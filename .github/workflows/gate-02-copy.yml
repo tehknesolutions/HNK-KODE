@@ -1,0 +1,70 @@
+name: Gate 02 Preservative Copy
+
+on:
+  push:
+    branches:
+      - migration/gate-02-preservative-extraction
+    paths:
+      - .github/workflows/gate-02-copy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  copy-frozen-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout HNK-KODE migration branch
+        uses: actions/checkout@v4
+        with:
+          ref: migration/gate-02-preservative-extraction
+          fetch-depth: 0
+
+      - name: Checkout frozen CODEX source
+        uses: actions/checkout@v4
+        with:
+          repository: tehknesolutions/codex-hnk
+          ref: 3027151d18176fd5ae46a04b2ac8ed8424bf68db
+          path: .source-codex
+
+      - name: Copy source-locked language packages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p packages
+          rm -rf packages/hnk-linguas packages/hnk-glyphs
+          cp -a .source-codex/packages/hnk-linguas packages/hnk-linguas
+          cp -a .source-codex/packages/hnk-glyphs packages/hnk-glyphs
+          rm -rf .source-codex
+
+      - name: Record provenance
+        shell: bash
+        run: |
+          cat > packages/SOURCE-LOCK.md <<'EOF'
+          # Gate 02 Source Lock
+
+          Source repository: `tehknesolutions/codex-hnk`
+
+          Frozen commit: `3027151d18176fd5ae46a04b2ac8ed8424bf68db`
+
+          Packages copied without semantic edits:
+          - `packages/hnk-linguas`
+          - `packages/hnk-glyphs`
+
+          Authority has not transferred. `@hnk/canon-contract` remains CODEX-owned.
+          EOF
+
+      - name: Commit material extraction
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages
+          if git diff --cached --quiet; then
+            echo "No material changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: copy frozen HNK language packages"
+          git push origin HEAD:migration/gate-02-preservative-extraction

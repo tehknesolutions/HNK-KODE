@@ -21,12 +21,18 @@ jobs:
           ref: migration/gate-02-preservative-extraction
           fetch-depth: 0
 
-      - name: Checkout frozen CODEX source
-        uses: actions/checkout@v4
-        with:
-          repository: tehknesolutions/codex-hnk
-          ref: 3027151d18176fd5ae46a04b2ac8ed8424bf68db
-          path: .source-codex
+      - name: Fetch frozen CODEX source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_SHA='3027151d18176fd5ae46a04b2ac8ed8424bf68db'
+          curl --fail --location --retry 3 \
+            "https://github.com/tehknesolutions/codex-hnk/archive/${SOURCE_SHA}.tar.gz" \
+            --output /tmp/codex-hnk.tar.gz
+          mkdir -p .source-codex
+          tar -xzf /tmp/codex-hnk.tar.gz --strip-components=1 -C .source-codex
+          test -f .source-codex/packages/hnk-linguas/package.json
+          test -f .source-codex/packages/hnk-glyphs/package.json
 
       - name: Copy source-locked language packages
         shell: bash
@@ -36,7 +42,7 @@ jobs:
           rm -rf packages/hnk-linguas packages/hnk-glyphs
           cp -a .source-codex/packages/hnk-linguas packages/hnk-linguas
           cp -a .source-codex/packages/hnk-glyphs packages/hnk-glyphs
-          rm -rf .source-codex
+          rm -rf .source-codex /tmp/codex-hnk.tar.gz
 
       - name: Record provenance
         shell: bash
@@ -54,6 +60,19 @@ jobs:
 
           Authority has not transferred. `@hnk/canon-contract` remains CODEX-owned.
           EOF
+
+      - name: Verify copied bytes against frozen archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_SHA='3027151d18176fd5ae46a04b2ac8ed8424bf68db'
+          curl --fail --location --retry 3 \
+            "https://github.com/tehknesolutions/codex-hnk/archive/${SOURCE_SHA}.tar.gz" \
+            --output /tmp/codex-verify.tar.gz
+          mkdir -p /tmp/codex-verify
+          tar -xzf /tmp/codex-verify.tar.gz --strip-components=1 -C /tmp/codex-verify
+          diff -qr /tmp/codex-verify/packages/hnk-linguas packages/hnk-linguas
+          diff -qr /tmp/codex-verify/packages/hnk-glyphs packages/hnk-glyphs
 
       - name: Commit material extraction
         shell: bash

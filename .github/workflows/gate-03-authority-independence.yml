@@ -1,0 +1,110 @@
+name: Gate 03 Authority Independence
+
+on:
+  push:
+    branches:
+      - gate-03-authority-independence
+    paths:
+      - 'packages/**'
+      - '.github/workflows/gate-03-authority-independence.yml'
+  pull_request:
+    paths:
+      - 'packages/**'
+      - '.github/workflows/gate-03-authority-independence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-authority-independence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout HNK-KODE
+        uses: actions/checkout@v4
+
+      - name: Fetch frozen CODEX source
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_SHA='3027151d18176fd5ae46a04b2ac8ed8424bf68db'
+          curl --fail --location --retry 3 \
+            "https://github.com/tehknesolutions/codex-hnk/archive/${SOURCE_SHA}.tar.gz" \
+            --output /tmp/codex-hnk.tar.gz
+          mkdir -p /tmp/codex-source
+          tar -xzf /tmp/codex-hnk.tar.gz --strip-components=1 -C /tmp/codex-source
+
+      - name: Verify source-locked HNK linguas runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in index.mjs authored.mjs cycle1.mjs grammar-core-v1.mjs; do
+            test -f "packages/hnk-linguas/src/$file"
+            test -f "/tmp/codex-source/packages/hnk-linguas/src/$file"
+            cmp --silent "/tmp/codex-source/packages/hnk-linguas/src/$file" "packages/hnk-linguas/src/$file" || {
+              echo "SOURCE-LOCK DRIFT: packages/hnk-linguas/src/$file"
+              exit 1
+            }
+          done
+
+      - name: Verify regression tests preserved
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in lexicon.test.mjs authored.test.mjs cycle1.test.mjs grammar-core-v1.test.mjs; do
+            cmp --silent "/tmp/codex-source/packages/hnk-linguas/test/$file" "packages/hnk-linguas/test/$file" || {
+              echo "TEST DRIFT: packages/hnk-linguas/test/$file"
+              exit 1
+            }
+          done
+
+      - name: Verify glyph authority boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f packages/hnk-glyphs/src/index.mjs
+          if grep -R -n -E "HNK40_SPRITE_SVG|getGlyphSvg|getSpriteUseSvg|frozen-sprite|renderer" packages/hnk-glyphs/src packages/hnk-linguas/src; then
+            echo 'VISUAL AUTHORITY LEAK: renderer/sprite surface entered linguistic authority boundary.'
+            exit 1
+          fi
+          if grep -R -n "@hnk/canon-contract" packages/hnk-glyphs packages/hnk-linguas; then
+            echo 'CODEX AUTHORITY LEAK: @hnk/canon-contract dependency remains in Gate 03 packages.'
+            exit 1
+          fi
+
+      - name: Verify package dependency direction
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const linguas = JSON.parse(fs.readFileSync('packages/hnk-linguas/package.json','utf8'));
+          const glyphs = JSON.parse(fs.readFileSync('packages/hnk-glyphs/package.json','utf8'));
+          if (!linguas.dependencies?.['@hnk/glyphs']) throw new Error('@hnk/linguas must depend on @hnk/glyphs');
+          if (glyphs.dependencies?.['@hnk/linguas']) throw new Error('@hnk/glyphs must not depend on @hnk/linguas');
+          if (linguas.dependencies?.['@hnk/canon-contract'] || glyphs.dependencies?.['@hnk/canon-contract']) throw new Error('CODEX canon-contract dependency is forbidden in Gate 03');
+          NODE
+
+      - name: Link workspace dependency for standalone tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p packages/hnk-linguas/node_modules/@hnk
+          ln -s "$(pwd)/packages/hnk-glyphs" packages/hnk-linguas/node_modules/@hnk/glyphs
+
+      - name: Run glyph compatibility regression
+        shell: bash
+        run: node --test packages/hnk-glyphs/test/*.test.mjs
+
+      - name: Run HNK linguas regression
+        shell: bash
+        run: node --test packages/hnk-linguas/test/*.test.mjs
+
+      - name: Gate 03 attestation
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo 'GATE-03 PASS CONDITIONS SATISFIED'
+          echo 'Preservation: source-locked linguas runtime + regression tests byte-identical.'
+          echo 'Independence: no canon-contract, renderer, sprite, or visual-authority dependency.'
+          echo 'Runtime: glyph compatibility and linguas regression suites passed.'

@@ -1,0 +1,12 @@
+{
+  "schema":"hnk-e5-census-evidence/v1",
+  "n":12,
+  "source":{"repository":"tehknesolutions/codex-hnk","branch":"research/hnk-kode-e5-render-distinct"},
+  "rawWalk":{"status":"PARTIAL_EXACT","major463":"7289096672","mf":"6141966264","mfPlusCg":"7289051616","crT":"6144","crH":"14336","crD":"24576"},
+  "simplePath":{"status":"PASS","law":{"repeatedAddress":false,"ordered":true,"symmetryReduction":"NONE"},"major463":"95284518","mf":"16535232","mfPlusCg":"95284494","crT":"0","crH":"0","crD":"24"},
+  "reversal":{"law":"FORM != EXECUTION; reverse traversal is the same base undirected trace when direction is metadata","fixedClasses":"0","major463Classes":"47642259"},
+  "automorphism":{"status":"PASS","mfCgGroup":"D9","groupOrder":18,"sectorRotationStep":8,"layerAction":"IDENTITY_ONLY","mfCgReversalBaseline":"47642247","mfCgClasses":"2647891","crDReversalBaseline":"12","crD_D12Classes":"1","major463GeometricClasses":"2647892"},
+  "renderDistinct":{"status":"PASS","mfCgVertices":441,"frozenMfCgEdges":873,"coordinateCollisions":0,"edgeSegmentCollisions":0,"coordinateInjective":true,"edgeSegmentInjective":true,"major463":"2647892"},
+  "boundary":"CR:D absolute placement is not frozen against MF+CG; no cross-component collapse is asserted.",
+  "interpretation":"2,647,892 is the final currently-computable N=12 render-distinct geometric identity count under the frozen topology/geometry, not the number of letters or semantically assigned language units."
+}

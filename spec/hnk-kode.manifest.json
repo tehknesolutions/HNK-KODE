@@ -1,0 +1,36 @@
+{
+  "schema": "hnk-kode-manifest/v1",
+  "authority": "tehknesolutions/HNK-KODE",
+  "language": {
+    "id": "HNK-KODE",
+    "name": "HENUVOKODAN"
+  },
+  "projects": {
+    "language": "HNK-KODE",
+    "script": "HNK-KODESCRIPT"
+  },
+  "glyphSpace": {
+    "n12": {
+      "rawWalks": 7289096672,
+      "simplePaths": 95284518,
+      "reversalClasses": 47642259,
+      "geometricClasses": 2647892,
+      "renderDistinct": 2647892,
+      "status": "CURRENTLY_COMPUTABLE_FINAL"
+    }
+  },
+  "identityLaws": {
+    "formNotExecution": true,
+    "reverseTraversalCreatesNewBaseGlyph": false,
+    "directionMayCarryMetadata": true
+  },
+  "boundaries": [
+    "MF-to-CR and absolute/cross-family Rose binding remain explicit model boundaries",
+    "glyph-space capacity does not imply 2,647,892 linguistic letters or assigned meanings"
+  ],
+  "consumers": [
+    "tehknesolutions/codex-hnk",
+    "tehknesolutions/tehkne-os",
+    "tehknesolutions/alakazam-strangeverse"
+  ]
+}

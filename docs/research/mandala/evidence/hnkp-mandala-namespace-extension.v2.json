@@ -1,0 +1,14 @@
+{
+  "version":"2.0-candidate",
+  "status":"E3_HNKP_NAMESPACE_EXTENSION_CANDIDATE",
+  "profileId":"HNKP2-MANDALA-ADDR-BE",
+  "extends":"HNKP1-MF-TUPLE-BE",
+  "authorityBoundary":{"transport":"HNK_CANDIDATE","semanticMeaning":"NONE","linguisticAuthority":"HNK-KODE","humanGateRequired":true},
+  "compatibility":{"legacyMagic":"HNKP","legacyVersion":1,"legacyFlags":1,"rule":"Every HNKP1 packet remains byte-for-byte unchanged and MUST be decoded by the V1 MF tuple decoder.","v2PacketsUseVersion":2},
+  "namespaceEnum":{"MF":1,"CG":2,"CR_T":3,"CR_H":4,"CR_D":5,"HC":255},
+  "ordinalLaw":{"MF":{"range":"1..432","mapping":"(layer-1)*72 + sector"},"CG":{"range":"1..9"},"CR_T":{"range":"1..3"},"CR_H":{"range":"1..7"},"CR_D":{"range":"1..12"},"HC":{"status":"RESERVED_NOT_ENCODABLE_IN_E3"}},
+  "edgeGovernance":{"allowedE2":[0,1,2,3,6,7,9,10,11,12],"reservedOrBlocked":[4,5,8],"rule":"Transport enum availability does not authorize a graph edge."},
+  "textTransport":{"v1Prefix":"HNKP1:","v2Prefix":"HNKP2:","encoding":"base64url without padding"},
+  "securityAndIntegrity":{"crcPurpose":"accidental corruption detection only","notAuthentication":true,"canonicalMeaningNotImplied":true},
+  "provenance":{"repository":"tehknesolutions/codex-hnk","branch":"research/hnk-kode-e5-render-distinct","originalPath":"docs/research/mandala/final/hnkp-mandala-namespace-extension.v2.json"}
+}

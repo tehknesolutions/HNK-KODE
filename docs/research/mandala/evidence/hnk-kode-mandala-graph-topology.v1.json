@@ -1,0 +1,18 @@
+{
+  "version":"1.0",
+  "status":"E2_GRAPH_TOPOLOGY_CANDIDATE",
+  "vertexCount":463,
+  "principle":"Only source-supported or purely grid-topological adjacency is promoted. Unsupported cross-domain geometry remains unresolved.",
+  "edgeClasses":{
+    "MF_ANGULAR":{"status":"SUPPORTED","undirectedEdgeCount":432,"law":"Within fixed layer, S01..S72 form C72."},
+    "MF_RADIAL":{"status":"SUPPORTED","undirectedEdgeCount":360,"law":"Within fixed sector, adjacent layers connect L01..L06."},
+    "MF_CG":{"status":"SUPPORTED_BY_OUTER_BAND_PARTITION","undirectedEdgeCount":72,"law":"Each L06 sector connects to its containing 8-sector choir group."},
+    "CG_CG":{"status":"DERIVED_FROM_9_OUTER_GROUPS","undirectedEdgeCount":9,"law":"CG01..CG09 form C9."},
+    "MF_CR":{"status":"UNRESOLVED"},
+    "CR_INTERNAL":{"status":"PARTIALLY_RESOLVED","subgraphs":{"CR_T":{"topology":"C3","undirectedEdgeCount":3},"CR_H":{"topology":"C7","undirectedEdgeCount":7},"CR_D":{"topology":"C12","undirectedEdgeCount":12}},"crossFamilyEdges":"UNRESOLVED"},
+    "HC_ANY":{"status":"FORBIDDEN_IN_E2"}
+  },
+  "supportedSubgraph":{"MF":{"topology":"P6 □ C72","vertices":432,"undirectedEdges":792},"MF_plus_CG":{"vertices":441,"knownUndirectedEdges":873},"CR_knownInternal":{"vertices":22,"knownUndirectedEdges":22},"major463":{"vertices":463,"knownUndirectedEdges":895,"connectedComponentsUnderOnlyFrozenEdges":4,"components":["MF+CG (441)","CR:T (3)","CR:H (7)","CR:D (12)"]}},
+  "pathPolicy":{"allowedNow":["MF_ANGULAR","MF_RADIAL","MF_CG","CG_CG","CR_T_CYCLE","CR_H_CYCLE","CR_D_CYCLE"],"blockedNow":["MF_CR","CR_CROSS_FAMILY","HC_ANY"],"semanticMeaning":"NONE","humanGateRequiredForNewEdgeClass":true},
+  "provenance":{"repository":"tehknesolutions/codex-hnk","branch":"research/hnk-kode-e5-render-distinct","originalPath":"docs/research/mandala/final/hnk-kode-mandala-graph-topology.v1.json"}
+}

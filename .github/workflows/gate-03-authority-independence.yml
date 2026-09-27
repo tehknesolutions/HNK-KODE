@@ -33,30 +33,68 @@ jobs:
             --output /tmp/codex-hnk.tar.gz
           mkdir -p /tmp/codex-source
           tar -xzf /tmp/codex-hnk.tar.gz --strip-components=1 -C /tmp/codex-source
+          echo "SOURCE_SHA=$SOURCE_SHA"
 
-      - name: Verify source-locked HNK linguas runtime
+      - name: Diagnose source-locked HNK linguas runtime
         shell: bash
         run: |
           set -euo pipefail
+          failed=0
           for file in index.mjs authored.mjs cycle1.mjs grammar-core-v1.mjs; do
-            test -f "packages/hnk-linguas/src/$file"
-            test -f "/tmp/codex-source/packages/hnk-linguas/src/$file"
-            cmp --silent "/tmp/codex-source/packages/hnk-linguas/src/$file" "packages/hnk-linguas/src/$file" || {
-              echo "SOURCE-LOCK DRIFT: packages/hnk-linguas/src/$file"
-              exit 1
-            }
+            src="/tmp/codex-source/packages/hnk-linguas/src/$file"
+            dst="packages/hnk-linguas/src/$file"
+            echo "::group::SOURCE-LOCK $file"
+            if [[ ! -f "$src" ]]; then echo "MISSING SOURCE: $src"; failed=1; echo '::endgroup::'; continue; fi
+            if [[ ! -f "$dst" ]]; then echo "MISSING DESTINATION: $dst"; failed=1; echo '::endgroup::'; continue; fi
+            echo "SOURCE_SHA256=$(sha256sum "$src" | cut -d' ' -f1)"
+            echo "DEST_SHA256=$(sha256sum "$dst" | cut -d' ' -f1)"
+            echo "SOURCE_BYTES=$(wc -c < "$src")"
+            echo "DEST_BYTES=$(wc -c < "$dst")"
+            if cmp --silent "$src" "$dst"; then
+              echo 'BYTE_IDENTICAL=YES'
+            else
+              echo 'BYTE_IDENTICAL=NO'
+              echo 'FIRST_DIFF:'
+              cmp -l "$src" "$dst" | head -n 20 || true
+              echo 'TEXT_DIFF:'
+              diff -u "$src" "$dst" | head -n 120 || true
+              failed=1
+            fi
+            echo '::endgroup::'
           done
+          if [[ "$failed" -ne 0 ]]; then
+            echo 'SOURCE_LOCK_RESULT=FAIL'
+            exit 1
+          fi
+          echo 'SOURCE_LOCK_RESULT=PASS'
 
-      - name: Verify regression tests preserved
+      - name: Diagnose preserved regression tests
         shell: bash
         run: |
           set -euo pipefail
+          failed=0
           for file in lexicon.test.mjs authored.test.mjs cycle1.test.mjs grammar-core-v1.test.mjs; do
-            cmp --silent "/tmp/codex-source/packages/hnk-linguas/test/$file" "packages/hnk-linguas/test/$file" || {
-              echo "TEST DRIFT: packages/hnk-linguas/test/$file"
-              exit 1
-            }
+            src="/tmp/codex-source/packages/hnk-linguas/test/$file"
+            dst="packages/hnk-linguas/test/$file"
+            echo "::group::TEST-LOCK $file"
+            if [[ ! -f "$src" ]]; then echo "MISSING SOURCE: $src"; failed=1; echo '::endgroup::'; continue; fi
+            if [[ ! -f "$dst" ]]; then echo "MISSING DESTINATION: $dst"; failed=1; echo '::endgroup::'; continue; fi
+            echo "SOURCE_SHA256=$(sha256sum "$src" | cut -d' ' -f1)"
+            echo "DEST_SHA256=$(sha256sum "$dst" | cut -d' ' -f1)"
+            if cmp --silent "$src" "$dst"; then
+              echo 'BYTE_IDENTICAL=YES'
+            else
+              echo 'BYTE_IDENTICAL=NO'
+              diff -u "$src" "$dst" | head -n 120 || true
+              failed=1
+            fi
+            echo '::endgroup::'
           done
+          if [[ "$failed" -ne 0 ]]; then
+            echo 'TEST_LOCK_RESULT=FAIL'
+            exit 1
+          fi
+          echo 'TEST_LOCK_RESULT=PASS'
 
       - name: Verify glyph authority boundary
         shell: bash
@@ -71,6 +109,7 @@ jobs:
             echo 'CODEX AUTHORITY LEAK: @hnk/canon-contract dependency remains in Gate 03 packages.'
             exit 1
           fi
+          echo 'AUTHORITY_BOUNDARY_RESULT=PASS'
 
       - name: Verify package dependency direction
         shell: bash
@@ -80,9 +119,12 @@ jobs:
           import fs from 'node:fs';
           const linguas = JSON.parse(fs.readFileSync('packages/hnk-linguas/package.json','utf8'));
           const glyphs = JSON.parse(fs.readFileSync('packages/hnk-glyphs/package.json','utf8'));
+          console.log('LINGUAS_DEPENDENCIES', linguas.dependencies ?? {});
+          console.log('GLYPHS_DEPENDENCIES', glyphs.dependencies ?? {});
           if (!linguas.dependencies?.['@hnk/glyphs']) throw new Error('@hnk/linguas must depend on @hnk/glyphs');
           if (glyphs.dependencies?.['@hnk/linguas']) throw new Error('@hnk/glyphs must not depend on @hnk/linguas');
           if (linguas.dependencies?.['@hnk/canon-contract'] || glyphs.dependencies?.['@hnk/canon-contract']) throw new Error('CODEX canon-contract dependency is forbidden in Gate 03');
+          console.log('DEPENDENCY_DIRECTION_RESULT=PASS');
           NODE
 
       - name: Link workspace dependency for standalone tests
@@ -91,6 +133,7 @@ jobs:
           set -euo pipefail
           mkdir -p packages/hnk-linguas/node_modules/@hnk
           ln -s "$(pwd)/packages/hnk-glyphs" packages/hnk-linguas/node_modules/@hnk/glyphs
+          ls -la packages/hnk-linguas/node_modules/@hnk
 
       - name: Run glyph compatibility regression
         shell: bash

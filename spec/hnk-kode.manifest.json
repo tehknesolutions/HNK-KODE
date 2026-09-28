@@ -109,6 +109,25 @@
         "G32",
         "G40"
       ]
+    },
+    "familyExpansionCorpus": {
+      "version": "HNK-FAMILY-EXPANSION-CORPUS-V1",
+      "artifact": "data/acquisition/hnk-family-expansion-corpus.v1.json",
+      "generator": "packages/kodescript/src/family-expansion-corpus.mjs",
+      "train": 72,
+      "holdout": 24,
+      "trainHoldoutCoarseOverlap": 0,
+      "trainFamilies": {
+        "coarse": 72,
+        "topological": 72,
+        "radialAngular": 71
+      },
+      "holdoutFamilies": {
+        "coarse": 24,
+        "topological": 24,
+        "radialAngular": 24
+      },
+      "semanticBindings": 0
     }
   }
 }

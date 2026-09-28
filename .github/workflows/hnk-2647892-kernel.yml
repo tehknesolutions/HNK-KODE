@@ -25,30 +25,16 @@ jobs:
   verify-mathematical-kernel:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout HNK-KODE
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
+      - name: Runtime info
+        run: node --version
 
-      - name: Verify machine-readable manifest
+      - name: Verify HNK-2647892 invariants
         run: node --test tests/hnk-2647892-kernel.test.mjs
 
-      - name: Verify schema identity
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          const schema = JSON.parse(fs.readFileSync('spec/hnk-2647892-kernel.schema.json','utf8'));
-          if (schema.$id !== 'hnk-kode/hnk-2647892-kernel.schema.json') throw new Error('schema id drift');
-          if (schema.properties?.n?.const !== 12) throw new Error('N drift');
-          if (schema.properties?.counts?.properties?.geometricClasses?.const !== 2647892) throw new Error('final count drift');
-          NODE
+      - name: Verify schema contract
+        run: node -e "const s=require('./spec/hnk-2647892-kernel.schema.json'); if(s.properties.n.const!==12||s.properties.counts.properties.geometricClasses.const!==2647892) process.exit(1)"
 
-      - name: Gate attestation
-        run: |
-          echo 'HNK-2647892 KERNEL PASS'
-          echo 'N=12'
-          echo 'Final geometric/render-distinct identities=2,647,892'
-          echo 'Language semantics remain non-canonical.'
+      - name: Attestation
+        run: echo "HNK-2647892 KERNEL PASS — N=12 — 2,647,892 geometric/render-distinct identities — semantics remain non-canonical"

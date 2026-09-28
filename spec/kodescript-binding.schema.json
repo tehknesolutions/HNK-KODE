@@ -3,16 +3,36 @@
   "$id": "hnk-kode/kodescript-binding.schema.json",
   "title": "HNK-KODESCRIPT Geometry-to-Language Binding",
   "type": "object",
-  "required": ["bindingId", "glyphIdentity", "authority", "linguisticBinding"],
+  "required": ["bindingId", "glyphIdentity", "authority", "namespace", "linguisticBinding"],
   "properties": {
     "bindingId": {"type": "string", "minLength": 1},
     "glyphIdentity": {
       "type": "object",
-      "required": ["n", "identityId", "path"],
+      "required": ["n", "identityId", "path", "topologyValidation"],
       "properties": {
         "n": {"const": 12},
-        "identityId": {"type": "string"},
-        "path": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"type": "string"}},
+        "identityId": {"type": "string", "minLength": 1},
+        "path": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^(MF:L0[1-6]:S(?:0[1-9]|[1-6][0-9]|7[0-2])|CG:0[1-9]|CR:D:(?:0[1-9]|1[0-2]))$"
+          }
+        },
+        "topologyValidation": {
+          "type": "object",
+          "required": ["validator", "status", "topologyVersion"],
+          "properties": {
+            "validator": {"const": "GFV-N12"},
+            "status": {"const": "PASS"},
+            "topologyVersion": {"type": "string", "minLength": 1},
+            "featureVectorRef": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
         "featureVectorRef": {"type": "string"},
         "renderDistinctSpaceVersion": {"type": "string"}
       },
@@ -64,5 +84,24 @@
       "additionalProperties": false
     }
   },
+  "allOf": [
+    {
+      "if": {"properties": {"authority": {"enum": ["HNK_CANDIDATE", "HUMAN_REVIEW", "HNK_CANON"]}}, "required": ["authority"]},
+      "then": {
+        "properties": {
+          "linguisticBinding": {
+            "anyOf": [
+              {"required": ["lexeme"], "properties": {"lexeme": {"type": "string", "minLength": 1}}},
+              {"required": ["phonologyRef"], "properties": {"phonologyRef": {"type": "string", "minLength": 1}}},
+              {"required": ["semanticRef"], "properties": {"semanticRef": {"type": "string", "minLength": 1}}},
+              {"required": ["grammarRef"], "properties": {"grammarRef": {"type": "string", "minLength": 1}}},
+              {"required": ["astRef"], "properties": {"astRef": {"type": "string", "minLength": 1}}},
+              {"required": ["irRef"], "properties": {"irRef": {"type": "string", "minLength": 1}}}
+            ]
+          }
+        }
+      }
+    }
+  ],
   "additionalProperties": false
 }

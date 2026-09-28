@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "HNK-KODESCRIPT-LANGUAGE-ELIGIBILITY-V1",
+  "status": "EXPERIMENTAL_POLICY",
+  "authority": "HNK-KODE",
+  "mathematicalKernel": "HNK-2647892-MATH-KERNEL-V1",
+  "familyCensus": "HNK-2647892-FAMILY-CENSUS-V1",
+  "principles": {
+    "geometryAssignsMeaning": false,
+    "automaticPhonology": false,
+    "automaticGrammar": false,
+    "automaticSemanticBinding": false,
+    "explicitBindingRequired": true,
+    "unresolvedIdentityMayBeExperimentSet": true,
+    "unresolvedIdentityMayBeCanonicalBinding": false
+  },
+  "structuralEligibility": {
+    "required": {
+      "n": 12,
+      "simplePath": true,
+      "renderDistinctIdentity": true,
+      "structuralAuthority": "STRUCTURAL_ONLY"
+    },
+    "statuses": [
+      "STRUCTURAL_EXPERIMENT_READY",
+      "AMBIGUOUS_EXPERIMENT_SET",
+      "BLOCKED_STRUCTURAL"
+    ]
+  },
+  "bindingReadiness": {
+    "statuses": [
+      "NO_BINDING",
+      "EXPERIMENTAL_BINDING_CANDIDATE",
+      "HUMAN_REVIEW_REQUIRED",
+      "CANON_BINDING"
+    ],
+    "promotionRequirements": [
+      "explicit_linguistic_source_or_author_decision",
+      "provenance",
+      "namespace",
+      "phonology_or_grammar_or_semantic_binding_as_applicable",
+      "conflict_check",
+      "human_or_authority_gate",
+      "tests"
+    ]
+  },
+  "namespacePolicy": {
+    "allowed": [
+      "LANGUAGE",
+      "SACRED",
+      "GRAMMAR",
+      "RUNTIME",
+      "SYSTEM",
+      "SW",
+      "EXPERIMENTAL",
+      "RESERVED"
+    ],
+    "defaultForUnboundGeometry": "EXPERIMENTAL"
+  },
+  "acquisitionPolicy": {
+    "memorizationTarget": false,
+    "familyRepresentativeSampling": true,
+    "holdoutWholeFamilies": true,
+    "preserveAmbiguousCandidateSets": true,
+    "benchmarkHNK40": true
+  }
+}

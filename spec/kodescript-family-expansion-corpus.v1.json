@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "HNK-KODESCRIPT-FAMILY-EXPANSION-CORPUS-V1",
+  "status": "EXPERIMENTAL_PROTOCOL",
+  "authority": "STRUCTURAL_ONLY",
+  "mathematicalKernel": "HNK-2647892-MATH-KERNEL-V1",
+  "familyCensus": "HNK-2647892-FAMILY-CENSUS-V1",
+  "objective": "Test structural generalization beyond the HNK40 Genesis neighborhood without assigning automatic linguistic meaning.",
+  "knownUniverse": {
+    "geometricIdentities": 2647892,
+    "coarseFamilies": 256,
+    "topologicalFamilies": 11492,
+    "radialAngularFamilies": 3041,
+    "hnk40Coverage": {"coarse": 1, "topological": 4, "radialAngular": 6}
+  },
+  "selectionPolicy": {
+    "unit": "FAMILY_REPRESENTATIVE",
+    "semanticAssignment": false,
+    "phonologicalAssignment": false,
+    "canonicalPromotion": false,
+    "excludeHnk40FamiliesFromNovelTransfer": true,
+    "preserveWholeFamilyHoldouts": true,
+    "deterministicRepresentativeRequired": true,
+    "representativeRule": "minimum canonical identity key within each selected family",
+    "stratifyBy": ["coarse", "topological", "radialAngular", "family_size_band"],
+    "familySizeBands": ["singleton", "small_2_31", "medium_32_255", "large_256_plus"]
+  },
+  "corpusSplits": {
+    "TRAIN": {"purpose": "learn structural primitives and family rules", "familyDisjointFrom": ["TRANSFER"]},
+    "CONTRAST": {"purpose": "nearest-family discrimination and confusion measurement"},
+    "TRANSFER": {"purpose": "unseen-family generalization", "familyDisjointFrom": ["TRAIN"]},
+    "HNK40_BENCHMARK": {"purpose": "regression against governed Genesis forms"},
+    "AMBIGUOUS_HOLDOUT": {"identities": ["G17", "G20"], "purpose": "ambiguity-preservation tests"}
+  },
+  "minimumPilot": {
+    "coarseNovelFamilies": 32,
+    "topologicalNovelFamilies": 64,
+    "radialAngularNovelFamilies": 64,
+    "representativesPerSelectedFamily": 1,
+    "transferFractionByFamily": 0.25,
+    "contrastPairsMinimum": 32,
+    "note": "Pilot cardinalities are experimental acquisition parameters, not mathematical or linguistic canon."
+  },
+  "measurements": [
+    "recognition_accuracy",
+    "production_accuracy",
+    "response_time",
+    "confusion_matrix",
+    "delayed_retention",
+    "unseen_family_transfer",
+    "family_rule_explanation",
+    "memorization_vs_rule_use"
+  ],
+  "promotionGate": {
+    "automaticSemanticPromotion": false,
+    "automaticPhonologicalPromotion": false,
+    "requiresExplicitHnkKodeDecision": true,
+    "requiresProvenance": true,
+    "requiresConflictCheck": true
+  }
+}

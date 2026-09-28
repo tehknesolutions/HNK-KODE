@@ -5,7 +5,7 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 ## [Unreleased]
 
 ### Added — 2026-09-28
-- Added Language Eligibility V1 policy/schema/runtime: 38 HNK40 resolved experiment-ready, 2 ambiguity-preserved holdouts, 0 automatic semantic bindings.
+- Added deterministic Family Expansion Corpus V1: 96 representatives = 72 TRAIN + 24 HOLDOUT with zero coarse-family leakage.\n- Family Expansion V1 deliberately excludes the HNK40 Genesis coarse family and reserves 23 unseen MF+CG coarse families + 1 CR:D representative for transfer testing.\n- Added Language Eligibility V1 policy/schema/runtime: 38 HNK40 resolved experiment-ready, 2 ambiguity-preserved holdouts, 0 automatic semantic bindings.
 - Added Language × Mathematics Bridge V1: 33 recovered lexemes / 140 authored forms mapped onto HNK40 structural families; neither corpus uses G17/G20.
 - Added exact acquisition curriculum bands: 21 CORE_OBSERVED, 17 EXPANSION_RESOLVED, 2 AMBIGUOUS_HOLDOUT.
 - Added exact shared-corpus frequency frontier: 14 glyphs for 80%, one unique 16-glyph set for 90%, 18 glyphs for 95%.

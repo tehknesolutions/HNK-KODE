@@ -1,9 +1,10 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.0.1",
   "source": {
     "hybrid": "data/benchmarks/hnk40-e5-hybrid-projection.v1.json",
     "featureVectorVersion": "GFV-N12-0.1",
-    "mathematicalKernel": "HNK-2647892-MATH-KERNEL-V1"
+    "mathematicalKernel": "HNK-2647892-MATH-KERNEL-V1",
+    "topologicalNormalForm": "REVERSAL_MIN_LEX"
   },
   "summary": {
     "glyphRecords": 40,
@@ -388,7 +389,7 @@
           "projectionId": "G11-E5-bdc463989b5de812",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -403,7 +404,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -423,7 +424,7 @@
           "projectionId": "G12-E5-54140fe2180e6a62",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -438,7 +439,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -458,7 +459,7 @@
           "projectionId": "G13-E5-7b9e705579f5e2b8",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -473,7 +474,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -493,7 +494,7 @@
           "projectionId": "G14-E5-9b77d3a02704709b",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -508,7 +509,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -528,7 +529,7 @@
           "projectionId": "G15-E5-d4269d43c6c5d292",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -543,7 +544,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -563,7 +564,7 @@
           "projectionId": "G16-E5-78e122baafb136d9",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -578,7 +579,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -598,7 +599,7 @@
           "projectionId": "G17-E5-ee584ad1394483f6",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-7"
           }
         },
@@ -606,7 +607,7 @@
           "projectionId": "G17-E5-8e04f31a084076d4",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -621,7 +622,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -642,7 +643,7 @@
           "projectionId": "G18-E5-febc9f1c4a18f4c2",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -657,7 +658,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -677,7 +678,7 @@
           "projectionId": "G19-E5-4a501d40f405bc30",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         }
@@ -692,7 +693,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -712,7 +713,7 @@
           "projectionId": "G20-E5-66f496d3ca4416d8",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-6"
           }
         },
@@ -720,7 +721,7 @@
           "projectionId": "G20-E5-bd35fd4f59c227a2",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6",
+            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -735,7 +736,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:6|S:6"
+            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL|T:6|S:6"
           ]
         },
         "radialAngular": {
@@ -756,7 +757,7 @@
           "projectionId": "G21-E5-b4eaeb5fd4c0229a",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -771,7 +772,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -791,7 +792,7 @@
           "projectionId": "G22-E5-6192a7cea8c7ad0f",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -806,7 +807,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -826,7 +827,7 @@
           "projectionId": "G23-E5-0b9f53b754fc0e86",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -841,7 +842,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -861,7 +862,7 @@
           "projectionId": "G24-E5-b979138735d23ed6",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -876,7 +877,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -896,7 +897,7 @@
           "projectionId": "G25-E5-f39951085bdb4535",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -911,7 +912,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -931,7 +932,7 @@
           "projectionId": "G26-E5-d0cc8c2eb891c76b",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -946,7 +947,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -966,7 +967,7 @@
           "projectionId": "G27-E5-ab5b83615ae5e0c4",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -981,7 +982,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1001,7 +1002,7 @@
           "projectionId": "G28-E5-6fe309e9feb0136a",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:3-4|A:7-4"
           }
         }
@@ -1016,7 +1017,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1036,7 +1037,7 @@
           "projectionId": "G29-E5-9bd00aac094ac483",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:3-4|A:7-4"
           }
         }
@@ -1051,7 +1052,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1071,7 +1072,7 @@
           "projectionId": "G30-E5-59cbfe3dff2701f9",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1086,7 +1087,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1106,7 +1107,7 @@
           "projectionId": "G31-E5-272958bae4aa17ec",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -1121,7 +1122,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1141,7 +1142,7 @@
           "projectionId": "G32-E5-fa35897816f41fc9",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1156,7 +1157,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1176,7 +1177,7 @@
           "projectionId": "G33-E5-84616f709a5e52b5",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1191,7 +1192,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1211,7 +1212,7 @@
           "projectionId": "G34-E5-b51de3f6de2948b1",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1226,7 +1227,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1246,7 +1247,7 @@
           "projectionId": "G35-E5-7379825386d2f38c",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1261,7 +1262,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1281,7 +1282,7 @@
           "projectionId": "G36-E5-4ecfb3349ba10058",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1296,7 +1297,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1316,7 +1317,7 @@
           "projectionId": "G37-E5-b8298ae19e4a977f",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -1331,7 +1332,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1351,7 +1352,7 @@
           "projectionId": "G38-E5-264e1f175757cd26",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1366,7 +1367,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1386,7 +1387,7 @@
           "projectionId": "G39-E5-95baf0f9f3453815",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-4"
           }
         }
@@ -1401,7 +1402,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {
@@ -1421,7 +1422,7 @@
           "projectionId": "G40-E5-71ef986bd298da9e",
           "familyKeys": {
             "coarse": "MF_CG|N:12-0-0|E:7-4-0-0-0",
-            "topological": "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7",
+            "topological": "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7",
             "radialAngular": "R:2-4|A:7-7"
           }
         }
@@ -1436,7 +1437,7 @@
         "topological": {
           "stable": true,
           "values": [
-            "MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR|T:7|S:7"
+            "MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_RADIAL.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_ANGULAR.MF_RADIAL|T:7|S:7"
           ]
         },
         "radialAngular": {

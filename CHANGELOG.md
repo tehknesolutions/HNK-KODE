@@ -5,6 +5,10 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 ## [Unreleased]
 
 ### Added — 2026-09-28
+- Established `HNK-2647892 Mathematical Kernel` as a machine-verifiable N=12 research baseline.
+- Added `data/math/hnk-2647892.manifest.v1.json`, schema, Node invariant tests, and GitHub Actions gate.
+- Locked the enumeration funnel `7,289,096,672 → 95,284,518 → 47,642,259 → 2,647,892` and the independent Burnside D9 cross-check.
+- Explicitly separated geometric identity count from vocabulary, semantics, and acquisition inventories.
 - Mirrored HNK40 → E5 Hybrid Projection V1 research result from CODEX-HNK.
 - Added `spec/hnk40-e5-hybrid-projection.schema.json`.
 - Registered the reproducible 40-record result: 4 DIRECT, 34 DERIVED_UNIQUE, 2 DERIVED_AMBIGUOUS (G17/G20).

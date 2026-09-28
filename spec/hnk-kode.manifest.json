@@ -74,6 +74,41 @@
       "ambiguousHoldout": 2,
       "blocked": 0
     },
-    "automaticSemanticAssignments": 0
+    "automaticSemanticAssignments": 0,
+    "frequencyFrontier": {
+      "artifact": "data/acquisition/hnk-acquisition-frequency-frontier.v1.json",
+      "exactSharedCorpusMinima": {
+        "p80": {
+          "glyphs": 14,
+          "solutions": 700
+        },
+        "p90": {
+          "glyphs": 16,
+          "solutions": 1
+        },
+        "p95": {
+          "glyphs": 18,
+          "solutions": 7
+        }
+      },
+      "uniqueP90Core": [
+        "G01",
+        "G02",
+        "G03",
+        "G04",
+        "G05",
+        "G11",
+        "G12",
+        "G14",
+        "G15",
+        "G18",
+        "G19",
+        "G21",
+        "G23",
+        "G31",
+        "G32",
+        "G40"
+      ]
+    }
   }
 }

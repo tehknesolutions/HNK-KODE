@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hnk-kode/kodescript-binding.schema.json",
+  "title": "HNK-KODESCRIPT Geometry-to-Language Binding",
+  "type": "object",
+  "required": ["bindingId", "glyphIdentity", "authority", "linguisticBinding"],
+  "properties": {
+    "bindingId": {"type": "string", "minLength": 1},
+    "glyphIdentity": {
+      "type": "object",
+      "required": ["n", "identityId", "path"],
+      "properties": {
+        "n": {"const": 12},
+        "identityId": {"type": "string"},
+        "path": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"type": "string"}},
+        "featureVectorRef": {"type": "string"},
+        "renderDistinctSpaceVersion": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "executionMetadata": {
+      "type": "object",
+      "properties": {
+        "direction": {"enum": ["FORWARD", "REVERSE", "UNSPECIFIED"]},
+        "profile": {"type": "string"},
+        "metadata": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "authority": {
+      "enum": ["STRUCTURAL_ONLY", "HNK_CANDIDATE", "HUMAN_REVIEW", "HNK_CANON", "RESERVED"]
+    },
+    "namespace": {
+      "enum": ["LANGUAGE", "SACRED", "GRAMMAR", "RUNTIME", "SYSTEM", "SW", "EXPERIMENTAL", "RESERVED"]
+    },
+    "linguisticBinding": {
+      "type": "object",
+      "properties": {
+        "lexeme": {"type": ["string", "null"]},
+        "phonologyRef": {"type": ["string", "null"]},
+        "semanticRef": {"type": ["string", "null"]},
+        "grammarRef": {"type": ["string", "null"]},
+        "astRef": {"type": ["string", "null"]},
+        "irRef": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": {"type": "string"},
+        "decision": {"type": "string"},
+        "version": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "acquisition": {
+      "type": "object",
+      "properties": {
+        "level": {"enum": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]},
+        "isHeldOutForTransfer": {"type": "boolean"},
+        "experimentIds": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

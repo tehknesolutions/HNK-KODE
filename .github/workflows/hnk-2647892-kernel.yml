@@ -21,6 +21,9 @@ on:
       - 'tests/hnk-2647892-kernel.test.mjs'
       - 'packages/kodescript/**'
       - 'data/benchmarks/**'
+      - 'spec/kodescript-language-eligibility*.json'
+      - 'spec/hnk-family-expansion-corpus.schema.json'
+      - 'data/acquisition/**'
       - 'docs/research/HNK-2647892-MATHEMATICAL-KERNEL.md'
       - '.github/workflows/hnk-2647892-kernel.yml'
   workflow_dispatch:

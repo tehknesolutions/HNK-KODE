@@ -1,70 +1,93 @@
 # HNK-KODE — Core Lexemes Reconciliation Ledger
 
 Date: 2026-09-27
-Status: **RECONCILIATION / SOURCE-LOCKED**
+Status: **RECONCILIATION / EVIDENCE-CORRECTED**
 
 ## Purpose
 
-Establish a single explicit ledger for the core HNK-KODE/HENUVOKODAN decisions recovered during the all-sources migration. This file does not manufacture missing source text and does not silently upgrade historical proposals.
+Establish a single explicit ledger for core HNK-KODE/HENUVOKODAN decisions while separating three evidence classes:
 
-## Evidence boundary
+1. `LIVE_SOURCE_VERIFIED` — directly recovered from connected Drive/GitHub source payloads;
+2. `PROJECT_CANON_DECISION` — explicit HNK decisions carried by project authority/current project context but not yet recovered byte-for-byte from the connected Drive;
+3. `HISTORICAL_RESEARCH` — older design proposals/influences that must not silently overwrite current HNK-KODE canon.
 
-The repository's Drive inventory records that the `HNK — IDIOMA` source family contains:
+## Correction to the earlier migration inventory
 
-- language designation `HNK-KODE` / `HENUVOKODAN`;
-- sacred-name mappings `YAHUSHA` and `YAHUAH`;
-- core lexemes `AHNUVA`, `EMANU`, `HAYA`, `HODERU`;
-- `HNK-TRIAD-001`;
-- grammar/morphology, glyph and numerology registries;
-- dedicated HODERU canon/lexicon/validation/changelog deltas dated 2026-09-20.
+A live audit of the connected Drive shows that the folder previously treated as the `HNK — IDIOMA` source family is actually titled **`PROJETO IDIOMA HNK`** and currently exposes one direct child: the Google Doc **`Criação de Idiomas HNK`** (`10NWFVDRCS_4-8g-JZi-xrkIm88NVJhEyu0DVKyKIygA`). Its parent folder is **`HENUVOKODAN`**.
 
-The current GitHub default-branch code search does **not** independently surface `AHNUVA` or `HODERU` inside the runtime package. Therefore this ledger treats the Drive-derived decisions as material requiring explicit normalization into runtime registries, not as proof that the runtime already implements them.
+The live Drive payload does **not** currently expose the previously inventoried files named `01-STATUS-HNK-KODE.md` through `17-CHANGELOG-2026-09-20-HODERU.md`. Searches for `AHNUVA`, `HODERU`, `YAHUSHA`, and `HNK-KODE` also did not recover those exact source files in the current connector view.
+
+Therefore the earlier `DRIVE-HNK-KODE-INVENTORY.md` must be treated as a **migration-era inventory assertion**, not as current byte-level proof that those files exist in the connected Drive.
+
+## Live Drive evidence recovered
+
+### Folder topology
+
+- `HENUVOKODAN` → contains `PROJETO IDIOMA HNK` plus other broader HNK folders.
+- `PROJETO IDIOMA HNK` → contains `Criação de Idiomas HNK`.
+
+### `Criação de Idiomas HNK`
+
+Current revision: `1`.
+
+This historical/research document directly supports that an HNK proprietary language was being designed using, among other influences:
+
+- Esperanto-style regularity and a matrix/correlative model;
+- multilingual functional mapping;
+- glossolalia as proposed phonetic/acoustic research material;
+- Sefer Yetzirah 3/7/12 structure and 231-gates combinatorics as design inspiration;
+- gematria/binary indexing proposals;
+- Enochian/esolang analogies;
+- a three-layer proposal described as firmware / interface / execution;
+- a roadmap for combinatorial generation and multilingual middleware.
+
+It does **not** contain the current forms `AHNUVA`, `EMANU`, `HAYA`, `HODERU`, `YAHUSHA`, `YAHUAH`, or the current HNK-TRIAD-001 definitions. It therefore cannot serve as their exact lexical source.
 
 ## Reconciliation table
 
-| ID | HNK-KODE form | Meaning / role recorded by current HNK canon | Source state | Runtime state | Reconciliation action |
+| ID | HNK-KODE form | Current project-canon meaning / role | Evidence class in this audit | Runtime state | Action |
 |---|---|---|---|---|---|
-| HK-LEX-AHNUVA | `AHNUVA` | AMOR | CANON DECISION / DRIVE SNAPSHOT FAMILY | NOT YET VERIFIED IN RUNTIME | Normalize from exact Drive lexicon/canon source before adding code. |
-| HK-LEX-EMANU | `EMANU` | VERDADE | CANON DECISION / DRIVE SNAPSHOT FAMILY | NOT YET VERIFIED IN RUNTIME | Normalize from exact Drive lexicon/canon source before adding code. |
-| HK-LEX-HAYA | `HAYA` | VIDA | CANON DECISION / DRIVE SNAPSHOT FAMILY | NOT YET VERIFIED IN RUNTIME | Normalize from exact Drive lexicon/canon source before adding code. |
-| HK-LEX-HODERU | `HODERU` | CAMINHO / WAY / VIA / JEITO / MANEIRA / MODO; objetivo/destino only as contextual extension | LATER CANON DELTA / DRIVE 2026-09-20 | NOT YET VERIFIED IN RUNTIME | HODERU delta has precedence over older conflicting path/way proposals after exact-source verification. |
-| HK-CON-KODAN | `KODAN` | canonical concept centered on LOGOS; HNK internal theological semantics remain governed by HNK canon | CANON DECISION | NOT YET VERIFIED IN RUNTIME | Keep separate from generic lexical derivation until exact registry source is recovered. |
-| HK-NAME-YAHUSHA | `YAHUSHA` | HNK sacred-name mapping for Jesus | HNK CANON / SACRED NAME | NOT YET VERIFIED IN RUNTIME | Sacred namespace; do not derive or mutate automatically. |
-| HK-NAME-YAHUAH | `YAHUAH` | HNK sacred-name mapping for YHWH | HNK CANON / SACRED NAME | NOT YET VERIFIED IN RUNTIME | Sacred namespace; do not derive or mutate automatically. |
+| HK-LEX-AHNUVA | `AHNUVA` | AMOR | PROJECT_CANON_DECISION; exact Drive payload not recovered | NOT VERIFIED IN RUNTIME | Preserve as canon decision; do not claim live-Drive proof until exact source is recovered. |
+| HK-LEX-EMANU | `EMANU` | VERDADE | PROJECT_CANON_DECISION; exact Drive payload not recovered | NOT VERIFIED IN RUNTIME | Same gate. |
+| HK-LEX-HAYA | `HAYA` | VIDA | PROJECT_CANON_DECISION; exact Drive payload not recovered | NOT VERIFIED IN RUNTIME | Same gate. |
+| HK-LEX-HODERU | `HODERU` | CAMINHO / WAY / VIA / JEITO / MANEIRA / MODO; objetivo/destino as contextual extension | PROJECT_CANON_DECISION; exact Drive delta not recovered | NOT VERIFIED IN RUNTIME | Preserve decision and continue exact-source recovery. |
+| HK-CON-KODAN | `KODAN` | canonical HNK concept centered on LOGOS | PROJECT_CANON_DECISION | NOT VERIFIED IN RUNTIME | Sacred/conceptual governance; no automatic derivation. |
+| HK-NAME-YAHUSHA | `YAHUSHA` | HNK sacred-name mapping for Jesus | PROJECT_CANON_DECISION | NOT VERIFIED IN RUNTIME | Sacred namespace; no automatic mutation. |
+| HK-NAME-YAHUAH | `YAHUAH` | HNK sacred-name mapping for YHWH | PROJECT_CANON_DECISION | NOT VERIFIED IN RUNTIME | Sacred namespace; no automatic mutation. |
 
 ## HNK-TRIAD-001
 
-Current HNK canon records the conceptual triad as:
+Current project canon records:
 
-- `H` — VERDADE; holiness/transparency layer.
-- `N` — VIDA; Zoe/Nazareno layer.
+- `H` — VERDADE; holiness/transparency layer;
+- `N` — VIDA; Zoe/Nazareno layer;
 - `K` — CAMINHO; Logos/Luz/forma/metanoia layer.
 
-This triad is a conceptual/semantic authority layer. It must not be confused with a claim that every geometric Mandala path automatically receives one of these meanings.
+Evidence class in this audit: `PROJECT_CANON_DECISION`. The live Drive document recovered in this pass does not independently contain this triad.
 
-## HENUVOKODAN identity layer
+## Historical research vs current canon
 
-The language designation is `HNK-KODE`, with `HENUVOKODAN` as the language identity/name in the current project architecture. Historical HNK material also contains an 11-letter/portal HENUVOKODAN system and a creator-key concept. Those historical symbolic rules require their own exact-source migration and must not be reconstructed from memory into executable code.
+`Criação de Idiomas HNK` proposes older architectures such as a 22-letter Hebrew/231-gates combinatorial generator. These are preserved as `HISTORICAL_RESEARCH`. They do **not** override the later HENUVOKODAN/HNK-KODE language identity, current lexemes, HNK40, or Mandala/KODESCRIPT architecture without a new explicit authority decision.
 
 ## Mandala boundary
 
-The N=12 Mandala census is now part of HNK-KODE evidence:
+The N=12 evidence already merged into HNK-KODE remains:
 
 `7,289,096,672 raw walks -> 95,284,518 simple paths -> 47,642,259 reversal classes -> 2,647,892 geometric classes -> 2,647,892 render-distinct classes`.
 
-This mathematical space is a **KODESCRIPT/glyph identity capacity**. It does not create 2,647,892 meanings, words, phonemes or sacred names.
+This is KODESCRIPT/glyph identity capacity, not an automatic word/phoneme/meaning count.
 
 ## Runtime promotion gate
 
-Before any row above is added to an executable registry:
+Before a project-canon row above becomes executable runtime data:
 
-1. recover the exact Drive canon/lexicon source where available;
-2. preserve source identifier/date/provenance;
-3. compare against existing recovered/runtime registries;
-4. flag conflicts instead of silently replacing entries;
-5. add tests for exact form, meaning, authority state and non-derivability where applicable;
+1. search/recover exact source payload where possible;
+2. preserve source id/date/provenance;
+3. compare against current runtime registries;
+4. record conflicts explicitly;
+5. add tests for exact form, meaning, authority and derivation constraints;
 6. only then expose through the HNK-KODE package API.
 
 ## Current conclusion
 
-The all-sources migration has established enough evidence to create this reconciliation ledger, but not enough exact source payload has been recovered in the current pass to safely manufacture the missing runtime records. The correct next operation is **exact-source extraction**, not lexical invention.
+The audit corrected an overstatement in the earlier Drive inventory. We have strong current **project-canon authority** for the core lexemes, but the connected Drive presently provides direct byte-level evidence only for the older `Criação de Idiomas HNK` research document, not for the claimed September canon/delta files. HNK-KODE must preserve that distinction.

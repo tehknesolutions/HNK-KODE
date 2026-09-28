@@ -7,6 +7,8 @@ on:
       - 'data/math/hnk-2647892.manifest.v1.json'
       - 'spec/hnk-2647892-kernel.schema.json'
       - 'tests/hnk-2647892-kernel.test.mjs'
+      - 'packages/kodescript/**'
+      - 'data/benchmarks/**'
       - 'docs/research/HNK-2647892-MATHEMATICAL-KERNEL.md'
       - '.github/workflows/hnk-2647892-kernel.yml'
   pull_request:
@@ -14,6 +16,8 @@ on:
       - 'data/math/hnk-2647892.manifest.v1.json'
       - 'spec/hnk-2647892-kernel.schema.json'
       - 'tests/hnk-2647892-kernel.test.mjs'
+      - 'packages/kodescript/**'
+      - 'data/benchmarks/**'
       - 'docs/research/HNK-2647892-MATHEMATICAL-KERNEL.md'
       - '.github/workflows/hnk-2647892-kernel.yml'
   workflow_dispatch:
@@ -32,6 +36,9 @@ jobs:
 
       - name: Verify HNK-2647892 invariants
         run: node --test tests/hnk-2647892-kernel.test.mjs
+
+      - name: Verify KODESCRIPT family classifier
+        run: node --test packages/kodescript/test/*.test.mjs
 
       - name: Verify schema contract
         run: node -e "const s=require('./spec/hnk-2647892-kernel.schema.json'); if(s.properties.n.const!==12||s.properties.counts.properties.geometricClasses.const!==2647892) process.exit(1)"

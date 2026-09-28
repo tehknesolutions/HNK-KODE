@@ -1,0 +1,54 @@
+name: HNK 2647892 Mathematical Kernel
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/math/hnk-2647892.manifest.v1.json'
+      - 'spec/hnk-2647892-kernel.schema.json'
+      - 'tests/hnk-2647892-kernel.test.mjs'
+      - 'docs/research/HNK-2647892-MATHEMATICAL-KERNEL.md'
+      - '.github/workflows/hnk-2647892-kernel.yml'
+  pull_request:
+    paths:
+      - 'data/math/hnk-2647892.manifest.v1.json'
+      - 'spec/hnk-2647892-kernel.schema.json'
+      - 'tests/hnk-2647892-kernel.test.mjs'
+      - 'docs/research/HNK-2647892-MATHEMATICAL-KERNEL.md'
+      - '.github/workflows/hnk-2647892-kernel.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-mathematical-kernel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout HNK-KODE
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify machine-readable manifest
+        run: node --test tests/hnk-2647892-kernel.test.mjs
+
+      - name: Verify schema identity
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const schema = JSON.parse(fs.readFileSync('spec/hnk-2647892-kernel.schema.json','utf8'));
+          if (schema.$id !== 'hnk-kode/hnk-2647892-kernel.schema.json') throw new Error('schema id drift');
+          if (schema.properties?.n?.const !== 12) throw new Error('N drift');
+          if (schema.properties?.counts?.properties?.geometricClasses?.const !== 2647892) throw new Error('final count drift');
+          NODE
+
+      - name: Gate attestation
+        run: |
+          echo 'HNK-2647892 KERNEL PASS'
+          echo 'N=12'
+          echo 'Final geometric/render-distinct identities=2,647,892'
+          echo 'Language semantics remain non-canonical.'

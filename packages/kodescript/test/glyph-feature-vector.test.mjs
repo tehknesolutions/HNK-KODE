@@ -40,3 +40,17 @@ test('rejects repeated-address walks because E5 corpus is simple-path only', () 
   const path = ['MF:L01:S01', ...Array.from({length:10}, (_,i) => `MF:L01:S${String(i+2).padStart(2,'0')}`), 'MF:L01:S01'];
   assert.throws(() => extractGlyphFeatureVector({identityId:'BAD', path}), /simple path/);
 });
+
+
+test('topological family key is invariant under reverse execution', () => {
+  const path = [
+    'MF:L02:S01','MF:L02:S02','MF:L02:S03','MF:L03:S03',
+    'MF:L03:S04','MF:L03:S05','MF:L03:S06','MF:L04:S06',
+    'MF:L04:S07','MF:L03:S07','MF:L03:S08','MF:L02:S08'
+  ];
+  const forward = extractGlyphFeatureVector({identityId:'REV-FWD', path});
+  const reverse = extractGlyphFeatureVector({identityId:'REV-REV', path:[...path].reverse()});
+  assert.equal(forward.familyKeys.coarse, reverse.familyKeys.coarse);
+  assert.equal(forward.familyKeys.topological, reverse.familyKeys.topological);
+  assert.equal(forward.familyKeys.radialAngular, reverse.familyKeys.radialAngular);
+});

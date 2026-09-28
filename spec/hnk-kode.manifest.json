@@ -16,7 +16,14 @@
       "reversalClasses": 47642259,
       "geometricClasses": 2647892,
       "renderDistinct": 2647892,
-      "status": "CURRENTLY_COMPUTABLE_FINAL"
+      "status": "CURRENTLY_COMPUTABLE_FINAL",
+      "familyCensus": {
+        "coarseFamilies": 256,
+        "topologicalFamilies": 11492,
+        "radialAngularFamilies": 3041,
+        "artifact": "data/math/hnk-2647892-family-census.v1.json",
+        "status": "EXACT_STRUCTURAL_ONLY"
+      }
     }
   },
   "identityLaws": {
@@ -32,5 +39,41 @@
     "tehknesolutions/codex-hnk",
     "tehknesolutions/tehkne-os",
     "tehknesolutions/alakazam-strangeverse"
-  ]
+  ],
+  "languageMathBridge": {
+    "artifact": "data/acquisition/hnk-language-math-family-coverage.v1.json",
+    "recoveredMasterLexicon": {
+      "forms": 33,
+      "glyphTokens": 208,
+      "uniqueGlyphIds": 21,
+      "familyCoverage": {
+        "coarse": 1,
+        "topological": 4,
+        "radialAngular": 5
+      }
+    },
+    "authoredCandidates": {
+      "forms": 140,
+      "glyphTokens": 791,
+      "uniqueGlyphIds": 19,
+      "familyCoverage": {
+        "coarse": 1,
+        "topological": 4,
+        "radialAngular": 5
+      }
+    },
+    "usesAmbiguousE5Glyphs": false
+  },
+  "acquisition": {
+    "languageEligibilityPolicy": "HNK-KODESCRIPT-LANGUAGE-ELIGIBILITY-V1",
+    "benchmarkEligibilityArtifact": "data/acquisition/hnk40-language-eligibility.v1.json",
+    "curriculumBandsArtifact": "data/acquisition/hnk40-acquisition-curriculum-bands.v1.json",
+    "hnk40Bands": {
+      "coreObserved": 21,
+      "expansionResolved": 17,
+      "ambiguousHoldout": 2,
+      "blocked": 0
+    },
+    "automaticSemanticAssignments": 0
+  }
 }

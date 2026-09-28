@@ -120,7 +120,10 @@ export function extractGlyphFeatureVector({ identityId, path, canonicalRepresent
   const geometricGroup = component === 'CR_D' ? 'D12' : 'D9';
 
   const coarse = `${component}|N:${namespaceCounts.MF}-${namespaceCounts.CG}-${namespaceCounts.CR_D}|E:${edgeCounts.MF_ANGULAR}-${edgeCounts.MF_RADIAL}-${edgeCounts.MF_CG}-${edgeCounts.CG_CG}-${edgeCounts.CR_D_CYCLE}`;
-  const topological = `${edges.join('.')}` + `|T:${turnCount}|S:${edgeClassSwitchCount}`;
+  const edgeForward = edges.join('.');
+  const edgeReverse = [...edges].reverse().join('.');
+  const edgeSequenceNormalForm = edgeForward.localeCompare(edgeReverse) <= 0 ? edgeForward : edgeReverse;
+  const topological = `${edgeSequenceNormalForm}|T:${turnCount}|S:${edgeClassSwitchCount}`;
   const radialAngular = `R:${span}-${edgeCounts.MF_RADIAL}|A:${edgeCounts.MF_ANGULAR}-${circularSpan(sectors) ?? 'NA'}`;
 
   return {

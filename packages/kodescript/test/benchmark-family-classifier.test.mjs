@@ -41,3 +41,22 @@ test('every candidate yields GFV-N12 structural family keys', () => {
     }
   }
 });
+
+test('HNK40 benchmark exposes the first measured family decomposition', () => {
+  const out = classifyHybridBenchmark(source);
+  assert.deepEqual(out.summary.familyCardinality, {
+    coarse: 1,
+    topological: 4,
+    radialAngular: 6
+  });
+  const ambiguous = Object.fromEntries(
+    out.records
+      .filter(r => r.resolutionStatus === 'DERIVED_AMBIGUOUS')
+      .map(r => [r.glyphId, r.familyAgreement])
+  );
+  for (const glyphId of ['G17', 'G20']) {
+    assert.equal(ambiguous[glyphId].coarse.stable, true);
+    assert.equal(ambiguous[glyphId].topological.stable, true);
+    assert.equal(ambiguous[glyphId].radialAngular.stable, false);
+  }
+});

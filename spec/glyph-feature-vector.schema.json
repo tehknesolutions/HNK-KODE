@@ -44,7 +44,7 @@
         "angular": {
           "type": "object",
           "required": ["angularEdgeCount", "clockwiseSteps", "counterclockwiseSteps", "sectorDeltaAbsSum", "sectorSpanCircular"],
-          "properties": {"angularEdgeCount":{"type":"integer","minimum":0,"maximum":11},"clockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"counterclockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"sectorDeltaAbsSum":{"type":"integer","minimum":0},"sectorSpanCircular":{"type":["integer","null"],"minimum":0,"maximum":36}},
+          "properties": {"angularEdgeCount":{"type":"integer","minimum":0,"maximum":11},"clockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"counterclockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"sectorDeltaAbsSum":{"type":"integer","minimum":0},"sectorSpanCircular":{"type":["integer","null"],"minimum":0,"maximum":66}},
           "additionalProperties": false
         },
         "topology": {

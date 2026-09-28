@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hnk-kode/glyph-feature-vector.schema.json",
+  "title": "HNK-KODESCRIPT GlyphFeatureVector N12",
+  "description": "Structural feature vector only. No semantic, phonological or sacred meaning is implied by any feature.",
+  "type": "object",
+  "required": ["version", "n", "identityId", "component", "path", "edgeSequence", "features", "authority"],
+  "properties": {
+    "version": {"const": "GFV-N12-0.1"},
+    "n": {"const": 12},
+    "identityId": {"type": "string", "minLength": 1},
+    "component": {"enum": ["MF_CG", "CR_D"]},
+    "path": {"type": "array", "minItems": 12, "maxItems": 12, "items": {"type": "string"}},
+    "edgeSequence": {"type": "array", "minItems": 11, "maxItems": 11, "items": {"enum": ["MF_ANGULAR", "MF_RADIAL", "MF_CG", "CG_CG", "CR_D_CYCLE"]}},
+    "features": {
+      "type": "object",
+      "required": ["startNamespace", "endNamespace", "namespaceCounts", "edgeClassCounts", "transitionCounts", "radial", "angular", "topology", "symmetry"],
+      "properties": {
+        "startNamespace": {"enum": ["MF", "CG", "CR_D"]},
+        "endNamespace": {"enum": ["MF", "CG", "CR_D"]},
+        "namespaceCounts": {
+          "type": "object",
+          "required": ["MF", "CG", "CR_D"],
+          "properties": {"MF":{"type":"integer","minimum":0,"maximum":12},"CG":{"type":"integer","minimum":0,"maximum":12},"CR_D":{"type":"integer","minimum":0,"maximum":12}},
+          "additionalProperties": false
+        },
+        "edgeClassCounts": {
+          "type": "object",
+          "required": ["MF_ANGULAR", "MF_RADIAL", "MF_CG", "CG_CG", "CR_D_CYCLE"],
+          "properties": {"MF_ANGULAR":{"type":"integer","minimum":0,"maximum":11},"MF_RADIAL":{"type":"integer","minimum":0,"maximum":11},"MF_CG":{"type":"integer","minimum":0,"maximum":11},"CG_CG":{"type":"integer","minimum":0,"maximum":11},"CR_D_CYCLE":{"type":"integer","minimum":0,"maximum":11}},
+          "additionalProperties": false
+        },
+        "transitionCounts": {
+          "type": "object",
+          "description": "Counts of ordered adjacent edge-class pairs in the 11-edge execution path; useful for morphology experiments without assigning meaning.",
+          "additionalProperties": {"type":"integer","minimum":0,"maximum":10}
+        },
+        "radial": {
+          "type": "object",
+          "required": ["minLayer", "maxLayer", "span", "radialEdgeCount", "outwardSteps", "inwardSteps"],
+          "properties": {"minLayer":{"type":["integer","null"],"minimum":1,"maximum":6},"maxLayer":{"type":["integer","null"],"minimum":1,"maximum":6},"span":{"type":"integer","minimum":0,"maximum":5},"radialEdgeCount":{"type":"integer","minimum":0,"maximum":11},"outwardSteps":{"type":"integer","minimum":0,"maximum":11},"inwardSteps":{"type":"integer","minimum":0,"maximum":11}},
+          "additionalProperties": false
+        },
+        "angular": {
+          "type": "object",
+          "required": ["angularEdgeCount", "clockwiseSteps", "counterclockwiseSteps", "sectorDeltaAbsSum", "sectorSpanCircular"],
+          "properties": {"angularEdgeCount":{"type":"integer","minimum":0,"maximum":11},"clockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"counterclockwiseSteps":{"type":"integer","minimum":0,"maximum":11},"sectorDeltaAbsSum":{"type":"integer","minimum":0},"sectorSpanCircular":{"type":["integer","null"],"minimum":0,"maximum":36}},
+          "additionalProperties": false
+        },
+        "topology": {
+          "type": "object",
+          "required": ["turnCount", "edgeClassSwitchCount", "namespaceSwitchCount", "revisitsAddress", "isSimplePath"],
+          "properties": {"turnCount":{"type":"integer","minimum":0,"maximum":10},"edgeClassSwitchCount":{"type":"integer","minimum":0,"maximum":10},"namespaceSwitchCount":{"type":"integer","minimum":0,"maximum":11},"revisitsAddress":{"type":"boolean"},"isSimplePath":{"const":true}},
+          "additionalProperties": false
+        },
+        "symmetry": {
+          "type": "object",
+          "required": ["baseEquivalence", "geometricGroup", "canonicalRepresentativeId"],
+          "properties": {"baseEquivalence":{"const":"REVERSAL_PLUS_APPROVED_AUTOMORPHISM"},"geometricGroup":{"enum":["D9","D12"]},"canonicalRepresentativeId":{"type":"string"}},
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "familyKeys": {
+      "type": "object",
+      "description": "Derived structural grouping keys. These are experimental clusters, never semantic labels by themselves.",
+      "properties": {
+        "coarse": {"type":"string"},
+        "topological": {"type":"string"},
+        "radialAngular": {"type":"string"},
+        "confusionNeighborhood": {"type":"string"}
+      },
+      "additionalProperties": false
+    },
+    "authority": {"const": "STRUCTURAL_ONLY"}
+  },
+  "additionalProperties": false
+}

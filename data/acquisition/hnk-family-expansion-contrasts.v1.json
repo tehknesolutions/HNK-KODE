@@ -1,0 +1,360 @@
+{
+  "version": "1.0.0",
+  "kind": "HNK_FAMILY_EXPANSION_CONTRAST_REGISTRY",
+  "pairCount": 32,
+  "semanticBindings": 0,
+  "pairs": [
+    {
+      "a": "FEXP-T004",
+      "b": "FEXP-T007",
+      "distance": {
+        "total": 6,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 1,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-T035",
+      "b": "FEXP-T046",
+      "distance": {
+        "total": 6,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-T040",
+      "b": "FEXP-T051",
+      "distance": {
+        "total": 6,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 1,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-H003",
+      "b": "FEXP-T060",
+      "distance": {
+        "total": 7,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 4,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H006",
+      "b": "FEXP-T070",
+      "distance": {
+        "total": 7,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 5,
+        "radialAngular": 0
+      }
+    },
+    {
+      "a": "FEXP-H015",
+      "b": "FEXP-T030",
+      "distance": {
+        "total": 7,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-H021",
+      "b": "FEXP-T022",
+      "distance": {
+        "total": 7,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 2,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-H003",
+      "b": "FEXP-T004",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H006",
+      "b": "FEXP-T041",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H022",
+      "b": "FEXP-T025",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-H023",
+      "b": "FEXP-T021",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-T007",
+      "b": "FEXP-T008",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 1,
+        "radialAngular": 5
+      }
+    },
+    {
+      "a": "FEXP-T010",
+      "b": "FEXP-T041",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-T019",
+      "b": "FEXP-T046",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 3
+      }
+    },
+    {
+      "a": "FEXP-T043",
+      "b": "FEXP-T051",
+      "distance": {
+        "total": 8,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 5,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H001",
+      "b": "FEXP-T030",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 4
+      }
+    },
+    {
+      "a": "FEXP-H001",
+      "b": "FEXP-T039",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 6,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H002",
+      "b": "FEXP-T037",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-H003",
+      "b": "FEXP-T043",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-H003",
+      "b": "FEXP-T051",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 4,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-H005",
+      "b": "FEXP-T037",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 1,
+        "radialAngular": 6
+      }
+    },
+    {
+      "a": "FEXP-H006",
+      "b": "FEXP-H012",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-H011",
+      "b": "FEXP-T023",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 5,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-T005",
+      "b": "FEXP-T008",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 5,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-T010",
+      "b": "FEXP-T029",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 6,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-T015",
+      "b": "FEXP-T065",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 4
+      }
+    },
+    {
+      "a": "FEXP-T019",
+      "b": "FEXP-T032",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 4,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-T032",
+      "b": "FEXP-T035",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 6,
+        "radialAngular": 1
+      }
+    },
+    {
+      "a": "FEXP-T032",
+      "b": "FEXP-T046",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-T035",
+      "b": "FEXP-T041",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 4,
+        "topological": 3,
+        "radialAngular": 2
+      }
+    },
+    {
+      "a": "FEXP-T036",
+      "b": "FEXP-T064",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 4
+      }
+    },
+    {
+      "a": "FEXP-T040",
+      "b": "FEXP-T058",
+      "distance": {
+        "total": 9,
+        "componentPenalty": 0,
+        "coarse": 2,
+        "topological": 3,
+        "radialAngular": 4
+      }
+    }
+  ]
+}

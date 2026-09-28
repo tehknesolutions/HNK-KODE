@@ -18,10 +18,17 @@
       "nonIdentityRotationFixed": 0,
       "reflections": 9,
       "fixedPerReflection": 2199,
-      "quotientClasses": 2647891
+      "quotientClasses": 2647891,
+      "identityFixed": 47642247,
+      "fixedReflectionTotal": 19791,
+      "burnsideNumerator": 47662038
     },
     "crDContribution": 1,
-    "totalClasses": 2647892
+    "totalClasses": 2647892,
+    "crD": {
+      "inputReversalClasses": 12,
+      "quotientClasses": 1
+    }
   },
   "structuralContext": {
     "mfExternalPositions": 432,
@@ -49,5 +56,10 @@
       "SEMANTIC_ASSIGNMENT",
       "ACQUISITION_TARGET"
     ]
+  },
+  "reversalClassesByComponent": {
+    "mfCg": 47642247,
+    "crD": 12,
+    "total": 47642259
   }
 }

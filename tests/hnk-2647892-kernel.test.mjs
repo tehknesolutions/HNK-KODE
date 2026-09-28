@@ -49,3 +49,14 @@ test('language boundary forbids geometric count from becoming vocabulary automat
   assert.notEqual(manifest.structuralContext.activeAddresses, manifest.counts.geometricClasses);
   assert.equal(manifest.counts.renderDistinctClasses, manifest.counts.geometricClasses);
 });
+
+
+test('exact family census partitions the full geometric universe', () => {
+  assert.deepEqual(manifest.familyCensus.cardinality, {
+    coarse: 256,
+    topological: 11492,
+    radialAngular: 3041
+  });
+  assert.equal(manifest.familyCensus.eachPartitionTotal, 2647892);
+  assert.equal(manifest.familyCensus.semanticsAssigned, 0);
+});

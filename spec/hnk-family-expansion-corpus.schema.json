@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hnk-kode/hnk-family-expansion-corpus.schema.json",
+  "title": "HNK Family Expansion Corpus V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "mathematicalKernel",
+    "familyCensus",
+    "selection",
+    "summary",
+    "train",
+    "holdout",
+    "reserveCoarseFamilies",
+    "authority"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "const": "HNK-FAMILY-EXPANSION-CORPUS-V1"
+    },
+    "mathematicalKernel": {
+      "const": "HNK-2647892-MATH-KERNEL-V1"
+    },
+    "familyCensus": {
+      "const": "HNK-2647892-FAMILY-CENSUS-V1"
+    },
+    "selection": {
+      "type": "object"
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "train",
+        "holdout",
+        "total",
+        "trainHoldoutCoarseOverlap",
+        "semanticBindings"
+      ],
+      "properties": {
+        "train": {
+          "const": 72
+        },
+        "holdout": {
+          "const": 24
+        },
+        "total": {
+          "const": 96
+        },
+        "trainHoldoutCoarseOverlap": {
+          "const": 0
+        },
+        "semanticBindings": {
+          "const": 0
+        }
+      }
+    },
+    "train": {
+      "type": "array",
+      "minItems": 72,
+      "maxItems": 72,
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "holdout": {
+      "type": "array",
+      "minItems": 24,
+      "maxItems": 24,
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "reserveCoarseFamilies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authority": {
+      "const": "STRUCTURAL_ONLY"
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "identityId",
+        "split",
+        "component",
+        "path",
+        "familyKeys",
+        "authority",
+        "semanticBinding"
+      ],
+      "properties": {
+        "identityId": {
+          "type": "string"
+        },
+        "split": {
+          "enum": [
+            "TRAIN",
+            "HOLDOUT"
+          ]
+        },
+        "component": {
+          "enum": [
+            "MF_CG",
+            "CR_D"
+          ]
+        },
+        "path": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": {
+            "type": "string"
+          }
+        },
+        "familyKeys": {
+          "type": "object",
+          "required": [
+            "coarse",
+            "topological",
+            "radialAngular",
+            "confusionNeighborhood"
+          ],
+          "properties": {
+            "coarse": {
+              "type": "string"
+            },
+            "topological": {
+              "type": "string"
+            },
+            "radialAngular": {
+              "type": "string"
+            },
+            "confusionNeighborhood": {
+              "const": "UNCOMPUTED"
+            }
+          },
+          "additionalProperties": false
+        },
+        "authority": {
+          "const": "STRUCTURAL_ONLY"
+        },
+        "semanticBinding": {
+          "type": "null"
+        }
+      }
+    }
+  }
+}

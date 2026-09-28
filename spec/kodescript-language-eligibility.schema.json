@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hnk-kode/kodescript-language-eligibility.schema.json",
+  "title": "HNK-KODESCRIPT Language Eligibility Evaluation V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "identityId",
+    "structuralEligibility",
+    "bindingReadiness",
+    "namespace",
+    "canonicalBindingAllowed",
+    "reasons"
+  ],
+  "properties": {
+    "version": {
+      "const": "LANG-ELIG-V1"
+    },
+    "identityId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "structuralEligibility": {
+      "enum": [
+        "STRUCTURAL_EXPERIMENT_READY",
+        "AMBIGUOUS_EXPERIMENT_SET",
+        "BLOCKED_STRUCTURAL"
+      ]
+    },
+    "bindingReadiness": {
+      "enum": [
+        "NO_BINDING",
+        "EXPERIMENTAL_BINDING_CANDIDATE",
+        "HUMAN_REVIEW_REQUIRED",
+        "CANON_BINDING"
+      ]
+    },
+    "namespace": {
+      "enum": [
+        "LANGUAGE",
+        "SACRED",
+        "GRAMMAR",
+        "RUNTIME",
+        "SYSTEM",
+        "SW",
+        "EXPERIMENTAL",
+        "RESERVED"
+      ]
+    },
+    "canonicalBindingAllowed": {
+      "type": "boolean"
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidateProjectionIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

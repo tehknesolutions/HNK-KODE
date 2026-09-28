@@ -15,7 +15,8 @@
     "burnside",
     "structuralContext",
     "invariants",
-    "languageBoundary"
+    "languageBoundary",
+    "familyCensus"
   ],
   "properties": {
     "schemaVersion": {
@@ -125,6 +126,51 @@
     },
     "languageBoundary": {
       "type": "object"
+    },
+    "familyCensus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "artifact",
+        "cardinality",
+        "eachPartitionTotal",
+        "semanticsAssigned"
+      ],
+      "properties": {
+        "version": {
+          "const": "HNK-2647892-FAMILY-CENSUS-V1"
+        },
+        "artifact": {
+          "const": "data/math/hnk-2647892-family-census.v1.json"
+        },
+        "cardinality": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coarse",
+            "topological",
+            "radialAngular"
+          ],
+          "properties": {
+            "coarse": {
+              "const": 256
+            },
+            "topological": {
+              "const": 11492
+            },
+            "radialAngular": {
+              "const": 3041
+            }
+          }
+        },
+        "eachPartitionTotal": {
+          "const": 2647892
+        },
+        "semanticsAssigned": {
+          "const": 0
+        }
+      }
     }
   }
 }

@@ -1,0 +1,618 @@
+{
+  "schemaVersion": "1.0.0",
+  "policy": "HNK-KODESCRIPT-LANGUAGE-ELIGIBILITY-V1",
+  "source": "data/acquisition/hnk40-e5-acquisition.v1.json",
+  "records": [
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G01",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G01-E5-84cbaab00402058d"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G02",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G02-E5-26c44b0e8748193f"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G03",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G03-E5-9f935577de0c79de"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G04",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G04-E5-9baaf78e24d99b44"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G05",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G05-E5-b1c412985607762b"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G06",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G06-E5-f1ac847a91d420de"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G07",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G07-E5-a00b0c22e39e1c29"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G08",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G08-E5-6d7a9082f5c56181"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G09",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G09-E5-aac0415b17da01e7"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G10",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G10-E5-41e3244c82cccbf3"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G11",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G11-E5-bdc463989b5de812"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G12",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G12-E5-54140fe2180e6a62"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G13",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G13-E5-7b9e705579f5e2b8"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G14",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G14-E5-9b77d3a02704709b"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G15",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G15-E5-d4269d43c6c5d292"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G16",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G16-E5-78e122baafb136d9"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G17",
+      "structuralEligibility": "AMBIGUOUS_EXPERIMENT_SET",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "identity_ambiguity_preserved_as_candidate_set",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G17-E5-ee584ad1394483f6",
+        "G17-E5-8e04f31a084076d4"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G18",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G18-E5-febc9f1c4a18f4c2"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G19",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G19-E5-4a501d40f405bc30"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G20",
+      "structuralEligibility": "AMBIGUOUS_EXPERIMENT_SET",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "identity_ambiguity_preserved_as_candidate_set",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G20-E5-66f496d3ca4416d8",
+        "G20-E5-bd35fd4f59c227a2"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G21",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G21-E5-b4eaeb5fd4c0229a"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G22",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G22-E5-6192a7cea8c7ad0f"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G23",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G23-E5-0b9f53b754fc0e86"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G24",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G24-E5-b979138735d23ed6"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G25",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G25-E5-f39951085bdb4535"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G26",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G26-E5-d0cc8c2eb891c76b"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G27",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G27-E5-ab5b83615ae5e0c4"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G28",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G28-E5-6fe309e9feb0136a"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G29",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G29-E5-9bd00aac094ac483"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G30",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G30-E5-59cbfe3dff2701f9"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G31",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G31-E5-272958bae4aa17ec"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G32",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G32-E5-fa35897816f41fc9"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G33",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G33-E5-84616f709a5e52b5"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G34",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G34-E5-b51de3f6de2948b1"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G35",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G35-E5-7379825386d2f38c"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G36",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G36-E5-4ecfb3349ba10058"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G37",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G37-E5-b8298ae19e4a977f"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G38",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G38-E5-264e1f175757cd26"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G39",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G39-E5-95baf0f9f3453815"
+      ]
+    },
+    {
+      "version": "LANG-ELIG-V1",
+      "identityId": "G40",
+      "structuralEligibility": "STRUCTURAL_EXPERIMENT_READY",
+      "bindingReadiness": "NO_BINDING",
+      "namespace": "EXPERIMENTAL",
+      "canonicalBindingAllowed": false,
+      "reasons": [
+        "single_structural_projection_available",
+        "no_linguistic_binding_assigned"
+      ],
+      "candidateProjectionIds": [
+        "G40-E5-71ef986bd298da9e"
+      ]
+    }
+  ],
+  "summary": {
+    "total": 40,
+    "structuralExperimentReady": 38,
+    "ambiguousExperimentSet": 2,
+    "blockedStructural": 0,
+    "canonicalBindings": 0
+  },
+  "automaticSemanticAssignments": 0,
+  "authority": "STRUCTURAL_ONLY"
+}

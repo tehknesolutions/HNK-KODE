@@ -5,10 +5,10 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 ## [Unreleased]
 
 ### Added — 2026-09-29
-- Established **HNK-KODE Framework — Canon Universal v0.1** as a Grupo HNK architectural authority.
+- Established **haKodan — Canon Universal v0.1** as the official Grupo HNK framework built on HNK-KODE.
 - Canonized the language priority **HNK → PT-BR → EN**, with one Canonical Grammar and shared AST/HNK-IR semantics.
 - Defined the nine computational layers **L8 ALEF/Intent → L0 Binary/Malkuth**.
-- Added the HNK-KODE Framework Architecture Blueprint v0.1: Intent Graph, HNK Object Model, AST, HNK-IR, MHCM, lowering, targets, Manifestation Engine, SDK and Studio.
+- Added the **haKodan Architecture Blueprint v0.1**: Intent Graph, HNK Object Model, AST, HNK-IR, MHCM, lowering, targets, Manifestation Engine, SDK and Studio.
 - Established the multiparadigm model: POO for identity/contracts, components for capabilities, systems for collective behavior, events for causality and narrative as executable structure.
 - Defined three authoring surfaces — Visual, Standard and Pro — converging to the same HNK-IR.
 - Defined artifact targets beyond software: Web, App, Game, World, UI, Mockup, Wireframe, DOC, GDD, PDD, Image, Video, Audio, Prompt, Agent and Workflow.
@@ -16,7 +16,8 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 - Locked the rule that unresolved HNK keywords remain `UNRESOLVED`; HNK lexemes must never be invented merely to complete programming syntax.
 - Preserved existing canonical HNK lexemes (AHNUVA, EMANU, HAYA, HODERU, KODAN) without automatically reassigning them as programming keywords.
 - Established provenance/source-map requirements across Intent → Surface → AST → HNK-IR → target/binary.
-- Reaffirmed repository boundaries: CODEX-HNK = integral canon, HNK-KODE = language/framework authority, HNK-VERSE = world/experience consumer, TEHKNÉ-OS = technological know-how/evidence/provenance.
+- Canonized naming boundary: **HNK-KODE = idioma + linguagem computacional; haKodan = framework/runtime/SDK de manifestação; HNK-KODE Studio = ambiente de autoria**.
+- Reaffirmed repository boundaries: CODEX-HNK = integral canon, HNK-KODE = language authority and haKodan source repository, HNK-VERSE = world/experience consumer, TEHKNÉ-OS = technological know-how/evidence/provenance.
 
 ### Added — 2026-09-28
 - Added deterministic Family Expansion Corpus V1: 96 representatives = 72 TRAIN + 24 HOLDOUT with zero coarse-family leakage.\n- Family Expansion V1 deliberately excludes the HNK40 Genesis coarse family and reserves 23 unseen MF+CG coarse families + 1 CR:D representative for transfer testing.\n- Added Language Eligibility V1 policy/schema/runtime: 38 HNK40 resolved experiment-ready, 2 ambiguity-preserved holdouts, 0 automatic semantic bindings.

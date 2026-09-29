@@ -1,3 +1,13 @@
+## 2026-09-29 — Project persistence consolidation
+
+- Added authoritative project snapshot for haKodan/VHK/Kodin/HNK-MATH decisions.
+- Persisted the 127-Kodin working registry and both lexical discovery datasets from chat artifacts.
+- Persisted multilingual/mixed-source and PT-BR normalization rules.
+- Persisted Universal Target Ladder and Visual↔Textual VHK contract.
+- Persisted Mora-Kodin discovery direction.
+- Added v1.7.7 historical binding-readiness gate and prototype-status archive.
+- Reaffirmed GitHub as persistent source of truth; chat-only definitions must be committed in-cycle.
+
 # Changelog
 
 All notable HNK-KODE changes are recorded here. Git history remains the immutable version record; this file is the human-readable release ledger.

@@ -1,0 +1,1180 @@
+{
+  "name": "VHK Lexical Discovery — Rodada Tripla HNK",
+  "version": "0.1",
+  "status": "DISCOVERY_NON_CANONICAL",
+  "rounds": {
+    "A": "continuidade fonética",
+    "B": "diretiva compacta",
+    "C": "distinção/memorização"
+  },
+  "blocked": [
+    "AHNUVA",
+    "DEVAL",
+    "EMANU",
+    "HAVUN",
+    "HAYA",
+    "HODERU",
+    "HUREL",
+    "KE",
+    "KODAN",
+    "KUON",
+    "KUVAN",
+    "MELUKA",
+    "MUNASE",
+    "MUNAV",
+    "PEMORA",
+    "PUMEK",
+    "RUMEKI",
+    "SARADAYA",
+    "SAVUNO",
+    "SEVAK",
+    "VADUL",
+    "VALIVAN",
+    "VAMAKALA",
+    "ZUNEV"
+  ],
+  "rows": [
+    {
+      "VHK": "CRIAR",
+      "SEMANTIC_ID": "CREATE",
+      "A": "KADENA",
+      "B": "KAVEN",
+      "C": "KIRAVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DEFINIR",
+      "SEMANTIC_ID": "DEFINE",
+      "A": "DENURA",
+      "B": "DEKAL",
+      "C": "DERVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ALTERAR",
+      "SEMANTIC_ID": "ALTER",
+      "A": "REMIMO",
+      "B": "NALOL",
+      "C": "HANAVE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REMOVER",
+      "SEMANTIC_ID": "REMOVE",
+      "A": "LERIMI",
+      "B": "SARA",
+      "C": "REPEYU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CONECTAR",
+      "SEMANTIC_ID": "CONNECT",
+      "A": "RULINI",
+      "B": "VAMA",
+      "C": "KEDASO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ASSOCIAR",
+      "SEMANTIC_ID": "ASSOCIATE",
+      "A": "PAZEDU",
+      "B": "SEYA",
+      "C": "HAYIZI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ATIVAR",
+      "SEMANTIC_ID": "ACTIVATE",
+      "A": "HUYOZE",
+      "B": "SEKI",
+      "C": "HAMAHO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DESATIVAR",
+      "SEMANTIC_ID": "DEACTIVATE",
+      "A": "SEHAKE",
+      "B": "KIDI",
+      "C": "DIVORI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EXECUTAR",
+      "SEMANTIC_ID": "EXECUTE",
+      "A": "YIHOHE",
+      "B": "LUVIH",
+      "C": "HESUSA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MANIFESTAR",
+      "SEMANTIC_ID": "MANIFEST",
+      "A": "MANARA",
+      "B": "MANEV",
+      "C": "MAVIRA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "TRANSFORMAR",
+      "SEMANTIC_ID": "TRANSFORM",
+      "A": "VAZASU",
+      "B": "LIKI",
+      "C": "DAPOLI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "VALIDAR",
+      "SEMANTIC_ID": "VALIDATE",
+      "A": "RAYUSO",
+      "B": "KEVO",
+      "C": "VEDONI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "IMPORTAR",
+      "SEMANTIC_ID": "IMPORT",
+      "A": "LALIVE",
+      "B": "SELI",
+      "C": "HIVOSA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EXPORTAR",
+      "SEMANTIC_ID": "EXPORT",
+      "A": "YOHAVI",
+      "B": "ZIHA",
+      "C": "HEZAYE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CARREGAR",
+      "SEMANTIC_ID": "LOAD",
+      "A": "KIHUZE",
+      "B": "RINIV",
+      "C": "KOZAYO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SALVAR",
+      "SEMANTIC_ID": "SAVE",
+      "A": "LEMONA",
+      "B": "KIVE",
+      "C": "SUDAYO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REGISTRAR",
+      "SEMANTIC_ID": "REGISTER",
+      "A": "VUDISE",
+      "B": "MADA",
+      "C": "RANIHI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "OBSERVAR",
+      "SEMANTIC_ID": "OBSERVE",
+      "A": "SOMUYI",
+      "B": "LAPAN",
+      "C": "HOHOVO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EMITIR",
+      "SEMANTIC_ID": "EMIT",
+      "A": "KADEHE",
+      "B": "SIYU",
+      "C": "HENUDE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "RETORNAR",
+      "SEMANTIC_ID": "RETURN",
+      "A": "HOMUMA",
+      "B": "KIPE",
+      "C": "RIMEDA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MUNDO",
+      "SEMANTIC_ID": "WORLD",
+      "A": "MAVORA",
+      "B": "MUNDAN",
+      "C": "MARUVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "OBJETO",
+      "SEMANTIC_ID": "OBJECT",
+      "A": "OVENA",
+      "B": "OKVAR",
+      "C": "OBARA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ENTIDADE",
+      "SEMANTIC_ID": "ENTITY",
+      "A": "ENARA",
+      "B": "ENTAV",
+      "C": "ERIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CLASSE",
+      "SEMANTIC_ID": "CLASS",
+      "A": "KALASA",
+      "B": "KELAN",
+      "C": "KARIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "TIPO",
+      "SEMANTIC_ID": "TYPE",
+      "A": "NIZONI",
+      "B": "YADU",
+      "C": "DAYERE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "COMPONENTE",
+      "SEMANTIC_ID": "COMPONENT",
+      "A": "KOMPORA",
+      "B": "KOMEN",
+      "C": "KAVORA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SISTEMA",
+      "SEMANTIC_ID": "SYSTEM",
+      "A": "SISTARA",
+      "B": "SIVEN",
+      "C": "SYRADA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MODULO",
+      "SEMANTIC_ID": "MODULE",
+      "A": "HAYOLU",
+      "B": "NURAS",
+      "C": "MUYALI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MODELO",
+      "SEMANTIC_ID": "MODEL",
+      "A": "KENUDU",
+      "B": "YUYU",
+      "C": "MAKAPU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ESTRUTURA",
+      "SEMANTIC_ID": "STRUCTURE",
+      "A": "SUVUZU",
+      "B": "MUNA",
+      "C": "HEPUHA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ELEMENTO",
+      "SEMANTIC_ID": "ELEMENT",
+      "A": "LORUMI",
+      "B": "VUVO",
+      "C": "HEYEHI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "INSTANCIA",
+      "SEMANTIC_ID": "INSTANCE",
+      "A": "SONELO",
+      "B": "VIPU",
+      "C": "HIVIDE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "INTERFACE",
+      "SEMANTIC_ID": "INTERFACE",
+      "A": "MUHOZO",
+      "B": "YUMAD",
+      "C": "HIHAPU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CONTRATO",
+      "SEMANTIC_ID": "CONTRACT",
+      "A": "VADUNO",
+      "B": "SUSA",
+      "C": "KANIHU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "RELACAO",
+      "SEMANTIC_ID": "RELATION",
+      "A": "KALERU",
+      "B": "KAZE",
+      "C": "RASURO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "IDENTIDADE",
+      "SEMANTIC_ID": "IDENTITY",
+      "A": "SOZINA",
+      "B": "RIYU",
+      "C": "HIMAVU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EVENTO",
+      "SEMANTIC_ID": "EVENT",
+      "A": "EVANA",
+      "B": "EVAR",
+      "C": "ENEVU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ACAO",
+      "SEMANTIC_ID": "ACTION",
+      "A": "AKANA",
+      "B": "AKOR",
+      "C": "ADIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "COMANDO",
+      "SEMANTIC_ID": "COMMAND",
+      "A": "KOMARA",
+      "B": "KOMEN",
+      "C": "KADIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "FUNCAO",
+      "SEMANTIC_ID": "FUNCTION",
+      "A": "ZEYUMO",
+      "B": "LARUS",
+      "C": "VASOSO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "OPERACAO",
+      "SEMANTIC_ID": "OPERATION",
+      "A": "SASOMU",
+      "B": "YOHO",
+      "C": "HOSAHU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PROCESSO",
+      "SEMANTIC_ID": "PROCESS",
+      "A": "PEVAZO",
+      "B": "ZANUY",
+      "C": "PASOZI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ESTADO",
+      "SEMANTIC_ID": "STATE",
+      "A": "SIKEYU",
+      "B": "ZOVAK",
+      "C": "HEDIMA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CONDICAO",
+      "SEMANTIC_ID": "CONDITION",
+      "A": "HASUZE",
+      "B": "POZEN",
+      "C": "KADENE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "QUANDO",
+      "SEMANTIC_ID": "WHEN",
+      "A": "LISAPU",
+      "B": "SUPU",
+      "C": "KOLURO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SE",
+      "SEMANTIC_ID": "IF",
+      "A": "NAKIHE",
+      "B": "YOZIZ",
+      "C": "SOPULA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SENAO",
+      "SEMANTIC_ID": "ELSE",
+      "A": "HULUHA",
+      "B": "KEYO",
+      "C": "SUHIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PARA",
+      "SEMANTIC_ID": "FOR",
+      "A": "KAREKA",
+      "B": "ROKI",
+      "C": "PESAKA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CADA",
+      "SEMANTIC_ID": "EACH",
+      "A": "DASINU",
+      "B": "HIZE",
+      "C": "KEZUPU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ENQUANTO",
+      "SEMANTIC_ID": "WHILE",
+      "A": "DUVULI",
+      "B": "SEYE",
+      "C": "HERAVU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ENTAO",
+      "SEMANTIC_ID": "THEN",
+      "A": "LEKOKO",
+      "B": "VIDI",
+      "C": "HEPODA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "INICIO",
+      "SEMANTIC_ID": "START",
+      "A": "DALASO",
+      "B": "ZEDA",
+      "C": "HIPIPA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "FIM",
+      "SEMANTIC_ID": "END",
+      "A": "LISIDI",
+      "B": "RERU",
+      "C": "VOYOPA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "NOME",
+      "SEMANTIC_ID": "NAME",
+      "A": "NOMUMA",
+      "B": "DIPAV",
+      "C": "NIYOHU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ID",
+      "SEMANTIC_ID": "IDENTIFIER",
+      "A": "KONANE",
+      "B": "LAKAK",
+      "C": "HIVENI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "VALOR",
+      "SEMANTIC_ID": "VALUE",
+      "A": "RARUNO",
+      "B": "VEMI",
+      "C": "VOSIKE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PROPRIEDADE",
+      "SEMANTIC_ID": "PROPERTY",
+      "A": "NAVULE",
+      "B": "ZUZIN",
+      "C": "PAKODU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ATRIBUTO",
+      "SEMANTIC_ID": "ATTRIBUTE",
+      "A": "YAKUYO",
+      "B": "HUPU",
+      "C": "HAHIKO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PARAMETRO",
+      "SEMANTIC_ID": "PARAMETER",
+      "A": "DUKASA",
+      "B": "ROZIS",
+      "C": "PEHUYE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ARGUMENTO",
+      "SEMANTIC_ID": "ARGUMENT",
+      "A": "ZINEZU",
+      "B": "VAMAY",
+      "C": "HAPIKU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REFERENCIA",
+      "SEMANTIC_ID": "REFERENCE",
+      "A": "VONOVU",
+      "B": "MAHON",
+      "C": "RIPONO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ORIGEM",
+      "SEMANTIC_ID": "SOURCE",
+      "A": "ROHUDI",
+      "B": "PIZIR",
+      "C": "HOMEME",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DESTINO",
+      "SEMANTIC_ID": "TARGET",
+      "A": "SISIZI",
+      "B": "PAZUD",
+      "C": "DOSEKO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CONTEXTO",
+      "SEMANTIC_ID": "CONTEXT",
+      "A": "KEZAYE",
+      "B": "YINA",
+      "C": "KONARE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "VERSAO",
+      "SEMANTIC_ID": "VERSION",
+      "A": "NOMIMO",
+      "B": "KUHI",
+      "C": "VEMIDA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PERFIL",
+      "SEMANTIC_ID": "PROFILE",
+      "A": "PEMESI",
+      "B": "KODAH",
+      "C": "PISOSU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "META",
+      "SEMANTIC_ID": "META",
+      "A": "KORIRE",
+      "B": "MIKUS",
+      "C": "MIRELO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DADO",
+      "SEMANTIC_ID": "DATA",
+      "A": "DADARA",
+      "B": "DANEV",
+      "C": "DARIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MEMORIA",
+      "SEMANTIC_ID": "MEMORY",
+      "A": "MEMORA",
+      "B": "MENAR",
+      "C": "MERIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "BASE",
+      "SEMANTIC_ID": "DATABASE",
+      "A": "MEMIDO",
+      "B": "PISI",
+      "C": "PIMALU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ARQUIVO",
+      "SEMANTIC_ID": "FILE",
+      "A": "YISIHA",
+      "B": "PILU",
+      "C": "HAMIHO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DOCUMENTO",
+      "SEMANTIC_ID": "DOCUMENT",
+      "A": "LARASU",
+      "B": "YERO",
+      "C": "DODOLO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REGISTRO",
+      "SEMANTIC_ID": "RECORD",
+      "A": "KAMUPO",
+      "B": "MUVID",
+      "C": "RUYESA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "COLECAO",
+      "SEMANTIC_ID": "COLLECTION",
+      "A": "PAMIPA",
+      "B": "VEHI",
+      "C": "KAPENU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "LISTA",
+      "SEMANTIC_ID": "LIST",
+      "A": "NUROKO",
+      "B": "VOVAM",
+      "C": "LAPUKA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MAPA",
+      "SEMANTIC_ID": "MAP",
+      "A": "RUHERA",
+      "B": "DALA",
+      "C": "MUZODU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "FONTE",
+      "SEMANTIC_ID": "SOURCE_ALIAS",
+      "A": "SAHIKA",
+      "B": "MEMUS",
+      "C": "VILASE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CACHE",
+      "SEMANTIC_ID": "CACHE",
+      "A": "VUZOHU",
+      "B": "MEVAH",
+      "C": "KARALO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "HISTORICO",
+      "SEMANTIC_ID": "HISTORY",
+      "A": "MOHIDO",
+      "B": "SERO",
+      "C": "HEDUDE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PROVENIENCIA",
+      "SEMANTIC_ID": "PROVENANCE",
+      "A": "RUPUVA",
+      "B": "KILO",
+      "C": "PERAKU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "CAPACIDADE",
+      "SEMANTIC_ID": "CAPABILITY",
+      "A": "KAPARA",
+      "B": "KAVEN",
+      "C": "KAPIRA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PERMISSAO",
+      "SEMANTIC_ID": "PERMISSION",
+      "A": "PERAMA",
+      "B": "PEREN",
+      "C": "PEVIRA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ACESSO",
+      "SEMANTIC_ID": "ACCESS",
+      "A": "ASEKA",
+      "B": "ASEN",
+      "C": "AKSERA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "AUTORIZAR",
+      "SEMANTIC_ID": "ALLOW",
+      "A": "AUTARA",
+      "B": "AUVEN",
+      "C": "ALORA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "NEGAR",
+      "SEMANTIC_ID": "DENY",
+      "A": "NEGARA",
+      "B": "NEVAR",
+      "C": "NEDRA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "LER",
+      "SEMANTIC_ID": "READ",
+      "A": "RONIHE",
+      "B": "ZAMO",
+      "C": "LESAHO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ESCREVER",
+      "SEMANTIC_ID": "WRITE",
+      "A": "VODULA",
+      "B": "KAYU",
+      "C": "HESULA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EDITAR",
+      "SEMANTIC_ID": "EDIT",
+      "A": "LUMIRE",
+      "B": "DADEN",
+      "C": "HEYODA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REDE",
+      "SEMANTIC_ID": "NETWORK",
+      "A": "PIMINE",
+      "B": "VEROL",
+      "C": "RIHUMU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "LOCAL",
+      "SEMANTIC_ID": "LOCAL",
+      "A": "SUNOVI",
+      "B": "HADE",
+      "C": "LIYUYU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "EXTERNO",
+      "SEMANTIC_ID": "EXTERNAL",
+      "A": "LUVAHE",
+      "B": "HAYU",
+      "C": "HEKIKU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PRIVADO",
+      "SEMANTIC_ID": "PRIVATE",
+      "A": "PIVALI",
+      "B": "MALOV",
+      "C": "PAZODI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PUBLICO",
+      "SEMANTIC_ID": "PUBLIC",
+      "A": "MEKILU",
+      "B": "HILU",
+      "C": "PUDOVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SEGURO",
+      "SEMANTIC_ID": "SECURE",
+      "A": "SASAHE",
+      "B": "MURIY",
+      "C": "SUDOZA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "AGENTE",
+      "SEMANTIC_ID": "AGENT",
+      "A": "AGENAR",
+      "B": "AGENA",
+      "C": "AYERA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "IA",
+      "SEMANTIC_ID": "AI",
+      "A": "NURIZA",
+      "B": "NOKON",
+      "C": "HIKIDO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PROMPT",
+      "SEMANTIC_ID": "PROMPT",
+      "A": "PROMARA",
+      "B": "PROMEN",
+      "C": "PORIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "INTENCAO",
+      "SEMANTIC_ID": "INTENT",
+      "A": "INTARA",
+      "B": "INTEV",
+      "C": "INARA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "OBJETIVO",
+      "SEMANTIC_ID": "GOAL",
+      "A": "SONUKU",
+      "B": "ZUHU",
+      "C": "HOKOKE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PLANO",
+      "SEMANTIC_ID": "PLAN",
+      "A": "MEPUVA",
+      "B": "RIDAR",
+      "C": "PAKEVI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "TAREFA",
+      "SEMANTIC_ID": "TASK",
+      "A": "HUNUVE",
+      "B": "YOVE",
+      "C": "DAPUSA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "SKILL",
+      "SEMANTIC_ID": "SKILL",
+      "A": "HOMIDE",
+      "B": "RAVI",
+      "C": "SELIRE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ESPECIALISTA",
+      "SEMANTIC_ID": "SPECIALIST",
+      "A": "LUZEMO",
+      "B": "DOYE",
+      "C": "HEDAHU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "MESTRE",
+      "SEMANTIC_ID": "MASTER",
+      "A": "KADAKO",
+      "B": "KEHI",
+      "C": "MASALO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "PAPEL",
+      "SEMANTIC_ID": "ROLE",
+      "A": "RUNIDO",
+      "B": "DIRO",
+      "C": "PODAYA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "REGRA",
+      "SEMANTIC_ID": "RULE",
+      "A": "RULUPA",
+      "B": "POYE",
+      "C": "RAYOPE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "POLITICA",
+      "SEMANTIC_ID": "POLICY",
+      "A": "DEZEZO",
+      "B": "LUVIR",
+      "C": "PUDOYI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {      "VHK": "INSTRUCAO",
+      "SEMANTIC_ID": "INSTRUCTION",
+      "A": "REHUDU",
+      "B": "HIVAS",
+      "C": "HIDOME",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "DESIGN",
+      "SEMANTIC_ID": "DESIGN",
+      "A": "DESARA",
+      "B": "DESEN",
+      "C": "DEZIRA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "VISUAL",
+      "SEMANTIC_ID": "VISUAL",
+      "A": "VIZARA",
+      "B": "VIZEN",
+      "C": "VISURA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "LAYOUT",
+      "SEMANTIC_ID": "LAYOUT",
+      "A": "HILUYE",
+      "B": "PAYA",
+      "C": "LEHUYA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "ESTILO",
+      "SEMANTIC_ID": "STYLE",
+      "A": "LIMIHA",
+      "B": "POMOV",
+      "C": "HEVODU",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "COR",
+      "SEMANTIC_ID": "COLOR",
+      "A": "PUNUYU",
+      "B": "PAKE",
+      "C": "KEKOSO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "FORMA",
+      "SEMANTIC_ID": "FORM",
+      "A": "MALURU",
+      "B": "DEYI",
+      "C": "VUYURE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "IMAGEM",
+      "SEMANTIC_ID": "IMAGE",
+      "A": "RUKOSI",
+      "B": "ZERUM",
+      "C": "HIRAMI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "VIDEO",
+      "SEMANTIC_ID": "VIDEO",
+      "A": "LIYUVA",
+      "B": "DOZIS",
+      "C": "VOPIDE",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "AUDIO",
+      "SEMANTIC_ID": "AUDIO",
+      "A": "MALIYO",
+      "B": "PIDA",
+      "C": "HAVUKA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "TEXTO",
+      "SEMANTIC_ID": "TEXT",
+      "A": "PENIME",
+      "B": "NISER",
+      "C": "DIZIMA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "WEB",
+      "SEMANTIC_ID": "WEB",
+      "A": "POROMI",
+      "B": "RENU",
+      "C": "VOYUVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "APP",
+      "SEMANTIC_ID": "APP",
+      "A": "LONANE",
+      "B": "VAKO",
+      "C": "HAZUSO",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "GAME",
+      "SEMANTIC_ID": "GAME",
+      "A": "RAHEKU",
+      "B": "MARU",
+      "C": "KADIVA",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "WORKFLOW",
+      "SEMANTIC_ID": "WORKFLOW",
+      "A": "HISAPI",
+      "B": "NEHU",
+      "C": "VILAMI",
+      "STATUS": "DISCOVERY_CANDIDATE",
+      "NOTA": "Sem morfologia interna autorizada; requer validação."
+    },
+    {
+      "VHK": "AMOR",
+      "SEMANTIC_ID": "LOVE",
+      "A": "AHNUVA",
+      "B": "—",
+      "C": "—",
+      "STATUS": "CANON",
+      "NOTA": "Lexema HNK-KODE já confirmado; não gerar concorrentes."
+    },
+    {
+      "VHK": "VERDADE",
+      "SEMANTIC_ID": "TRUTH",
+      "A": "EMANU",
+      "B": "—",
+      "C": "—",
+      "STATUS": "CANON",
+      "NOTA": "Lexema HNK-KODE já confirmado; não gerar concorrentes."
+    },
+    {
+      "VHK": "VIDA",
+      "SEMANTIC_ID": "LIFE",
+      "A": "HAYA",
+      "B": "—",
+      "C": "—",
+      "STATUS": "CANON",
+      "NOTA": "Lexema HNK-KODE já confirmado; não gerar concorrentes."
+    },
+    {
+      "VHK": "CAMINHO",
+      "SEMANTIC_ID": "WAY",
+      "A": "HODERU",
+      "B": "—",
+      "C": "—",
+      "STATUS": "CANON",
+      "NOTA": "Lexema HNK-KODE já confirmado; não gerar concorrentes."
+    },
+    {
+      "VHK": "LOGOS",
+      "SEMANTIC_ID": "LOGOS",
+      "A": "KODAN",
+      "B": "—",
+      "C": "—",
+      "STATUS": "CANON",
+      "NOTA": "Lexema HNK-KODE já confirmado; não gerar concorrentes."
+    }
+  ]
+}

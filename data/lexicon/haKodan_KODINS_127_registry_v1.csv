@@ -1,0 +1,129 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: haKodan_KODINS_127_registry_v1.csv>index,#,Kodin / HNK-KODE,PT-BR,EN / Semantic meaning,Semantic ID,Status,Category,JS/TS ref.,Python ref.,C#/C++/Rust ref.,Low-level lowering,Glyph,Codepoint
+0,1,KADENA,CRIAR,CREATE,CREATE,PROVISIONAL,OPERATIONS,new / factory / constructor,constructor / factory,new / ctor / allocation,ALLOC + INIT,—,—
+1,2,DENURA,DEFINIR,DEFINE,DEFINE,PROVISIONAL,OPERATIONS,const/let/type/function declaration,assignment / def / class,declaration / definition,SYMBOL_DEF,—,—
+2,3,NALOL,ALTERAR,ALTER,ALTER,PROVISIONAL,OPERATIONS,assignment / mutation,assignment / mutation,assignment / mutation,STORE / UPDATE,—,—
+3,4,SARA,REMOVER,REMOVE,REMOVE,PROVISIONAL,OPERATIONS,delete / splice / dispose,del / pop,delete / dispose / erase,FREE / REMOVE,—,—
+4,5,VAMA,CONECTAR,CONNECT,CONNECT,PROVISIONAL,OPERATIONS,event/listener/reference wiring,reference/callback wiring,reference/event wiring,LINK / BIND,—,—
+5,6,SEYA,ASSOCIAR,ASSOCIATE,ASSOCIATE,PROVISIONAL,OPERATIONS,object relation / Map,object relation / dict,reference/association,RELATE,—,—
+6,7,SEKI,ATIVAR,ACTIVATE,ACTIVATE,PROVISIONAL,OPERATIONS,enable/start,enable/start,enable/start,ENABLE,—,—
+7,8,KIDI,DESATIVAR,DEACTIVATE,DEACTIVATE,PROVISIONAL,OPERATIONS,disable/stop,disable/stop,disable/stop,DISABLE,—,—
+8,9,LUVIH,EXECUTAR,EXECUTE,EXECUTE,PROVISIONAL,OPERATIONS,call/await/run,call/await/run,call/invoke/run,CALL / EXEC,—,—
+9,10,MANEV,MANIFESTAR,MANIFEST,MANIFEST,PROVISIONAL,OPERATIONS,render/build/emit,render/build/emit,render/build/emit,TARGET_EMIT,—,—
+10,11,LIKI,TRANSFORMAR,TRANSFORM,TRANSFORM,PROVISIONAL,OPERATIONS,map/convert,map/convert,transform/convert,TRANSFORM,—,—
+11,12,KEVO,VALIDAR,VALIDATE,VALIDATE,PROVISIONAL,OPERATIONS,assert/schema/type guard,assert/validation,assert/validation,CHECK / TRAP,—,—
+12,13,SELI,IMPORTAR,IMPORT,IMPORT,PROVISIONAL,OPERATIONS,import,import,using/include/import,LINK/LOAD MODULE,—,—
+13,14,ZIHA,EXPORTAR,EXPORT,EXPORT,PROVISIONAL,OPERATIONS,export,__all__/package API,public/export,SYMBOL_EXPORT,—,—
+14,15,RINIV,CARREGAR,LOAD,LOAD,PROVISIONAL,OPERATIONS,load/fetch/read,load/read,load/read,LOAD,—,—
+15,16,KIVE,SALVAR,SAVE,SAVE,PROVISIONAL,OPERATIONS,persist/write,persist/write,persist/write,STORE,—,—
+16,17,MADA,REGISTRAR,REGISTER,REGISTER,PROVISIONAL,OPERATIONS,register/add,register/add,register/add,REGISTRY_WRITE,—,—
+17,18,LAPAN,OBSERVAR,OBSERVE,OBSERVE,PROVISIONAL,OPERATIONS,subscribe/watch,observe/watch,observer/event,TRACE / WATCH,—,—
+18,19,SIYU,EMITIR,EMIT,EMIT,PROVISIONAL,OPERATIONS,emit/dispatch,emit/dispatch,raise/event,EVENT_EMIT,—,—
+19,20,KIPE,RETORNAR,RETURN,RETURN,PROVISIONAL,OPERATIONS,return,return,return,RET,—,—
+20,21,MAVORA,MUNDO,WORLD,WORLD,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+21,22,OKVAR,OBJETO,OBJECT,OBJECT,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+22,23,ENTAV,ENTIDADE,ENTITY,ENTITY,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+23,24,KELAN,CLASSE,CLASS,CLASS,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+24,25,NIZONI,TIPO,TYPE,TYPE,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+25,26,KAVORA,COMPONENTE,COMPONENT,COMPONENT,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+26,27,SIVEN,SISTEMA,SYSTEM,SYSTEM,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+27,28,NURAS,MODULO,MODULE,MODULE,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+28,29,YUYU,MODELO,MODEL,MODEL,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+29,30,SUVUZU,ESTRUTURA,STRUCTURE,STRUCTURE,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+30,31,VUVO,ELEMENTO,ELEMENT,ELEMENT,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+31,32,VIPU,INSTANCIA,INSTANCE,INSTANCE,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+32,33,YUMAD,INTERFACE,INTERFACE,INTERFACE,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+33,34,SUSA,CONTRATO,CONTRACT,CONTRACT,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+34,35,KAZE,RELACAO,RELATION,RELATION,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+35,36,RIYU,IDENTIDADE,IDENTITY,IDENTITY,PROVISIONAL,STRUCTURE,object/type/module construct,class/module/object construct,type/struct/class construct,TYPE/OBJECT_META,—,—
+36,37,ENEVU,EVENTO,EVENT,EVENT,PROVISIONAL,LOGIC_FLOW,Event/EventTarget,event/callback,event/delegate/signal,EVENT,—,—
+37,38,AKANA,ACAO,ACTION,ACTION,PROVISIONAL,LOGIC_FLOW,callable/command,callable/command,command/action,CALLABLE,—,—
+38,39,KOMARA,COMANDO,COMMAND,COMMAND,PROVISIONAL,LOGIC_FLOW,control/event construct,control/event construct,control/event construct,CFG/IR,—,—
+39,40,LARUS,FUNCAO,FUNCTION,FUNCTION,PROVISIONAL,LOGIC_FLOW,function,def,method/function,FUNC,—,—
+40,41,YOHO,OPERACAO,OPERATION,OPERATION,PROVISIONAL,LOGIC_FLOW,control/event construct,control/event construct,control/event construct,CFG/IR,—,—
+41,42,ZANUY,PROCESSO,PROCESS,PROCESS,PROVISIONAL,LOGIC_FLOW,control/event construct,control/event construct,control/event construct,CFG/IR,—,—
+42,43,ZOVAK,ESTADO,STATE,STATE,PROVISIONAL,LOGIC_FLOW,state/store,state/dataclass,state/field,STATE_SLOT,—,—
+43,44,POZEN,CONDICAO,CONDITION,CONDITION,PROVISIONAL,LOGIC_FLOW,boolean expression,boolean expression,boolean expression,CMP/PREDICATE,—,—
+44,45,SUPU,QUANDO,WHEN,WHEN,PROVISIONAL,LOGIC_FLOW,event condition / when,event condition,when/event condition,EVENT_GUARD,—,—
+45,46,YOZIZ,SE,IF,IF,PROVISIONAL,LOGIC_FLOW,if,if,if,BRANCH,—,—
+46,47,KEYO,SENAO,ELSE,ELSE,PROVISIONAL,LOGIC_FLOW,else,else,else,BRANCH_ELSE,—,—
+47,48,ROKI,PARA,FOR,FOR,PROVISIONAL,LOGIC_FLOW,for,for,for,LOOP,—,—
+48,49,HIZE,CADA,EACH,EACH,PROVISIONAL,LOGIC_FLOW,for...of / forEach,for item in,foreach/range-for,ITERATE,—,—
+49,50,SEYE,ENQUANTO,WHILE,WHILE,PROVISIONAL,LOGIC_FLOW,while,while,while,LOOP_WHILE,—,—
+50,51,VIDI,ENTAO,THEN,THEN,PROVISIONAL,LOGIC_FLOW,block continuation,suite/block,block,BLOCK,—,—
+51,52,ZEDA,INICIO,START,START,PROVISIONAL,LOGIC_FLOW,entry/init,__main__/init,Main/init,ENTRY,—,—
+52,53,RERU,FIM,END,END,PROVISIONAL,LOGIC_FLOW,block/end/lifecycle,dedent/end lifecycle,scope end,SCOPE_END,—,—
+53,54,DIPAV,NOME,NAME,NAME,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+54,55,LAKAK,ID,IDENTIFIER,IDENTIFIER,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+55,56,VEMI,VALOR,VALUE,VALUE,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+56,57,ZUZIN,PROPRIEDADE,PROPERTY,PROPERTY,PROVISIONAL,IDENTITY_METADATA,property/field,@property/attribute,property/field,FIELD,—,—
+57,58,HUPU,ATRIBUTO,ATTRIBUTE,ATTRIBUTE,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+58,59,ROZIS,PARAMETRO,PARAMETER,PARAMETER,PROVISIONAL,IDENTITY_METADATA,parameter,parameter,parameter,PARAM,—,—
+59,60,VAMAY,ARGUMENTO,ARGUMENT,ARGUMENT,PROVISIONAL,IDENTITY_METADATA,argument,argument,argument,ARG,—,—
+60,61,MAHON,REFERENCIA,REFERENCE,REFERENCE,PROVISIONAL,IDENTITY_METADATA,reference/pointer-like handle,reference/object name,ref/pointer/handle,REF,—,—
+61,62,PIZIR,ORIGEM,SOURCE,SOURCE,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+62,63,PAZUD,DESTINO,TARGET,TARGET,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+63,64,YINA,CONTEXTO,CONTEXT,CONTEXT,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+64,65,KUHI,VERSAO,VERSION,VERSION,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+65,66,PEMESI,PERFIL,PROFILE,PROFILE,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+66,67,MIKUS,META,META,META,PROVISIONAL,IDENTITY_METADATA,identifier/metadata field,identifier/metadata field,identifier/metadata field,METADATA,—,—
+67,68,DANEV,DADO,DATA,DATA,PROVISIONAL,DATA_MEMORY,object/record/data,dict/dataclass,struct/record,DATA,—,—
+68,69,MENAR,MEMORIA,MEMORY,MEMORY,PROVISIONAL,DATA_MEMORY,store/cache/state,store/cache/state,memory/store,MEMORY,—,—
+69,70,PISI,BASE,DATABASE,DATABASE,PROVISIONAL,DATA_MEMORY,DB adapter/storage,DB adapter/storage,DB/storage,STORAGE_ADAPTER,—,—
+70,71,PILU,ARQUIVO,FILE,FILE,PROVISIONAL,DATA_MEMORY,File/Blob,file object,file/stream,FILE_IO,—,—
+71,72,YERO,DOCUMENTO,DOCUMENT,DOCUMENT,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+72,73,MUVID,REGISTRO,RECORD,RECORD,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+73,74,VEHI,COLECAO,COLLECTION,COLLECTION,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+74,75,VOVAM,LISTA,LIST,LIST,PROVISIONAL,DATA_MEMORY,Array,list,List/vector,SEQ,—,—
+75,76,DALA,MAPA,MAP,MAP,PROVISIONAL,DATA_MEMORY,Map/Object,dict,Dictionary/map,MAP,—,—
+76,77,MEMUS,FONTE,SOURCE ALIAS,SOURCE_ALIAS,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+77,78,MEVAH,CACHE,CACHE,CACHE,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+78,79,SERO,HISTORICO,HISTORY,HISTORY,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+79,80,KILO,PROVENIENCIA,PROVENANCE,PROVENANCE,PROVISIONAL,DATA_MEMORY,data/storage construct,data/storage construct,data/storage construct,DATA_IR,—,—
+80,81,KAPARA,CAPACIDADE,CAPABILITY,CAPABILITY,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+81,82,PEREN,PERMISSAO,PERMISSION,PERMISSION,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+82,83,ASEKA,ACESSO,ACCESS,ACCESS,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+83,84,AUVEN,AUTORIZAR,ALLOW,ALLOW,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+84,85,NEVAR,NEGAR,DENY,DENY,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+85,86,ZAMO,LER,READ,READ,PROVISIONAL,CAPABILITY_SECURITY_IO,read/get,read/get,read/get,LOAD,—,—
+86,87,KAYU,ESCREVER,WRITE,WRITE,PROVISIONAL,CAPABILITY_SECURITY_IO,write/set,write/set,write/set,STORE,—,—
+87,88,DADEN,EDITAR,EDIT,EDIT,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+88,89,VEROL,REDE,NETWORK,NETWORK,PROVISIONAL,CAPABILITY_SECURITY_IO,fetch/socket,requests/socket,HTTP/socket,NET_IO,—,—
+89,90,HADE,LOCAL,LOCAL,LOCAL,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+90,91,LUVAHE,EXTERNO,EXTERNAL,EXTERNAL,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+91,92,MALOV,PRIVADO,PRIVATE,PRIVATE,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+92,93,HILU,PUBLICO,PUBLIC,PUBLIC,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+93,94,MURIY,SEGURO,SECURE,SECURE,PROVISIONAL,CAPABILITY_SECURITY_IO,capability/security/I/O policy,capability/security/I/O policy,capability/security/I/O policy,CAPABILITY_IR,—,—
+94,95,AGENA,AGENTE,AGENT,AGENT,PROVISIONAL,AI_ORCHESTRATION,agent object/runtime,agent object/runtime,agent object/runtime,AGENT_RUNTIME,—,—
+95,96,NOKON,IA,AI,AI,PROVISIONAL,AI_ORCHESTRATION,model/provider adapter,model/provider adapter,model/provider adapter,AI_ADAPTER,—,—
+96,97,PROMEN,PROMPT,PROMPT,PROMPT,PROVISIONAL,AI_ORCHESTRATION,prompt payload,prompt payload,prompt payload,PROMPT_DATA,—,—
+97,98,INTEV,INTENCAO,INTENT,INTENT,PROVISIONAL,AI_ORCHESTRATION,intent metadata/IR,intent metadata/IR,intent metadata/IR,INTENT_IR,—,—
+98,99,ZUHU,OBJETIVO,GOAL,GOAL,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+99,100,RIDAR,PLANO,PLAN,PLAN,PROVISIONAL,AI_ORCHESTRATION,plan/workflow graph,plan/workflow graph,plan/workflow graph,PLAN_IR,—,—
+100,101,YOVE,TAREFA,TASK,TASK,PROVISIONAL,AI_ORCHESTRATION,task/promise/job,task/coroutine/job,Task/thread/job,TASK,—,—
+101,102,RAVI,SKILL,SKILL,SKILL,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+102,103,DOYE,ESPECIALISTA,SPECIALIST,SPECIALIST,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+103,104,KEHI,MESTRE,MASTER,MASTER,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+104,105,DIRO,PAPEL,ROLE,ROLE,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+105,106,POYE,REGRA,RULE,RULE,PROVISIONAL,AI_ORCHESTRATION,validation/policy rule,validation/policy rule,validation/policy rule,RULE_IR,—,—
+106,107,LUVIR,POLITICA,POLICY,POLICY,PROVISIONAL,AI_ORCHESTRATION,AI/orchestration metadata,AI/orchestration metadata,AI/orchestration metadata,ORCHESTRATION_IR,—,—
+107,108,HIVAS,INSTRUCAO,INSTRUCTION,INSTRUCTION,PROVISIONAL,AI_ORCHESTRATION,instruction node,instruction node,instruction node,IR_INSTR,—,—
+108,109,DESEN,DESIGN,DESIGN,DESIGN,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+109,110,VIZEN,VISUAL,VISUAL,VISUAL,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+110,111,HILUYE,LAYOUT,LAYOUT,LAYOUT,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+111,112,POMOV,ESTILO,STYLE,STYLE,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+112,113,PAKE,COR,COLOR,COLOR,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+113,114,DEYI,FORMA,FORM,FORM,PROVISIONAL,DESIGN_MANIFESTATION,design/target metadata,design/target metadata,design/target metadata,MANIFEST_IR,—,—
+114,115,ZERUM,IMAGEM,IMAGE,IMAGE,PROVISIONAL,DESIGN_MANIFESTATION,Image/Canvas asset,image asset,image/texture asset,IMAGE_ASSET,—,—
+115,116,DOZIS,VIDEO,VIDEO,VIDEO,PROVISIONAL,DESIGN_MANIFESTATION,Video asset,video asset,video asset,VIDEO_ASSET,—,—
+116,117,PIDA,AUDIO,AUDIO,AUDIO,PROVISIONAL,DESIGN_MANIFESTATION,Audio asset,audio asset,audio asset,AUDIO_ASSET,—,—
+117,118,NISER,TEXTO,TEXT,TEXT,PROVISIONAL,DESIGN_MANIFESTATION,string/Text,str,string,TEXT,—,—
+118,119,RENU,WEB,WEB,WEB,PROVISIONAL,DESIGN_MANIFESTATION,Web target,Web target,Web target,TARGET_WEB,—,—
+119,120,VAKO,APP,APP,APP,PROVISIONAL,DESIGN_MANIFESTATION,App target,App target,App target,TARGET_APP,—,—
+120,121,RAHEKU,GAME,GAME,GAME,PROVISIONAL,DESIGN_MANIFESTATION,Game target,Game target,Game target,TARGET_GAME,—,—
+121,122,NEHU,WORKFLOW,WORKFLOW,WORKFLOW,PROVISIONAL,DESIGN_MANIFESTATION,workflow graph,workflow graph,workflow graph,WORKFLOW_IR,—,—
+122,123,AHNUVA,AMOR,LOVE,LOVE,CANON,HNK_CANON_CONCEPT,semantic constant/concept,semantic constant/concept,semantic constant/concept,SEMANTIC_CONST,HNK-LG-0001,U+E100
+123,124,EMANU,VERDADE,TRUTH,TRUTH,CANON,HNK_CANON_CONCEPT,semantic constant/concept,semantic constant/concept,semantic constant/concept,SEMANTIC_CONST,HNK-LG-0002,U+E101
+124,125,HAYA,VIDA,LIFE,LIFE,CANON,HNK_CANON_CONCEPT,semantic constant/concept,semantic constant/concept,semantic constant/concept,SEMANTIC_CONST,HNK-LG-0003,U+E102
+125,126,HODERU,CAMINHO,WAY,WAY,CANON,HNK_CANON_CONCEPT,semantic constant/concept,semantic constant/concept,semantic constant/concept,SEMANTIC_CONST,HNK-LG-0004,U+E103
+126,127,KODAN,LOGOS,LOGOS,LOGOS,CANON,HNK_CANON_CONCEPT,semantic constant/concept,semantic constant/concept,semantic constant/concept,SEMANTIC_CONST,HNK-LG-0005,U+E104

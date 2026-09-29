@@ -14,6 +14,9 @@ const EVENT = Object.freeze({
   response: 'same-family',
   responseTimeMs: 1840,
   structuralDistance: 3,
+  protocolVersion: 'ASP-V1',
+  dataVersion: 'FEC-V1',
+  criteriaVersion: 'ASP-V1-CRITERIA-001',
 });
 
 test('new evidence ledger is empty and immutable', () => {

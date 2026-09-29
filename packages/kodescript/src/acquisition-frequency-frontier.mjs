@@ -17,6 +17,21 @@ function popcount(x) {
   return n;
 }
 
+function buildMaskSums(ids, a, b) {
+  const limit=2**ids.length;
+  const counts=new Uint8Array(limit);
+  const sumsA=new Uint32Array(limit), sumsB=new Uint32Array(limit);
+  for (let mask=1; mask<limit; mask++) {
+    const bit=mask & -mask;
+    const i=31-Math.clz32(bit);
+    const prev=mask ^ bit;
+    counts[mask]=counts[prev]+1;
+    sumsA[mask]=sumsA[prev]+(a.counts[ids[i]]??0);
+    sumsB[mask]=sumsB[prev]+(b.counts[ids[i]]??0);
+  }
+  return { counts, sumsA, sumsB };
+}
+
 export function exactSharedCoverageFrontier(corpusA, corpusB, thresholds=[0.8,0.9,0.95]) {
   const a=normalizeCorpus(corpusA), b=normalizeCorpus(corpusB);
   const ids=[...new Set([...Object.keys(a.counts),...Object.keys(b.counts)])].sort();
@@ -31,16 +46,12 @@ export function exactSharedCoverageFrontier(corpusA, corpusB, thresholds=[0.8,0.
   }));
 
   const limit=2**ids.length;
+  const { counts, sumsA, sumsB }=buildMaskSums(ids,a,b);
   for (let mask=1; mask<limit; mask++) {
-    const k=popcount(mask);
+    const k=counts[mask];
     if (targets.every(t => t.minGlyphCount!==null && k>t.minGlyphCount)) continue;
 
-    let ca=0,cb=0;
-    for (let i=0;i<ids.length;i++) if (mask & (2**i)) {
-      ca+=a.counts[ids[i]]??0;
-      cb+=b.counts[ids[i]]??0;
-    }
-
+    const ca=sumsA[mask], cb=sumsB[mask];
     for (const t of targets) {
       if (ca<t.aTarget || cb<t.bTarget) continue;
       if (t.minGlyphCount===null || k<t.minGlyphCount) {

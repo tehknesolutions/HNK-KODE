@@ -1,4 +1,5 @@
 import { keywordMap } from "./semantic-tokens.mjs";
+import { inferLiteralType } from "./type-system.mjs";
 
 function tokenize(source, profile) {
   const keywords = keywordMap(profile);
@@ -115,7 +116,8 @@ export function toHnkIr(ast) {
       entities: world.members.filter(x => x.kind === "EntityDeclaration").map(entity => ({
         id: `hnk://world/${world.name}/entity/${entity.name}`,
         name: entity.name,
-        properties: Object.fromEntries(entity.properties.map(p => [p.name, p.value.value]))
+        properties: Object.fromEntries(entity.properties.map(p => [p.name, p.value.value])),
+        propertyTypes: Object.fromEntries(entity.properties.map(p => [p.name, inferLiteralType(p.value)]))
       })),
       events: world.members.filter(x => x.kind === "EventDeclaration").map(event => ({
         name: event.name,

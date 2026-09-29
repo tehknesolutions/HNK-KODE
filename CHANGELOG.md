@@ -4,6 +4,15 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Addressing + Dispatch — 2026-09-29
+- Added Object/Component Addressing v0.1 with stable semantic addresses for objects, properties and attached components.
+- Added deterministic Address Table generation and fail-closed resolution.
+- Added Event Dispatch Contract v0.1 with deterministic event lookup, ordered action planning and payload validation.
+- Added serializable Event Dispatch Catalog for pre-opcode compilation.
+- Integrated Address and Dispatch tables into haKodan pre-opcode output.
+- Added PT-BR/EN equivalence tests for addressing and dispatch.
+- Advanced VM Opcode Readiness Gate to 5/10 completed prerequisites.
+
 ### VM Tables — 2026-09-29
 - Added Symbol Table v0.1 with deterministic semantic addresses for World, Entity, Property, Event and Action symbols.
 - Added Constant Pool v0.1 with typed literal deduplication.

@@ -1,3 +1,10 @@
+## 2026-09-29 — Phonological Separation Gate v0.7
+
+- Precomputed cross-family similarity across v0.6 candidates.
+- Applied deterministic coordinate descent to reduce cross-family confusion.
+- Preserved 122 unique discovery selections and explicit remaining WATCH pairs.
+- No canon promotion.
+
 ## 2026-09-29 — Root Family & Semantic Coherence v0.6
 
 - Grouped all 122 provisional Kodins into 26 semantic root-family hypotheses.

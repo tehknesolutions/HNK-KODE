@@ -4,6 +4,15 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Execution Model — 2026-09-29
+- Compared Stack VM, Register VM and Hybrid VM against haKodan requirements.
+- Accepted Hybrid VM v0.1: typed virtual registers for explicit dataflow plus structured frames for World/Event/Action invocation context.
+- Kept any operand stack outside the canonical semantic contract.
+- Added explicit frame lifecycle, program counter, typed register declaration/read/write and uninitialized-register trap behavior.
+- Integrated the execution model identifier into pre-opcode output.
+- Advanced VM Opcode Readiness Gate to 6/10 completed prerequisites.
+- No numeric opcodes assigned yet.
+
 ### Addressing + Dispatch — 2026-09-29
 - Added Object/Component Addressing v0.1 with stable semantic addresses for objects, properties and attached components.
 - Added deterministic Address Table generation and fail-closed resolution.

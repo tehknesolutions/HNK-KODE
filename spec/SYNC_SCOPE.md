@@ -1,0 +1,1 @@
+Scope: MHCM v0.1, Mandala structural baseline and KODESCRIPT V0 boundary only. No automatic linguistic promotion.

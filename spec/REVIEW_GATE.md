@@ -1,0 +1,1 @@
+Review gate: verify MHCM structural and canonical boundaries before merge.

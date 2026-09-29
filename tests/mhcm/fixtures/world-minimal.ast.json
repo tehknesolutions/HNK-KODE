@@ -1,0 +1,20 @@
+{
+  "type": "world",
+  "name": "genesis",
+  "entities": [
+    {
+      "name": "light",
+      "properties": [
+        {"name": "active", "value": false}
+      ],
+      "events": [
+        {
+          "name": "awaken",
+          "actions": [
+            {"name": "activate", "args": []}
+          ]
+        }
+      ]
+    }
+  ]
+}

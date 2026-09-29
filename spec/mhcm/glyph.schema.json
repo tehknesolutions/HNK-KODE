@@ -1,0 +1,18 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hnk.dev/spec/mhcm/glyph.schema.json",
+  "title":"MHCM Glyph",
+  "description":"Structural glyph candidate. Validation against this schema does not imply linguistic canon.",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","startCell","path","edgeSequence","state","provenance"],
+  "properties":{
+    "id":{"type":"string","minLength":1},
+    "startCell":{"$ref":"address.schema.json"},
+    "path":{"$ref":"path.schema.json"},
+    "edgeSequence":{"type":"array","items":{"$ref":"edge.schema.json"}},
+    "transform":{"anyOf":[{"$ref":"transform.schema.json"},{"type":"null"}]},
+    "state":{"enum":["candidate","validated","canonical","rejected","unresolved"]},
+    "provenance":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}
+  }
+}

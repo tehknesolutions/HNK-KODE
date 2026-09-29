@@ -1,0 +1,12 @@
+{
+  "world": "genesis",
+  "entities": {
+    "light": {
+      "properties": {
+        "active": false
+      },
+      "events": ["awaken"],
+      "actionsCalled": ["activate"]
+    }
+  }
+}

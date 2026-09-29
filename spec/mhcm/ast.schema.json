@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hnk.dev/spec/mhcm/ast.schema.json",
+  "title":"KODESCRIPT AST V0",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["type","name","entities"],
+  "properties":{
+    "type":{"const":"world"},
+    "name":{"type":"string","minLength":1},
+    "entities":{"type":"array","items":{"$ref":"#/$defs/entity"}}
+  },
+  "$defs":{
+    "property":{"type":"object","additionalProperties":false,"required":["name","value"],"properties":{"name":{"type":"string","minLength":1},"value":{}}},
+    "action":{"type":"object","additionalProperties":false,"required":["name"],"properties":{"name":{"type":"string","minLength":1},"args":{"type":"array","items":{}}}},
+    "event":{"type":"object","additionalProperties":false,"required":["name","actions"],"properties":{"name":{"type":"string","minLength":1},"actions":{"type":"array","items":{"$ref":"#/$defs/action"}}}},
+    "entity":{"type":"object","additionalProperties":false,"required":["name","properties","events"],"properties":{"name":{"type":"string","minLength":1},"properties":{"type":"array","items":{"$ref":"#/$defs/property"}},"events":{"type":"array","items":{"$ref":"#/$defs/event"}}}}
+  }
+}

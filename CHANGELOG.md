@@ -1,3 +1,10 @@
+## 2026-09-29 — Compact Mora Gate v0.5
+
+- Re-ranked 366 Mora-Kodin candidates for moraic economy and family coherence.
+- Added compact/root-signature candidate path and stronger length weighting.
+- Preserved 122 concepts as discovery-only; 0 canon promotions.
+- Added data, CSV, report, invariant module and tests.
+
 ## 2026-09-29 — Mora-Kodin mass discovery v0.4
 
 - Generated 3 deterministic Mora-Kodin candidates for each of 122 provisional concepts (366 total).

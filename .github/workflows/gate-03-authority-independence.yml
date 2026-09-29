@@ -4,12 +4,17 @@ on:
   push:
     branches:
       - gate-03-authority-independence
+      - docs/hnk-linguas-consolidation
     paths:
       - 'packages/**'
+      - 'canon/**'
+      - 'docs/migration/**'
       - '.github/workflows/gate-03-authority-independence.yml'
   pull_request:
     paths:
       - 'packages/**'
+      - 'canon/**'
+      - 'docs/migration/**'
       - '.github/workflows/gate-03-authority-independence.yml'
   workflow_dispatch:
 
@@ -39,15 +44,13 @@ jobs:
         run: |
           set -euo pipefail
           for file in index.mjs authored.mjs cycle1.mjs grammar-core-v1.mjs; do
-            test -f "packages/hnk-linguas/src/$file"
-            test -f "/tmp/codex-source/packages/hnk-linguas/src/$file"
             cmp --silent "/tmp/codex-source/packages/hnk-linguas/src/$file" "packages/hnk-linguas/src/$file" || {
               echo "SOURCE-LOCK DRIFT: packages/hnk-linguas/src/$file"
               exit 1
             }
           done
 
-      - name: Verify regression tests preserved
+      - name: Verify preserved language regression tests
         shell: bash
         run: |
           set -euo pipefail
@@ -58,17 +61,38 @@ jobs:
             }
           done
 
-      - name: Verify glyph authority boundary
+      - name: Verify recovered canon source-lock
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in \
+            canon/core/research-001-symbolic-architecture-v1.json \
+            canon/governance/human-gates/research-001.json \
+            canon/governance/human-gates/research-001-batch-001-approval.json \
+            packages/canon-contract/src/index.mjs \
+            packages/canon-contract/src/index.d.ts \
+            packages/hnk-glyphs/src/canon.mjs \
+            packages/hnk-glyphs/src/canon.d.ts \
+            packages/hnk-glyphs/reference/HNK40_REFERENCE_MATRIX_V1.json \
+            packages/hnk-glyphs/reference/README.md \
+            packages/hnk-glyphs/test/reference-matrix.test.mjs; do
+            cmp --silent "/tmp/codex-source/$file" "$file" || {
+              echo "RECOVERED SOURCE-LOCK DRIFT: $file"
+              exit 1
+            }
+          done
+
+      - name: Verify glyph linguistic boundary
         shell: bash
         run: |
           set -euo pipefail
           test -f packages/hnk-glyphs/src/index.mjs
-          if grep -R -n -E "HNK40_SPRITE_SVG|getGlyphSvg|getSpriteUseSvg|frozen-sprite|renderer" packages/hnk-glyphs/src packages/hnk-linguas/src; then
+          if grep -R -n -E "HNK40_SPRITE_SVG|getGlyphSvg|getSpriteUseSvg|frozen-sprite|renderer" packages/hnk-glyphs/src/index.mjs packages/hnk-linguas/src; then
             echo 'VISUAL AUTHORITY LEAK: renderer/sprite surface entered linguistic authority boundary.'
             exit 1
           fi
-          if grep -R -n "@hnk/canon-contract" packages/hnk-glyphs packages/hnk-linguas; then
-            echo 'CODEX AUTHORITY LEAK: @hnk/canon-contract dependency remains in Gate 03 packages.'
+          if grep -R -n -E "codex-hnk|tehknesolutions/codex-hnk" packages/*/src; then
+            echo 'REVERSE RUNTIME DEPENDENCY: HNK-KODE package source references CODEX-HNK.'
             exit 1
           fi
 
@@ -82,17 +106,24 @@ jobs:
           const glyphs = JSON.parse(fs.readFileSync('packages/hnk-glyphs/package.json','utf8'));
           if (!linguas.dependencies?.['@hnk/glyphs']) throw new Error('@hnk/linguas must depend on @hnk/glyphs');
           if (glyphs.dependencies?.['@hnk/linguas']) throw new Error('@hnk/glyphs must not depend on @hnk/linguas');
-          if (linguas.dependencies?.['@hnk/canon-contract'] || glyphs.dependencies?.['@hnk/canon-contract']) throw new Error('CODEX canon-contract dependency is forbidden in Gate 03');
+          if (glyphs.dependencies?.['@hnk/canon-contract'] !== 'workspace:*') throw new Error('@hnk/glyphs must consume the local @hnk/canon-contract compatibility boundary');
+          if (linguas.dependencies?.['@hnk/canon-contract']) throw new Error('@hnk/linguas must not directly depend on @hnk/canon-contract');
           NODE
 
-      - name: Link workspace dependency for standalone tests
+      - name: Link local workspace dependencies for standalone tests
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p packages/hnk-linguas/node_modules/@hnk
+          mkdir -p node_modules/@hnk packages/hnk-linguas/node_modules/@hnk packages/hnk-glyphs/node_modules/@hnk
+          ln -s "$(pwd)/packages/canon-contract" node_modules/@hnk/canon-contract
+          ln -s "$(pwd)/packages/canon-contract" packages/hnk-glyphs/node_modules/@hnk/canon-contract
           ln -s "$(pwd)/packages/hnk-glyphs" packages/hnk-linguas/node_modules/@hnk/glyphs
 
-      - name: Run glyph compatibility regression
+      - name: Run recovered canon contract regression
+        shell: bash
+        run: node --test packages/canon-contract/test/*.test.mjs
+
+      - name: Run glyph compatibility and reference regression
         shell: bash
         run: node --test packages/hnk-glyphs/test/*.test.mjs
 
@@ -104,7 +135,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          echo 'GATE-03 PASS CONDITIONS SATISFIED'
-          echo 'Preservation: source-locked linguas runtime + regression tests byte-identical.'
-          echo 'Independence: no canon-contract, renderer, sprite, or visual-authority dependency.'
-          echo 'Runtime: glyph compatibility and linguas regression suites passed.'
+          echo 'GATE-03 PARITY CONDITIONS SATISFIED'
+          echo 'Preservation: linguas + recovered canon/reference artifacts source-locked.'
+          echo 'Compatibility: local canon contract validates 22 human-gated records.'
+          echo 'Boundary: no reverse CODEX runtime dependency and no visual renderer authority leak.'
+          echo 'Runtime: canon, glyph/reference and linguas regression suites passed.'

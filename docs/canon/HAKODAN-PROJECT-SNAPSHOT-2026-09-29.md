@@ -286,3 +286,39 @@ Several chat-generated v1.0–v1.7 TypeScript prototype ZIPs were research artif
 **GitHub is the persistent source of truth. Chat artifacts are working evidence, never the only copy of a project decision.**
 
 Every future approved HNK/haKodan definition should be committed to the appropriate HNK repository in the same work cycle.
+
+## 18. Mora-Kodin production gates added after initial snapshot
+
+The Mora-Kodin direction has now been executed as reproducible discovery data.
+
+### v0.4 — Mass Discovery
+- 122 provisional concepts processed.
+- 3 candidates per concept.
+- 366 unique candidates.
+- 0 canon promotions.
+- deterministic batch contract + tests committed.
+
+### v0.5 — Compact Mora Gate
+- same 122 concepts and 366 candidates reworked/re-ranked for stronger moraic economy.
+- 122 unique shortlist winners.
+- 82/122 winners have 5 letters or fewer.
+- average winner length reduced from 6.00 to 4.67.
+- 0 canon promotions.
+- examples currently include:
+  - CREATE → KADA
+  - DEFINE → DENA
+  - WORLD → MAVU
+  - OBJECT → OKU
+  - MEMORY → MENO
+  - CAPABILITY → KAPU
+
+All v0.4/v0.5 words remain `DISCOVERY_CANDIDATE`; this section records production state, not lexical canon.
+
+Persisted files:
+- `data/lexicon/haKodan-mora-kodin-candidates-v0.4.json`
+- `data/lexicon/haKodan-mora-kodin-shortlist-v0.4.csv`
+- `docs/language/HAKODAN-MORA-KODIN-MASS-DISCOVERY-v0.4.md`
+- `data/lexicon/haKodan-mora-kodin-compact-v0.5.json`
+- `data/lexicon/haKodan-mora-kodin-shortlist-v0.5.csv`
+- `docs/language/HAKODAN-MORA-KODIN-COMPACT-GATE-v0.5.md`
+

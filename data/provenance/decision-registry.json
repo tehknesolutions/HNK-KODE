@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "status": "ARCHAEOLOGY_IN_PROGRESS",
+  "generated_on": "2026-09-29",
+  "tracking": ["#22", "#23"],
+  "decisions": [
+    {
+      "id": "DEC-HNK-KODE-0001",
+      "domain": "language-architecture",
+      "statement": "HENUVOKODAN/HNK-KODE uses distinct layers for fundamental keys, glyph address space, generative geometry, HNK40 genesis/validation, PATH formation, glyph composition, lexemes and language composition.",
+      "state": "RECOVERED",
+      "authority": "REQUIRES_PROMOTION_CHECK",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3"],
+      "notes": "Do not collapse 463 addressable fields into 463 phonetic letters."
+    },
+    {
+      "id": "DEC-HNK-KODE-0002",
+      "domain": "lexicon",
+      "statement": "AHNUVA, EMANU, HAYA, HODERU and KODAN are recovered as HNK-KODE lexemes.",
+      "state": "RECOVERED",
+      "authority": "EXISTENCE_SUPPORTED_SEMANTICS_PENDING",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3"],
+      "notes": "Exact meanings and approval chronology require separate source evidence."
+    },
+    {
+      "id": "DEC-HNK-KODE-0003",
+      "domain": "hnk40",
+      "statement": "The 40 HNK40 glyphs are a genesis/validation set and must not be mechanically treated as the first forty cells of a 463-unit alphabet.",
+      "state": "RECOVERED",
+      "authority": "STRONG_ARCHITECTURAL_EVIDENCE",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3"]
+    },
+    {
+      "id": "DEC-HNK-KODE-0004",
+      "domain": "mandala",
+      "statement": "Recovered Mandala counts are 432 MF = 72 sectors x 6 layers; 463 ACTIVE = 432 MF + 9 EXTERNAL + 22 CENTER; 504 RASTER = 463 ACTIVE + 41 RESERVED.",
+      "state": "RECOVERED",
+      "authority": "STRUCTURAL_FORMULA_SUPPORTED",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3"],
+      "notes": "This does not assign semantics to every field."
+    },
+    {
+      "id": "DEC-HNK-KODE-0005",
+      "domain": "mandala",
+      "statement": "Mandala-HNK is a structural/computational foundation of HNK-KODE; later recovered architecture treats it as Encoding + Grammar + Computational Substrate.",
+      "state": "RECOVERED_PROMOTION_EVENT",
+      "authority": "CREATOR_APPROVAL_PRESENT_IN_CORPUS",
+      "source_ids": ["SRC-POLISH-CANDIDATE-C", "SRC-HNK40-VALIDATION-V1_3"],
+      "notes": "Preserve earlier hypothesis stages rather than retroactively relabelling them."
+    },
+    {
+      "id": "DEC-HNK-KODE-0006",
+      "domain": "glyph-genesis",
+      "statement": "A glyph may be represented by a PATH over addressable cells rather than one cell alone; recovered model includes START_CELL + PATH + EDGE_SEQUENCE + TRANSFORM.",
+      "state": "RECOVERED",
+      "authority": "ARCHITECTURAL_MODEL",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3"]
+    },
+    {
+      "id": "DEC-HNK-KODE-0007",
+      "domain": "governance",
+      "statement": "Mathematical or topological validity does not automatically create linguistic canon.",
+      "state": "RECOVERED_INVARIANT",
+      "authority": "GOVERNANCE_RULE",
+      "source_ids": ["SRC-HNK40-VALIDATION-V1_3", "SRC-HNKVERSE-ARCHAEOLOGY"],
+      "notes": "Human promotion remains separate from structural validation."
+    },
+    {
+      "id": "DEC-HNK-KODE-0008",
+      "domain": "ecosystem-boundary",
+      "statement": "HNK-VERSE is a platform/metaverse consumer; HNK-KODE is the language and fullstack-language product; CODEX-HNK is central authority/record; HNK-KODE is not a submodule of HNK-VERSE.",
+      "state": "RECOVERED_CANONICAL_SCOPE",
+      "authority": "CREATOR_APPROVAL_PRESENT_IN_CORPUS",
+      "source_ids": ["SRC-POLISH-CANDIDATE-C"]
+    },
+    {
+      "id": "DEC-HNK-KODE-0009",
+      "domain": "ecosystem-boundary",
+      "statement": "TEHKNE-OS is the technological codex of Tehkne Solutions and is not a metacenter above CODEX-HNK.",
+      "state": "RECOVERED_CORRECTION",
+      "authority": "EXPLICIT_LATER_CORRECTION",
+      "source_ids": ["SRC-POLISH-CANDIDATE-C"]
+    },
+    {
+      "id": "DEC-HNK-KODE-0010",
+      "domain": "computational-language",
+      "statement": "Recovered architecture links textual, structural and glyphic representations through AST and HNK-IR, while Mandala/PATH semantics must be formally defined rather than assigned merely to fill the address space.",
+      "state": "RECOVERED_ARCHITECTURAL_DIRECTION",
+      "authority": "DESIGN_DIRECTION_NOT_IMPLEMENTATION_PROOF",
+      "source_ids": ["SRC-POLISH-CANDIDATE-C"]
+    }
+  ],
+  "known_gaps": [
+    "Exact source-backed semantic definitions and promotion chronology for AHNUVA, EMANU, HAYA, HODERU and KODAN remain to be extracted.",
+    "Current Project-file search did not recover authoritative source text for the previously tracked reject/watch lexemes; provenance must not be fabricated.",
+    "Item-level HNK40 provenance and E4/E5 transition remain to be extracted.",
+    "KODESCRIPT/MHCM design must be compared with current repository packages, tests and contracts before implementation status is asserted."
+  ]
+}

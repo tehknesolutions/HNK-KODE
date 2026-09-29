@@ -1,16 +1,7 @@
 import { toHnkIr } from "./parser.mjs";
+import { encodeBytecode, bytecodeToBinaryString } from "./bytecode.mjs";
 
-function stable(value) {
-  if (Array.isArray(value)) return value.map(stable);
-  if (value && typeof value === "object") {
-    return Object.fromEntries(Object.keys(value).sort().map(key => [key, stable(value[key])]));
-  }
-  return value;
-}
-
-export function canonicalIrJson(ast) {
-  return JSON.stringify(stable(toHnkIr(ast)));
-}
+export { canonicalIrJson } from "./canonical-ir.mjs";
 
 export function lowerToJavaScript(ast) {
   const ir = toHnkIr(ast);
@@ -22,9 +13,9 @@ export function lowerToJavaScript(ast) {
 }
 
 export function lowerToBinary(ast) {
-  return new TextEncoder().encode(canonicalIrJson(ast));
+  return encodeBytecode(ast);
 }
 
 export function binaryString(ast) {
-  return Array.from(lowerToBinary(ast), byte => byte.toString(2).padStart(8, "0")).join("");
+  return bytecodeToBinaryString(lowerToBinary(ast));
 }

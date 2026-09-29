@@ -1,4 +1,4 @@
-import { canonicalIrJson } from "./lowering.mjs";
+import { canonicalIrJson } from "./canonical-ir.mjs";
 
 export const HAKODAN_BYTECODE_VERSION = Object.freeze({ major: 0, minor: 1 });
 export const HAKODAN_MAGIC = "HAKD";

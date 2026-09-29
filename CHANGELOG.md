@@ -4,6 +4,16 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Executable kernel — 2026-09-29
+- Added machine-readable haKodan Semantic Token Registry v0.1 and Canonical Grammar v0.1.
+- Bootstrapped `packages/hakodan` as the executable framework kernel.
+- Added PT-BR and EN surface profiles converging to the same canonical AST and HNK-IR.
+- Enforced an explicit HNK profile lock while programming lexemes remain unresolved.
+- Added deterministic JavaScript lowering.
+- Added deterministic binary lowering from canonical HNK-IR bytes.
+- Added tests proving PT-BR/EN equivalence across AST, HNK-IR, JavaScript target and binary output.
+- Added GitHub Actions gate `hakodan-kernel.yml`.
+
 ### Added — 2026-09-29
 - Established **haKodan — Canon Universal v0.1** as the official Grupo HNK framework built on HNK-KODE.
 - Canonized the language priority **HNK → PT-BR → EN**, with one Canonical Grammar and shared AST/HNK-IR semantics.

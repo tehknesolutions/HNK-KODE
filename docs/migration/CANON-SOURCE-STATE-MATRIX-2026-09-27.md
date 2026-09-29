@@ -31,7 +31,7 @@ This matrix prevents historical recovery, authored proposals, structural mathema
 
 ## Important repository integrity finding
 
-`packages/hnk-linguas/src/grammar-core-v1.mjs` imports `./authored.mjs`, while the current repository tree exposes `authored.d.ts` but no `authored.mjs`. This is a runtime/build integrity issue and must be repaired from provenance or regenerated from governed source; it must **not** be filled by inventing authored entries.
+`packages/hnk-linguas/src/grammar-core-v1.mjs` imports `./authored.mjs`, and the current repository tree now contains the authored runtime. The earlier absence statement was a migration-time observation and is superseded by the verified runtime state recorded in Gate 05. The authored registry remains governed candidate material and must not be promoted by runtime presence alone.
 
 ## Promotion law
 

@@ -13,6 +13,14 @@ function holdoutN(curve) {
 
 export function interpretAcquisition(metrics, criteria) {
   validateCriteria(criteria);
+  if (metrics.curveProvenance) {
+    if (metrics.curveProvenance.protocolVersion !== metrics.protocolVersion) {
+      throw new Error('protocolVersion mismatch between metrics and G(d)');
+    }
+    if (metrics.curveProvenance.dataVersion !== metrics.dataVersion) {
+      throw new Error('dataVersion mismatch between metrics and G(d)');
+    }
+  }
   const n = holdoutN(metrics.curve);
 
   let classification = 'MEMORIZATION_COMPATIBLE';

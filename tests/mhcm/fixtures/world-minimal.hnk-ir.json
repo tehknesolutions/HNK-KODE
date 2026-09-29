@@ -1,0 +1,11 @@
+{
+  "version": "0.1",
+  "world": "genesis",
+  "instructions": [
+    {"op": "ENTITY_DECLARE", "target": "light"},
+    {"op": "PROPERTY_SET", "target": "light", "key": "active", "value": false},
+    {"op": "EVENT_DECLARE", "target": "light.awaken"},
+    {"op": "ACTION_CALL", "target": "light.activate", "args": []}
+  ],
+  "provenance": ["tests/mhcm/fixtures/world-minimal.ast.json"]
+}

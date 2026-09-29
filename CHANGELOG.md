@@ -1,3 +1,10 @@
+## 2026-09-29 — Root Family & Semantic Coherence v0.6
+
+- Grouped all 122 provisional Kodins into 26 semantic root-family hypotheses.
+- Compared compact family forms, extended family forms and v0.5 continuity forms.
+- Added family-coherence scoring and full coverage/uniqueness invariants.
+- No root or Kodin was promoted to HNK canon.
+
 ## 2026-09-29 — Compact Mora Gate v0.5
 
 - Re-ranked 366 Mora-Kodin candidates for moraic economy and family coherence.

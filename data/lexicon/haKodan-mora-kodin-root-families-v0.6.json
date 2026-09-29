@@ -1,0 +1,7316 @@
+{
+  "schemaVersion": "MORA-KODIN-ROOT-FAMILY/V0.6",
+  "status": "DISCOVERY_NON_CANONICAL",
+  "date": "2026-09-29",
+  "source": "data/lexicon/haKodan-mora-kodin-compact-v0.5.json",
+  "familyCount": 26,
+  "concepts": 122,
+  "candidates": 366,
+  "canonPromotions": 0,
+  "familyHypotheses": [
+    {
+      "id": "F01_CREATION_MUTATION",
+      "root": "KD",
+      "members": [
+        "CREATE",
+        "DEFINE",
+        "ALTER",
+        "REMOVE",
+        "TRANSFORM"
+      ]
+    },
+    {
+      "id": "F02_RELATION_BINDING",
+      "root": "VM",
+      "members": [
+        "CONNECT",
+        "ASSOCIATE",
+        "RELATION",
+        "REFERENCE"
+      ]
+    },
+    {
+      "id": "F03_LIFECYCLE_EXECUTION",
+      "root": "LV",
+      "members": [
+        "ACTIVATE",
+        "DEACTIVATE",
+        "EXECUTE",
+        "RETURN"
+      ]
+    },
+    {
+      "id": "F04_MANIFEST_VALIDATION",
+      "root": "MN",
+      "members": [
+        "MANIFEST",
+        "VALIDATE"
+      ]
+    },
+    {
+      "id": "F05_TRANSFER_PERSISTENCE",
+      "root": "SL",
+      "members": [
+        "IMPORT",
+        "EXPORT",
+        "LOAD",
+        "SAVE"
+      ]
+    },
+    {
+      "id": "F06_OBSERVABILITY",
+      "root": "NP",
+      "members": [
+        "REGISTER",
+        "OBSERVE",
+        "EMIT",
+        "EVENT"
+      ]
+    },
+    {
+      "id": "F07_STRUCTURE_CORE",
+      "root": "MV",
+      "members": [
+        "WORLD",
+        "OBJECT",
+        "ENTITY",
+        "ELEMENT",
+        "INSTANCE"
+      ]
+    },
+    {
+      "id": "F08_TYPE_IDENTITY",
+      "root": "KL",
+      "members": [
+        "CLASS",
+        "TYPE",
+        "INTERFACE",
+        "CONTRACT",
+        "IDENTITY"
+      ]
+    },
+    {
+      "id": "F09_COMPOSITION_SYSTEM",
+      "root": "SV",
+      "members": [
+        "COMPONENT",
+        "SYSTEM",
+        "MODULE",
+        "MODEL",
+        "STRUCTURE"
+      ]
+    },
+    {
+      "id": "F10_BEHAVIOR_EXEC",
+      "root": "KM",
+      "members": [
+        "ACTION",
+        "COMMAND",
+        "FUNCTION",
+        "OPERATION",
+        "PROCESS"
+      ]
+    },
+    {
+      "id": "F11_LOGIC_STATE",
+      "root": "ZV",
+      "members": [
+        "STATE",
+        "CONDITION",
+        "WHEN",
+        "IF",
+        "ELSE"
+      ]
+    },
+    {
+      "id": "F12_CONTROL_FLOW",
+      "root": "RK",
+      "members": [
+        "FOR",
+        "EACH",
+        "WHILE",
+        "THEN",
+        "START",
+        "END"
+      ]
+    },
+    {
+      "id": "F13_IDENTITY_FIELDS",
+      "root": "DP",
+      "members": [
+        "NAME",
+        "IDENTIFIER",
+        "VALUE",
+        "PROPERTY",
+        "ATTRIBUTE"
+      ]
+    },
+    {
+      "id": "F14_CALL_SIGNATURE",
+      "root": "PZ",
+      "members": [
+        "PARAMETER",
+        "ARGUMENT",
+        "SOURCE",
+        "TARGET"
+      ]
+    },
+    {
+      "id": "F15_CONTEXT_META",
+      "root": "KH",
+      "members": [
+        "CONTEXT",
+        "VERSION",
+        "PROFILE",
+        "META"
+      ]
+    },
+    {
+      "id": "F16_DATA_STORAGE",
+      "root": "DN",
+      "members": [
+        "DATA",
+        "MEMORY",
+        "DATABASE",
+        "FILE",
+        "DOCUMENT",
+        "RECORD"
+      ]
+    },
+    {
+      "id": "F17_COLLECTION_PROVENANCE",
+      "root": "VH",
+      "members": [
+        "COLLECTION",
+        "LIST",
+        "MAP",
+        "SOURCE_ALIAS",
+        "CACHE",
+        "HISTORY",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "id": "F18_SECURITY_CAPABILITY",
+      "root": "KP",
+      "members": [
+        "CAPABILITY",
+        "PERMISSION",
+        "ACCESS",
+        "ALLOW",
+        "DENY",
+        "SECURE"
+      ]
+    },
+    {
+      "id": "F19_DATA_ACCESS",
+      "root": "ZM",
+      "members": [
+        "READ",
+        "WRITE",
+        "EDIT"
+      ]
+    },
+    {
+      "id": "F20_NETWORK_SCOPE",
+      "root": "VR",
+      "members": [
+        "NETWORK",
+        "LOCAL",
+        "EXTERNAL",
+        "PRIVATE",
+        "PUBLIC"
+      ]
+    },
+    {
+      "id": "F21_AGENT_IDENTITY",
+      "root": "GN",
+      "members": [
+        "AGENT",
+        "AI",
+        "SPECIALIST",
+        "MASTER",
+        "ROLE"
+      ]
+    },
+    {
+      "id": "F22_INTENT_ORCHESTRATION",
+      "root": "PR",
+      "members": [
+        "PROMPT",
+        "INTENT",
+        "GOAL",
+        "PLAN",
+        "TASK"
+      ]
+    },
+    {
+      "id": "F23_POLICY_INSTRUCTION",
+      "root": "HY",
+      "members": [
+        "SKILL",
+        "RULE",
+        "POLICY",
+        "INSTRUCTION"
+      ]
+    },
+    {
+      "id": "F24_DESIGN_SYSTEM",
+      "root": "DS",
+      "members": [
+        "DESIGN",
+        "VISUAL",
+        "LAYOUT",
+        "STYLE",
+        "COLOR",
+        "FORM"
+      ]
+    },
+    {
+      "id": "F25_MEDIA_CONTENT",
+      "root": "ZR",
+      "members": [
+        "IMAGE",
+        "VIDEO",
+        "AUDIO",
+        "TEXT"
+      ]
+    },
+    {
+      "id": "F26_TARGET_MANIFESTATION",
+      "root": "VK",
+      "members": [
+        "WEB",
+        "APP",
+        "GAME",
+        "WORKFLOW"
+      ]
+    }
+  ],
+  "metrics": {
+    "allConceptsAssigned": true,
+    "allCandidateFormsUnique": true,
+    "allWinnerFormsUnique": true,
+    "familyDrivenWinners": 99,
+    "continuityWinners": 23,
+    "averageWinnerLength": 4.21
+  },
+  "familyStats": [
+    {
+      "familyId": "F01_CREATION_MUTATION",
+      "root": "KD",
+      "members": 5,
+      "familyFormWins": 5,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F02_RELATION_BINDING",
+      "root": "VM",
+      "members": 4,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "root": "LV",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "root": "MN",
+      "members": 2,
+      "familyFormWins": 1,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "root": "SL",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F06_OBSERVABILITY",
+      "root": "NP",
+      "members": 4,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F07_STRUCTURE_CORE",
+      "root": "MV",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F08_TYPE_IDENTITY",
+      "root": "KL",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "root": "SV",
+      "members": 5,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "root": "KM",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F11_LOGIC_STATE",
+      "root": "ZV",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F12_CONTROL_FLOW",
+      "root": "RK",
+      "members": 6,
+      "familyFormWins": 5,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F13_IDENTITY_FIELDS",
+      "root": "DP",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F14_CALL_SIGNATURE",
+      "root": "PZ",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F15_CONTEXT_META",
+      "root": "KH",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F16_DATA_STORAGE",
+      "root": "DN",
+      "members": 6,
+      "familyFormWins": 5,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "root": "VH",
+      "members": 7,
+      "familyFormWins": 6,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "root": "KP",
+      "members": 6,
+      "familyFormWins": 5,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F19_DATA_ACCESS",
+      "root": "ZM",
+      "members": 3,
+      "familyFormWins": 2,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F20_NETWORK_SCOPE",
+      "root": "VR",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F21_AGENT_IDENTITY",
+      "root": "GN",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "root": "PR",
+      "members": 5,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "root": "HY",
+      "members": 4,
+      "familyFormWins": 4,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F24_DESIGN_SYSTEM",
+      "root": "DS",
+      "members": 6,
+      "familyFormWins": 5,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F25_MEDIA_CONTENT",
+      "root": "ZR",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    },
+    {
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "root": "VK",
+      "members": 4,
+      "familyFormWins": 3,
+      "averageFamilyCoherenceScore": 35
+    }
+  ],
+  "items": [
+    {
+      "semanticId": "CREATE",
+      "ptBr": "CRIAR",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "previousV05": "KADA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KADA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KALA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KADATA",
+          "score": {
+            "total": 82,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 10,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KADATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KADATA",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KADA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DEFINE",
+      "ptBr": "DEFINIR",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "previousV05": "DENA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KEDU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KELU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KEDUNO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KEHUNO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DENA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "DANA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KEDU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ALTER",
+      "ptBr": "ALTERAR",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "previousV05": "NALA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KIDI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KILI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KIDIRU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KIDI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NALA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SALA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KIDI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "REMOVE",
+      "ptBr": "REMOVER",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "previousV05": "SARA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KODE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOLE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KODEVA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KODE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SARA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SALA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KODE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "TRANSFORM",
+      "ptBr": "TRANSFORMAR",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "previousV05": "LIKA",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KUDO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KULO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KUDOME",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KUDO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LIKA",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "MELUKA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KUDO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "CONNECT",
+      "ptBr": "CONECTAR",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "previousV05": "VAMA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VAMA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KAMA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VAMATO",
+          "score": {
+            "total": 82,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 10,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VAMATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VAMATO",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VAMA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ASSOCIATE",
+      "ptBr": "ASSOCIAR",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "previousV05": "SEYA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VEMU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KEMU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VEMUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VEHUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SEYA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SELA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VEMU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "RELATION",
+      "ptBr": "RELACAO",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "previousV05": "KAZU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VIMI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KIMI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VIMINU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KIMINU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KAZU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KAVU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VIMI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "REFERENCE",
+      "ptBr": "REFERENCIA",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "previousV05": "MAHI",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VOME",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOME",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VOMECA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VOME",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MAHI",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VOME",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ACTIVATE",
+      "ptBr": "ATIVAR",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "previousV05": "SEKETA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "LAVA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LUVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "LAVATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "SAVATI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SEKETA",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SEYA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "LAVA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DEACTIVATE",
+      "ptBr": "DESATIVAR",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "previousV05": "KEDULA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "LEVU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "LEVUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "MEVUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KEDULA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "LEVU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "EXECUTE",
+      "ptBr": "EXECUTAR",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "previousV05": "LUVA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LUVA",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "LAVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "LIVI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MIVI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "LIVITU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "LUVA",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "RETURN",
+      "ptBr": "RETORNAR",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "previousV05": "KIPA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "LOVE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MOVE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "LOVENA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LOVE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KIPA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KIVA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "LOVE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "MANIFEST",
+      "ptBr": "MANIFESTAR",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "previousV05": "MANUVA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MANUVA",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "AHNUVA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MANA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MAVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MANATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DANATI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MANUVA",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "VALIDATE",
+      "ptBr": "VALIDAR",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "previousV05": "KEVA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MENU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MENUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "MEVUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KEVA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KIVA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MENU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "IMPORT",
+      "ptBr": "IMPORTAR",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "previousV05": "SELA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SELA",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SEYA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SALA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "NALA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SALATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "SAVATI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SELA",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "EXPORT",
+      "ptBr": "EXPORTAR",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "previousV05": "ZEHAMA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SELU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SELA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SELUTO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VEMUTO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZEHAMA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "ZAMA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SELU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "LOAD",
+      "ptBr": "CARREGAR",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "previousV05": "RINA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SILI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KILI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SILIDU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SILI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "RINA",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "DENA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SILI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SAVE",
+      "ptBr": "SALVAR",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "previousV05": "KIVA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SOLE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOLE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SOLEVA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KODEVA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KIVA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KIPA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SOLE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "REGISTER",
+      "ptBr": "REGISTRAR",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "previousV05": "MIDITA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "NAPA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "NALA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "NAPARI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NAPA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MIDITA",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KADATA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "NAPA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "OBSERVE",
+      "ptBr": "OBSERVAR",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "previousV05": "LIPONA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "NEPU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DEPU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "NEPUVO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NEPU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LIPONA",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "LIKA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "NEPU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "EMIT",
+      "ptBr": "EMITIR",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "previousV05": "SIYA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "NIPI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DIPI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "NIPITU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVITU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SIYA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SEYA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "NIPI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "EVENT",
+      "ptBr": "EVENTO",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "previousV05": "NIVAKE",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "NOPE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DOPE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "NOPETA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NOPE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NIVAKE",
+          "score": {
+            "total": 73,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SEVAK",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "NOPE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "WORLD",
+      "ptBr": "MUNDO",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "previousV05": "MAVU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MAVU",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MAVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MAVA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LAVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MAVADI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LAVATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MAVU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "OBJECT",
+      "ptBr": "OBJETO",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "previousV05": "OKU",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MEVU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MEVUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "LEVUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "OKU",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "ROKE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MEVU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ENTITY",
+      "ptBr": "ENTIDADE",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "previousV05": "NATIVU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MIVI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LIVI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MIVIYU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVITU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NATIVU",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NIPITU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MIVI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ELEMENT",
+      "ptBr": "ELEMENTO",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "previousV05": "VUNU",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MOVE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LOVE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MOVETA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "ROVETA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VUNU",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SAVUNO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MOVE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "INSTANCE",
+      "ptBr": "INSTANCIA",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "previousV05": "VAPAZU",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "MUVO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SUVO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "MUVOCE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MUVO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VAPAZU",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "VAMA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "MUVO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "CLASS",
+      "ptBr": "CLASSE",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "previousV05": "KELU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KELU",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KALA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KADA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KALASI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KELU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "TYPE",
+      "ptBr": "TIPO",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "previousV05": "NIZU",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KELUPA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KELUPO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KELUPO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KELUPA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NIZU",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KAZU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KELUPA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "INTERFACE",
+      "ptBr": "INTERFACE",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "previousV05": "YUMU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KILI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KIDI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KILICU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KIDIRU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YUMU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "YUVU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KILI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "CONTRACT",
+      "ptBr": "CONTRATO",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "previousV05": "SUHU",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KOLE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KODE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KOLETA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KOHETA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SUHU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SUVU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KOLE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "IDENTITY",
+      "ptBr": "IDENTIDADE",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "previousV05": "RIYU",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KULO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KUDO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KULOYE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KUPOYE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "RIYU",
+          "score": {
+            "total": 60,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "MARIYU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KULO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "COMPONENT",
+      "ptBr": "COMPONENTE",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "previousV05": "KAVU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SAVA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SAVATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "LAVATI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KAVU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KAZU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SAVA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SYSTEM",
+      "ptBr": "SISTEMA",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "previousV05": "SIVEN",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SIVEN",
+          "score": {
+            "total": 86,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 6,
+            "continuity": 10,
+            "nearest": "SIVI",
+            "nearestSimilarity": 0.6
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SEVU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SEVUMO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SAVUNO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SIVEN",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "MODULE",
+      "ptBr": "MODULO",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "previousV05": "NURU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SIVI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LIVI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SIVILU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVITU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NURU",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NEPU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SIVI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "MODEL",
+      "ptBr": "MODELO",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "previousV05": "YUVU",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SOVE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LOVE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SOVELA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LOVENA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YUVU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "YUMU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SOVE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "STRUCTURE",
+      "ptBr": "ESTRUTURA",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "previousV05": "SUVU",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SUVU",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "SUHU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "SUVO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MUVO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "SUVORE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MUVOCE",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "SUVU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "ACTION",
+      "ptBr": "ACAO",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "previousV05": "KANESE",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KAMA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KADA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KAMANI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KANESE",
+          "score": {
+            "total": 73,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "MUNASE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KAMA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "COMMAND",
+      "ptBr": "COMANDO",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "previousV05": "KOME",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KOME",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KODE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KEMU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KEMUDO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KEDUNO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KOME",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "FUNCTION",
+      "ptBr": "FUNCAO",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "previousV05": "LARE",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KIMI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KIDI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KIMINU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VIMINU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LARE",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KIMI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "OPERATION",
+      "ptBr": "OPERACAO",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "previousV05": "YEHUKE",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KOMENA",
+          "score": {
+            "total": 79,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOMENANA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KOMENANA",
+          "score": {
+            "total": 72,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 8,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOMENA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YEHUKE",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "MELUKA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KOMENA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PROCESS",
+      "ptBr": "PROCESSO",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "previousV05": "ZANE",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KUMO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KUDO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KUMOSE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KUDOME",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZANE",
+          "score": {
+            "total": 60,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "PEZANE",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KUMO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "STATE",
+      "ptBr": "ESTADO",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "previousV05": "ZOVE",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZOVE",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "LOVE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZAVA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LAVA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZAVATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "LAVATI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZOVE",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "CONDITION",
+      "ptBr": "CONDICAO",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "previousV05": "PEZANE",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZEVU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZEVUNO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SAVUNO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PEZANE",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "ZANE",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZEVU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "WHEN",
+      "ptBr": "QUANDO",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "previousV05": "SEPUBE",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZIVI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "LIVI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZIVINU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VIMINU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SEPUBE",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SELU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZIVI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "IF",
+      "ptBr": "SE",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "previousV05": "YOZE",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZOVEFA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "ZOVEFO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZOVEFO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "ZOVEFA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YOZE",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "POZE",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZOVEFA",
+      "winnerVariant": "B_FAMILY_EXTENDED"
+    },
+    {
+      "semanticId": "ELSE",
+      "ptBr": "SENAO",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "previousV05": "KEYE",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZUVO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MUVO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZUVOSE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MUVOCE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KEYE",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZUVO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "FOR",
+      "ptBr": "PARA",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "ROKE",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ROKE",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VOKE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "RAKA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "RAKU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "RAKARI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NAPARI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ROKE",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "EACH",
+      "ptBr": "CADA",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "HEZUDE",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "REKU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "RAKU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "REKUHO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "REKU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HEZUDE",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KEMUDO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "REKU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "WHILE",
+      "ptBr": "ENQUANTO",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "SAYITE",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "RIKI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MIKI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "RIKILU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SIVILU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SAYITE",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SALATI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "RIKI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "THEN",
+      "ptBr": "ENTAO",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "VUDOPE",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ROKENA",
+          "score": {
+            "total": 79,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "ROKENANA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ROKENANA",
+          "score": {
+            "total": 72,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 8,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KOMENANA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VUDOPE",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "KUDOME",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ROKENA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "START",
+      "ptBr": "INICIO",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "ZEDE",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "RUKO",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "RUKOTE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "RUKOTE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "RUKO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZEDE",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "RUKO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "END",
+      "ptBr": "FIM",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "previousV05": "REBE",
+      "memberIndex": 5,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "RAKU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "RAKA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "RAKUDI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "RAKARI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "REBE",
+          "score": {
+            "total": 78,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SEPUBE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "RAKU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "NAME",
+      "ptBr": "NOME",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "previousV05": "DIPI",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DIPI",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "NIPI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DAPA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "NAPA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DAPAMI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NAPARI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DIPI",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "IDENTIFIER",
+      "ptBr": "ID",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "previousV05": "LAKI",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DEPU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "NEPU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DEPURO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NEPUVO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LAKI",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "LIKA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DEPU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "VALUE",
+      "ptBr": "VALOR",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "previousV05": "VEMI",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DIPILE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DIPILU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DIPILU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DIPILE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VEMI",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DIPILE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PROPERTY",
+      "ptBr": "PROPRIEDADE",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "previousV05": "ZUNI",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DOPE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "NOPE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DOPEYA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NOPETA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZUNI",
+          "score": {
+            "total": 61,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 6,
+            "continuity": 10,
+            "nearest": "ZUNEV",
+            "nearestSimilarity": 0.6
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DOPE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ATTRIBUTE",
+      "ptBr": "ATRIBUTO",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "previousV05": "HUPI",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DUPO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DUNO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DUPOTE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DUNOTE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HUPI",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NIPI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DUPO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PARAMETER",
+      "ptBr": "PARAMETRO",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "previousV05": "ROZI",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PAZA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "PAZI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PAZARI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NAPARI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ROZI",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "YOZE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PAZA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ARGUMENT",
+      "ptBr": "ARGUMENTO",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "previousV05": "VAMI",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PEZU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "PERU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PEZUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "PERUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VAMI",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VAMA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PEZU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SOURCE",
+      "ptBr": "ORIGEM",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "previousV05": "PIZI",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PIZI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "PAZI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PIZICI",
+          "score": {
+            "total": 82,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 10,
+            "nearest": "PIZICU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PIZICU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "PIZICI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PIZI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "TARGET",
+      "ptBr": "DESTINO",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "previousV05": "PAZI",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PAZI",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "PAZA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "POZE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "YOZE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "POZETA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "NOPETA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PAZI",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "CONTEXT",
+      "ptBr": "CONTEXTO",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "previousV05": "YANIGI",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KAHA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KADA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KAHATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YANIGI",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "MANATI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KAHA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "VERSION",
+      "ptBr": "VERSAO",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "previousV05": "KUHI",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KUHI",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KIHI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KEHU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KEHUNO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KEDUNO",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KUHI",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "PROFILE",
+      "ptBr": "PERFIL",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "previousV05": "PEMI",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KIHI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KIDI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KIHILU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KIDIRU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PEMI",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VEMI",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KIHI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "META",
+      "ptBr": "META",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "previousV05": "MIKI",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KOHE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KODE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KOHETA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KOLETA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MIKI",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MIVI",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KOHE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DATA",
+      "ptBr": "DADO",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "DANUVO",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DANUVO",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "MANUVA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DANA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DENA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DANATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "MANATI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DANUVO",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "MEMORY",
+      "ptBr": "MEMORIA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "MENO",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DENU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DENA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DENUYO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MENUTO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MENO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MENU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DENU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DATABASE",
+      "ptBr": "BASE",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "PUSELO",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DINI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DIPI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DINISU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "DIPILU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PUSELO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "PUMEK",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DINI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "FILE",
+      "ptBr": "ARQUIVO",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "PELIHO",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DONE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DOPE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DONELA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DOSELA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PELIHO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SELUTO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DONE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DOCUMENT",
+      "ptBr": "DOCUMENTO",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "YARAVO",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DUNO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DUPO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DUNOTE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DUPOTE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YARAVO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DUNO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "RECORD",
+      "ptBr": "REGISTRO",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "previousV05": "MUVO",
+      "memberIndex": 5,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DANU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DANA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DANUDI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "RAKUDI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MUVODI",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "MAVADI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DANU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "COLLECTION",
+      "ptBr": "COLECAO",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "VEHO",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VEHO",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VEHU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VAHA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VAMA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VAHANI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VEHO",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "LIST",
+      "ptBr": "LISTA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "VOMO",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VEHU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VEHUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VEMUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VOMO",
+          "score": {
+            "total": 74,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VOME",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VEHU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "MAP",
+      "ptBr": "MAPA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "DALEKO",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VIHI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VIMI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VIHIPU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VIMINU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DALEKO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "DANUVO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VIHI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SOURCE_ALIAS",
+      "ptBr": "FONTE",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "MESO",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VOHE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VOME",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VOHESA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VOMECA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MESO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MENO",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VOHE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "CACHE",
+      "ptBr": "CACHE",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "MEVO",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VUHO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VEHO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VUHOHE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VUDOPE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MEVO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MEVU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VUHO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "HISTORY",
+      "ptBr": "HISTORICO",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "SAROPO",
+      "memberIndex": 5,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VAHU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VAHA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VAHUYI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VAHANI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SAROPO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "SAVUNO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VAHU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PROVENANCE",
+      "ptBr": "PROVENIENCIA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "previousV05": "KILO",
+      "memberIndex": 6,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VEHA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VAHA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VEHACO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VEHO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KILO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KILI",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VEHA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "CAPABILITY",
+      "ptBr": "CAPACIDADE",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "KAPU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KAPU",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KAZU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KAPA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KADA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KAPAYI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KAPU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "PERMISSION",
+      "ptBr": "PERMISSAO",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "PEREN",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KEPU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KEDU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KEPUNO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KEDUNO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PEREN",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "PORENA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KEPU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ACCESS",
+      "ptBr": "ACESSO",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "SIKOMU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KIPI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KIDI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KIPISU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KIDIRU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "SIKOMU",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "VIKIMU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KIPI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ALLOW",
+      "ptBr": "AUTORIZAR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "VANEMU",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KOPE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KODE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KOPEWA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KODEVA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VANEMU",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KOPE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DENY",
+      "ptBr": "NEGAR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "NEVIRU",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KUPO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KUDO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KUPOYE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "KULOYE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NEVIRU",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KIDIRU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KUPO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SECURE",
+      "ptBr": "SEGURO",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "previousV05": "MARIYU",
+      "memberIndex": 5,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "KAPURI",
+          "score": {
+            "total": 79,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KAPURIRI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "KAPURIRI",
+          "score": {
+            "total": 72,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 8,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "KAPURI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MARIYU",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "MIVIYU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "KAPURI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "READ",
+      "ptBr": "LER",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "previousV05": "ZUMONU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZUMONU",
+          "score": {
+            "total": 88,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "EMANU",
+            "nearestSimilarity": 0.5
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZAMA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VAMA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZAMADI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZUMONU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "WRITE",
+      "ptBr": "ESCREVER",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "previousV05": "KIYUZU",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZEMU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZEMUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VEMUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KIYUZU",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KIDIRU",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZEMU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "EDIT",
+      "ptBr": "EDITAR",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "previousV05": "DANU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZIMI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VIMI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZIMITU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VIMINU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DANUTA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "MANUVA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZIMI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "NETWORK",
+      "ptBr": "REDE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "previousV05": "VERU",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VERU",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VARA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VARAKI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VERU",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "LOCAL",
+      "ptBr": "LOCAL",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "previousV05": "HADU",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VERULE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VERULO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VERULO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VERULE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HADU",
+          "score": {
+            "total": 61,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 6,
+            "continuity": 10,
+            "nearest": "VADUL",
+            "nearestSimilarity": 0.6
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VERULE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "EXTERNAL",
+      "ptBr": "EXTERNO",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "previousV05": "LUVU",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VIRI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VIMI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VIRILU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "PIRILU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LUVU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "LEVU",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VIRI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PRIVATE",
+      "ptBr": "PRIVADO",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "previousV05": "MALEVU",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VORE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VOME",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VORETA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "ZORETA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "MALEVU",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "LEVU",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VORE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PUBLIC",
+      "ptBr": "PUBLICO",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "previousV05": "HILU",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VURO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VUHO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VUROCE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MUVOCE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HILU",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "HILO",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VURO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "AGENT",
+      "ptBr": "AGENTE",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "previousV05": "AGENA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "AGENA",
+          "score": {
+            "total": 86,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 6,
+            "continuity": 10,
+            "nearest": "DENA",
+            "nearestSimilarity": 0.6
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "GANA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MANA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "GANATI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "MANATI",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "AGENA",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "AI",
+      "ptBr": "IA",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "previousV05": "NOKA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "GENU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "MENU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "GENUNO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KEDUNO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NOKA",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NALA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "GENU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SPECIALIST",
+      "ptBr": "ESPECIALISTA",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "previousV05": "DUYIVA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "GINI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DINI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "GINITU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVITU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DUYIVA",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "LUVA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "GINI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "MASTER",
+      "ptBr": "MESTRE",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "previousV05": "KEHA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "GONE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DONE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "GONERA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "DONELA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "KEHA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KEVA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "GONE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "ROLE",
+      "ptBr": "PAPEL",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "previousV05": "DIRA",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "GUNO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DUNO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "GUNOLE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "DUNOTE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DIRA",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "DENA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "GUNO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PROMPT",
+      "ptBr": "PROMPT",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "previousV05": "PORA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PORA",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "PARA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PARA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PARATI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KADATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PORA",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "INTENT",
+      "ptBr": "INTENCAO",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "previousV05": "NETUVA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PERU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "PEZU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PERUTO",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "PEZUTO",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NETUVA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "NEPUVO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PERU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "GOAL",
+      "ptBr": "OBJETIVO",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "previousV05": "ZOHEGA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PIRI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "PIZI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PIRILU",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VIRILU",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZOHEGA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "ZOVEFA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PIRI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "PLAN",
+      "ptBr": "PLANO",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "previousV05": "RIDUHA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PORE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "POZE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PORENA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LOVENA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "RIDUHA",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KEDULA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PORE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "TASK",
+      "ptBr": "TAREFA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "previousV05": "YOVA",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "PURO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VURO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "PUROKE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "ROKE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "YOVA",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KODEVA",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "PURO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "SKILL",
+      "ptBr": "SKILL",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "previousV05": "ROVETA",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "HAYALE",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "HAYALI",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "HAYALI",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "HAYALE",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ROVETA",
+          "score": {
+            "total": 52,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 10,
+            "nearest": "MOVETA",
+            "nearestSimilarity": 0.833
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "HAYALE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "RULE",
+      "ptBr": "REGRA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "previousV05": "POYA",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "HEYU",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "HEYULO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "HEYULO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VERULO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "POYA",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "PORA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "HEYU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "POLICY",
+      "ptBr": "POLITICA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "previousV05": "LOVARA",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "HIYI",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "HIYIYU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "HIYIYU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "MIVIYU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "LOVARA",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "LOVENA",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "HIYI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "INSTRUCTION",
+      "ptBr": "INSTRUCAO",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "previousV05": "HIVA",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "HOYE",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "HOYENA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "HOYENA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LOVENA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HIVA",
+          "score": {
+            "total": 74,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KIVA",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "HOYE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "DESIGN",
+      "ptBr": "DESIGN",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "DUSONO",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DUSONO",
+          "score": {
+            "total": 85,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "DUNO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DASA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DAPA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DASANI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KAMANI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DUSONO",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "VISUAL",
+      "ptBr": "VISUAL",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "VIZO",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DESU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DEPU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DESULO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "DEPURO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VIZO",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "VIMI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DESU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "LAYOUT",
+      "ptBr": "LAYOUT",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "HILO",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DISI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DIPI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DISITU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "LIVITU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "HILO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "KILO",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DISI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "STYLE",
+      "ptBr": "ESTILO",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "POMO",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DOSE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DOPE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DOSELA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "DONELA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "POMO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VOMO",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DOSE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "COLOR",
+      "ptBr": "COR",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "PEKOTO",
+      "memberIndex": 4,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DUSO",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DUPO",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DUSORE",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SUVORE",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PEKOTO",
+          "score": {
+            "total": 55,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "PEZUTO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DUSO",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "FORM",
+      "ptBr": "FORMA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "previousV05": "DEYO",
+      "memberIndex": 5,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "DASU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "DANU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "DASUMI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "DAPAMI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DEYO",
+          "score": {
+            "total": 75,
+            "familyCoherence": 20,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 5,
+            "continuity": 10,
+            "nearest": "DENUYO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "DASU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "IMAGE",
+      "ptBr": "IMAGEM",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "previousV05": "ZERO",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "ZERO",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "ZERU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZARA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "SARA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZARAGI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "ZAVATI",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZERO",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "VIDEO",
+      "ptBr": "VIDEO",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "previousV05": "DOZO",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZERU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "ZEVU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZERUDO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "KEMUDO",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "DOZO",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "YOZE",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZERU",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "AUDIO",
+      "ptBr": "AUDIO",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "previousV05": "PUDUYO",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZIRI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "ZIVI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZIRIDU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "SILIDU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "PUDUYO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "KEDUNO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZIRI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "TEXT",
+      "ptBr": "TEXTO",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "previousV05": "NISO",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "ZORE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "ZOVE",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "ZORETA",
+          "score": {
+            "total": 77,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 2,
+            "continuity": 5,
+            "nearest": "VORETA",
+            "nearestSimilarity": 0.833
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NISO",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NIPI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "ZORE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "WEB",
+      "ptBr": "WEB",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "previousV05": "RENO",
+      "memberIndex": 0,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VAKA",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VAMA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VAKABI",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VAMATI",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "RENO",
+          "score": {
+            "total": 59,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "MENO",
+            "nearestSimilarity": 0.75
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VAKA",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "APP",
+      "ptBr": "APP",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "previousV05": "VAKO",
+      "memberIndex": 1,
+      "candidates": [
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "VAKO",
+          "score": {
+            "total": 89,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 10,
+            "nearest": "VAKA",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VEKU",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VEMU",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VEKUPO",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VEMUTO",
+            "nearestSimilarity": 0.667
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VAKO",
+      "winnerVariant": "C_V05_CONTINUITY"
+    },
+    {
+      "semanticId": "GAME",
+      "ptBr": "GAME",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "previousV05": "RAHO",
+      "memberIndex": 2,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VIKI",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VIMI",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VIKIMU",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VIMINU",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "RAHO",
+          "score": {
+            "total": 63,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "MAHI",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VIKI",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    },
+    {
+      "semanticId": "WORKFLOW",
+      "ptBr": "WORKFLOW",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "previousV05": "NIHUZO",
+      "memberIndex": 3,
+      "candidates": [
+        {
+          "variant": "A_FAMILY_COMPACT",
+          "form": "VOKE",
+          "score": {
+            "total": 84,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 20,
+            "distinctness": 4,
+            "continuity": 5,
+            "nearest": "VOME",
+            "nearestSimilarity": 0.75
+          }
+        },
+        {
+          "variant": "B_FAMILY_EXTENDED",
+          "form": "VOKEWA",
+          "score": {
+            "total": 80,
+            "familyCoherence": 35,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 5,
+            "continuity": 5,
+            "nearest": "VOMECA",
+            "nearestSimilarity": 0.667
+          }
+        },
+        {
+          "variant": "C_V05_CONTINUITY",
+          "form": "NIHUZO",
+          "score": {
+            "total": 58,
+            "familyCoherence": 5,
+            "moraic": 20,
+            "compactness": 15,
+            "distinctness": 8,
+            "continuity": 10,
+            "nearest": "NEPUVO",
+            "nearestSimilarity": 0.5
+          }
+        }
+      ],
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "winner": "VOKE",
+      "winnerVariant": "A_FAMILY_COMPACT"
+    }
+  ]
+}

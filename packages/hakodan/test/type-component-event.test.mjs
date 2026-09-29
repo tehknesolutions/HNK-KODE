@@ -52,3 +52,22 @@ test("Event e Action descriptors usam tipos semânticos", () => {
   assert.equal(event.payloadType, "String");
   assert.equal(event.actions[0].returnType, "Boolean");
 });
+
+
+test("HNK-IR expõe propertyTypes sem depender do profile de superfície", () => {
+  const pt = toHnkIr(parse("mundo W { entidade E { propriedade vida = 100 propriedade nome = \"Alakazam\" } }", { profile: "PT-BR" }));
+  const en = toHnkIr(parse("world W { entity E { property vida = 100 property nome = \"Alakazam\" } }", { profile: "EN" }));
+  assert.deepEqual(pt.world.entities[0].propertyTypes, {
+    vida: TYPE_IDS.NUMBER,
+    nome: TYPE_IDS.STRING
+  });
+  assert.deepEqual(pt.world.entities[0].propertyTypes, en.world.entities[0].propertyTypes);
+});
+
+test("HOM consome Event Model formal com provenance", () => {
+  const hom = toHom(parse('mundo W { evento Start { ação run("E") } }', { profile: "PT-BR" }));
+  const world = hom.objects.find(x => x.type === "World");
+  assert.equal(world.events[0].kind, "EventDescriptor");
+  assert.equal(world.events[0].id, "hnk://world/W/event/Start");
+  assert.equal(world.events[0].provenance.sourceProfile, "PT-BR");
+});

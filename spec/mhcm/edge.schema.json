@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hnk.dev/spec/mhcm/edge.schema.json",
+  "title":"MHCM Edge",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","from","to","relation","state","provenance"],
+  "properties":{
+    "id":{"type":"string","minLength":1},
+    "from":{"$ref":"address.schema.json"},
+    "to":{"$ref":"address.schema.json"},
+    "relation":{"enum":["adjacent","radial","angular","layer","external","center","declared"]},
+    "directed":{"type":"boolean","default":true},
+    "state":{"enum":["candidate","validated","canonical","rejected","unresolved"]},
+    "provenance":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}
+  }
+}

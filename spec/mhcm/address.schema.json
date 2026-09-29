@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hnk.dev/spec/mhcm/address.schema.json",
+  "title": "MHCM Address",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["space", "index", "state"],
+  "properties": {
+    "space": {"enum": ["MF432", "EXTERNAL9", "CENTER22", "RESERVED41"]},
+    "index": {"type": "integer", "minimum": 1},
+    "sector": {"type": "integer", "minimum": 1, "maximum": 72},
+    "layer": {"type": "integer", "minimum": 1, "maximum": 6},
+    "state": {"enum": ["candidate", "validated", "canonical", "rejected", "unresolved", "reserved"]},
+    "provenance": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"space": {"const": "MF432"}}},
+      "then": {"required": ["sector", "layer"], "properties": {"index": {"maximum": 432}}}
+    },
+    {"if": {"properties": {"space": {"const": "EXTERNAL9"}}}, "then": {"properties": {"index": {"maximum": 9}}}},
+    {"if": {"properties": {"space": {"const": "CENTER22"}}}, "then": {"properties": {"index": {"maximum": 22}}}},
+    {"if": {"properties": {"space": {"const": "RESERVED41"}}}, "then": {"properties": {"index": {"maximum": 41}, "state": {"const": "reserved"}}}}
+  ]
+}

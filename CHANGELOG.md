@@ -4,6 +4,15 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Error + Trap Runtime — 2026-09-29
+- Added Error / Trap Model v0.1 with stable semantic trap codes and serializable trap records.
+- Added canonical categories for register, type, symbol, address, instruction and runtime failures.
+- Added frame trap transition with program counter, instruction, provenance and details capture.
+- Added minimal trap-aware VM runtime for NOP, LOAD_CONST, CALL_ACTION and RETURN.
+- LOAD_PROPERTY/STORE_PROPERTY intentionally trap as not-yet-implemented runtime actions.
+- Added tests for invalid opcode, missing constant, trap serialization, vertical-slice execution and PT-BR/EN trap-semantic equivalence.
+- Advanced VM Opcode Readiness Gate to 8/10 completed prerequisites.
+
 ### Instruction Encoding — 2026-09-29
 - Added semantic Opcode IR v0.1 for NOP, LOAD_CONST, LOAD_PROPERTY, STORE_PROPERTY, CALL_ACTION and RETURN.
 - Added deterministic binary instruction records with explicit operand kinds and big-endian 32-bit operand values.

@@ -1,4 +1,5 @@
 import { toHnkIr } from "./parser.mjs";
+import { eventFromIr } from "./event-model.mjs";
 
 function emptyObjectBase({ id, name, type, provenance }) {
   return {
@@ -35,15 +36,11 @@ export function toHom(ast) {
     target: entity.id
   }));
 
-  world.events = ir.world.events.map(event => ({
-    type: "Event",
-    name: event.name,
-    actions: event.actions.map(action => ({
-      type: "Action",
-      name: action.name,
-      arguments: action.arguments
-    }))
-  }));
+  world.events = ir.world.events.map(event => eventFromIr(
+    ir.world.id,
+    event,
+    { sourceProfile: profile, astKind: "EventDeclaration", irVersion: ir.version }
+  ));
 
   const entities = ir.world.entities.map(entity => {
     const hom = emptyObjectBase({
@@ -53,6 +50,7 @@ export function toHom(ast) {
       provenance: { sourceProfile: profile, astKind: "EntityDeclaration", irVersion: ir.version }
     });
     hom.properties = { ...entity.properties };
+    hom.data.propertyTypes = { ...(entity.propertyTypes ?? {}) };
     hom.components = ["Entity"];
     hom.relations = [{ kind: "containedBy", target: world.identity.id }];
     return hom;

@@ -16,6 +16,7 @@ test("pre-opcode package é idêntico entre PT-BR e EN",()=>{
 test("pre-opcode package reúne IR e tabelas VM",()=>{
   const out=compilePreOpcode(parse(pt,{profile:"PT-BR"}));
   assert.equal(out.format,"haKodan-pre-opcode");
+  assert.equal(out.executionModel.id,"haKodan.hybrid-register-frame");
   assert.equal(out.ir.ir,"HNK-IR");
   assert.ok(out.tables.symbols.length>0);
   assert.ok(out.tables.constants.length>0);

@@ -22,9 +22,9 @@ This gate defines what must be stable before haKodan introduces an executable VM
 
 ## Required before Opcode Set v0.1 is frozen
 
-1. Symbol Table contract.
-2. Constant Pool contract.
-3. Type Table encoding.
+1. ✅ Symbol Table contract — completed in HAKODAN-SYMBOL-TABLE-v0.1.
+2. ✅ Constant Pool contract — completed in HAKODAN-CONSTANT-POOL-v0.1.
+3. ✅ Type Table encoding — completed in HAKODAN-TYPE-TABLE-v0.1.
 4. Object/Component addressing contract.
 5. Event dispatch contract.
 6. Stack vs register execution decision.
@@ -32,6 +32,12 @@ This gate defines what must be stable before haKodan introduces an executable VM
 8. Error/trap model.
 9. Capability/security boundary.
 10. Source/provenance mapping from opcode offset back to HNK-IR/AST/source.
+
+## Current readiness
+
+**3/10 prerequisites completed.**
+
+A deterministic pre-opcode package now combines canonical HNK-IR with Symbol, Constant and Type Tables. It is still intentionally non-executable until addressing, dispatch, execution model, instruction encoding, traps, capabilities and source maps are frozen.
 
 ## Rule
 

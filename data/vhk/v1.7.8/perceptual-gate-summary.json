@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.7.8",
+  "status": "PERCEPTUAL_SEPARATION_GATE_NON_CANON",
+  "inputFinalists": 35,
+  "outputFinalists": 15,
+  "perLexeme": 3,
+  "minCrossLexemeStructuralDistance": 12,
+  "meanCrossLexemeStructuralDistance": 31.844444,
+  "minCrossLexemePerceptualDistance": 0.45,
+  "meanCrossLexemePerceptualDistance": 0.862155,
+  "allUniqueIdentities": true,
+  "allUniqueStructuralDigests": true,
+  "allUniqueSvgDigests": true,
+  "allRasterSizesPass": true,
+  "recommendedA": [
+    {
+      "lexeme": "AHNUVA",
+      "identityId": "HMATH-N12-E533006473117A1B6F91"
+    },
+    {
+      "lexeme": "EMANU",
+      "identityId": "HMATH-N12-45E7FA30BFB516CB279F"
+    },
+    {
+      "lexeme": "HAYA",
+      "identityId": "HMATH-N12-2887530BADEAC3A6374E"
+    },
+    {
+      "lexeme": "HODERU",
+      "identityId": "HMATH-N12-0431D17150B7E78A525F"
+    },
+    {
+      "lexeme": "KODAN",
+      "identityId": "HMATH-N12-83FAB36561ABF9BAB67A"
+    }
+  ]
+}

@@ -29,6 +29,8 @@ export function interpretAcquisition(metrics, criteria) {
 
   return Object.freeze({
     classification,
+    protocolVersion: metrics.protocolVersion,
+    dataVersion: metrics.dataVersion,
     criteriaVersion: criteria.version,
   });
 }

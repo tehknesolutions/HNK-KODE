@@ -150,3 +150,12 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 - Local workspaces are disposable execution environments, not authoritative storage.
 - Persistent code, specs, datasets, research results and operational decisions must be committed and pushed.
 - Cross-repository mirrors must retain provenance to their source repository/commit.
+
+## 2026-09-29 — Morphological Role System v0.8
+
+- Added 8-role registry across 122 provisional Kodins.
+- Added non-canonical role-morpheme candidate generation.
+- Added semantic authority diagnostics and multilingual alias resolution.
+- Added visual role-block round-trip contract.
+- Verification: 20/20 v0.8 + 15/15 v0.4-v0.7 tests PASS.
+- Canon promotions: 0.

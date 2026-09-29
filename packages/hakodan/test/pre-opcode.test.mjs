@@ -20,4 +20,6 @@ test("pre-opcode package reúne IR e tabelas VM",()=>{
   assert.ok(out.tables.symbols.length>0);
   assert.ok(out.tables.constants.length>0);
   assert.equal(out.tables.types.length,6);
+  assert.ok(out.tables.addresses.length>0);
+  assert.ok(Array.isArray(out.tables.dispatch));
 });

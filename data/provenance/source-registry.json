@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "status": "ARCHAEOLOGY_IN_PROGRESS",
+  "generated_on": "2026-09-29",
+  "project_context": "HNK CODEX",
+  "tracking": ["#22", "#23"],
+  "sources": [
+    {
+      "id": "SRC-HNK40-VALIDATION-V1_3",
+      "kind": "project_file",
+      "name": "Validação HNK40 V1.3.txt",
+      "domain": ["hnk-kode", "hnk40", "mandala", "glyph-genesis"],
+      "authority": "MIXED_REQUIRES_DECISION_EXTRACTION",
+      "notes": "Contains proposals, validations and later architectural reasoning; statements must be split into individual decisions before promotion."
+    },
+    {
+      "id": "SRC-HNKVERSE-ARCHAEOLOGY",
+      "kind": "project_file",
+      "name": "hnk-verse.txt",
+      "domain": ["hnk-verse", "glyph-genesis", "ecosystem-boundary"],
+      "authority": "MIXED_REQUIRES_DECISION_EXTRACTION",
+      "notes": "Contains runtime history plus recovered HNK-KODE/CODEX-HNK boundary and Glyph Genesis implementation evidence."
+    },
+    {
+      "id": "SRC-POLISH-CANDIDATE-C",
+      "kind": "project_file_family",
+      "name": "Polish do Candidate C.txt",
+      "domain": ["ecosystem-architecture", "hnk-kode", "hnk-verse", "codex-hnk", "tehkne-os"],
+      "authority": "MIXED_REQUIRES_CHRONOLOGY",
+      "notes": "Multiple files/versions exist. Later explicit corrections must supersede earlier ecosystem diagrams where supported."
+    },
+    {
+      "id": "SRC-CODEX-STATUS",
+      "kind": "project_file_family",
+      "name": "Status do site app.txt",
+      "domain": ["codex-hnk", "ui", "product-status"],
+      "authority": "CONTEXT_ONLY_BY_DEFAULT",
+      "notes": "Useful for CODEX product chronology; not HNK-KODE language canon unless a specific fragment is independently promoted."
+    },
+    {
+      "id": "SRC-CODEX365-ARCHITECTURE",
+      "kind": "project_file",
+      "name": "codex_365_arquitetura_final.md",
+      "domain": ["codex-365", "training", "grimoire"],
+      "authority": "OUTSIDE_HNK_KODE_BY_DEFAULT",
+      "notes": "Project corpus context; excluded from HNK-KODE canon unless explicitly linked by a later authoritative decision."
+    },
+    {
+      "id": "SRC-HNK-MAGIK-TRAINING",
+      "kind": "project_file",
+      "name": "chat-gemini-Programa_Treinamento_HNK_Magik.md",
+      "domain": ["training", "codex-365", "visual-experiments"],
+      "authority": "OUTSIDE_HNK_KODE_BY_DEFAULT",
+      "notes": "Large mixed historical artifact. Do not import terminology into HNK-KODE merely because multilingual/sigil material appears inside it."
+    }
+  ]
+}

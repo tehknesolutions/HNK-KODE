@@ -322,3 +322,47 @@ Persisted files:
 - `data/lexicon/haKodan-mora-kodin-shortlist-v0.5.csv`
 - `docs/language/HAKODAN-MORA-KODIN-COMPACT-GATE-v0.5.md`
 
+## 19. Mora-Kodin v0.6–v0.7 semantic-family and phonological gates
+
+### v0.6 — Root Family & Semantic Coherence
+- 122 provisional concepts assigned to **26 semantic root-family hypotheses**.
+- 366 candidates compared.
+- 99/122 winners became family-driven forms.
+- average winner length reached 4.21.
+- 0 canon promotions.
+
+Example discovery family:
+
+```text
+K-D  creation/mutation hypothesis
+CREATE      KADA
+DEFINE      KEDU
+ALTER       KIDI
+REMOVE      KODE
+TRANSFORM   KUDO
+```
+
+These root families are hypotheses, not lexical/morphological canon.
+
+### v0.7 — Phonological Separation
+The compact v0.6 system created many cross-family near-collisions. v0.7 globally reselected among the existing three candidates per concept.
+
+Measured result:
+- cross-family pairs with similarity >= 0.75: **127 → 0**
+- cross-family pairs with similarity >= 0.67: **127 → 0**
+- cross-family pairs with similarity >= 0.60: **130 → 3**
+- average selected length: **4.21 → 4.92**
+- selections changed: **64**
+- selected forms unique: **122/122**
+- 0 canon promotions.
+
+This gate establishes a project preference for **family coherence + phonological separability**, not maximal compactness alone.
+
+Persisted files:
+- `data/lexicon/haKodan-mora-kodin-root-families-v0.6.json`
+- `data/lexicon/haKodan-mora-kodin-root-shortlist-v0.6.csv`
+- `docs/language/HAKODAN-MORA-KODIN-ROOT-FAMILIES-v0.6.md`
+- `data/lexicon/haKodan-mora-kodin-phonological-v0.7.json`
+- `data/lexicon/haKodan-mora-kodin-phonological-shortlist-v0.7.csv`
+- `docs/language/HAKODAN-MORA-KODIN-PHONOLOGICAL-GATE-v0.7.md`
+

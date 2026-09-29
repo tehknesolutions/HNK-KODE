@@ -6,6 +6,9 @@ const REQUIRED_FIELDS = Object.freeze([
   'response',
   'responseTimeMs',
   'structuralDistance',
+  'protocolVersion',
+  'dataVersion',
+  'criteriaVersion',
 ]);
 
 export function createEvidenceLedger() {

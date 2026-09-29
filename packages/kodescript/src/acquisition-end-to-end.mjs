@@ -12,10 +12,11 @@ const materialForPhase = (phase, materials) => {
   return undefined;
 };
 
-export function createAcquisitionRun({ participantId, sessionId, materials }) {
+export function createAcquisitionRun({ participantId, sessionId, materials, versions }) {
   const session = createAcquisitionSession({ participantId, sessionId });
   return Object.freeze({
     ...session,
+    ...(versions ? { versions: Object.freeze({ ...versions }) } : {}),
     materialCounts: Object.freeze({
       train: materials.train.length,
       contrasts: materials.contrasts.length,
@@ -33,6 +34,7 @@ export function advanceAcquisitionRun(run, nextPhase) {
   const next = {
     ...session,
     materialCounts: run.materialCounts,
+    ...(run.versions ? { versions: run.versions } : {}),
     _materials: materials,
   };
   if (phaseMaterials !== undefined) next.materials = phaseMaterials;

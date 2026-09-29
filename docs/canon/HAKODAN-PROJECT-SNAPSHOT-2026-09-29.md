@@ -374,3 +374,34 @@ Implemented on `feat/hakodan-morphology-v08`: 122 concepts and 8 computational r
 All new morphology remains `DISCOVERY_NON_CANONICAL`; canon promotions: 0.
 
 Verification: 20/20 v0.8 tests and 15/15 Mora-Kodin v0.4-v0.7 regression tests PASS.
+
+## 13. haKodan v0.9 Unified Narrative Architecture — audited 2026-09-29
+
+The v0.9 implementation extends the canonical parser → AST → HOM → HNK-IR architecture with nine verified foundation contracts plus an integrated vertical slice.
+
+```text
+INTENT → NARRATIVE SOURCE → DISCOVERY → SEMANTIC GRAPH → AST → HOM → HNK-IR
+       → MANIFESTATION PLAN → TARGET/ADAPTER → ARTIFACT
+```
+
+Verified local suite: **130/130 PASS, 0 FAIL**.
+
+Implemented contracts:
+
+- Narrative Sentence Core with compact/explicit equivalence.
+- Narrative Flow and semantic scopes.
+- IDPF progressive formalization and lateral discovery states.
+- APM authority capabilities and provenance tracing.
+- RLG causal dependencies and policy-gated effects.
+- UMG manifestation planning with distinct TARGET/FORMAT/ADAPTER/ARTIFACT.
+- ULTM L7..L0 lowering/lifting contracts.
+- GBCT text/block/glyph projections through Semantic ID.
+- Integrated v0.9 vertical slice.
+
+The release remains fail-closed for unresolved HNK language material. PT-BR accented/ASCII aliases may converge when registered; normalization is not translation.
+
+HNK-MATH remains a structural/descriptive authority at this layer. Glyph geometry or numerological metadata cannot silently create compiler semantics.
+
+v0.9 does not auto-canonize provisional Kodins, roots, morphemes or glyphs. Complete backend/native implementation is outside this release boundary.
+
+Release implementation commits are preserved on `feat/hakodan-v09-narrative`, culminating in `b0fc5bb`.

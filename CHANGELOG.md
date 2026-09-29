@@ -159,3 +159,17 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 - Added visual role-block round-trip contract.
 - Verification: 20/20 v0.8 + 15/15 v0.4-v0.7 tests PASS.
 - Canon promotions: 0.
+## 2026-09-29 — haKodan Narrative Architecture v0.9
+
+- Implemented the approved Unified Narrative Architecture across narrative sentences, composable flows, progressive discovery, authority/provenance, reactive dependencies, manifestation planning, representation transmutation and multimodal projections.
+- Added compact/explicit narrative sentence convergence and PT-BR/EN/mixed Semantic-ID equivalence, including PT-BR accent/ASCII normalization.
+- Added IDPF lifecycle with DISCOVERY, PROPOSED, CANDIDATE, APPROVED, CANON and explicit WATCH/REJECTED/CONFLICT branches.
+- Added capability-gated authority and append-only provenance tracing; authorship does not imply authority.
+- Added Reactive Living Graph with causal impact planning, cycle diagnostics and policy-gated effects.
+- Added Universal Manifestation Graph preserving TARGET, FORMAT, ADAPTER and ARTIFACT as distinct dimensions; MANIFEST produces plans and does not execute adapters.
+- Added ULTM L7..L0 contracts separating lowering from lifting and preserving reconstruction provenance.
+- Added Glyph–Block–Code Trinity registry: text, block and glyph projections converge through Semantic ID; unknown geometry cannot invent semantics.
+- Added integrated v0.9 vertical slice covering narrative, authority, manifestation and multimodal identity preservation.
+- Verification: **130/130 tests PASS, 0 FAIL** in the complete local haKodan suite.
+- v0.9 does not auto-canonize provisional Kodins/glyphs and does not claim complete backend/native support.
+- Remote CI status is intentionally not claimed as green while the known GitHub Actions billing restriction remains unresolved.

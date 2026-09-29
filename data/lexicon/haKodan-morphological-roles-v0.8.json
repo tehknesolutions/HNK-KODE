@@ -1,0 +1,1117 @@
+{
+  "schemaVersion": "HAKODAN-MORPHOLOGICAL-ROLES/V0.8",
+  "status": "DISCOVERY_NON_CANONICAL",
+  "source": "haKodan-mora-kodin-phonological-v0.7.json",
+  "roles": [
+    "ACTION",
+    "ENTITY",
+    "STATE",
+    "DATA",
+    "AGENT",
+    "OPERATOR",
+    "COLLECTION",
+    "TARGET"
+  ],
+  "concepts": 122,
+  "canonPromotions": 0,
+  "assignments": [
+    {
+      "semanticId": "CREATE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KADATA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DEFINE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KEDU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ALTER",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KIDI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "REMOVE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KODE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "TRANSFORM",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "LIKA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CONNECT",
+      "role": "ACTION",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VAMATO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ASSOCIATE",
+      "role": "ACTION",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VEMUTO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "RELATION",
+      "role": "ENTITY",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VIMI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "REFERENCE",
+      "role": "ENTITY",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "MAHI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ACTIVATE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "SEKETA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DEACTIVATE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "LEVU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EXECUTE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "LUVA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "RETURN",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "KIPA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MANIFEST",
+      "role": "ACTION",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "selected": "MANA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "VALIDATE",
+      "role": "ACTION",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "selected": "KEVA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "IMPORT",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SELA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EXPORT",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SELU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "LOAD",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SILIDU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SAVE",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SOLE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "REGISTER",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NAPA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "OBSERVE",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NEPU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EMIT",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NIPI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EVENT",
+      "role": "ENTITY",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NIVAKE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WORLD",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MAVU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "OBJECT",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "OKU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ENTITY",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MIVIYU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ELEMENT",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MOVE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "INSTANCE",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MUVO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CLASS",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KALASI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "TYPE",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KELUPA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "INTERFACE",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "YUMU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CONTRACT",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KOLETA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "IDENTITY",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KULO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "COMPONENT",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SAVA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SYSTEM",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SIVEN",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MODULE",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "NURU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MODEL",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SOVELA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "STRUCTURE",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SUVU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ACTION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KANESE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "COMMAND",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KEMUDO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "FUNCTION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "LARE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "OPERATION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KOMENANA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PROCESS",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "ZANE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "STATE",
+      "role": "STATE",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZAVATI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CONDITION",
+      "role": "STATE",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZEVUNO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WHEN",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZIVI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "IF",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZOVEFO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ELSE",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZUVOSE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "FOR",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "ROKE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EACH",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "REKU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WHILE",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "SAYITE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "THEN",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "ROKENA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "START",
+      "role": "ACTION",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "RUKO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "END",
+      "role": "ACTION",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "REBE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "NAME",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DAPAMI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "IDENTIFIER",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "LAKI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "VALUE",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DIPILE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PROPERTY",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DOPEYA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ATTRIBUTE",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "HUPI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PARAMETER",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PAZA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ARGUMENT",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PEZU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SOURCE",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PIZICI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "TARGET",
+      "role": "TARGET",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PAZI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CONTEXT",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "KAHA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "VERSION",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "KUHI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PROFILE",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "PEMI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "META",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "MIKI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DATA",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DANUVO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MEMORY",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DENUYO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DATABASE",
+      "role": "COLLECTION",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "PUSELO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "FILE",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "PELIHO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DOCUMENT",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DUNOTE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "RECORD",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DANUDI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "COLLECTION",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VEHO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "LIST",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VOMO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MAP",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "DALEKO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SOURCE_ALIAS",
+      "role": "ENTITY",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VOHE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CACHE",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VUHO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "HISTORY",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VAHUYI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PROVENANCE",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VEHACO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "CAPABILITY",
+      "role": "TARGET",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KAPU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PERMISSION",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "PEREN",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ACCESS",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KIPISU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ALLOW",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "VANEMU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DENY",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KUPOYE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SECURE",
+      "role": "STATE",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KAPURIRI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "READ",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "ZUMONU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WRITE",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "KIYUZU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EDIT",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "ZIMITU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "NETWORK",
+      "role": "ENTITY",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VARAKI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "LOCAL",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VERULE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "EXTERNAL",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VIRILU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PRIVATE",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VORETA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PUBLIC",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VUROCE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "AGENT",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "AGENA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "AI",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GENU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SPECIALIST",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GINI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "MASTER",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GONERA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "ROLE",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GUNO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PROMPT",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PORA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "INTENT",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "NETUVA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "GOAL",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PIRI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "PLAN",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "RIDUHA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "TASK",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PURO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "SKILL",
+      "role": "ENTITY",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HAYALE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "RULE",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HEYULO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "POLICY",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HIYI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "INSTRUCTION",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HOYE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "DESIGN",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DUSONO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "VISUAL",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DESU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "LAYOUT",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DISI",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "STYLE",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DOSE",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "COLOR",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DUSO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "FORM",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DASU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "IMAGE",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "ZERO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "VIDEO",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "ZERU",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "AUDIO",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "PUDUYO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "TEXT",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "NISO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WEB",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "VAKA",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "APP",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "VAKO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "GAME",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "RAHO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    },
+    {
+      "semanticId": "WORKFLOW",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "NIHUZO",
+      "status": "DISCOVERY_NON_CANONICAL",
+      "canon": false
+    }
+  ]
+}

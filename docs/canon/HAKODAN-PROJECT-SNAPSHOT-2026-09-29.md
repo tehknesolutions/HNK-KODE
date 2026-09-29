@@ -366,3 +366,11 @@ Persisted files:
 - `data/lexicon/haKodan-mora-kodin-phonological-shortlist-v0.7.csv`
 - `docs/language/HAKODAN-MORA-KODIN-PHONOLOGICAL-GATE-v0.7.md`
 
+
+## 20. Morphological Role System v0.8
+
+Implemented on `feat/hakodan-morphology-v08`: 122 concepts and 8 computational roles, role-aware candidate morphology, Semantic-ID-first validation, HNK/PT-BR/EN alias resolution, and textual/visual role-block metadata.
+
+All new morphology remains `DISCOVERY_NON_CANONICAL`; canon promotions: 0.
+
+Verification: 20/20 v0.8 tests and 15/15 Mora-Kodin v0.4-v0.7 regression tests PASS.

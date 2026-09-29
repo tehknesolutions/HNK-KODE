@@ -20,7 +20,7 @@ test("MHCM vertical slice lowers world/entity/property/event/action into HNK-IR"
     id: "hnk://world/genesis/entity/light",
     name: "light",
     properties: { active: false },
-    propertyTypes: { active: "boolean" }
+    propertyTypes: { active: "Boolean" }
   }]);
   assert.deepEqual(ir.world.events, [{
     name: "awaken",

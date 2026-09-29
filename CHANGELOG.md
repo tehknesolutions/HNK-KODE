@@ -4,6 +4,17 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### HOM + Bytecode — 2026-09-29
+- Added **HOM — HNK Object Model v0.1** as the canonical object layer between semantic AST and HNK-IR.
+- HOM now models identity, type, state, properties, components, relations, behaviors, events, narrative, assets, presentation, data, manifestations and provenance.
+- Implemented executable HOM mapping for the vertical slice `world → entity → property → event → action`.
+- Added **haKodan Bytecode v0.1** with deterministic `HAKD` framing, versioning, payload length and FNV-1a integrity checksum.
+- Bytecode v0.1 is explicitly a framed canonical HNK-IR binary format, not yet a VM opcode stream or native machine code.
+- Added bytecode encoder/decoder with validation for magic, version, length, checksum and HNK-IR payload.
+- Refactored canonical HNK-IR serialization into a dedicated module.
+- Changed binary lowering so `lowerToBinary()` emits formal haKodan Bytecode v0.1 instead of raw UTF-8 JSON bytes.
+- Added tests for HOM provenance/relations/events, PT-BR↔EN byte-for-byte bytecode equivalence, bytecode round-trip and corruption detection.
+
 ### Executable kernel — 2026-09-29
 - Added machine-readable haKodan Semantic Token Registry v0.1 and Canonical Grammar v0.1.
 - Bootstrapped `packages/hakodan` as the executable framework kernel.

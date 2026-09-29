@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "status": "ARCHAEOLOGY_IN_PROGRESS",
+  "status": "SOURCE_REGISTRY_ACTIVE",
   "generated_on": "2026-09-29",
   "project_context": "HNK CODEX",
   "tracking": ["#22", "#23"],
@@ -14,44 +14,136 @@
       "notes": "Contains proposals, validations and later architectural reasoning; statements must be split into individual decisions before promotion."
     },
     {
+      "id": "SRC-HNK40-E4",
+      "kind": "repository_artifact",
+      "path": "docs/research/mandala/evidence/HNK40-E4-GENESIS-PROJECTION-REPORT.md",
+      "role": "E4_VERIFICATION_EVIDENCE",
+      "authority": "STRUCTURAL_EVIDENCE",
+      "status": "PASS",
+      "scope": "G01-G40",
+      "invariants": ["PATH_ROUND_TRIP_40_40", "EDGE_ROUND_TRIP_40_40", "HNKP2_CRC_40_40", "HNKP2_PACKET_58_BYTES_40_40", "HNKP1_IMMUTABLE_40_40"],
+      "semantic_assignments": 0,
+      "canonical_promotions": 0
+    },
+    {
+      "id": "SRC-HNK40-E5-RESULT",
+      "kind": "repository_artifact",
+      "path": "docs/research/mandala/HNK40-E5-HYBRID-PROJECTION-V1-RESULT.md",
+      "role": "E5_GATE_RESULT",
+      "authority": "DERIVED_STRUCTURAL",
+      "status": "RESEARCH_RESULT_NON_CANONICAL",
+      "scope": "G01-G40",
+      "derivation_rule": "HNK40-E5-V4-DIRECTION-DISTANCE@1"
+    },
+    {
+      "id": "SRC-HNK40-E5-BENCHMARK",
+      "kind": "repository_artifact",
+      "path": "data/benchmarks/hnk40-e5-hybrid-projection.v1.json",
+      "role": "ITEM_LEVEL_PROJECTION_DATA",
+      "authority": "DERIVED_STRUCTURAL",
+      "status": "NON_CANONICAL",
+      "scope": "G01-G40",
+      "resolution_summary": {
+        "DIRECT": 4,
+        "DERIVED_UNIQUE": 34,
+        "DERIVED_AMBIGUOUS": 2,
+        "NO_E5_PROJECTION": 0,
+        "PENDING_RULE": 0
+      }
+    },
+    {
+      "id": "SRC-HNK40-E5-ACQUISITION",
+      "kind": "repository_artifact",
+      "path": "data/acquisition/hnk40-e5-acquisition.v1.json",
+      "role": "ACQUISITION_TARGET_REGISTRY",
+      "authority": "DERIVED_STRUCTURAL",
+      "status": "NON_CANONICAL",
+      "scope": "G01-G40",
+      "ambiguous_items": ["G17", "G20"]
+    },
+    {
+      "id": "SRC-HNK40-KODESCRIPT-BASELINE",
+      "kind": "repository_artifact",
+      "path": "docs/research/HNK40-KODESCRIPT-FAMILY-BASELINE-V1.md",
+      "role": "FAMILY_BENCHMARK_INTERPRETATION",
+      "authority": "STRUCTURAL_ONLY_EXPERIMENTAL",
+      "status": "NON_CANONICAL",
+      "scope": "HNK40_E5_BENCHMARK"
+    },
+    {
+      "id": "SRC-HNK40-ITEM-RECON",
+      "kind": "repository_artifact",
+      "path": "docs/migration/HNK40-ITEM-LEVEL-RECONCILIATION-2026-09-29.md",
+      "role": "MIGRATION_REGISTER",
+      "authority": "MIGRATION_CONTROL",
+      "status": "ACTIVE",
+      "scope": "G01-G40"
+    },
+    {
+      "id": "SRC-GATE-02",
+      "kind": "repository_artifact",
+      "path": "docs/migration/GATE-02-EXTRACTION-MANIFEST.md",
+      "role": "LEGACY_EXTRACTION_GOVERNANCE",
+      "authority": "SOURCE_LOCKED_MIGRATION_POLICY",
+      "status": "OPEN",
+      "scope": "HNK-LINGUAS_AND_HNK-GLYPHS"
+    },
+    {
+      "id": "SRC-CANON-MATRIX",
+      "kind": "repository_artifact",
+      "path": "docs/migration/CANON-SOURCE-STATE-MATRIX-2026-09-27.md",
+      "role": "AUTHORITY_CLASSIFICATION",
+      "authority": "MIGRATION_CONTROL",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "SRC-AUTHORITY-MANIFEST",
+      "kind": "repository_artifact",
+      "path": "docs/AUTHORITY-MANIFEST.md",
+      "role": "REPOSITORY_AUTHORITY",
+      "authority": "HNK-KODE_LANGUAGE_AUTHORITY",
+      "status": "ACTIVE"
+    },
+    {
       "id": "SRC-HNKVERSE-ARCHAEOLOGY",
       "kind": "project_file",
       "name": "hnk-verse.txt",
       "domain": ["hnk-verse", "glyph-genesis", "ecosystem-boundary"],
-      "authority": "MIXED_REQUIRES_DECISION_EXTRACTION",
-      "notes": "Contains runtime history plus recovered HNK-KODE/CODEX-HNK boundary and Glyph Genesis implementation evidence."
+      "authority": "MIXED_REQUIRES_DECISION_EXTRACTION"
     },
     {
       "id": "SRC-POLISH-CANDIDATE-C",
       "kind": "project_file_family",
       "name": "Polish do Candidate C.txt",
       "domain": ["ecosystem-architecture", "hnk-kode", "hnk-verse", "codex-hnk", "tehkne-os"],
-      "authority": "MIXED_REQUIRES_CHRONOLOGY",
-      "notes": "Multiple files/versions exist. Later explicit corrections must supersede earlier ecosystem diagrams where supported."
-    },
-    {
-      "id": "SRC-CODEX-STATUS",
-      "kind": "project_file_family",
-      "name": "Status do site app.txt",
-      "domain": ["codex-hnk", "ui", "product-status"],
-      "authority": "CONTEXT_ONLY_BY_DEFAULT",
-      "notes": "Useful for CODEX product chronology; not HNK-KODE language canon unless a specific fragment is independently promoted."
-    },
-    {
-      "id": "SRC-CODEX365-ARCHITECTURE",
-      "kind": "project_file",
-      "name": "codex_365_arquitetura_final.md",
-      "domain": ["codex-365", "training", "grimoire"],
-      "authority": "OUTSIDE_HNK_KODE_BY_DEFAULT",
-      "notes": "Project corpus context; excluded from HNK-KODE canon unless explicitly linked by a later authoritative decision."
-    },
-    {
-      "id": "SRC-HNK-MAGIK-TRAINING",
-      "kind": "project_file",
-      "name": "chat-gemini-Programa_Treinamento_HNK_Magik.md",
-      "domain": ["training", "codex-365", "visual-experiments"],
-      "authority": "OUTSIDE_HNK_KODE_BY_DEFAULT",
-      "notes": "Large mixed historical artifact. Do not import terminology into HNK-KODE merely because multilingual/sigil material appears inside it."
+      "authority": "MIXED_REQUIRES_CHRONOLOGY"
     }
+  ],
+  "item_registry": {
+    "scope": "G01-G40",
+    "source_chain": [
+      "SRC-HNK40-E4",
+      "SRC-HNK40-E5-RESULT",
+      "SRC-HNK40-E5-BENCHMARK",
+      "SRC-HNK40-E5-ACQUISITION",
+      "SRC-HNK40-ITEM-RECON"
+    ],
+    "resolution": {
+      "G01": "DIRECT",
+      "G11": "DIRECT",
+      "G21": "DIRECT",
+      "G31": "DIRECT",
+      "G17": "DERIVED_AMBIGUOUS",
+      "G20": "DERIVED_AMBIGUOUS",
+      "all_other_items": "DERIVED_UNIQUE"
+    },
+    "provenance_rule": "Never infer a semantic, phonetic, sacred, numerological or linguistic identity from a structural projection alone."
+  },
+  "open_gates": [
+    "Recover/verify exact E4 source fingerprints for all G01-G40 against the frozen source manifest.",
+    "Preserve G17 and G20 candidate sets without preferred target selection.",
+    "Verify HNK40 acquisition records against the current repository schemas/tests.",
+    "Resolve the legacy @hnk/linguas authored.mjs provenance gap before authority transfer.",
+    "Define the final external contract boundary for CODEX-owned canon compatibility."
   ]
 }

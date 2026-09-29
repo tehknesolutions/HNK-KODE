@@ -1,0 +1,6974 @@
+{
+  "schemaVersion": "HAKODAN-MORPHOLOGY/V0.8",
+  "status": "DISCOVERY_NON_CANONICAL",
+  "roleMorphemeHypotheses": {
+    "ACTION": "RA",
+    "ENTITY": "NA",
+    "STATE": "SE",
+    "DATA": "DA",
+    "AGENT": "TA",
+    "OPERATOR": "KO",
+    "COLLECTION": "LI",
+    "TARGET": "MA"
+  },
+  "concepts": 122,
+  "canonPromotions": 0,
+  "selectedUnique": true,
+  "watch": [],
+  "items": [
+    {
+      "semanticId": "CREATE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KDRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KDRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KADATARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KADATAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "DEFINE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KEDURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KDRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KEDURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KEDUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ALTER",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KIDIRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KDRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KIDIRA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KIDIR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "REMOVE",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "KODERA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KDRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KODERA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KODER",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "TRANSFORM",
+      "role": "ACTION",
+      "familyId": "F01_CREATION_MUTATION",
+      "familyRoot": "KD",
+      "selected": "LIKARA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KDRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "LIKARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "LIKAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "CONNECT",
+      "role": "ACTION",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VMRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VMRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VAMATORA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VAMATOR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "ASSOCIATE",
+      "role": "ACTION",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VEMUTORA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VMRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VEMUTORA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VEMUTOR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "RELATION",
+      "role": "ENTITY",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "VMNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VIMINA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VIMIN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "REFERENCE",
+      "role": "ENTITY",
+      "familyId": "F02_RELATION_BINDING",
+      "familyRoot": "VM",
+      "selected": "MAHINA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MAHINA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MAHIN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ACTIVATE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "LVRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "LVRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SEKETARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "SEKETAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "DEACTIVATE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "LEVURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "LVRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "LEVURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "LEVUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "EXECUTE",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "LUVARA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "LVRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "LUVARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "LUVAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "RETURN",
+      "role": "ACTION",
+      "familyId": "F03_LIFECYCLE_EXECUTION",
+      "familyRoot": "LV",
+      "selected": "KIPARA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "LVRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KIPARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KIPAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "MANIFEST",
+      "role": "ACTION",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "selected": "MNRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MNRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MANARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MANAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "VALIDATE",
+      "role": "ACTION",
+      "familyId": "F04_MANIFEST_VALIDATION",
+      "familyRoot": "MN",
+      "selected": "KEVARA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MNRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KEVARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KEVAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "IMPORT",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SLRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SLRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SELARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "SELAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "EXPORT",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SELURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SLRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SELURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "SELUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "LOAD",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SILIDURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SLRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SILIDURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "SILIDUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SAVE",
+      "role": "ACTION",
+      "familyId": "F05_TRANSFER_PERSISTENCE",
+      "familyRoot": "SL",
+      "selected": "SOLERA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SLRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SOLERA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "SOLER",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "REGISTER",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NPRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "NPRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NAPARA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "NAPAR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "OBSERVE",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NEPURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "NPRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NEPURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "NEPUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "EMIT",
+      "role": "ACTION",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NIPIRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "NPRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NIPIRA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "NIPIR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "EVENT",
+      "role": "ENTITY",
+      "familyId": "F06_OBSERVABILITY",
+      "familyRoot": "NP",
+      "selected": "NPNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "NPNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NIVAKENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "NIVAKEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "WORLD",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MVNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MAVUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MAVUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "OBJECT",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "OKUNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "OKUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "OKUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ENTITY",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MIVIYUNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MIVIYUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "MIVIYUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ELEMENT",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MOVENA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MOVENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MOVEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "INSTANCE",
+      "role": "ENTITY",
+      "familyId": "F07_STRUCTURE_CORE",
+      "familyRoot": "MV",
+      "selected": "MUVONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "MVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MUVONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MUVON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "CLASS",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KLNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KLNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KALASINA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KALASIN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "TYPE",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KELUPANA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KLNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KELUPANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KELUPAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "INTERFACE",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "YUMUNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KLNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "YUMUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "YUMUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "CONTRACT",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KOLETANA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KLNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KOLETANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KOLETAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "IDENTITY",
+      "role": "ENTITY",
+      "familyId": "F08_TYPE_IDENTITY",
+      "familyRoot": "KL",
+      "selected": "KULONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KLNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KULONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KULON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "COMPONENT",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SVNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SAVANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "SAVAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "SYSTEM",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SIVENNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SIVENNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "SIVENN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "MODULE",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "NURUNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NURUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "NURUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "MODEL",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SOVELANA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SOVELANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "SOVELAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "STRUCTURE",
+      "role": "ENTITY",
+      "familyId": "F09_COMPOSITION_SYSTEM",
+      "familyRoot": "SV",
+      "selected": "SUVUNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "SVNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SUVUNA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "SUVUN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ACTION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KMNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KANESENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KANESEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "COMMAND",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KEMUDONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KEMUDONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KEMUDON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "FUNCTION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "LARENA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "LARENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "LAREN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "OPERATION",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "KOMENANAN",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KOMENANAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 8,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 78
+        },
+        {
+          "form": "KOMENANANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 8,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 78
+        }
+      ],
+      "selectedVariant": "COMPACT_ROLE"
+    },
+    {
+      "semanticId": "PROCESS",
+      "role": "ENTITY",
+      "familyId": "F10_BEHAVIOR_EXEC",
+      "familyRoot": "KM",
+      "selected": "ZANENA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KMNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZANENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "ZANEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "STATE",
+      "role": "STATE",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZVSE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZVSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZAVATISE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZAVATIS",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "CONDITION",
+      "role": "STATE",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZEVUNOSE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZVSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZEVUNOSE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZEVUNOS",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "WHEN",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZVKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZVKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZIVIKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "ZIVIK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "IF",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZOVEFOKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZVKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZOVEFOKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZOVEFOK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ELSE",
+      "role": "OPERATOR",
+      "familyId": "F11_LOGIC_STATE",
+      "familyRoot": "ZV",
+      "selected": "ZUVOSEKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZVKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZUVOSEKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZUVOSEK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "FOR",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "RKKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ROKEKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "ROKEK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "EACH",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "REKUKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "REKUKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "REKUK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "WHILE",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "SAYITEKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "SAYITEKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "SAYITEK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "THEN",
+      "role": "OPERATOR",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "ROKENAKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ROKENAKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ROKENAK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "START",
+      "role": "ACTION",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "RKRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "RUKORA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "RUKOR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "END",
+      "role": "ACTION",
+      "familyId": "F12_CONTROL_FLOW",
+      "familyRoot": "RK",
+      "selected": "REBERA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "RKRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "REBERA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "REBER",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "NAME",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DPDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DPDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DAPAMID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DAPAMIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "IDENTIFIER",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "LAKIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DPDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "LAKIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "LAKID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "VALUE",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DIPILEDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DPDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DIPILEDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DIPILED",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PROPERTY",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "DOPEYADA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DPDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DOPEYADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DOPEYAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ATTRIBUTE",
+      "role": "DATA",
+      "familyId": "F13_IDENTITY_FIELDS",
+      "familyRoot": "DP",
+      "selected": "HUPIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DPDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "HUPIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "HUPID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PARAMETER",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PZDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PZDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PAZADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PAZAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "ARGUMENT",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PEZUDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PZDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PEZUDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PEZUD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SOURCE",
+      "role": "DATA",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PIZICIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PZDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PIZICIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "PIZICID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "TARGET",
+      "role": "TARGET",
+      "familyId": "F14_CALL_SIGNATURE",
+      "familyRoot": "PZ",
+      "selected": "PZMA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PZMA",
+          "variant": "ROOT_ROLE",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PAZIMA",
+          "variant": "ROLE_SUFFIX",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PAZIM",
+          "variant": "COMPACT_ROLE",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "CONTEXT",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "KHDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KAHADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KAHAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "VERSION",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "KUHIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KUHIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KUHID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PROFILE",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "PEMIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PEMIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PEMID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "META",
+      "role": "DATA",
+      "familyId": "F15_CONTEXT_META",
+      "familyRoot": "KH",
+      "selected": "MIKIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "MIKIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "MIKID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "DATA",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DNDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DANUVOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DANUVODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "MEMORY",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DENUYODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DENUYODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DENUYOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "DATABASE",
+      "role": "COLLECTION",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DNLI",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNLI",
+          "variant": "ROOT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PUSELOLI",
+          "variant": "ROLE_SUFFIX",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "PUSELOL",
+          "variant": "COMPACT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "FILE",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "PELIHODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PELIHODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "PELIHOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "DOCUMENT",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DUNOTEDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DUNOTEDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DUNOTED",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "RECORD",
+      "role": "DATA",
+      "familyId": "F16_DATA_STORAGE",
+      "familyRoot": "DN",
+      "selected": "DANUDID",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DNDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DANUDID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DANUDIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        }
+      ],
+      "selectedVariant": "COMPACT_ROLE"
+    },
+    {
+      "semanticId": "COLLECTION",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VHLI",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHLI",
+          "variant": "ROOT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VEHOLI",
+          "variant": "ROLE_SUFFIX",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VEHOL",
+          "variant": "COMPACT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "LIST",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VOMOLI",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHLI",
+          "variant": "ROOT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VOMOLI",
+          "variant": "ROLE_SUFFIX",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VOMOL",
+          "variant": "COMPACT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "MAP",
+      "role": "COLLECTION",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "DALEKOLI",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHLI",
+          "variant": "ROOT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DALEKOLI",
+          "variant": "ROLE_SUFFIX",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DALEKOL",
+          "variant": "COMPACT_ROLE",
+          "role": "COLLECTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SOURCE_ALIAS",
+      "role": "ENTITY",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VHNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VOHENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VOHEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "CACHE",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VHDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VUHODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VUHOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "HISTORY",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VAHUYIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VAHUYIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VAHUYID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PROVENANCE",
+      "role": "DATA",
+      "familyId": "F17_COLLECTION_PROVENANCE",
+      "familyRoot": "VH",
+      "selected": "VEHACODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VHDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VEHACODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VEHACOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "CAPABILITY",
+      "role": "TARGET",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KPMA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPMA",
+          "variant": "ROOT_ROLE",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KAPUMA",
+          "variant": "ROLE_SUFFIX",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "KAPUM",
+          "variant": "COMPACT_ROLE",
+          "role": "TARGET",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "PERMISSION",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KPKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PERENKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "PERENK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "ACCESS",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KIPISUKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KIPISUKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KIPISUK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ALLOW",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "VANEMUKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VANEMUKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VANEMUK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "DENY",
+      "role": "OPERATOR",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KUPOYEKO",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPKO",
+          "variant": "ROOT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KUPOYEKO",
+          "variant": "ROLE_SUFFIX",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KUPOYEK",
+          "variant": "COMPACT_ROLE",
+          "role": "OPERATOR",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SECURE",
+      "role": "STATE",
+      "familyId": "F18_SECURITY_CAPABILITY",
+      "familyRoot": "KP",
+      "selected": "KPSE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "KPSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KAPURIRISE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 8,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 78
+        },
+        {
+          "form": "KAPURIRIS",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 8,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 68
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "READ",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "ZMRA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZMRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZUMONURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZUMONUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "WRITE",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "KIYUZURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZMRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "KIYUZURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "KIYUZUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "EDIT",
+      "role": "ACTION",
+      "familyId": "F19_DATA_ACCESS",
+      "familyRoot": "ZM",
+      "selected": "ZIMITURA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZMRA",
+          "variant": "ROOT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZIMITURA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "ZIMITUR",
+          "variant": "COMPACT_ROLE",
+          "role": "ACTION",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "NETWORK",
+      "role": "ENTITY",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VRNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VRNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VARAKINA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VARAKIN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "LOCAL",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VRSE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VRSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VERULESE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VERULES",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "EXTERNAL",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VIRILUSE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VRSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VIRILUSE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VIRILUS",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PRIVATE",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VORETASE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VRSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VORETASE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VORETAS",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PUBLIC",
+      "role": "STATE",
+      "familyId": "F20_NETWORK_SCOPE",
+      "familyRoot": "VR",
+      "selected": "VUROCESE",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VRSE",
+          "variant": "ROOT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VUROCESE",
+          "variant": "ROLE_SUFFIX",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "VUROCES",
+          "variant": "COMPACT_ROLE",
+          "role": "STATE",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "AGENT",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GNTA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "GNTA",
+          "variant": "ROOT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "AGENATA",
+          "variant": "ROLE_SUFFIX",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "AGENAT",
+          "variant": "COMPACT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "AI",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GENUTA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "GNTA",
+          "variant": "ROOT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "GENUTA",
+          "variant": "ROLE_SUFFIX",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "GENUT",
+          "variant": "COMPACT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SPECIALIST",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GINITA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "GNTA",
+          "variant": "ROOT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "GINITA",
+          "variant": "ROLE_SUFFIX",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "GINIT",
+          "variant": "COMPACT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "MASTER",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GONERATA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "GNTA",
+          "variant": "ROOT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "GONERATA",
+          "variant": "ROLE_SUFFIX",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "GONERAT",
+          "variant": "COMPACT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "ROLE",
+      "role": "AGENT",
+      "familyId": "F21_AGENT_IDENTITY",
+      "familyRoot": "GN",
+      "selected": "GUNOTA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "GNTA",
+          "variant": "ROOT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "GUNOTA",
+          "variant": "ROLE_SUFFIX",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "GUNOT",
+          "variant": "COMPACT_ROLE",
+          "role": "AGENT",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PROMPT",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PRDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PORADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PORAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "INTENT",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "NETUVADA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NETUVADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "NETUVAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "GOAL",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PIRIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PIRIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PIRID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "PLAN",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "RIDUHADA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "RIDUHADA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "RIDUHAD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "TASK",
+      "role": "DATA",
+      "familyId": "F22_INTENT_ORCHESTRATION",
+      "familyRoot": "PR",
+      "selected": "PURODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "PRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PURODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "PUROD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "SKILL",
+      "role": "ENTITY",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HYNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "HYNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "HAYALENA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "HAYALEN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "RULE",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HYDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "HYDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "HEYULODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "HEYULOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "POLICY",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HIYIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "HYDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "HIYIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "HIYID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "INSTRUCTION",
+      "role": "DATA",
+      "familyId": "F23_POLICY_INSTRUCTION",
+      "familyRoot": "HY",
+      "selected": "HOYEDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "HYDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "HOYEDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "HOYED",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "DESIGN",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DSDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DUSONODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "DUSONOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "VISUAL",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DESUDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DESUDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "DESUD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "LAYOUT",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DISIDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DISIDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "DISID",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "STYLE",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DOSEDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DOSEDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "DOSED",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "COLOR",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DUSODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DUSODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "DUSOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "FORM",
+      "role": "DATA",
+      "familyId": "F24_DESIGN_SYSTEM",
+      "familyRoot": "DS",
+      "selected": "DASUD",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "DSDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "DASUD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "DASUDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        }
+      ],
+      "selectedVariant": "COMPACT_ROLE"
+    },
+    {
+      "semanticId": "IMAGE",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "ZRDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZERODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "ZEROD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "VIDEO",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "ZERUDA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "ZERUDA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "ZERUD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "AUDIO",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "PUDUYODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "PUDUYODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "PUDUYOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "TEXT",
+      "role": "DATA",
+      "familyId": "F25_MEDIA_CONTENT",
+      "familyRoot": "ZR",
+      "selected": "NISODA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "ZRDA",
+          "variant": "ROOT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NISODA",
+          "variant": "ROLE_SUFFIX",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "NISOD",
+          "variant": "COMPACT_ROLE",
+          "role": "DATA",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "WEB",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "VKNA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VKNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VAKANA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VAKAN",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROOT_ROLE"
+    },
+    {
+      "semanticId": "APP",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "VAKONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VKNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "VAKONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "VAKON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "GAME",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "RAHONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VKNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "RAHONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 90
+        },
+        {
+          "form": "RAHON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 80
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    },
+    {
+      "semanticId": "WORKFLOW",
+      "role": "ENTITY",
+      "familyId": "F26_TARGET_MANIFESTATION",
+      "familyRoot": "VK",
+      "selected": "NIHUZONA",
+      "status": "DISCOVERY_CANDIDATE",
+      "canon": false,
+      "candidates": [
+        {
+          "form": "VKNA",
+          "variant": "ROOT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 25,
+            "compactness": 20,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 100
+        },
+        {
+          "form": "NIHUZONA",
+          "variant": "ROLE_SUFFIX",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 30,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 85
+        },
+        {
+          "form": "NIHUZON",
+          "variant": "COMPACT_ROLE",
+          "role": "ENTITY",
+          "status": "DISCOVERY_CANDIDATE",
+          "canon": false,
+          "score": {
+            "roleRegularity": 20,
+            "familyCoherence": 15,
+            "compactness": 15,
+            "distinctness": 15,
+            "separation": 10
+          },
+          "totalScore": 75
+        }
+      ],
+      "selectedVariant": "ROLE_SUFFIX"
+    }
+  ]
+}

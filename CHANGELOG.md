@@ -1,3 +1,10 @@
+## 2026-09-29 — Mora-Kodin mass discovery v0.4
+
+- Generated 3 deterministic Mora-Kodin candidates for each of 122 provisional concepts (366 total).
+- Preserved 5 canonical HNK lexemes outside regeneration.
+- Added reproducible batch contract, scores, CSV shortlist, report and haKodan tests.
+- No new lexical or glyph canon was promoted.
+
 ## 2026-09-29 — Project persistence consolidation
 
 - Added authoritative project snapshot for haKodan/VHK/Kodin/HNK-MATH decisions.

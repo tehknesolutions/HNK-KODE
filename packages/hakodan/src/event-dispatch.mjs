@@ -38,3 +38,25 @@ export function planDispatch(hom, eventId, payload = undefined) {
     }))
   };
 }
+
+
+export function buildEventCatalog(hom) {
+  const rows = [];
+  for (const object of [...hom.objects].sort((a,b)=>a.identity.id.localeCompare(b.identity.id))) {
+    for (const event of [...(object.events ?? [])].sort((a,b)=>a.id.localeCompare(b.id))) {
+      rows.push({
+        index: rows.length,
+        eventId: event.id,
+        owner: object.identity.id,
+        payloadType: event.payloadType,
+        actions: event.actions.map((action, order) => ({
+          order,
+          actionId: action.id,
+          name: action.name,
+          returnType: action.returnType
+        }))
+      });
+    }
+  }
+  return rows;
+}

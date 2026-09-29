@@ -1,0 +1,23 @@
+name: MHCM V0
+
+on:
+  push:
+    branches: ["sync/project-chats-2026-09-29"]
+  pull_request:
+    paths:
+      - "spec/mhcm/**"
+      - "tests/mhcm/**"
+      - "packages/kodescript/src/mhcm-runtime-v0.mjs"
+      - "packages/kodescript/test/mhcm-runtime-v0.test.mjs"
+      - ".github/workflows/mhcm-v0.yml"
+
+jobs:
+  runtime-v0:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run MHCM runtime vertical slice
+        run: node --test packages/kodescript/test/mhcm-runtime-v0.test.mjs

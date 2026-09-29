@@ -14,6 +14,11 @@ export function buildAcquisitionMaterials(corpus, contrastRegistry) {
   assertArtifact(corpus && Array.isArray(corpus.train), 'FEC corpus train must be an array');
   assertArtifact(Array.isArray(corpus.holdout), 'FEC corpus holdout must be an array');
   assertArtifact(contrastRegistry && Array.isArray(contrastRegistry.pairs), 'FEC contrasts pairs must be an array');
+  for (const field of ['semanticBindings', 'phonologicalBindings', 'grammaticalBindings', 'canonicalBindings']) {
+    if (contrastRegistry[field] !== undefined && contrastRegistry[field] !== 0 && !(Array.isArray(contrastRegistry[field]) && contrastRegistry[field].length === 0)) {
+      throw new TypeError(`FEC structural boundary forbids ${field}`);
+    }
+  }
 
   const train = Object.freeze(corpus.train.map(freezeRecord));
   const holdout = Object.freeze(corpus.holdout.map(freezeRecord));

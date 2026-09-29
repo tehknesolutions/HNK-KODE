@@ -1,0 +1,73 @@
+{
+  "name": "haKodan Canonical Grammar",
+  "version": "0.1.0",
+  "scope": "vertical-slice",
+  "surfaceProfiles": [
+    "PT-BR",
+    "EN"
+  ],
+  "hnkProfile": "locked-until-token-canon",
+  "productions": {
+    "Program": [
+      "WorldDeclaration"
+    ],
+    "WorldDeclaration": [
+      "WORLD",
+      "Identifier",
+      "{",
+      "WorldMember*",
+      "}"
+    ],
+    "WorldMember": [
+      "EntityDeclaration",
+      "EventDeclaration"
+    ],
+    "EntityDeclaration": [
+      "ENTITY",
+      "Identifier",
+      "{",
+      "PropertyDeclaration*",
+      "}"
+    ],
+    "PropertyDeclaration": [
+      "PROPERTY",
+      "Identifier",
+      "=",
+      "Literal",
+      ";?"
+    ],
+    "EventDeclaration": [
+      "EVENT",
+      "Identifier",
+      "{",
+      "ActionDeclaration*",
+      "}"
+    ],
+    "ActionDeclaration": [
+      "ACTION",
+      "Identifier",
+      "(",
+      "ArgumentList?",
+      ")",
+      ";?"
+    ],
+    "ArgumentList": [
+      "Literal",
+      "(',' Literal)*"
+    ],
+    "Literal": [
+      "String",
+      "Number",
+      "Boolean",
+      "Identifier"
+    ]
+  },
+  "semanticNodes": [
+    "Program",
+    "WorldDeclaration",
+    "EntityDeclaration",
+    "PropertyDeclaration",
+    "EventDeclaration",
+    "ActionDeclaration"
+  ]
+}

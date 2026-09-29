@@ -1,4 +1,20 @@
 # HNK-KODE
+## haKodan — framework oficial
+
+**haKodan** é o framework universal do HNK-KODE.
+
+- **HNK-KODE** = idioma + linguagem computacional.
+- **haKodan** = framework multicamada, runtime, SDK e Manifestation Engine.
+- **HNK-KODE Studio** = IDE/ambiente de autoria.
+
+Arquitetura canônica: **HNK → PT-BR → EN**, convergindo para a mesma AST/HNK-IR, com camadas de **L8 ALEF/Intent até L0 Binary/Malkuth**.
+
+Fontes:
+- `docs/canon/HAKODAN-UNIVERSAL-CANON-v0.1.md`
+- `docs/architecture/HAKODAN-ARCHITECTURE-v0.1.md`
+- `spec/HNK-SEMANTIC-TOKEN-REGISTRY-v0.1.md`
+
+
 
 Repositório oficial e independente do **Domain Canon linguístico HNK**.
 

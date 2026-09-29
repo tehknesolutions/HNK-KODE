@@ -8,7 +8,7 @@ function meanBinary(name, scores) {
   return scores.reduce((sum, score) => sum + score, 0) / scores.length;
 }
 
-export function computeSessionMetrics(scores) {
+export function computeSessionMetrics(scores, versions) {
   const RT = meanBinary('recognition', scores?.recognition);
   const PT = meanBinary('production', scores?.production);
   const CA = meanBinary('contrast', scores?.contrast);
@@ -18,5 +18,9 @@ export function computeSessionMetrics(scores) {
     PT,
     RPG: RT - PT,
     CA,
+    ...(versions ? {
+      protocolVersion: versions.protocolVersion,
+      dataVersion: versions.dataVersion,
+    } : {}),
   });
 }

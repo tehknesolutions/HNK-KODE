@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "haKodan Semantic Token Registry",
+  "version": "0.1.0",
+  "languagePriority": [
+    "HNK",
+    "PT-BR",
+    "EN"
+  ],
+  "profiles": {
+    "HNK": {
+      "canonical": true,
+      "humanPrimary": false,
+      "interoperability": false
+    },
+    "PT-BR": {
+      "canonical": false,
+      "humanPrimary": true,
+      "interoperability": false
+    },
+    "EN": {
+      "canonical": false,
+      "humanPrimary": false,
+      "interoperability": true
+    }
+  },
+  "tokens": [
+    {
+      "semanticId": "WORLD",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "mundo",
+        "EN": "world"
+      },
+      "status": "hnk-unresolved"
+    },
+    {
+      "semanticId": "ENTITY",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "entidade",
+        "EN": "entity"
+      },
+      "status": "hnk-unresolved"
+    },
+    {
+      "semanticId": "PROPERTY",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "propriedade",
+        "EN": "property"
+      },
+      "status": "hnk-unresolved"
+    },
+    {
+      "semanticId": "EVENT",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "evento",
+        "EN": "event"
+      },
+      "status": "hnk-unresolved"
+    },
+    {
+      "semanticId": "ACTION",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "ação",
+        "EN": "action"
+      },
+      "status": "hnk-unresolved"
+    },
+    {
+      "semanticId": "WHEN",
+      "lexemes": {
+        "HNK": null,
+        "PT-BR": "quando",
+        "EN": "when"
+      },
+      "status": "hnk-unresolved"
+    }
+  ],
+  "canonicalLexemes": {
+    "AHNUVA": {
+      "concept": "AMOR",
+      "programmingKeyword": false
+    },
+    "EMANU": {
+      "concept": "VERDADE",
+      "programmingKeyword": false
+    },
+    "HAYA": {
+      "concept": "VIDA",
+      "programmingKeyword": false
+    },
+    "HODERU": {
+      "concept": "CAMINHO",
+      "programmingKeyword": false
+    },
+    "KODAN": {
+      "concept": "LOGOS",
+      "programmingKeyword": false
+    }
+  }
+}

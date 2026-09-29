@@ -1,0 +1,1 @@
+Review target: numeric structural invariants, explicit semantics, deterministic mappings and candidate/canonical separation.

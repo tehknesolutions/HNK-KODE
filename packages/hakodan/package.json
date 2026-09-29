@@ -1,0 +1,10 @@
+{
+  "name": "@hnk/hakodan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "haKodan executable language/framework kernel",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}

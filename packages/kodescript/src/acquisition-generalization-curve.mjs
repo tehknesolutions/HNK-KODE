@@ -10,7 +10,7 @@ function assertObservation(observation) {
   }
 }
 
-export function computeGeneralizationCurve(observations) {
+export function computeGeneralizationCurve(observations, versions) {
   if (!Array.isArray(observations) || observations.length === 0) {
     throw new Error('Generalization curve requires observations');
   }
@@ -35,5 +35,12 @@ export function computeGeneralizationCurve(observations) {
       PT: band.production / band.n,
     }));
 
-  return Object.freeze(curve);
+  const frozenCurve = Object.freeze(curve);
+  if (!versions) return frozenCurve;
+
+  return Object.freeze({
+    protocolVersion: versions.protocolVersion,
+    dataVersion: versions.dataVersion,
+    curve: frozenCurve,
+  });
 }

@@ -4,6 +4,14 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### VM Tables — 2026-09-29
+- Added Symbol Table v0.1 with deterministic semantic addresses for World, Entity, Property, Event and Action symbols.
+- Added Constant Pool v0.1 with typed literal deduplication.
+- Added Type Table v0.1 with versioned semantic type indices.
+- Added deterministic pre-opcode compilation package combining canonical HNK-IR and VM tables.
+- Added PT-BR/EN equivalence tests for symbols, constants, types and pre-opcode output.
+- Advanced VM Opcode Readiness Gate to 3/10 completed prerequisites.
+
 ### Type + Component + Event — 2026-09-29
 - Added haKodan Type System v0.1 with semantic types Any, Boolean, Number, String, IdentifierRef and Void.
 - Added Component Model v0.1 with typed state, dependency checks and duplicate protection.

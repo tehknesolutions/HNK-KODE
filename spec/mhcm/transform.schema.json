@@ -1,0 +1,15 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://hnk.dev/spec/mhcm/transform.schema.json",
+  "title":"MHCM Transform",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["id","kind","state","provenance"],
+  "properties":{
+    "id":{"type":"string","minLength":1},
+    "kind":{"enum":["identity","rotate","reflect","translate","compose","declared"]},
+    "parameters":{"type":"object"},
+    "state":{"enum":["candidate","validated","canonical","rejected","unresolved"]},
+    "provenance":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}}
+  }
+}

@@ -28,16 +28,16 @@ This gate defines what must be stable before haKodan introduces an executable VM
 4. ✅ Object/Component addressing contract — completed in HAKODAN-OBJECT-COMPONENT-ADDRESSING-v0.1.
 5. ✅ Event dispatch contract — completed in HAKODAN-EVENT-DISPATCH-v0.1.
 6. ✅ Execution model decision — Hybrid VM (typed virtual registers + structured frames), accepted in ADR-HAKODAN-VM-EXECUTION-MODEL-v0.1.
-7. Deterministic instruction encoding.
+7. ✅ Deterministic instruction encoding — completed in HAKODAN-INSTRUCTION-ENCODING-v0.1 with initial Opcode IR and binary instruction records.
 8. Error/trap model.
 9. Capability/security boundary.
 10. Source/provenance mapping from opcode offset back to HNK-IR/AST/source.
 
 ## Current readiness
 
-**6/10 prerequisites completed.**
+**7/10 prerequisites completed.**
 
-A deterministic pre-opcode package now combines canonical HNK-IR with Symbol, Constant, Type, Address and Event Dispatch tables. It is still intentionally non-executable until deterministic instruction encoding, traps, capabilities and source maps are frozen.
+A deterministic pre-opcode package now combines canonical HNK-IR with Symbol, Constant, Type, Address and Event Dispatch tables. It is still intentionally not a complete VM until traps, capabilities and source maps are frozen.
 
 ## Rule
 

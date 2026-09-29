@@ -25,8 +25,8 @@ This gate defines what must be stable before haKodan introduces an executable VM
 1. ✅ Symbol Table contract — completed in HAKODAN-SYMBOL-TABLE-v0.1.
 2. ✅ Constant Pool contract — completed in HAKODAN-CONSTANT-POOL-v0.1.
 3. ✅ Type Table encoding — completed in HAKODAN-TYPE-TABLE-v0.1.
-4. Object/Component addressing contract.
-5. Event dispatch contract.
+4. ✅ Object/Component addressing contract — completed in HAKODAN-OBJECT-COMPONENT-ADDRESSING-v0.1.
+5. ✅ Event dispatch contract — completed in HAKODAN-EVENT-DISPATCH-v0.1.
 6. Stack vs register execution decision.
 7. Deterministic instruction encoding.
 8. Error/trap model.
@@ -35,9 +35,9 @@ This gate defines what must be stable before haKodan introduces an executable VM
 
 ## Current readiness
 
-**3/10 prerequisites completed.**
+**5/10 prerequisites completed.**
 
-A deterministic pre-opcode package now combines canonical HNK-IR with Symbol, Constant and Type Tables. It is still intentionally non-executable until addressing, dispatch, execution model, instruction encoding, traps, capabilities and source maps are frozen.
+A deterministic pre-opcode package now combines canonical HNK-IR with Symbol, Constant, Type, Address and Event Dispatch tables. It is still intentionally non-executable until the execution model, instruction encoding, traps, capabilities and source maps are frozen.
 
 ## Rule
 

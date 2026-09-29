@@ -4,6 +4,15 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Instruction Encoding — 2026-09-29
+- Added semantic Opcode IR v0.1 for NOP, LOAD_CONST, LOAD_PROPERTY, STORE_PROPERTY, CALL_ACTION and RETURN.
+- Added deterministic binary instruction records with explicit operand kinds and big-endian 32-bit operand values.
+- Added first stable transport opcode codes 0x00–0x05; values have no symbolic or numerological meaning.
+- Added Opcode IR generation from pre-opcode dispatch/action data.
+- Added deterministic instruction-program compilation containing VM tables, Opcode IR and encoded instruction bytes.
+- Added PT-BR/EN equivalence tests proving identical Opcode IR and byte streams.
+- Advanced VM Opcode Readiness Gate to 7/10 completed prerequisites.
+
 ### Execution Model — 2026-09-29
 - Compared Stack VM, Register VM and Hybrid VM against haKodan requirements.
 - Accepted Hybrid VM v0.1: typed virtual registers for explicit dataflow plus structured frames for World/Event/Action invocation context.

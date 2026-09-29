@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.7.5",
+  "status": "STRUCTURAL_CANDIDATES_NON_CANON",
+  "poolSize": 30000,
+  "eligible": 29929,
+  "assignedTotal": 1000,
+  "rendered": 120,
+  "contactSheets": 5,
+  "kernel": {
+    "n": 12,
+    "graph": "MF+CG/441",
+    "symmetry": "D9_PLUS_REVERSAL",
+    "semanticInference": false
+  },
+  "summary": [
+    {
+      "lexeme": "AHNUVA",
+      "ptBr": "AMOR",
+      "en": "LOVE",
+      "candidateCount": 200,
+      "renderedShortlist": 24,
+      "uniqueCoarseFamilies": 34,
+      "uniqueTopologicalFamilies": 191,
+      "uniqueRadialAngularFamilies": 142,
+      "minHnk40Distance": 9,
+      "maxHnk40Distance": 56
+    },
+    {
+      "lexeme": "EMANU",
+      "ptBr": "VERDADE",
+      "en": "TRUTH",
+      "candidateCount": 200,
+      "renderedShortlist": 24,
+      "uniqueCoarseFamilies": 39,
+      "uniqueTopologicalFamilies": 194,
+      "uniqueRadialAngularFamilies": 140,
+      "minHnk40Distance": 8,
+      "maxHnk40Distance": 37
+    },
+    {
+      "lexeme": "HAYA",
+      "ptBr": "VIDA",
+      "en": "LIFE",
+      "candidateCount": 200,
+      "renderedShortlist": 24,
+      "uniqueCoarseFamilies": 36,
+      "uniqueTopologicalFamilies": 199,
+      "uniqueRadialAngularFamilies": 148,
+      "minHnk40Distance": 9,
+      "maxHnk40Distance": 45
+    },
+    {
+      "lexeme": "HODERU",
+      "ptBr": "CAMINHO",
+      "en": "WAY",
+      "candidateCount": 200,
+      "renderedShortlist": 24,
+      "uniqueCoarseFamilies": 33,
+      "uniqueTopologicalFamilies": 194,
+      "uniqueRadialAngularFamilies": 143,
+      "minHnk40Distance": 8,
+      "maxHnk40Distance": 38
+    },
+    {
+      "lexeme": "KODAN",
+      "ptBr": "LOGOS",
+      "en": "LOGOS",
+      "candidateCount": 200,
+      "renderedShortlist": 24,
+      "uniqueCoarseFamilies": 37,
+      "uniqueTopologicalFamilies": 192,
+      "uniqueRadialAngularFamilies": 140,
+      "minHnk40Distance": 9,
+      "maxHnk40Distance": 55
+    }
+  ]
+}

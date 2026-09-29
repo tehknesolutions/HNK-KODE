@@ -4,6 +4,14 @@ All notable HNK-KODE changes are recorded here. Git history remains the immutabl
 
 ## [Unreleased]
 
+### Type + Component + Event — 2026-09-29
+- Added haKodan Type System v0.1 with semantic types Any, Boolean, Number, String, IdentifierRef and Void.
+- Added Component Model v0.1 with typed state, dependency checks and duplicate protection.
+- Added Event Model v0.1 with deterministic event/action IDs and provenance.
+- Integrated propertyTypes into HNK-IR and formal Event Model descriptors into HOM.
+- Added integration tests for type equivalence and event provenance.
+- Added VM Opcode Readiness Gate v0.1; opcode numbers cannot be assigned before semantic contracts are frozen.
+
 ### HOM + Bytecode — 2026-09-29
 - Added **HOM — HNK Object Model v0.1** as the canonical object layer between semantic AST and HNK-IR.
 - HOM now models identity, type, state, properties, components, relations, behaviors, events, narrative, assets, presentation, data, manifestations and provenance.

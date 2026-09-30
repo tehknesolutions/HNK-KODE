@@ -1,0 +1,42 @@
+{
+  "id": "goodle:m1:sample",
+  "nome": "MundoDemo",
+  "versao": 1,
+  "ambiente": "hibrido",
+  "intencao": {
+    "descricao": "Criar uma experiência com um personagem.",
+    "objetivo": "Provar a ponte GoodProjeto → haKodan.",
+    "restricoes": ["preservar o modelo do criador"]
+  },
+  "componentes": [
+    {
+      "id": "Player",
+      "tipo": "jogo",
+      "nome": "Player",
+      "versao": "1.0.0",
+      "manifestacao": "interativa",
+      "configuracao": {
+        "vida": 100
+      },
+      "componentesFilhos": []
+    }
+  ],
+  "cenas": [
+    {
+      "id": "scene-1",
+      "nome": "Inicial",
+      "componentes": ["Player"]
+    }
+  ],
+  "regras": [
+    {
+      "id": "rule-1",
+      "nome": "Regra inicial",
+      "expressao": "quando Player tocar Enemy",
+      "habilitada": true
+    }
+  ],
+  "metadados": {
+    "fixture": "M1"
+  }
+}

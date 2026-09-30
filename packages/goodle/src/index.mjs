@@ -8,3 +8,6 @@ export * from "./semantic-data-adapter.mjs";
 export * from "./runtime-adapter.mjs";
 export * from "./capability-broker.mjs";
 export * from "./provenance-lineage.mjs";
+export * from "./manifestation-intent.mjs";
+export * from "./manifestation-bridge.mjs";
+export * from "./target-capability-registry.mjs";

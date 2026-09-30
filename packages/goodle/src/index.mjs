@@ -9,3 +9,4 @@ export * from "./runtime-adapter.mjs";
 export * from "./manifestation-intent.mjs";
 export * from "./manifestation-bridge.mjs";
 export * from "./target-capability-registry.mjs";
+export * from "./target-capability-inventory.mjs";

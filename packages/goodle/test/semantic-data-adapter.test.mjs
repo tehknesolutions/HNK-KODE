@@ -6,12 +6,11 @@ import {
   lowerGoodleCondition
 } from "../src/semantic-data-adapter.mjs";
 
-test("M3 maps only exact registry-backed semantic concepts", () => {
-  assert.deepEqual(classifyGoodleSemantic("quando"), {
-    status: "MAPPED",
-    semanticId: "WHEN",
-    sourceTerm: "quando"
-  });
+test("M3 maps only exact executable registry-backed semantic concepts", () => {
+  const when = classifyGoodleSemantic("quando");
+  assert.equal(when.status, "MAPPED");
+  assert.equal(when.semanticId, "WHEN");
+  assert.equal(when.executable, true);
   assert.equal(classifyGoodleSemantic("tocar").status, "UNMAPPED");
   assert.equal(classifyGoodleSemantic("diminuir").status, "UNMAPPED");
 });
@@ -40,9 +39,16 @@ test("M3 keeps unknown Goodle conditions unresolved", () => {
   assert.equal(result.status, "UNRESOLVED");
   assert.equal(result.sourceCondition, "maiorQueZero");
   assert.equal(result.semanticId, null);
+  assert.equal(result.executable, false);
 });
 
-test("M3 recognizes IF and ELSE as registry concepts without inventing condition operators", () => {
-  assert.equal(classifyGoodleSemantic("se").semanticId, "IF");
-  assert.equal(classifyGoodleSemantic("senão").semanticId, "ELSE");
+test("M3 recognizes spec-only IF and ELSE without treating them as executable", () => {
+  const ifToken = classifyGoodleSemantic("se");
+  const elseToken = classifyGoodleSemantic("senão");
+  assert.equal(ifToken.semanticId, "IF");
+  assert.equal(ifToken.status, "UNRESOLVED");
+  assert.equal(ifToken.executable, false);
+  assert.equal(elseToken.semanticId, "ELSE");
+  assert.equal(elseToken.status, "UNRESOLVED");
+  assert.equal(elseToken.executable, false);
 });

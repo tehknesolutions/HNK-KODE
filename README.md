@@ -6,17 +6,40 @@
 - **HNK-KODE** = idioma + linguagem computacional.
 - **haKodan** = framework multicamada, runtime, SDK e Manifestation Engine.
 - **HNK-KODE Studio** = IDE/ambiente de autoria.
+- **Goodle** = camada de criação/autoria universal integrada ao HNK-KODE.
 
 Arquitetura canônica: **HNK → PT-BR → EN**, convergindo para a mesma AST/HNK-IR, com camadas de **L8 ALEF/Intent até L0 Binary/Malkuth**.
 
-Fontes:
-- `docs/canon/HAKODAN-UNIVERSAL-CANON-v0.1.md`
-- `docs/architecture/HAKODAN-ARCHITECTURE-v0.1.md`
-- `spec/HNK-SEMANTIC-TOKEN-REGISTRY-v0.1.md`
+## Unificação Goodle → HNK-KODE
 
+O Goodle Browser está sendo incorporado ao HNK-KODE como camada de autoria/creator experience.
 
+A regra arquitetural é:
 
-Repositório oficial e independente do **Domain Canon linguístico HNK**.
+```text
+Goodle Surface / GoodProject
+        ↓
+Goodle Semantic Bridge
+        ↓
+Goodle IR
+        ↓
+haKodan semantic IDs
+        ↓
+Canonical AST / HOM
+        ↓
+HNK-IR
+        ↓
+Target / Runtime / Manifestation
+```
+
+Goodle não cria um segundo HNK-IR, HOM, type system, VM ou semantic canon. Esses contratos pertencem ao haKodan.
+
+O plano de migração está em:
+
+- `docs/migration/GOODLE-INTO-HNK-KODE-MIGRATION-v0.1.md`
+- `packages/goodle`
+
+A integração começa por contratos e compatibilidade; a migração completa de authoring, behavior, runtime e Studio ocorrerá por gates verificáveis.
 
 ## Autoridade
 
@@ -78,6 +101,7 @@ O material legado G01–G40 é patrimônio de pesquisa/cânone histórico confor
 
 - `packages/hnk-linguas` — corpus, léxico, gramática e runtime linguístico.
 - `packages/hnk-glyphs` — glifos linguísticos, fonemas e runtime associado.
+- `packages/goodle` — creator layer, GoodProject, Semantic Bridge e superfícies Goodle.
 - `canon` — registros do Domain Canon versionados.
 - `governance` — regras de promoção, autoridade e contratos ROOT/DOMAIN.
 - `references` — fontes e proveniência.
@@ -96,6 +120,7 @@ BIN, HEX, matriz/QR-like, cor, som, geometria polar, isometria e 3D são superf�
 - **SimpleWay-HNK** — curso oficial/experiência pedagógica do Idioma HNK; consumidor, não autoridade canônica.
 - **SimpleWay Math** — produto educacional/laboratório de ciências exatas; pode testar estruturas, mas descobertas retornam ao CODEX-HNK como pesquisa/candidato antes de qualquer canonização HNK-MATH.
 - **HNK-VERSE** — consumidor futuro do idioma em runtime/gameplay.
+- **Goodle Browser** — fonte histórica da camada Goodle durante a migração; a autoridade operacional passa progressivamente para HNK-KODE.
 
 ## Genesis V0.1
 

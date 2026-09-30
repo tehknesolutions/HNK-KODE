@@ -1,4 +1,4 @@
-const REGISTRY = Object.freeze({
+const EXECUTABLE_REGISTRY = Object.freeze({
   mundo: "WORLD",
   world: "WORLD",
   entidade: "ENTITY",
@@ -11,7 +11,10 @@ const REGISTRY = Object.freeze({
   acao: "ACTION",
   action: "ACTION",
   quando: "WHEN",
-  when: "WHEN",
+  when: "WHEN"
+});
+
+const SPEC_BOOTSTRAP_REGISTRY = Object.freeze({
   se: "IF",
   if: "IF",
   senão: "ELSE",
@@ -39,10 +42,24 @@ function fold(value) {
 
 export function classifyGoodleSemantic(term) {
   const sourceTerm = String(term);
-  const semanticId = REGISTRY[fold(sourceTerm)] ?? null;
-  return semanticId
-    ? { status: "MAPPED", semanticId, sourceTerm }
-    : { status: "UNMAPPED", semanticId: null, sourceTerm };
+  const key = fold(sourceTerm);
+  const executableId = EXECUTABLE_REGISTRY[key] ?? null;
+  if (executableId) {
+    return { status: "MAPPED", semanticId: executableId, sourceTerm, executable: true };
+  }
+
+  const bootstrapId = SPEC_BOOTSTRAP_REGISTRY[key] ?? null;
+  if (bootstrapId) {
+    return {
+      status: "UNRESOLVED",
+      semanticId: bootstrapId,
+      sourceTerm,
+      executable: false,
+      reason: "Semantic ID exists in bootstrap spec but is not yet present in the executable haKodan token table."
+    };
+  }
+
+  return { status: "UNMAPPED", semanticId: null, sourceTerm, executable: false };
 }
 
 export function normalizeGoodleData(data) {
@@ -74,11 +91,12 @@ export function lowerGoodleCondition(expression) {
     kind: "GoodleConditionLowering",
     status: "UNRESOLVED",
     sourceCondition: expression.nome,
-    semanticId: classification.status === "MAPPED" ? classification.semanticId : null,
+    semanticId: classification.semanticId,
+    executable: classification.executable,
     parameters: structuredClone(expression.parametros ?? {}),
     diagnostics: [{
       code: "GOODLE_CONDITION_OPERATOR_NOT_CANONICAL",
-      message: "IF/ELSE are registry concepts, but the source condition operator requires an explicit canonical operator contract."
+      message: "Control-flow vocabulary does not define arbitrary source condition operators; an explicit canonical operator contract is required."
     }],
     provenance: {
       sourceRepository: "tehknesolutions/goodle-browser",

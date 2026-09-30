@@ -3,42 +3,43 @@ const FAMILIES = new Set([
   "typescript", "react", "backend"
 ]);
 
-const EQUIVALENCE = new Set([
-  "direta", "aproximada", "contextual", "com_perda"
-]);
+const EQUIVALENCE = new Set(["direta", "aproximada", "contextual", "com_perda"]);
 
+/*
+ * Goodle keeps its historical/source semantic ID here.
+ * hnkSemanticId is populated ONLY when an exact HNK-KODE registry ID exists.
+ * This prevents migration from silently inventing canonical HNK semantics.
+ */
 const aliases = new Map([
-  ["se", { id: "LOGIC.IF", term: "se", family: "goodle", equivalence: "direta" }],
-  ["if", { id: "LOGIC.IF", term: "se", family: "goodle", equivalence: "direta" }],
-  ["senão", { id: "LOGIC.ELSE", term: "senão", family: "goodle", equivalence: "direta" }],
-  ["senao", { id: "LOGIC.ELSE", term: "senão", family: "goodle", equivalence: "direta" }],
-  ["else", { id: "LOGIC.ELSE", term: "senão", family: "goodle", equivalence: "direta" }],
-  ["repetir", { id: "LOGIC.LOOP", term: "repetir", family: "goodle", equivalence: "direta" }],
-  ["loop", { id: "LOGIC.LOOP", term: "repetir", family: "goodle", equivalence: "direta" }],
-  ["criar", { id: "ACTION.CREATE", term: "criar", family: "goodle", equivalence: "direta" }],
-  ["create", { id: "ACTION.CREATE", term: "criar", family: "goodle", equivalence: "direta" }],
-  ["entidade", { id: "ENTITY", term: "entidade", family: "goodle", equivalence: "direta" }],
-  ["entity", { id: "ENTITY", term: "entidade", family: "goodle", equivalence: "direta" }],
-  ["posição", { id: "SPACE.POSITION", term: "posição", family: "goodle", equivalence: "direta" }],
-  ["posicao", { id: "SPACE.POSITION", term: "posição", family: "goodle", equivalence: "direta" }],
-  ["position", { id: "SPACE.POSITION", term: "posição", family: "goodle", equivalence: "direta" }],
-  ["movimento", { id: "SPACE.MOVE", term: "movimento", family: "goodle", equivalence: "direta" }],
-  ["mover", { id: "SPACE.MOVE", term: "movimento", family: "goodle", equivalence: "direta" }],
-  ["move", { id: "SPACE.MOVE", term: "movimento", family: "goodle", equivalence: "direta" }],
-  ["definir", { id: "DATA.SET", term: "definir", family: "goodle", equivalence: "direta" }],
-  ["set", { id: "DATA.SET", term: "definir", family: "goodle", equivalence: "direta" }],
-  ["diminuir", { id: "DATA.DECREASE", term: "diminuir", family: "goodle", equivalence: "direta" }],
-  ["decrease", { id: "DATA.DECREASE", term: "diminuir", family: "goodle", equivalence: "direta" }],
-  ["quando", { id: "EVENT.WHEN", term: "quando", family: "goodle", equivalence: "direta" }],
-  ["when", { id: "EVENT.WHEN", term: "quando", family: "goodle", equivalence: "direta" }],
-  ["tocar", { id: "EVENT.TOUCH", term: "tocar", family: "goodle", equivalence: "direta" }],
-  ["toque", { id: "EVENT.TOUCH", term: "tocar", family: "goodle", equivalence: "direta" }],
-  ["touch", { id: "EVENT.TOUCH", term: "tocar", family: "goodle", equivalence: "direta" }],
-  ["evento", { id: "EVENT", term: "evento", family: "goodle", equivalence: "direta" }],
-  ["ação", { id: "ACTION", term: "ação", family: "goodle", equivalence: "direta" }],
-  ["acao", { id: "ACTION", term: "ação", family: "goodle", equivalence: "direta" }],
-  ["emitir", { id: "EVENT.EMIT", term: "emitir", family: "goodle", equivalence: "direta" }],
-  ["emit", { id: "EVENT.EMIT", term: "emitir", family: "goodle", equivalence: "direta" }]
+  ["se", { id: "logica.condicao.se", hnkSemanticId: "IF", term: "se", equivalence: "direta" }],
+  ["if", { id: "logica.condicao.se", hnkSemanticId: "IF", term: "se", equivalence: "direta" }],
+  ["senão", { id: "logica.condicao.senao", hnkSemanticId: "ELSE", term: "senão", equivalence: "direta" }],
+  ["senao", { id: "logica.condicao.senao", hnkSemanticId: "ELSE", term: "senão", equivalence: "direta" }],
+  ["else", { id: "logica.condicao.senao", hnkSemanticId: "ELSE", term: "senão", equivalence: "direta" }],
+  ["criar", { id: "entidade.criar", hnkSemanticId: null, term: "criar", equivalence: "direta" }],
+  ["create", { id: "entidade.criar", hnkSemanticId: null, term: "criar", equivalence: "direta" }],
+  ["entidade", { id: "estrutura.entidade", hnkSemanticId: "ENTITY", term: "entidade", equivalence: "direta" }],
+  ["entity", { id: "estrutura.entidade", hnkSemanticId: "ENTITY", term: "entidade", equivalence: "direta" }],
+  ["posição", { id: "espaco.posicao", hnkSemanticId: null, term: "posição", equivalence: "direta" }],
+  ["posicao", { id: "espaco.posicao", hnkSemanticId: null, term: "posição", equivalence: "direta" }],
+  ["position", { id: "espaco.posicao", hnkSemanticId: null, term: "posição", equivalence: "direta" }],
+  ["movimento", { id: "espaco.movimento", hnkSemanticId: null, term: "movimento", equivalence: "direta" }],
+  ["mover", { id: "espaco.movimento", hnkSemanticId: null, term: "movimento", equivalence: "direta" }],
+  ["move", { id: "espaco.movimento", hnkSemanticId: null, term: "movimento", equivalence: "direta" }],
+  ["definir", { id: "dados.valor.definir", hnkSemanticId: null, term: "definir", equivalence: "direta" }],
+  ["set", { id: "dados.valor.definir", hnkSemanticId: null, term: "definir", equivalence: "direta" }],
+  ["diminuir", { id: "dados.valor.diminuir", hnkSemanticId: null, term: "diminuir", equivalence: "direta" }],
+  ["decrease", { id: "dados.valor.diminuir", hnkSemanticId: null, term: "diminuir", equivalence: "direta" }],
+  ["quando", { id: "comportamento.reacao.quando", hnkSemanticId: "WHEN", term: "quando", equivalence: "direta" }],
+  ["when", { id: "comportamento.reacao.quando", hnkSemanticId: "WHEN", term: "quando", equivalence: "direta" }],
+  ["tocar", { id: "evento.toque", hnkSemanticId: null, term: "tocar", equivalence: "direta" }],
+  ["toque", { id: "evento.toque", hnkSemanticId: null, term: "tocar", equivalence: "direta" }],
+  ["touch", { id: "evento.toque", hnkSemanticId: null, term: "tocar", equivalence: "direta" }],
+  ["evento", { id: "comportamento.evento", hnkSemanticId: "EVENT", term: "evento", equivalence: "direta" }],
+  ["ação", { id: "comportamento.acao", hnkSemanticId: "ACTION", term: "ação", equivalence: "direta" }],
+  ["acao", { id: "comportamento.acao", hnkSemanticId: "ACTION", term: "ação", equivalence: "direta" }],
+  ["emitir", { id: "comportamento.emissao", hnkSemanticId: "EMIT", term: "emitir", equivalence: "direta" }],
+  ["emit", { id: "comportamento.emissao", hnkSemanticId: "EMIT", term: "emitir", equivalence: "direta" }]
 ]);
 
 function fold(value) {
@@ -51,9 +52,10 @@ export function resolveGoodleSemantic(term, { family } = {}) {
   if (family && !FAMILIES.has(family)) throw new Error("GOODLE_UNKNOWN_SOURCE_FAMILY");
   return {
     semanticId: found.id,
+    hnkSemanticId: found.hnkSemanticId,
     surface: String(term),
     canonicalTerm: found.term,
-    sourceFamily: family ?? found.family,
+    sourceFamily: family ?? "goodle",
     equivalence: found.equivalence,
     provenance: { source: "goodle-browser", status: "MIGRATED", surface: "GOODLE" }
   };
@@ -67,6 +69,7 @@ export function registerGoodleAlias(term, semanticId, metadata = {}) {
   if (!FAMILIES.has(family)) throw new Error("GOODLE_UNKNOWN_SOURCE_FAMILY");
   aliases.set(fold(term), {
     id: semanticId,
+    hnkSemanticId: metadata.hnkSemanticId ?? null,
     term,
     family,
     equivalence

@@ -1,23 +1,17 @@
-const SUPPORTED = new Map([
-  ["ACTION.CREATE", "ACTION.CREATE"],
-  ["ENTITY", "ENTITY.REFERENCE"],
-  ["EVENT.TOUCH", "EVENT.TOUCH"],
-  ["EVENT.WHEN", "EVENT.WHEN"]
-]);
-
 export function lowerGoodleNodeToHnk(node) {
-  const target = SUPPORTED.get(node?.semantica);
-  if (!target) {
+  const hnkSemanticId = node?.hnkSemanticId ?? null;
+
+  if (!hnkSemanticId) {
     return {
       status: "UNMAPPED",
       sourceSemanticId: node?.semantica ?? null,
-      diagnostics: ["GOODLE_SEMANTIC_NOT_YET_MAPPED"]
+      diagnostics: ["GOODLE_SEMANTIC_NOT_IN_HNK_REGISTRY"]
     };
   }
 
   return {
     status: "MAPPED",
-    semanticId: target,
+    semanticId: hnkSemanticId,
     inputs: structuredClone(node.parametros ?? {}),
     children: (node.filhos ?? []).map(lowerGoodleNodeToHnk),
     provenance: {

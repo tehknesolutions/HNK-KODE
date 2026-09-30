@@ -60,10 +60,27 @@ export function filterLexemes({authority,lesson,hasMeaning}={}){
 export function validateHnkMasterLexicon(){
   const errors=[],forms=new Set(),ids=new Set();
   if(HNK40_STATUS!=='PREPRODUCTION_NOT_OFFICIAL')errors.push(`Unexpected HNK40 visual state: ${HNK40_STATUS}`);
+  if(HNK_MASTER_LEXICON.length!==33)errors.push(`Expected 33 recovered lexeme/reference forms, got ${HNK_MASTER_LEXICON.length}`);
+  if(HNK_MASTER_PHRASES.length!==7)errors.push(`Expected 7 recovered phrases, got ${HNK_MASTER_PHRASES.length}`);
   for(const entry of HNK_MASTER_LEXICON){
-    if(ids.has(entry.id))errors.push(`Duplicate lexeme id: ${entry.id}`);ids.add(entry.id);
-    if(forms.has(entry.transliteration))errors.push(`Duplicate lexeme form: ${entry.transliteration}`);forms.add(entry.transliteration);
-    if(entry.authority==='BRIDGE'&&entry.encodingMode!=='EXPLICIT_BRIDGE')errors.push(`Bridge encoding missing: ${entry.transliteration}`);
+    if(forms.has(entry.transliteration))errors.push(`Duplicate form: ${entry.transliteration}`);forms.add(entry.transliteration);
+    if(ids.has(entry.id))errors.push(`Duplicate id: ${entry.id}`);ids.add(entry.id);
+    if(entry.transliteration!==entry.transliteration.toUpperCase())errors.push(`Non-normalized transliteration: ${entry.transliteration}`);
+    if(!entry.glyphIds.length)errors.push(`No glyphs: ${entry.transliteration}`);
+    if(entry.certainty==='UNRECOVERED'&&entry.meaning!==null)errors.push(`Unrecovered gloss must remain null: ${entry.transliteration}`);
+    if(entry.encodingMode==='EXPLICIT_BRIDGE'&&entry.authority!=='BRIDGE')errors.push(`Explicit bridge encoding leaked outside BRIDGE: ${entry.transliteration}`);
   }
-  return {ok:errors.length===0,errors};
+  const pitsa=getLexeme('PITSA');
+  if(!pitsa||pitsa.glyphIds.join('·')!=='G21·G03·G30·G01')errors.push('PITSA must preserve atomic TS as G30.');
+  const california=getLexeme('KALIFORNIA');
+  if(!california||california.encodingMode!=='EXPLICIT_BRIDGE'||california.glyphIds.join('·')!=='G23·G01·G14·G03·G25·G04·G15·G12·G03·G01')errors.push('KALIFORNIA must preserve explicit bridge F as G25.');
+  const bank=getLexeme('BANKA');
+  if(!bank||bank.meaning!==null||bank.authority!=='GATE')errors.push('BANKA must remain an unglossed gate form.');
+  const frozen=HNK_MASTER_LEXICON.filter(entry=>entry.authority==='FROZEN').length;
+  if(frozen!==10)errors.push(`Expected 10 FROZEN entries, got ${frozen}`);
+  for(const phrase of HNK_MASTER_PHRASES){
+    if(ids.has(phrase.id))errors.push(`Duplicate id: ${phrase.id}`);ids.add(phrase.id);
+    if(phrase.certainty==='UNRECOVERED'&&phrase.meaning!==null)errors.push(`Unrecovered phrase gloss must remain null: ${phrase.id}`);
+  }
+  return Object.freeze({ok:errors.length===0,errors:Object.freeze(errors)});
 }

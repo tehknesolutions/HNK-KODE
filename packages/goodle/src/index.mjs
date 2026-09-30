@@ -6,3 +6,5 @@ export * from "./good-project-adapter.mjs";
 export * from "./behavior-adapter.mjs";
 export * from "./semantic-data-adapter.mjs";
 export * from "./runtime-adapter.mjs";
+export * from "./manifestation-intent.mjs";
+export * from "./manifestation-bridge.mjs";

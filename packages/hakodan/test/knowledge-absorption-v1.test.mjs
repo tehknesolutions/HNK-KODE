@@ -16,7 +16,8 @@ const actor = Object.freeze({
 });
 
 test("authority chain preserves HNK > HNK-KODE > haKodan > vibeHaKodin > Goodle", () => {
-  assert.deepEqual(HAKODAN_AUTHORITY_CHAIN, ["HNK", "HNK-KODE", "haKodan", "vibeHaKodin", "Goodle"]);
+  assert.deepEqual([...HAKODAN_AUTHORITY_CHAIN], ["HNK", "HNK-KODE", "haKodan", "vibeHaKodin", "Goodle"]);
+  assert.equal(Object.isFrozen(HAKODAN_AUTHORITY_CHAIN), true);
 });
 
 test("vibeHaKodin has precedence over Goodle inside HNK context", () => {

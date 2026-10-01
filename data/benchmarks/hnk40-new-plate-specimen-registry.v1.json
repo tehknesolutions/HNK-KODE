@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PROVENANCE_REGISTRY_ACTIVE",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "sourceSet": {
+    "type": "CHAT_RASTER_SET",
+    "suppliedBy": "HNK_CREATOR",
+    "observedPlateCount": 20,
+    "exactBinaryAttachmentHashesAvailableInRepository": false,
+    "vectorSourcesRecovered": 0
+  },
+  "bindingPolicy": {
+    "visualInspectionMayRegisterFamily": true,
+    "visualInspectionMayPromoteGxxGeometry": false,
+    "boardVisibleLabelMayBeRecordedAsClaim": true,
+    "boardVisibleLabelIsCanonicalByDefault": false,
+    "creatorExplicitIdentityDecisionIsAuthoritativeWithinHnk": true,
+    "geometryRequiresReproducibleProvenance": true
+  },
+  "families": [
+    {"familyId":"PROTOGLYPH_10","expectedSpecimens":10,"identityDomain":"P01-P10","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK40_MATRIX","expectedSpecimens":40,"identityDomain":"G01-G40","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"FOUR_WORLDS","identityDomain":"PROJECTION","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"STYLE_LEVELS","identityDomain":"SIMPLE_CODEX_MAGNUM","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK_ISO","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK_RADIAL","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK_GLYPH","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK_SIGIL","identityDomain":"COMPOSITION","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"COLOR_72","identityDomain":"COLOR_SYSTEM","geometry":"NOT_APPLICABLE"},
+    {"familyId":"LIGATURES","identityDomain":"COMPOSITION","geometry":"RASTER_PENDING_EXTRACTION"},
+    {"familyId":"HNK_VERSE_VISUAL_BIBLE","identityDomain":"APPLICATION_SYSTEM","geometry":"RASTER_PENDING_EXTRACTION"}
+  ],
+  "gxxSlots": [
+    "G01","G02","G03","G04","G05","G06","G07","G08","G09","G10",
+    "G11","G12","G13","G14","G15","G16","G17","G18","G19","G20",
+    "G21","G22","G23","G24","G25","G26","G27","G28","G29","G30",
+    "G31","G32","G33","G34","G35","G36","G37","G38","G39","G40"
+  ],
+  "specimens": [],
+  "summary": {
+    "gxxSlots": 40,
+    "gxxGeometryBound": 0,
+    "pxxExpected": 10,
+    "vectorSources": 0,
+    "deterministicComparisonsEnabled": false
+  },
+  "blocker": "The conversation raster plates are visually available, but no repository-addressable exact binary/vector provenance is currently bound per specimen. Do not fabricate hashes, crop coordinates, strokes or Gxx geometry.",
+  "unlockConditions": [
+    "Recover exact source/vector files for the supplied plates, or",
+    "materialize the exact conversation raster attachments into an addressable source set and derive provenance-preserving crops/skeletons"
+  ]
+}

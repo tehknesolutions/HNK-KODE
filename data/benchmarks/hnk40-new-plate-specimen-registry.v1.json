@@ -1,52 +1,71 @@
 {
-  "schemaVersion": "1.0.0",
-  "status": "PROVENANCE_REGISTRY_ACTIVE",
+  "schemaVersion": "1.1.0",
+  "status": "RASTER_SPECIMENS_BOUND_40_OF_40",
   "authority": "RESEARCH_NON_CANONICAL",
-  "sourceSet": {
-    "type": "CHAT_RASTER_SET",
-    "suppliedBy": "HNK_CREATOR",
-    "observedPlateCount": 20,
-    "exactBinaryAttachmentHashesAvailableInRepository": false,
-    "vectorSourcesRecovered": 0
+  "source": {
+    "fileId": "file_0000000026a481f5b6cf9cc2713167a5",
+    "name": "HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres.png",
+    "sha256": "f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9",
+    "widthPx": 1536,
+    "heightPx": 1024,
+    "sizeBytes": 3483750,
+    "matrixRegionPx": [424, 533, 1163, 719],
+    "bindingMethod": "exact source bytes materialized from conversation; deterministic rectangular cell crops"
   },
-  "bindingPolicy": {
-    "visualInspectionMayRegisterFamily": true,
-    "visualInspectionMayPromoteGxxGeometry": false,
-    "boardVisibleLabelMayBeRecordedAsClaim": true,
-    "boardVisibleLabelIsCanonicalByDefault": false,
-    "creatorExplicitIdentityDecisionIsAuthoritativeWithinHnk": true,
-    "geometryRequiresReproducibleProvenance": true
+  "cropPolicy": {
+    "rows": 4,
+    "columns": 10,
+    "order": "row-major G01..G40",
+    "note": "Crops preserve the full visible matrix cell specimen, including adjacent printed board annotation. Skeleton extraction must isolate the luminous glyph and must not treat annotation text as glyph geometry."
   },
-  "families": [
-    {"familyId":"PROTOGLYPH_10","expectedSpecimens":10,"identityDomain":"P01-P10","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK40_MATRIX","expectedSpecimens":40,"identityDomain":"G01-G40","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"FOUR_WORLDS","identityDomain":"PROJECTION","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"STYLE_LEVELS","identityDomain":"SIMPLE_CODEX_MAGNUM","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK_ISO","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK_RADIAL","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK_GLYPH","identityDomain":"CANVAS","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK_SIGIL","identityDomain":"COMPOSITION","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"COLOR_72","identityDomain":"COLOR_SYSTEM","geometry":"NOT_APPLICABLE"},
-    {"familyId":"LIGATURES","identityDomain":"COMPOSITION","geometry":"RASTER_PENDING_EXTRACTION"},
-    {"familyId":"HNK_VERSE_VISUAL_BIBLE","identityDomain":"APPLICATION_SYSTEM","geometry":"RASTER_PENDING_EXTRACTION"}
+  "specimens": [
+    {"glyphId":"G01","cropBoxPx":[424,533,498,580],"width":74,"height":47,"sha256":"87f82494e0bfcb507ba5babf0b52a2902a76e679653a3a90c038d0b6a400a3c4"},
+    {"glyphId":"G02","cropBoxPx":[498,533,572,580],"width":74,"height":47,"sha256":"b587dc568a97dbdf43136ca95e3e48d9c1c859db34332ba88cdd963844421ffd"},
+    {"glyphId":"G03","cropBoxPx":[572,533,646,580],"width":74,"height":47,"sha256":"75668b0b8440710850143991919fe3d748519413dff3cb176aa9f76b9a277b4b"},
+    {"glyphId":"G04","cropBoxPx":[646,533,720,580],"width":74,"height":47,"sha256":"d274e6ef474d730fa006302cc1a054a0d59c92b5d6c828f38c12a55b7b87f448"},
+    {"glyphId":"G05","cropBoxPx":[720,533,794,580],"width":74,"height":47,"sha256":"a014dc38ac76fd25ec8866c3b0c9bd20a1a353359e60a31c8ad9fc0f3a655f29"},
+    {"glyphId":"G06","cropBoxPx":[794,533,867,580],"width":73,"height":47,"sha256":"e945d3148e44a52d1fd9b444a9ad969755d8d873ba20e691ef8098fc44bb674d"},
+    {"glyphId":"G07","cropBoxPx":[867,533,941,580],"width":74,"height":47,"sha256":"9f0ff98432e4a40504006a1a0f0719eb0471a6d604a24571c841074cf127b734"},
+    {"glyphId":"G08","cropBoxPx":[941,533,1015,580],"width":74,"height":47,"sha256":"b8a81fffa26b2f9b73039e1e90b273ec050555fc0589f4fcf413979071c46644"},
+    {"glyphId":"G09","cropBoxPx":[1015,533,1089,580],"width":74,"height":47,"sha256":"9e694dc88a942a9fbca749e0d5dc0bc6ad6c8ad8d7a702b6e65523555bd72d0a"},
+    {"glyphId":"G10","cropBoxPx":[1089,533,1163,580],"width":74,"height":47,"sha256":"92091a40e7bbaf2d77eb70e20a42189dd22c6605b5eafc61f060b59a2917e9cc"},
+    {"glyphId":"G11","cropBoxPx":[424,580,498,626],"width":74,"height":46,"sha256":"bdbdc08f9657841116e827eb42187c5ac8a5b1059b750c18e3d850e1722bb7b6"},
+    {"glyphId":"G12","cropBoxPx":[498,580,572,626],"width":74,"height":46,"sha256":"99d3ec9eea1a54a765985258723c76f73ce0e3293dc3a78dfbb01afc5e66387f"},
+    {"glyphId":"G13","cropBoxPx":[572,580,646,626],"width":74,"height":46,"sha256":"9267d3b81e1a01d3b0172570f91dbfbf25c9621d3e5d31b18f197119c4d4b22a"},
+    {"glyphId":"G14","cropBoxPx":[646,580,720,626],"width":74,"height":46,"sha256":"1ac78563e97942a4904426f11fd2e4bbd64205a0ef1ef95f91899a120b0492a2"},
+    {"glyphId":"G15","cropBoxPx":[720,580,794,626],"width":74,"height":46,"sha256":"34d7787d3f4ec009b1e9a174f906b555f42956bf147fa594040312f003c5a9c5"},
+    {"glyphId":"G16","cropBoxPx":[794,580,867,626],"width":73,"height":46,"sha256":"96322bf8ed54cbe91f2dbb2e75ee6c6f1a8d89cb0af9574390c02e50633e2a84"},
+    {"glyphId":"G17","cropBoxPx":[867,580,941,626],"width":74,"height":46,"sha256":"7af4a66c29ea22f8508eb802a26bcb8a7454efbba46867a49396674240a6e4e7"},
+    {"glyphId":"G18","cropBoxPx":[941,580,1015,626],"width":74,"height":46,"sha256":"ced0e5dfaa7d63e1159d0f310d34fbc2a1293d202aa17d786df6c5fffbf315ec"},
+    {"glyphId":"G19","cropBoxPx":[1015,580,1089,626],"width":74,"height":46,"sha256":"cb65795f391d7d87ebcdd48df9851806ed7fb786d2a1d1f166f20c1ea9af29a7"},
+    {"glyphId":"G20","cropBoxPx":[1089,580,1163,626],"width":74,"height":46,"sha256":"96b5af330ebdf17468038a839adbd13b92a17d4a2c3bd08066a4dbb80e2a1aa7"},
+    {"glyphId":"G21","cropBoxPx":[424,626,498,672],"width":74,"height":46,"sha256":"7546d7c9dc99f66e11e9e9d89c6ff4d19ed1f9666041df1f98dbda0b3eac4bd4"},
+    {"glyphId":"G22","cropBoxPx":[498,626,572,672],"width":74,"height":46,"sha256":"865f31958c69d26bb1d41fb6062a8c0d8e64dff31fc10525ad2e099d24a5e2ae"},
+    {"glyphId":"G23","cropBoxPx":[572,626,646,672],"width":74,"height":46,"sha256":"e86ca97a94db2ce55e8a5968a7cc7ea81bcf8a51a73814f35fd5140494c1bdae"},
+    {"glyphId":"G24","cropBoxPx":[646,626,720,672],"width":74,"height":46,"sha256":"5969669364c313b72384f14f2c44a85dd9eb02142c23f0bdbd6b795a4c8b2277"},
+    {"glyphId":"G25","cropBoxPx":[720,626,794,672],"width":74,"height":46,"sha256":"db45359c902269c7988cf12f7fb2fefc0db23f80555e6c83c26ab1c98bcdfdda"},
+    {"glyphId":"G26","cropBoxPx":[794,626,867,672],"width":73,"height":46,"sha256":"75f92a7947dfd10d99dca2d38b27ee46e49005fca8a728d1f44721c4e017ba50"},
+    {"glyphId":"G27","cropBoxPx":[867,626,941,672],"width":74,"height":46,"sha256":"e166b3935e4f0611f54f97f90f1f671a93071b38a5cb7d2972254c2d1b0d67d4"},
+    {"glyphId":"G28","cropBoxPx":[941,626,1015,672],"width":74,"height":46,"sha256":"4e02a60c1d9e7856b58a8ca69201b7765e81cc74c3dc779ae065b127e8db3bfa"},
+    {"glyphId":"G29","cropBoxPx":[1015,626,1089,672],"width":74,"height":46,"sha256":"b43908a55f5a251c63e7dbcc7ee1ac46e5ed0ec4138f01e36eb2ad00b9f9ef87"},
+    {"glyphId":"G30","cropBoxPx":[1089,626,1163,672],"width":74,"height":46,"sha256":"77b263a4311fd29ad05ecb08068706457cb3e065ea5bc91ed83cfebff2022250b"},
+    {"glyphId":"G31","cropBoxPx":[424,672,498,719],"width":74,"height":47,"sha256":"df98743874cb7bd2115fdc268c9818e8a3393596212f667065c5c62f5f83537f"},
+    {"glyphId":"G32","cropBoxPx":[498,672,572,719],"width":74,"height":47,"sha256":"bf94a8e4eb6600c40e6f06ab88e2e89dc14c07712865961ce9b9e1b2d4d835ea"},
+    {"glyphId":"G33","cropBoxPx":[572,672,646,719],"width":74,"height":47,"sha256":"b282c2c93c2f7112646687f45ea64b26002e4e25f39907c04c9f4a39ea017e4f"},
+    {"glyphId":"G34","cropBoxPx":[646,672,720,719],"width":74,"height":47,"sha256":"86d87c1a30a1c1f70e6d5d53c6d0cc5c7a9016dc7d2bc177b95046bc999b7e83"},
+    {"glyphId":"G35","cropBoxPx":[720,672,794,719],"width":74,"height":47,"sha256":"f5160c40cb3b7f4eaf04d8995a922f12b5e4f7b07f83bb69dcfba3990dcb718d"},
+    {"glyphId":"G36","cropBoxPx":[794,672,867,719],"width":73,"height":47,"sha256":"9b01f095126b68f481e5d2a30193d0f799f72e12db795a94b214251db0e11b22"},
+    {"glyphId":"G37","cropBoxPx":[867,672,941,719],"width":74,"height":47,"sha256":"f4f043a35d3193b92375d5a08a120eea5e55aab81b8868d3c8a3e7d08341ea2"},
+    {"glyphId":"G38","cropBoxPx":[941,672,1015,719],"width":74,"height":47,"sha256":"3951f49e17c2863bc0449162a7460b16edb0ad7847e129b27915b43cdd54e6ef"},
+    {"glyphId":"G39","cropBoxPx":[1015,672,1089,719],"width":74,"height":47,"sha256":"bb68812670d5e24a9276ed99d7000377b5b3fbd6c8995b98529c1f1ec86b5a4f"},
+    {"glyphId":"G40","cropBoxPx":[1089,672,1163,719],"width":74,"height":47,"sha256":"e0b71b39465c29168277c1afc3de81a21b6e61bbcd07ba7bd975f858fab59c43"}
   ],
-  "gxxSlots": [
-    "G01","G02","G03","G04","G05","G06","G07","G08","G09","G10",
-    "G11","G12","G13","G14","G15","G16","G17","G18","G19","G20",
-    "G21","G22","G23","G24","G25","G26","G27","G28","G29","G30",
-    "G31","G32","G33","G34","G35","G36","G37","G38","G39","G40"
-  ],
-  "specimens": [],
   "summary": {
-    "gxxSlots": 40,
-    "gxxGeometryBound": 0,
-    "pxxExpected": 10,
-    "vectorSources": 0,
-    "deterministicComparisonsEnabled": false
+    "sourceBound": true,
+    "gxxCellsBound": 40,
+    "vectorized": 0,
+    "skeletonsExtracted": 0,
+    "deterministicGeometryComparisonEnabled": false
   },
-  "blocker": "The conversation raster plates are visually available, but no repository-addressable exact binary/vector provenance is currently bound per specimen. Do not fabricate hashes, crop coordinates, strokes or Gxx geometry.",
-  "unlockConditions": [
-    "Recover exact source/vector files for the supplied plates, or",
-    "materialize the exact conversation raster attachments into an addressable source set and derive provenance-preserving crops/skeletons"
-  ]
+  "nextStep": "Extract provenance-preserving luminous-glyph masks/skeletons from each bound cell and compare against Candidate D; retain raster crop/hash as immutable parent evidence."
 }

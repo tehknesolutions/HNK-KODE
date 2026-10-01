@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "SKELETON_CANDIDATES_EXTRACTED_40_OF_40",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "parentSourceSha256": "f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9",
+  "parentRegistry": "data/benchmarks/hnk40-new-plate-specimen-registry.v1.json",
+  "method": {
+    "glyphZoneLocalPx": "x=4..47, y=3..height-4",
+    "luminanceThreshold": 95,
+    "luminanceDefinition": "mean(R,G,B)",
+    "smallObjectRemovalMaxPixels": 3,
+    "closingRadiusPx": 1,
+    "skeletonization": "binary morphological skeleton",
+    "annotationPolicy": "right-side printed annotation excluded by fixed glyph-zone boundary",
+    "reviewPolicy": "every extracted skeleton remains REVIEW_REQUIRED until checked against its immutable parent crop"
+  },
+  "resultSet": {
+    "glyphRange": "G01-G40",
+    "recordCount": 40,
+    "recordsSha256": "bbfc05dca50f31182d571ae6468947699944c8d6454f14cb0ba4e4bf256233c7",
+    "totalSkeletonPixels": 2174,
+    "minSkeletonPixelsPerGlyph": 26,
+    "maxSkeletonPixelsPerGlyph": 90,
+    "state": "EXTRACTED_REVIEW_REQUIRED"
+  },
+  "summary": {
+    "sourceBound": 40,
+    "skeletonCandidatesExtracted": 40,
+    "reviewRequired": 40,
+    "accepted": 0,
+    "rejected": 0,
+    "deterministicCandidateDComparisonEnabled": false
+  },
+  "guardrails": [
+    "Extraction is a raster-derived candidate, not canonical vector geometry.",
+    "No phoneme or semantic assignment is inferred from extraction.",
+    "G17/G20 E5 ambiguity remains untouched.",
+    "Candidate D scoring stays disabled until extraction review passes."
+  ],
+  "nextStep": "Review the 40 extraction candidates against their provenance-bound crops, correct any clipped/contaminated skeleton, then freeze accepted skeleton hashes and enable Candidate D comparison."
+}

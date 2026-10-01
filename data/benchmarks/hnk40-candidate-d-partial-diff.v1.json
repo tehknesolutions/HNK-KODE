@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PARTIAL_DIFF_EXECUTION_MANIFEST",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "gate": "HNK40-CANDIDATE-D-PARTIAL-DIFF-GATE-V1",
+  "inputs": {
+    "newPlate": {
+      "sourceSha256": "f67dab0e19dbd62ef57dfc69b8c3dc16ef36b29dcce8a5910b965f50f20827d9",
+      "qaDisposition": "17_FREEZE_READY_RASTER__23_VECTOR_OR_HUMAN_TRACE_REQUIRED"
+    },
+    "candidateD": {
+      "repository": "tehknesolutions/codex-hnk",
+      "ref": "research/hnk40-e5-hybrid-v1",
+      "path": "docs/architecture/HNK40_V2_CANDIDATE_GLYPH_SHEET_B.svg",
+      "vectorGrammarRecovered": true,
+      "corePrimitiveDomain": "P01-P10",
+      "glyphDomain": "G01-G40"
+    }
+  },
+  "comparisonModel": {
+    "structuralLayers": ["CORE_FORM", "FAMILY_TRANSFORM"],
+    "excludedFromStructuralPenalty": ["CANDIDATE_D_MARKERS", "NEW_PLATE_ORNAMENT"],
+    "normalization": "COMMON_UNIT_BOUNDING_BOX_ASPECT_PRESERVED",
+    "metricsRequired": [
+      "endpointDelta",
+      "componentDelta",
+      "bidirectionalNearestSkeletonDistance",
+      "tolerantOverlap"
+    ],
+    "resultClasses": [
+      "CORE_PRESERVED",
+      "CORE_PRESERVED_WITH_STYLING",
+      "STRUCTURAL_VARIANT",
+      "VISUAL_REDESIGN",
+      "REVIEW_REQUIRED"
+    ]
+  },
+  "execution": {
+    "eligibleCount": 17,
+    "unresolvedCount": 23,
+    "numericScoresMaterialized": 0,
+    "reasonNumericScoresPending": "The branch records the QA disposition and exact Candidate D vector grammar, but the frozen per-glyph raster skeleton coordinates/masks are not repository-addressable in this manifest. Numeric geometry scores MUST NOT be invented from status labels alone.",
+    "nextRequiredArtifact": "provenance-bound per-glyph skeleton geometry for the 17 FREEZE_READY_RASTER records"
+  },
+  "guards": {
+    "scoreUnresolved23": false,
+    "collapseG17G20Ambiguity": false,
+    "inferSemanticsFromGeometry": false,
+    "candidateDMarkersRequiredForPreservation": false,
+    "automaticVisualCanonPromotion": false
+  },
+  "next": [
+    "Materialize the exact frozen skeleton coordinates/masks for the 17 eligible glyphs with hashes.",
+    "Rasterize Candidate D CORE_FORM + FAMILY_TRANSFORM at a fixed resolution.",
+    "Compute the required four metric families for each eligible Gxx.",
+    "Classify each record without promoting canon.",
+    "Continue vector/human-trace recovery for the unresolved 23."
+  ]
+}

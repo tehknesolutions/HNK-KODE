@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "EXACT_RASTER_BYTES_RECOVERED",
+  "authority": "SOURCE_PROVENANCE_NON_CANONICAL",
+  "sourceRoot": "/mnt/data",
+  "hashAlgorithm": "SHA-256",
+  "observedMountedFiles": 20,
+  "uniqueRasterPayloads": 14,
+  "files": [
+    {"file":"HNK-IDIOMA--ALFABETO-VIVO-V01.png","sha256":"406a4e87f3a35146aae4355a7b437c504410997a1e53ab3863d6b71e23278e78","width":1536,"height":1024,"mode":"RGBA","bytes":3417976},
+    {"file":"HNK-IDIOMA--ALFABETO-VIVO-V01(1).png","sha256":"406a4e87f3a35146aae4355a7b437c504410997a1e53ab3863d6b71e23278e78","width":1536,"height":1024,"mode":"RGBA","bytes":3417976,"duplicateOf":"HNK-IDIOMA--ALFABETO-VIVO-V01.png"},
+    {"file":"HNK-IDIOMA--ALFABETO-VIVO-V02.png","sha256":"3a00456d25f14e4c60b48212a865c41f055bdf60bd3657072686dc0b6e73235c","width":1536,"height":1024,"mode":"RGBA","bytes":3649204},
+    {"file":"HNK-IDIOMA--ALFABETO-VIVO-V02(1).png","sha256":"3a00456d25f14e4c60b48212a865c41f055bdf60bd3657072686dc0b6e73235c","width":1536,"height":1024,"mode":"RGBA","bytes":3649204,"duplicateOf":"HNK-IDIOMA--ALFABETO-VIVO-V02.png"},
+    {"file":"HNK-IDIOMA--ALFABETO-VIVO.png","sha256":"d46399cbab63167dbad1e114289eda4930c2ef23cf75326bc00633c11f3a0460","width":1536,"height":1024,"mode":"RGBA","bytes":3233359},
+    {"file":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres.png","sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","width":1536,"height":1024,"mode":"RGBA","bytes":3483750},
+    {"file":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres(1).png","sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","width":1536,"height":1024,"mode":"RGBA","bytes":3483750,"duplicateOf":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres.png"},
+    {"file":"HNK-IDIOMA-01(1).png","sha256":"825663c1265f284227ae667b57f29008bb459951dc151060d61f490deaa264cc","width":1214,"height":1295,"mode":"RGBA","bytes":3159322},
+    {"file":"HNK-IDIOMA-PROTOGLIFOS-SEFIROTICOS-V1.png","sha256":"6d09f17615677ed6ec564ab56715477a7d98cc4b83d1fb40d5a96884df1c67ac","width":1448,"height":1086,"mode":"RGBA","bytes":3556703},
+    {"file":"HNK-IDIOMA-PROTOGLIFOS-SEFIROTICOS-V1(1).png","sha256":"6d09f17615677ed6ec564ab56715477a7d98cc4b83d1fb40d5a96884df1c67ac","width":1448,"height":1086,"mode":"RGBA","bytes":3556703,"duplicateOf":"HNK-IDIOMA-PROTOGLIFOS-SEFIROTICOS-V1.png"},
+    {"file":"HNK-IDIOMA-SISTEMAS-DE-CANVAS.png","sha256":"fad21b0ec98a635a9e29d104fef9893922840e4564041a2710cf951abd5918bb","width":1055,"height":1491,"mode":"RGBA","bytes":4096331},
+    {"file":"HNK-IDIOMA-SISTEMAS-DE-CANVAS(1).png","sha256":"fad21b0ec98a635a9e29d104fef9893922840e4564041a2710cf951abd5918bb","width":1055,"height":1491,"mode":"RGBA","bytes":4096331,"duplicateOf":"HNK-IDIOMA-SISTEMAS-DE-CANVAS.png"},
+    {"file":"image(1).png","sha256":"fad21b0ec98a635a9e29d104fef9893922840e4564041a2710cf951abd5918bb","width":1055,"height":1491,"mode":"RGBA","bytes":4096331,"duplicateOf":"HNK-IDIOMA-SISTEMAS-DE-CANVAS.png"},
+    {"file":"HNK-IDIOMA-SISTEMAS-DE-CANVAS--CANVA-ISO.png","sha256":"51553844add5780c85b0db4afbfd66938db590c7a0a0b5fa42824113192ef509","width":1122,"height":1402,"mode":"RGBA","bytes":3846369},
+    {"file":"HNK-IDIOMA-SISTEMAS-DE-CANVAS-01.png","sha256":"28b6f6accb7ec7c6ac0cfc847fa68d6bb5434586da0d7919785dc90094b143f9","width":1312,"height":1199,"mode":"RGBA","bytes":3353431},
+    {"file":"HNK-VERSE: Bíblia Visual Sci-Fi Fantástica.png","sha256":"1bb60c788c1cd9174bc1b0d35ce48ec5f4370412a25a9f888b54c970e96588d7","width":1536,"height":1024,"mode":"RGB","bytes":2946959},
+    {"file":"Bíblia Visual HNK-Verse: Mundos e Manifestação.png","sha256":"1d1c03ecc203565f5a2396e89ef696584010d179159131c253595601f5429572","width":1536,"height":1024,"mode":"RGB","bytes":3046434},
+    {"file":"Painel Cósmico do Codex HNK.png","sha256":"76a7ac24f0c68bafe3940f0a0553a629ac21208ab195aa3a33c7146c91ab0bde","width":1536,"height":1024,"mode":"RGB","bytes":3075668},
+    {"file":"Portal Cósmico do Codex HNK.png","sha256":"67a8868ee44f768ebac13310e9023ec354fcc356a10870cb85581fd369f5c147","width":1536,"height":1024,"mode":"RGB","bytes":3000967},
+    {"file":"HNK-Verse: Cinco Visões do Zero World.png","sha256":"497f96ee5874a42a0bddd48ab61fa97cab17bab6a5e370ff6de28415e7b5dcb3","width":1536,"height":1024,"mode":"RGB","bytes":2682681}
+  ],
+  "integrityConclusion": "Exact mounted raster bytes are now hash-addressable. Duplicate filenames sharing the same SHA-256 are byte-identical and must not be counted as independent visual evidence.",
+  "nextGate": "Identify which hash-addressed raster contains the G01-G40 specimen matrix, derive provenance-preserving specimen crops, then bind individual Gxx geometry without semantic inference."
+}

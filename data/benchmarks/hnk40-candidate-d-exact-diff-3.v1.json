@@ -1,0 +1,16 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"EXACT_DIFF_EXECUTED_REVIEW_REQUIRED",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "eligible":["G18","G28","G39"],
+  "method":{"candidateDRenderer":"CairoSVG from recovered exact SVG primitives","connectivity":8,"normalization":"centered unit max-extent point space","distance":"bidirectional nearest-neighbor normalized distance","overlapToleranceNormalized":0.03,"note":"Point-space normalization is used because rescaling sparse raster skeleton pixels as an image can itself fragment topology."},
+  "records":[
+    {"glyphId":"G18","protoGlyph":"P08","familyTransform":"ROTATE_90","newPlateTopology":{"pixels":41,"endpoints":2,"junctionPixels":8,"components":1},"candidateDTopology":{"pixels":366,"endpoints":0,"junctionPixels":7,"components":1},"metrics":{"endpointDelta":2,"componentDelta":0,"bidirectionalMeanNormalized":0.13016,"tolerantOverlapF1":0.0937},"outcome":"REVIEW_REQUIRED"},
+    {"glyphId":"G28","protoGlyph":"P08","familyTransform":"REFLECT_X","newPlateTopology":{"pixels":72,"endpoints":4,"junctionPixels":15,"components":1},"candidateDTopology":{"pixels":366,"endpoints":0,"junctionPixels":7,"components":1},"metrics":{"endpointDelta":4,"componentDelta":0,"bidirectionalMeanNormalized":0.08267,"tolerantOverlapF1":0.1969},"outcome":"REVIEW_REQUIRED"},
+    {"glyphId":"G39","protoGlyph":"P09","familyTransform":"ROTATE_180","newPlateTopology":{"pixels":38,"endpoints":4,"junctionPixels":5,"components":1},"candidateDTopology":{"pixels":276,"endpoints":5,"junctionPixels":9,"components":1},"metrics":{"endpointDelta":-1,"componentDelta":0,"bidirectionalMeanNormalized":0.10079,"tolerantOverlapF1":0.1682},"outcome":"REVIEW_REQUIRED"}
+  ],
+  "summary":{"scored":3,"corePreserved":0,"corePreservedWithStyling":0,"structuralVariant":0,"visualRedesign":0,"reviewRequired":3,"humanTraceOrVectorRecovery":37},
+  "decision":"The three topology-clean raster skeletons are valid for measurement, but their point-space similarity to Candidate D is insufficient to assign a preservation/redesign class automatically. They remain REVIEW_REQUIRED. No canon promotion occurs.",
+  "guards":{"G17G20AmbiguityPreserved":true,"candidateDMarkersExcluded":true,"automaticCanonPromotion":false},
+  "next":"Move all 40 glyphs to the Human/Vector Reconciliation Gate: 37 require trace/vector recovery; G18/G28/G39 have machine measurements attached but still require visual authority review before classification."
+}

@@ -1,0 +1,97 @@
+# HNK40 Source-Lock Matrix V1
+
+Status: `SOURCE_LOCK_IN_PROGRESS`
+Parent: Issue #52 / Visual Canon V1
+
+This matrix exists to prevent visual candidates from silently redefining HNK40.
+
+## Authority chain recovered from project sources
+
+```text
+HNK40 Legacy
+→ E4
+→ E5 Hybrid
+→ 4 DIRECT + 34 UNIQUE + 2 AMBIGUOUS
+→ Acquisition Dataset
+→ KODESCRIPT
+```
+
+Rules:
+
+1. `HNK40 Legacy` preserves the identity of the forty-unit genesis/corpus set.
+2. E4/E5 are structural projections; they do not silently replace Legacy identity.
+3. A phoneme, geometry, sephirah/world mapping or visual form shown only in a generated board remains `VISUAL_CANDIDATE`.
+4. Unknown data is recorded as `UNRESOLVED`; it is never inferred from neighboring rows.
+5. The two E5 ambiguous cases must remain `AMBIGUOUS` until their original records are recovered.
+6. Promotion requires traceable evidence to the recovered E4/E5/acquisition artifacts or an explicit canonical decision.
+
+## State vocabulary
+
+- `RECOVERED` — source artifact directly recovered.
+- `DIRECT` — recovered E5 classification is DIRECT.
+- `UNIQUE` — recovered E5 classification is UNIQUE.
+- `AMBIGUOUS` — recovered E5 classification is AMBIGUOUS.
+- `UNRESOLVED` — source does not currently establish the value.
+- `VISUAL_CANDIDATE` — asserted by supplied visual boards only.
+- `CONFLICT` — two authoritative/relevant sources disagree.
+
+## G01–G40 source-lock table
+
+| ID | Legacy identity | E4 | E5 | E5 class | Canonical phoneme | Canonical geometry | Visual-board mapping | Gate |
+|---|---|---|---|---|---|---|---|---|
+| G01 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G02 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G03 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G04 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G05 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G06 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G07 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G08 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G09 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G10 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G11 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G12 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G13 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G14 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G15 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G16 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G17 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G18 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G19 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G20 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G21 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G22 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G23 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G24 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G25 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G26 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G27 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G28 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G29 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G30 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G31 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G32 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G33 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G34 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G35 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G36 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G37 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G38 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G39 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+| G40 | RECOVERED: member of HNK40 Legacy | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | UNRESOLVED | VISUAL_CANDIDATE | HOLD |
+
+## Aggregate invariants already source-supported
+
+```text
+count(HNK40 Legacy) = 40
+count(E5 DIRECT) = 4
+count(E5 UNIQUE) = 34
+count(E5 AMBIGUOUS) = 2
+4 + 34 + 2 = 40
+```
+
+These aggregate counts do **not** identify which Gxx rows belong to each E5 class. Row-level assignment remains unresolved until the underlying artifacts are recovered.
+
+## Promotion gate
+
+A row can move from `HOLD` only when enough evidence exists to bind its Legacy identity to the relevant E4/E5 record. Visual-board evidence may then be compared, accepted, versioned or rejected — never used as the missing source itself.

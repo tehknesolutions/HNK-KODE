@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "batch":"A",
+  "range":"G01-G10",
+  "status":"SOURCE_CROPS_MATERIALIZED_TRACE_PENDING",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "source":{"file":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres.png","sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","matrixBodyPx":[357,536,1162,716]},
+  "cropPolicy":{"cellLayout":"10x4 row-major","traceRoi":"left 60 percent of cell with 3px inset","purpose":"exclude adjacent printed annotation while preserving source evidence"},
+  "records":[
+    {"glyphId":"G01","cellBoxPx":[357,536,438,581],"traceRoiBoxPx":[360,539,402,578]},
+    {"glyphId":"G02","cellBoxPx":[438,536,518,581],"traceRoiBoxPx":[441,539,483,578]},
+    {"glyphId":"G03","cellBoxPx":[518,536,599,581],"traceRoiBoxPx":[521,539,563,578]},
+    {"glyphId":"G04","cellBoxPx":[599,536,679,581],"traceRoiBoxPx":[602,539,644,578]},
+    {"glyphId":"G05","cellBoxPx":[679,536,760,581],"traceRoiBoxPx":[682,539,724,578]},
+    {"glyphId":"G06","cellBoxPx":[760,536,840,581],"traceRoiBoxPx":[763,539,805,578]},
+    {"glyphId":"G07","cellBoxPx":[840,536,921,581],"traceRoiBoxPx":[843,539,885,578]},
+    {"glyphId":"G08","cellBoxPx":[921,536,1001,581],"traceRoiBoxPx":[924,539,966,578]},
+    {"glyphId":"G09","cellBoxPx":[1001,536,1082,581],"traceRoiBoxPx":[1004,539,1046,578]},
+    {"glyphId":"G10","cellBoxPx":[1082,536,1162,581],"traceRoiBoxPx":[1085,539,1127,578]}
+  ],
+  "guard":"No vector points, junctions or strokes are asserted by this manifest. It establishes exact source regions only. Human/vector trace must be derived from these regions and must not be corrected toward Candidate D.",
+  "next":"Trace G01-G10 from the provenance-bound ROIs; store normalized vector geometry and per-trace hashes; mark ambiguous visible strokes CREATOR_DECISION_REQUIRED rather than guessing."
+}

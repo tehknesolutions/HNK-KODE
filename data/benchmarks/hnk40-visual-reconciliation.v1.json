@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "ACTIVE_RESEARCH_NON_CANONICAL",
+  "pipeline": "HNK40-VISUAL-RECONCILIATION-V1",
+  "inputs": {
+    "e5Projection": "data/benchmarks/hnk40-e5-hybrid-projection.v1.json",
+    "e5Rule": "HNK40-E5-V4-DIRECTION-DISTANCE@1",
+    "candidateD": {
+      "sourceRepository": "tehknesolutions/codex-hnk",
+      "historicalBranch": "research/hnk40-e5-hybrid-v1",
+      "state": "VISUAL_FROZEN_CANDIDATE_40_OF_40",
+      "spriteSha256": "87ee43f3785165397752a21eaceffcda8b3240748125062ca275bf8d46234ca4",
+      "orderedSetSha256": "78668df0f707952b7c280de52526abaa2b7900597fb8ff362a3a08641fd1bce5",
+      "canonical": false
+    },
+    "newPlates": {
+      "state": "SOURCE_BINDING_PENDING",
+      "canonical": false
+    }
+  },
+  "mandalaRenderer": {
+    "canvas": [900, 900],
+    "center": [449.5, 449.5],
+    "sectorCount": 72,
+    "sectorWidthDegrees": 5,
+    "sector01StartDegrees": 90,
+    "radialBoundariesPx": [168.5, 190.5, 208.5, 231.5, 310.5, 387.5, 419.5]
+  },
+  "summary": {
+    "totalGlyphs": 40,
+    "e5Direct": 4,
+    "e5DerivedUnique": 34,
+    "e5DerivedAmbiguous": 2,
+    "candidateDFrozen": 40,
+    "newPlateBound": 0,
+    "humanPromoted": 0
+  },
+  "records": [],
+  "invariants": [
+    "G01_G40_IDENTITY_MUST_BE_PRESERVED",
+    "G17_G20_E5_AMBIGUITY_MUST_NOT_BE_COLLAPSED_AUTOMATICALLY",
+    "GEOMETRIC_SIMILARITY_MUST_NOT_ASSIGN_SEMANTICS",
+    "NO_VISUAL_CANON_WITHOUT_EXPLICIT_HUMAN_GATE",
+    "MISSING_NEW_PLATE_EVIDENCE_MUST_REMAIN_EXPLICIT"
+  ],
+  "nextStep": "Populate 40 records from E5 projection and Candidate D evidence, then bind new plates when exact source geometry is available."
+}

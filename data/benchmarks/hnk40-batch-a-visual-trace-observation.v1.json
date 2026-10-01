@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"DIRECT_VISUAL_OBSERVATION_COMPLETE_TRACE_GEOMETRY_PENDING",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"A",
+  "range":"G01-G10",
+  "sourceBinding":"data/benchmarks/hnk40-batch-a-trace-input.v1.json",
+  "method":"Direct visual inspection of authoritative G01-G10 source cells. Descriptions record only clearly visible primary geometry; they are not normalized vector traces and do not fill ambiguous pixels from Candidate D.",
+  "records":[
+    {"glyphId":"G01","visiblePrimaryGeometry":"vertical stem crossing a closed oval/circular loop; pointed/arrow-like terminal at top; lower pointed terminal","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G02","visiblePrimaryGeometry":"single continuous S-like serpentine curve from upper-right toward lower-left, with hooked upper terminal","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G03","visiblePrimaryGeometry":"single vertical stroke with pointed/arrow-like terminals at both top and bottom","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G04","visiblePrimaryGeometry":"single rising curved stroke from lower-left to upper-right, ending in an inward hook at upper-right","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G05","visiblePrimaryGeometry":"angular open form: upper horizontal segment turns diagonally downward-left/center, then descends to a pointed lower terminal","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G06","visiblePrimaryGeometry":"vertical stem crossed by a horizontal bar; pointed terminals visible on vertical axis and lateral bar ends","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G07","visiblePrimaryGeometry":"dominant vertical/curved stem with angular right-facing middle branch and pointed terminals; small upper-right mark/segment appears visually distinct","traceConfidence":"MEDIUM","next":"CREATOR_DECISION_REQUIRED_FOR_UPPER_RIGHT_MARK"},
+    {"glyphId":"G08","visiblePrimaryGeometry":"single tall curved/angular stroke, hooked at upper-left and descending toward lower-left/bottom","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G09","visiblePrimaryGeometry":"single S-like serpentine curve with hooked upper terminal and rounded lower sweep","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"},
+    {"glyphId":"G10","visiblePrimaryGeometry":"inverted-U/portal-like three-sided form with central vertical extension upward and lower extension at right; pointed terminals visible on extensions","traceConfidence":"HIGH","next":"VECTORIZE_VISIBLE_CENTERLINE"}
+  ],
+  "summary":{"visuallyObserved":10,"highConfidencePrimaryGeometry":9,"creatorDecisionRequired":1,"creatorDecisionGlyphs":["G07"]},
+  "guards":{"candidateDUsedToFillGeometry":false,"normalizedVectorCoordinatesClaimed":false,"automaticCanonPromotion":false},
+  "next":"Produce normalized vector centerline traces for G01-G06 and G08-G10. Keep G07 upper-right mark explicitly unresolved until Creator decision or stronger source evidence."
+}

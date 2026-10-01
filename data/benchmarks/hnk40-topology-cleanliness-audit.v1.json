@@ -1,0 +1,31 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"TOPOLOGY_CLEANLINESS_AUDITED",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "connectivity":8,
+  "policy":{"automaticCleanupAllowed":"only if skeleton has one component, or every secondary component <=3 px and all secondary pixels <=5% of skeleton","inventStrokes":false},
+  "summary":{"audited":17,"autoCleanFreezeReady":3,"humanTraceRequired":14,"previouslyUnresolved":23,"humanTraceRequiredTotal":37},
+  "autoCleanFreezeReady":["G18","G28","G39"],
+  "humanTraceRequired":["G05","G06","G09","G12","G14","G15","G24","G25","G26","G32","G33","G34","G35","G36"],
+  "records":[
+    {"glyphId":"G05","components8":2,"componentSizesPx":[79,14],"secondaryPixelRatio":0.1505,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G06","components8":4,"componentSizesPx":[79,8,3,2],"secondaryPixelRatio":0.1413,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G09","components8":2,"componentSizesPx":[39,24],"secondaryPixelRatio":0.381,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G12","components8":2,"componentSizesPx":[39,20],"secondaryPixelRatio":0.339,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G14","components8":5,"componentSizesPx":[38,13,10,3,2],"secondaryPixelRatio":0.4242,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G15","components8":2,"componentSizesPx":[37,8],"secondaryPixelRatio":0.1778,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G18","components8":1,"componentSizesPx":[41],"secondaryPixelRatio":0.0,"disposition":"AUTO_CLEAN_FREEZE_READY"},
+    {"glyphId":"G24","components8":3,"componentSizesPx":[38,16,2],"secondaryPixelRatio":0.3214,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G25","components8":2,"componentSizesPx":[39,24],"secondaryPixelRatio":0.381,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G26","components8":3,"componentSizesPx":[37,17,11],"secondaryPixelRatio":0.4308,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G28","components8":1,"componentSizesPx":[72],"secondaryPixelRatio":0.0,"disposition":"AUTO_CLEAN_FREEZE_READY"},
+    {"glyphId":"G32","components8":3,"componentSizesPx":[31,11,9],"secondaryPixelRatio":0.3922,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G33","components8":3,"componentSizesPx":[20,8,5],"secondaryPixelRatio":0.3939,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G34","components8":2,"componentSizesPx":[23,23],"secondaryPixelRatio":0.5,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G35","components8":2,"componentSizesPx":[39,20],"secondaryPixelRatio":0.339,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G36","components8":3,"componentSizesPx":[16,12,5],"secondaryPixelRatio":0.5152,"disposition":"HUMAN_TRACE_REQUIRED"},
+    {"glyphId":"G39","components8":1,"componentSizesPx":[38],"secondaryPixelRatio":0.0,"disposition":"AUTO_CLEAN_FREEZE_READY"}
+  ],
+  "decision":"Only G18, G28 and G39 retain automatic structural scoring eligibility. The other 14 stable-threshold skeletons contain material secondary components and are promoted to HUMAN_TRACE_REQUIRED rather than having strokes/components silently removed. Together with the 23 unresolved specimens from Pass 4, 37/40 now require provenance-preserving vector recovery or explicit human trace.",
+  "next":"Run exact Candidate D core comparison for G18/G28/G39 only; open trace/vector recovery batch for remaining 37; preserve G17/G20 ambiguity guard."
+}

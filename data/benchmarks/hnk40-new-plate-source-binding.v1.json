@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "SOURCE_BINDING_IN_PROGRESS",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "source": {
+    "type": "CHAT_RASTER_SET",
+    "suppliedBy": "HNK_CREATOR",
+    "plateCountObserved": 20,
+    "exactVectorSourcesRecovered": 0,
+    "deterministicGxxGeometryBound": 0
+  },
+  "plateFamilies": [
+    {"familyId":"PROTOGLYPH_10","content":"P01-P10 sephirotic proto-glyph candidates","state":"RASTER_ONLY"},
+    {"familyId":"HNK40_MATRIX","content":"G01-G40 / forty-character matrix candidates","state":"RASTER_ONLY"},
+    {"familyId":"FOUR_WORLDS","content":"Atziluth/Beriah/Yetzirah/Assiah projections","state":"RASTER_ONLY"},
+    {"familyId":"STYLE_LEVELS","content":"HNK-SIMPLE/HNK-CODEX/HNK-MAGNUM","state":"RASTER_ONLY"},
+    {"familyId":"HNK_ISO","content":"isometric construction canvas","state":"RASTER_ONLY"},
+    {"familyId":"HNK_RADIAL","content":"radial/cabalistic canvas","state":"RASTER_ONLY"},
+    {"familyId":"HNK_GLYPH","content":"glyph construction canvas","state":"RASTER_ONLY"},
+    {"familyId":"HNK_SIGIL","content":"word/sigil composition canvas","state":"RASTER_ONLY"},
+    {"familyId":"COLOR_72","content":"12 portals x 6 faces color proposal","state":"RASTER_ONLY"},
+    {"familyId":"LIGATURES","content":"HE/NU/VO/KO/DAN and compound forms","state":"RASTER_ONLY"},
+    {"familyId":"HNK_VERSE_VISUAL_BIBLE","content":"ecosystem/application visual language","state":"RASTER_ONLY"}
+  ],
+  "identityPolicy": {
+    "boardLabelMayClaimIdentity": true,
+    "boardLabelAutomaticallyCanonical": false,
+    "rasterImpressionMayResolveConflict": false,
+    "creatorExplicitDecisionMayAssignHnkIdentity": true,
+    "geometryMustRemainProvenanceBound": true
+  },
+  "comparisonGate": {
+    "candidateDComparisonEnabled": false,
+    "e5ComparisonEnabled": false,
+    "reason": "No exact new-plate vector/skeleton provenance has yet been bound to individual Gxx specimens."
+  },
+  "nextStep": "Recover or create provenance-preserving specimen geometry per plate/Gxx, then enable deterministic topology comparison."
+}

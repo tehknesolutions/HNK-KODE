@@ -25,3 +25,4 @@ export * from "./evidence-audit-integration.mjs";
 export * from "./evidence-audit-integrity.mjs";
 export * from "./evidence-audit-query.mjs";
 export * from "./evidence-audit-seal.mjs";
+export * from "./evidence-audit-export.mjs";

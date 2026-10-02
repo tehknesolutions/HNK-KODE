@@ -131,6 +131,38 @@ jobs:
         shell: bash
         run: node --test packages/hnk-linguas/test/*.test.mjs
 
+      - name: Gate 03 diagnostics artifact
+        if: always()
+        shell: bash
+        run: |
+          set +e
+          mkdir -p gate-03-diagnostics
+          {
+            echo "GATE_03_DIAGNOSTICS"
+            echo "commit=$GITHUB_SHA"
+            echo "run=$GITHUB_RUN_ID"
+            echo "job=$GITHUB_JOB"
+            echo "runner=$RUNNER_OS"
+            node --version 2>&1
+            npm --version 2>&1
+            echo "--- canon-contract ---"
+            node --test packages/canon-contract/test/*.test.mjs; echo "exit=$?"
+            echo "--- hnk-glyphs ---"
+            node --test packages/hnk-glyphs/test/*.test.mjs; echo "exit=$?"
+            echo "--- hnk-linguas ---"
+            node --test packages/hnk-linguas/test/*.test.mjs; echo "exit=$?"
+            echo "--- dependency tree ---"
+            npm ls --all --depth=2 2>&1; echo "exit=$?"
+          } > gate-03-diagnostics/diagnostic.txt 2>&1
+
+      - name: Upload Gate 03 diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-03-diagnostics
+          path: gate-03-diagnostics/diagnostic.txt
+          if-no-files-found: error
+
       - name: Gate 03 attestation
         shell: bash
         run: |

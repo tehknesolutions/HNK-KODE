@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_B_EXACT_SPECIMEN_MANIFEST_READY",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"B",
+  "range":"G11-G20",
+  "sourceSha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9",
+  "records":[
+    {"glyphId":"G11","cropBoxPx":[424,580,498,626],"cropSha256":"bdbdc08f9657841116e827eb42187c5ac8a5b1059b750c18e3d850e1722bb7b6","trace":"NEXT"},
+    {"glyphId":"G12","cropBoxPx":[498,580,572,626],"cropSha256":"99d3ec9eea1a54a765985258723c76f73ce0e3293dc3a78dfbb01afc5e66387f","trace":"NEXT"},
+    {"glyphId":"G13","cropBoxPx":[572,580,646,626],"cropSha256":"9267d3b81e1a01d3b0172570f91dbfbf25c9621d3e5d31b18f197119c4d4b22a","trace":"NEXT"},
+    {"glyphId":"G14","cropBoxPx":[646,580,720,626],"cropSha256":"1ac78563e97942a4904426f11fd2e4bbd64205a0ef1ef95f91899a120b0492a2","trace":"NEXT"},
+    {"glyphId":"G15","cropBoxPx":[720,580,794,626],"cropSha256":"34d7787d3f4ec009b1e9a174f906b555f42956bf147fa594040312f003c5a9c5","trace":"NEXT"},
+    {"glyphId":"G16","cropBoxPx":[794,580,867,626],"cropSha256":"96322bf8ed54cbe91f2dbb2e75ee6c6f1a8d89cb0af9574390c02e50633e2a84","trace":"NEXT"},
+    {"glyphId":"G17","cropBoxPx":[867,580,941,626],"cropSha256":"7af4a66c29ea22f8508eb802a26bcb8a7454efbba46867a49396674240a6e4e7","trace":"NEXT_WITH_AMBIGUITY","debt":"DERIVED_AMBIGUOUS"},
+    {"glyphId":"G18","cropBoxPx":[941,580,1015,626],"cropSha256":"ced0e5dfaa7d63e1159d0f310d34fbc2a1293d202aa17d786df6c5fffbf315ec","trace":"NEXT_SOURCE_FIRST","debt":"PRIOR_MACHINE_REVIEW_REQUIRED"},
+    {"glyphId":"G19","cropBoxPx":[1015,580,1089,626],"cropSha256":"cb65795f391d7d87ebcdd48df9851806ed7fb786d2a1d1f166f20c1ea9af29a7","trace":"NEXT"},
+    {"glyphId":"G20","cropBoxPx":[1089,580,1163,626],"cropSha256":"96b5af330ebdf17468038a839adbd13b92a17d4a2c3bd08066a4dbb80e2a1aa7","trace":"NEXT_WITH_AMBIGUITY","debt":"DERIVED_AMBIGUOUS"}
+  ],
+  "rule":"Do not claim normalized geometry until the exact raster specimen itself has been visually inspected. Crop metadata proves provenance, not shape.",
+  "blocking":false,
+  "next":"Inspect the source raster/crops and encode actual normalized geometry; if raster bytes are unavailable in the current GPT+GitHub surface, continue C/D provenance and record TRACE_VISUAL_EVIDENCE_NEEDED rather than inventing geometry."
+}

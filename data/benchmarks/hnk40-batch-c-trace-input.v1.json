@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"TRACE_INPUT_FROZEN",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"C",
+  "range":"G21-G30",
+  "source":{"sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","matrixRegionPx":[424,533,1163,719]},
+  "sourceRegistry":"data/benchmarks/hnk40-new-plate-specimen-registry.v1.json",
+  "records":[
+    {"glyphId":"G21","cropBoxPx":[424,626,498,672],"registryCropSha256":"7546d7c9dc99f66e11e9e9d89c6ff4d19ed1f9666041df1f98dbda0b3eac4bd4","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G22","cropBoxPx":[498,626,572,672],"registryCropSha256":"865f31958c69d26bb1d41fb6062a8c0d8e64dff31fc10525ad2e099d24a5e2ae","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G23","cropBoxPx":[572,626,646,672],"registryCropSha256":"e86ca97a94db2ce55e8a5968a7cc7ea81bcf8a51a73814f35fd5140494c1bdae","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G24","cropBoxPx":[646,626,720,672],"registryCropSha256":"5969669364c313b72384f14f2c44a85dd9eb02142c23f0bdbd6b795a4c8b2277","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G25","cropBoxPx":[720,626,794,672],"registryCropSha256":"db45359c902269c7988cf12f7fb2fefc0db23f80555e6c83c26ab1c98bcdfdda","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G26","cropBoxPx":[794,626,867,672],"registryCropSha256":"75f92a7947dfd10d99dca2d38b27ee46e49005fca8a728d1f44721c4e017ba50","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G27","cropBoxPx":[867,626,941,672],"registryCropSha256":"e166b3935e4f0611f54f97f90f1f671a93071b38a5cb7d2972254c2d1b0d67d4","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G28","cropBoxPx":[941,626,1015,672],"registryCropSha256":"4e02a60c1d9e7856b58a8ca69201b7765e81cc74c3dc779ae065b127e8db3bfa","traceStatus":"PENDING_HUMAN_VECTOR_TRACE","priorMachineEvidence":"REVIEW_REQUIRED","blocking":false},
+    {"glyphId":"G29","cropBoxPx":[1015,626,1089,672],"registryCropSha256":"b43908a55f5a251c63e7dbcc7ee1ac46e5ed0ec4138f01e36eb2ad00b9f9ef87","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G30","cropBoxPx":[1089,626,1163,672],"registryCropSha256":"77b263a4311fd29ad05ecb08068706457cb3e065ea5bc91ed83cfebff2022250b","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"}
+  ],
+  "guards":{"candidateDMayRepairSource":false,"inventMissingStroke":false,"uncertaintyBlocksBatch":false,"localExecutionRequired":false,"actionsRequired":false,"automaticCanonPromotion":false},
+  "continuation":{"afterBatchC":"OPEN_BATCH_D_WITHOUT_WAITING_FOR_CREATOR_GATE_C","target":"RESEARCH_RECONCILIATION_40_OF_40"}
+}

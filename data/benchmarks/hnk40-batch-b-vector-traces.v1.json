@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_B_TRACE_LEDGER_ACTIVE",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"B",
+  "range":"G11-G20",
+  "sourceTraceInput":"data/benchmarks/hnk40-batch-b-trace-input.v1.json",
+  "executionPolicy":"docs/research/mandala/HNK40-NONBLOCKING-EXECUTION-POLICY-V1.md",
+  "records":[
+    {"glyphId":"G11","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G12","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G13","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G14","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G15","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G16","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G17","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":["DERIVED_AMBIGUOUS"],"blocking":false},
+    {"glyphId":"G18","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":["PRIOR_MACHINE_REVIEW_REQUIRED"],"blocking":false},
+    {"glyphId":"G19","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":[]},
+    {"glyphId":"G20","traceStatus":"SOURCE_BOUND_TRACE_PENDING","uncertainty":["DERIVED_AMBIGUOUS"],"blocking":false}
+  ],
+  "guards":{"candidateDMayRepairSource":false,"inventMissingStroke":false,"uncertaintyBlocksBatch":false,"localExecutionRequired":false,"actionsRequired":false,"automaticCanonPromotion":false},
+  "continuation":{"afterBatchB":"OPEN_BATCH_C_WITHOUT_WAITING_FOR_CREATOR_GATE_B","target":"RESEARCH_RECONCILIATION_40_OF_40"}
+}

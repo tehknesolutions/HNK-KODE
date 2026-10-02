@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "DETERMINISTIC_GEOMETRY_FINGERPRINTS_G11_G40",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "algorithm": "FNV-1a-64 over canonical JSON serialization of ordered normalized stroke arrays",
+  "note": "These fingerprints provide deterministic identity for the current research trace representation. They are not raster SHA-256 hashes and do not establish subpixel/vector exactness.",
+  "records": [
+    {
+      "glyphId": "G11",
+      "fingerprint": "fnv1a64:21e9a81a66244234",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G12",
+      "fingerprint": "fnv1a64:7d57246894bffbe3",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G13",
+      "fingerprint": "fnv1a64:ea9639c8a93d78f9",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G14",
+      "fingerprint": "fnv1a64:38145fbf50e491d2",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G15",
+      "fingerprint": "fnv1a64:0c2d344cbbf766fe",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G16",
+      "fingerprint": "fnv1a64:0fa4d14aee47c130",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G17",
+      "fingerprint": "fnv1a64:b8f7224e7d6cb338",
+      "uncertainty": [
+        "DERIVED_AMBIGUOUS"
+      ],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G18",
+      "fingerprint": "fnv1a64:d3b5bb01177a8875",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G19",
+      "fingerprint": "fnv1a64:95b9bf95555bf87a",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G20",
+      "fingerprint": "fnv1a64:ea3852e4a811adb9",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G21",
+      "fingerprint": "fnv1a64:ce5548a2c08c772f",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G22",
+      "fingerprint": "fnv1a64:0890fe26a4744609",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G23",
+      "fingerprint": "fnv1a64:7f0f0ad4005c636f",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G24",
+      "fingerprint": "fnv1a64:740530fd0ede7115",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G25",
+      "fingerprint": "fnv1a64:f6a6ad7efe5dbd11",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G26",
+      "fingerprint": "fnv1a64:ac651e19c785121c",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G27",
+      "fingerprint": "fnv1a64:9ed56c7293e41110",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G28",
+      "fingerprint": "fnv1a64:faf468c983460f43",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G29",
+      "fingerprint": "fnv1a64:d681f43b6f2845b8",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G30",
+      "fingerprint": "fnv1a64:3d758e2b9a90d060",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G31",
+      "fingerprint": "fnv1a64:b8909c655477d7d0",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G32",
+      "fingerprint": "fnv1a64:3a49cb050ed81169",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G33",
+      "fingerprint": "fnv1a64:34244582a4fd72b6",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G34",
+      "fingerprint": "fnv1a64:bb5c5733753a3618",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G35",
+      "fingerprint": "fnv1a64:1bb224fc8d1ae579",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G36",
+      "fingerprint": "fnv1a64:288f893039d67fd1",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G37",
+      "fingerprint": "fnv1a64:b84b80964f289a71",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G38",
+      "fingerprint": "fnv1a64:10a543358fdb104a",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G39",
+      "fingerprint": "fnv1a64:58c46db5f3616d6f",
+      "uncertainty": [],
+      "sourceVisible": true
+    },
+    {
+      "glyphId": "G40",
+      "fingerprint": "fnv1a64:4315bf9f694abefe",
+      "uncertainty": [],
+      "sourceVisible": true
+    }
+  ],
+  "coverage": {
+    "glyphs": 30,
+    "fingerprinted": 30,
+    "priorGeometrySha256": 10,
+    "totalGeometryFingerprintCoverage": 40
+  },
+  "next": "Use fingerprints in global reconciliation; preserve existing source hashes separately."
+}

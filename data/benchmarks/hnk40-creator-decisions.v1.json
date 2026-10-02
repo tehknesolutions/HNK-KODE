@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PENDING_CREATOR_DECISIONS",
+  "authority": "CREATOR_CANON_GATE",
+  "scope": "G01-G40",
+  "rule": "No record is canon-promoted until an explicit Creator decision is recorded.",
+  "decisionStates": [
+    "PENDING",
+    "APPROVE_NEW_PLATE",
+    "RETAIN_CANDIDATE_D",
+    "HYBRID",
+    "RETRACE",
+    "DEFER"
+  ],
+  "records": [
+    {
+      "glyphId": "G01",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G02",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G03",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G04",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G05",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G06",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G07",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G08",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G09",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G10",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G11",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G12",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G13",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G14",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G15",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G16",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G17",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G18",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G19",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G20",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G21",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G22",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G23",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G24",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G25",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G26",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G27",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G28",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G29",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G30",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G31",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G32",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G33",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G34",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G35",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G36",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G37",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G38",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G39",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    },
+    {
+      "glyphId": "G40",
+      "decision": "PENDING",
+      "evidenceRefs": {
+        "globalReconciliation": "data/benchmarks/hnk40-global-reconciliation-v1.json"
+      },
+      "canonPromotion": false
+    }
+  ],
+  "focusedDebt": {
+    "G07": "upper_right_mark",
+    "G17": "DERIVED_AMBIGUOUS",
+    "G18": "PRIOR_MACHINE_REVIEW_REQUIRED",
+    "G20": "DERIVED_AMBIGUOUS",
+    "G28": "PRIOR_MACHINE_REVIEW_REQUIRED"
+  },
+  "invariants": {
+    "automaticCanonPromotion": false,
+    "researchEvidencePreserved": true,
+    "githubPlusGPTPrimary": true,
+    "externalRuntimeRequired": false
+  },
+  "next": "Fill only explicit Creator decisions; then generate Visual Canon V2 manifest and preserve all non-selected alternatives as historical evidence."
+}

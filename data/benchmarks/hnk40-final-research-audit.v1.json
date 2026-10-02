@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "FINAL_RESEARCH_AUDIT_READY_FOR_CANON",
+  "authority": "CREATOR_CANON_GATE",
+  "scope": "G01-G40",
+  "coverage": {
+    "authoritativeSourceBinding": 40,
+    "directVisualInspection": 40,
+    "normalizedSourceVisibleTrace": 40,
+    "candidateDInventory": 40,
+    "structuralComparison": 40,
+    "globalReconciliation": 40,
+    "creatorDecisionRecords": 40,
+    "canonPromoted": 0
+  },
+  "decisionDebt": [
+    {
+      "glyphId": "G07",
+      "state": "CREATOR_DECISION_REQUIRED",
+      "detail": "upper_right_mark"
+    },
+    {
+      "glyphId": "G17",
+      "state": "DERIVED_AMBIGUOUS"
+    },
+    {
+      "glyphId": "G18",
+      "state": "PRIOR_MACHINE_REVIEW_REQUIRED"
+    },
+    {
+      "glyphId": "G20",
+      "state": "DERIVED_AMBIGUOUS"
+    },
+    {
+      "glyphId": "G28",
+      "state": "PRIOR_MACHINE_REVIEW_REQUIRED"
+    }
+  ],
+  "invariants": [
+    "Research evidence is not canon.",
+    "PENDING does not promote.",
+    "Candidate D is comparison evidence, not an automatic repair source.",
+    "Uncertainty is non-blocking research debt.",
+    "Rejected/deferred alternatives remain historical evidence.",
+    "GPT + GitHub remain sufficient for repository-side execution."
+  ],
+  "completion": "Research package is frozen as decision-ready. Further canon changes require explicit Creator decisions in data/benchmarks/hnk40-creator-decisions.v1.json.",
+  "next": "Execute only explicit Creator decisions and generate Visual Canon V2 promotion records."
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"NON_BLOCKING_VISUAL_EVIDENCE_DEBT",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "purpose":"Prevent provenance metadata from being mistaken for visually inspected geometry while allowing the 40/40 program to continue through GPT + GitHub.",
+  "records":[
+    {"range":"G01-G10","visualEvidenceState":"PREVIOUSLY_INSPECTED_AND_TRACED","orderedTrace":10,"blocking":false},
+    {"range":"G11-G20","visualEvidenceState":"TRACE_VISUAL_EVIDENCE_NEEDED","orderedTrace":0,"blocking":false,"carry":["G17 DERIVED_AMBIGUOUS","G18 PRIOR_MACHINE_REVIEW_REQUIRED","G20 DERIVED_AMBIGUOUS"]},
+    {"range":"G21-G30","visualEvidenceState":"TRACE_VISUAL_EVIDENCE_NEEDED","orderedTrace":0,"blocking":false,"carry":["G28 PRIOR_MACHINE_REVIEW_REQUIRED"]},
+    {"range":"G31-G40","visualEvidenceState":"TRACE_VISUAL_EVIDENCE_NEEDED","orderedTrace":0,"blocking":false}
+  ],
+  "rules":{"cropHashEqualsGeometryEvidence":false,"inventGeometryFromMetadata":false,"externalToolRequired":false,"localRuntimeRequired":false,"githubActionsRequired":false,"continueIndependentWork":true},
+  "parallelWorkAllowed":["Candidate D inventory for G11-G40","reconciliation schema preparation","global evidence ledger maintenance","canon decision package structure","semantic/phonetic cross-reference work supported by repository evidence"],
+  "resumeCondition":"When exact source raster/crop pixels are visible to GPT in the conversation or repository surface, continue normalized trace directly from G11 without changing the source binding.",
+  "target":"40/40 evidence coverage with explicit distinction between provenance-complete and geometry-complete states."
+}

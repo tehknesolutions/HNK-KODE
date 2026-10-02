@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "2.0.0",
+  "status": "RESEARCH_LEDGER_40_OF_40_SOURCE_TRACE_AND_DIFF",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "totals": {
+    "glyphs": 40,
+    "sourceBound": 40,
+    "visualInspected": 40,
+    "normalizedTrace": 40,
+    "structuralDiff": 40,
+    "geometryHash": 10,
+    "canonPromoted": 0
+  },
+  "progress": {
+    "provenance": 100,
+    "visualInspection": 100,
+    "normalizedTrace": 100,
+    "structuralDiff": 100,
+    "geometryHash": 25,
+    "canonPromotion": 0
+  },
+  "batches": {
+    "A": {
+      "range": "G01-G10",
+      "trace": 10,
+      "hash": 10,
+      "diff": 10,
+      "canon": "PENDING_CREATOR"
+    },
+    "B": {
+      "range": "G11-G20",
+      "trace": 10,
+      "hash": 0,
+      "diff": 10,
+      "canon": "NOT_PROMOTED"
+    },
+    "C": {
+      "range": "G21-G30",
+      "trace": 10,
+      "hash": 0,
+      "diff": 10,
+      "canon": "NOT_PROMOTED"
+    },
+    "D": {
+      "range": "G31-G40",
+      "trace": 10,
+      "hash": 0,
+      "diff": 10,
+      "canon": "NOT_PROMOTED"
+    }
+  },
+  "debt": [
+    "G07 upper_right_mark",
+    "G17 DERIVED_AMBIGUOUS",
+    "G18 PRIOR_MACHINE_REVIEW_REQUIRED",
+    "G20 DERIVED_AMBIGUOUS",
+    "G28 PRIOR_MACHINE_REVIEW_REQUIRED"
+  ],
+  "next": [
+    "deterministic geometry fingerprints for G11-G40",
+    "global reconciliation package",
+    "single consolidated Creator Canon Gate"
+  ],
+  "invariants": {
+    "githubPlusGPTPrimary": true,
+    "externalRuntimeRequired": false,
+    "actionsRequired": false,
+    "uncertaintyBlocksProgress": false,
+    "automaticCanonPromotion": false
+  }
+}

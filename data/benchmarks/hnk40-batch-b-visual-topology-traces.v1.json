@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_B_VISUALLY_INSPECTED_TOPOLOGY_COMPLETE",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"B",
+  "range":"G11-G20",
+  "source":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres",
+  "method":"Direct visual inspection of the authoritative raster cells. This artifact records source-visible topology before metric coordinate fitting; it does not infer geometry from Candidate D.",
+  "records":[
+    {"glyphId":"G11","topology":"inverted-U/portal with central top stem and top terminal","components":["portal_arch","top_stem","top_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G12","topology":"rounded inverted-U/arch with central top stem and top terminal","components":["rounded_arch","top_stem","top_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G13","topology":"left vertical stem + upper-right horizontal/curved arm + descending right diagonal/vertical ending in terminal","components":["left_stem","upper_arm","right_descender","bottom_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G14","topology":"long rising/central diagonal-axis with triangular/open right branch and top terminal","components":["main_axis","right_triangular_branch","top_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G15","topology":"rising diagonal/axis with narrow triangular right branch and top terminal","components":["main_axis","right_branch","top_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G16","topology":"curved descending main stroke with upper bifurcation/short arm and detached upper mark","components":["curved_main","upper_branch","detached_upper_mark"],"visualState":"INSPECTED"},
+    {"glyphId":"G17","topology":"angular 7-like open form with upper horizontal stroke, right descending diagonal and left upper return","components":["upper_bar","left_return","right_descender"],"visualState":"INSPECTED_WITH_AMBIGUITY","uncertainty":["DERIVED_AMBIGUOUS retained"]},
+    {"glyphId":"G18","topology":"vertical stem with closed/near-closed triangular loop attached on right","components":["vertical_stem","right_loop"],"visualState":"INSPECTED","uncertainty":["PRIOR_MACHINE_REVIEW_REQUIRED retained as historical metadata"]},
+    {"glyphId":"G19","topology":"looped lower-left bowl/oval joined to vertical stem extending upward","components":["lower_loop","right_or_central_stem","top_terminal"],"visualState":"INSPECTED"},
+    {"glyphId":"G20","topology":"single sinuous S-like vertical stroke with pronounced central bend and upper terminal","components":["sinuous_main","top_terminal"],"visualState":"INSPECTED_WITH_AMBIGUITY","uncertainty":["DERIVED_AMBIGUOUS retained"]}
+  ],
+  "guards":{"candidateDUsedToInferTopology":false,"metricCoordinatesClaimed":false,"inventedHiddenStroke":false,"canonPromotion":false},
+  "progress":{"sourceVisibleTopology":20,"metricOrderedTrace":10,"candidateDInventory":40},
+  "next":"Fit normalized ordered coordinates for G11-G20 from these inspected topologies, freeze geometry hashes, and run the already-prepared Candidate D structural diff. Continue C/D visual inspection in parallel."
+}

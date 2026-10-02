@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "VISUAL_INSPECTION_COMPLETE_G11_G40",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "sourceArtifact": "hnk40_g11_g40_contact.png",
+  "note": "Direct visual inspection records source-visible topology only. These records do not claim subpixel vector coordinates or deterministic geometry hashes.",
+  "records": [
+    {
+      "glyphId": "G11",
+      "visibleCore": "vertical stem with top arrow and U-shaped lower arch",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G12",
+      "visibleCore": "vertical stem with top arrow and rounded U-shaped lower arch",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G13",
+      "visibleCore": "vertical stem with top arrow; rightward upper arm; lower right descending terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G14",
+      "visibleCore": "slanted ascending stem with top arrow and hooked/angled lower return",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G15",
+      "visibleCore": "slanted ascending stem with top arrow and angular lower return",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G16",
+      "visibleCore": "curved vertical stem with upper detached mark and long lower diagonal sweep",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G17",
+      "visibleCore": "inverted trapezoid/angled upper form with central descending stem",
+      "confidence": "high",
+      "ambiguity": [
+        "historical DERIVED_AMBIGUOUS retained"
+      ]
+    },
+    {
+      "glyphId": "G18",
+      "visibleCore": "vertical stem with right-facing bowl/loop and lower diagonal terminal",
+      "confidence": "high",
+      "ambiguity": [
+        "prior machine REVIEW_REQUIRED retained"
+      ]
+    },
+    {
+      "glyphId": "G19",
+      "visibleCore": "vertical stem with rounded lower loop and top extension",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G20",
+      "visibleCore": "curved S-like vertical form with angular upper/right termination",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G21",
+      "visibleCore": "angular open form with horizontal upper stroke and descending hooked terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G22",
+      "visibleCore": "cross-like vertical stem with short horizontal bar and pointed lower terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G23",
+      "visibleCore": "vertical stem with two angled right branches forming a K-like structure",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G24",
+      "visibleCore": "left-facing angular bowl/triangle with vertical descending terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G25",
+      "visibleCore": "vertical stem with angled upper arm and long descending terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G26",
+      "visibleCore": "vertical stem with short upper crossbar and curved lower sweep",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G27",
+      "visibleCore": "zig-zag/angular vertical form with top diamond/terminal and bottom pointed terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G28",
+      "visibleCore": "vertical stem with crossbar and curved/open left-facing lower hook",
+      "confidence": "high",
+      "ambiguity": [
+        "prior machine REVIEW_REQUIRED retained"
+      ]
+    },
+    {
+      "glyphId": "G29",
+      "visibleCore": "curved vertical form with upper loop/angle and pointed lower termination",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G30",
+      "visibleCore": "vertical stem with left-facing angular upper loop and descending right-side terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G31",
+      "visibleCore": "single angular lightning-like stroke with upper hook and downward pointed terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G32",
+      "visibleCore": "simple zig-zag/Z-like angular stroke",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G33",
+      "visibleCore": "Z-like/angular body with central vertical stem and top/bottom right terminals",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G34",
+      "visibleCore": "horizontal/angular left-facing wedge joined to a vertical stem",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G35",
+      "visibleCore": "angular hooked form with tall vertical right stem and curved left body",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G36",
+      "visibleCore": "curved lower loop joined to tall vertical stem",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G37",
+      "visibleCore": "angular zig-zag body with top pointed terminal and lower cross-like terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G38",
+      "visibleCore": "vertical stem with short crossbar and lower hooked/pointed terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G39",
+      "visibleCore": "curved S-like form with angular upper hook and lower pointed terminal",
+      "confidence": "high"
+    },
+    {
+      "glyphId": "G40",
+      "visibleCore": "rounded U-like vertical form with two top terminals and small lower-right mark",
+      "confidence": "high"
+    }
+  ],
+  "summary": {
+    "visuallyInspected": 30,
+    "visualInspectionCoverage": "40_OF_40",
+    "normalizedVectorTraceCoverageBeforeThisArtifact": "10_OF_40",
+    "deterministicGeometryHashCoverage": "10_OF_40",
+    "candidateDDiffCoverage": "10_OF_40",
+    "canonPromoted": 0,
+    "nonBlockingDebt": [
+      "G07",
+      "G17",
+      "G18",
+      "G20",
+      "G28"
+    ]
+  },
+  "next": [
+    "Convert G11-G40 source-visible cores into ordered normalized traces.",
+    "Hash each completed/explicitly partial trace.",
+    "Run structural Candidate D diff.",
+    "Do not infer hidden strokes from Candidate D."
+  ]
+}

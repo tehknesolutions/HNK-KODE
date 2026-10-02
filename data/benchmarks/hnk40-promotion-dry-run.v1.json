@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PROMOTION_DRY_RUN_COMPLETE",
+  "authority": "CREATOR_CANON_GATE",
+  "sourceManifest": "data/benchmarks/hnk40-creator-decisions.v1.json",
+  "scope": "G01-G40",
+  "inputState": "ALL_PENDING",
+  "simulatedPromotions": 0,
+  "actualCanonChanges": 0,
+  "records": [
+    {
+      "glyphId": "G01",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G02",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G03",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G04",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G05",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G06",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G07",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G08",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G09",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G10",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G11",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G12",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G13",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G14",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G15",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G16",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G17",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G18",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G19",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G20",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G21",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G22",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G23",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G24",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G25",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G26",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G27",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G28",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G29",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G30",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G31",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G32",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G33",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G34",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G35",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G36",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G37",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G38",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G39",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    },
+    {
+      "glyphId": "G40",
+      "decision": "PENDING",
+      "promotionState": "BLOCKED_PENDING_EXPLICIT_DECISION",
+      "visualCanonV2Record": false
+    }
+  ],
+  "focusedDebt": [
+    "G07",
+    "G17",
+    "G18",
+    "G20",
+    "G28"
+  ],
+  "invariantChecks": {
+    "pendingNeverPromotes": true,
+    "noCanonMutation": true,
+    "researchEvidencePreserved": true,
+    "alternativesPreserved": true
+  },
+  "result": "PASS",
+  "next": "Populate explicit Creator decisions; rerun promotion pipeline only for non-PENDING records."
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_B_TRACE_PASS_01_RECORDED",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"B",
+  "range":"G11-G20",
+  "parent":"data/benchmarks/hnk40-batch-b-trace-input.v1.json",
+  "policy":"NON_BLOCKING_SOURCE_FIRST",
+  "records":[
+    {"glyphId":"G11","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G12","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G13","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G14","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G15","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G16","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G17","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"ENCODE_VISIBLE_CORE_AND_CARRY_AMBIGUITY","uncertainty":["DERIVED_AMBIGUOUS"],"blocking":false},
+    {"glyphId":"G18","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"ENCODE_SOURCE_VISIBLE_CORE_INDEPENDENT_OF_MACHINE_REVIEW","uncertainty":["PRIOR_MACHINE_REVIEW_REQUIRED"],"blocking":false},
+    {"glyphId":"G19","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"SOURCE_VISIBLE_GEOMETRY_TO_BE_ENCODED","blocking":false},
+    {"glyphId":"G20","state":"TRACE_RECONSTRUCTION_ACTIVE","sourceBound":true,"geometryStatus":"ENCODE_VISIBLE_CORE_AND_CARRY_AMBIGUITY","uncertainty":["DERIVED_AMBIGUOUS"],"blocking":false}
+  ],
+  "guards":{"noCandidateDRepair":true,"noInventedStroke":true,"ambiguityIsDebtNotStop":true,"externalRuntimeRequired":false,"canonPromotion":false},
+  "next":"Encode normalized ordered source-visible geometry for G11-G20, then hash each resolved/partial geometry and immediately run Candidate D structural diff."
+}

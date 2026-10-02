@@ -1,0 +1,21 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_A_GEOMETRY_HASHES_FROZEN",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "sourceTraceArtifact":"data/benchmarks/hnk40-batch-a-vector-traces.v1.json",
+  "canonicalization":"JSON object containing strokes + intentional marks (+ unresolved id when present), keys sorted, compact separators, SHA-256 UTF-8",
+  "records":[
+    {"glyphId":"G01","geometrySha256":"8166d7ff99215e179776d5d5cf62a22b979bed03715479e6b378605cba9dd445"},
+    {"glyphId":"G02","geometrySha256":"300ab3b89968ca326bcfcbb3c95804054187d3f64bbc97a6ab9c474fe3a3857a"},
+    {"glyphId":"G03","geometrySha256":"3e27d0c4f50d255febc98bb93cba9685306f6d8160fa1441cabb0d374ee80073"},
+    {"glyphId":"G04","geometrySha256":"8b6dbc145f0ff51d2841d8e543a373798b8e1bfc78e810219ca3c7e74cbf83a4"},
+    {"glyphId":"G05","geometrySha256":"1c4e1d77acb876b8f32107059dc726c2aa7727fc79ddd0a0281ada744115bb31"},
+    {"glyphId":"G06","geometrySha256":"010516d5cb41a0ee1db69fed86964a9d359e4a96165d07c7378f29a6d89fc0a7"},
+    {"glyphId":"G07","geometrySha256":"628f766d37f9179ad6865af160d9dddd4dc4f5979f011dc57ef637f93b528c4c","partial":true,"unresolved":["upper_right_mark"]},
+    {"glyphId":"G08","geometrySha256":"149b6f910d8b8afdb62e9d449c506aa0776ff5026f75103faa46c11ed90bbd72"},
+    {"glyphId":"G09","geometrySha256":"92499875b2e3f985a3a2169b22742fc24e93563b311e93109d10a61ad1548e44"},
+    {"glyphId":"G10","geometrySha256":"019b7fef86da6322e46a912d254695fe8e227cc2c1f8fd20a2a6735ee326db73"}
+  ],
+  "guards":{"canonPromotion":false,"G07Complete":false},
+  "next":"Compute Candidate D comparison against these frozen Batch A trace guides, then assemble Creator Human Gate."
+}

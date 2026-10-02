@@ -14,3 +14,4 @@ export * from "./target-capability-registry.mjs";
 export * from "./target-capability-inventory.mjs";
 export * from "./target-capability-inventory.seed.mjs";
 export * from "./target-manifestation-router.mjs";
+export * from "./target-adapter-binding.mjs";

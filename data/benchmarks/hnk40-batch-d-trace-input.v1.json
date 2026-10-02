@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"TRACE_INPUT_FROZEN",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"D",
+  "range":"G31-G40",
+  "source":{"sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","matrixRegionPx":[424,533,1163,719]},
+  "sourceRegistry":"data/benchmarks/hnk40-new-plate-specimen-registry.v1.json",
+  "records":[
+    {"glyphId":"G31","cropBoxPx":[424,672,498,719],"registryCropSha256":"df98743874cb7bd2115fdc268c9818e8a3393596212f667065c5c62f5f83537f","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G32","cropBoxPx":[498,672,572,719],"registryCropSha256":"bf94a8e4eb6600c40e6f06ab88e2e89dc14c07712865961ce9b9e1b2d4d835ea","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G33","cropBoxPx":[572,672,646,719],"registryCropSha256":"b282c2c93c2f7112646687f45ea64b26002e4e25f39907c04c9f4a39ea017e4f","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G34","cropBoxPx":[646,672,720,719],"registryCropSha256":"86d87c1a30a1c1f70e6d5d53c6d0cc5c7a9016dc7d2bc177b95046bc999b7e83","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G35","cropBoxPx":[720,672,794,719],"registryCropSha256":"f5160c40cb3b7f4eaf04d8995a922f12b5e4f7b07f83bb69dcfba3990dcb718d","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G36","cropBoxPx":[794,672,867,719],"registryCropSha256":"9b01f095126b68f481e5d2a30193d0f799f72e12db795a94b214251db0e11b22","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G37","cropBoxPx":[867,672,941,719],"registryCropSha256":"f4f043a35d3193b92375d5a08a120eea5e55aab81b8868d3c8a3e7d08341ea2","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G38","cropBoxPx":[941,672,1015,719],"registryCropSha256":"3951f49e17c2863bc0449162a7460b16edb0ad7847e129b27915b43cdd54e6ef","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G39","cropBoxPx":[1015,672,1089,719],"registryCropSha256":"bb68812670d5e24a9276ed99d7000377b5b3fbd6c8995b98529c1f1ec86b5a4f","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G40","cropBoxPx":[1089,672,1163,719],"registryCropSha256":"e0b71b39465c29168277c1afc3de81a21b6e61bbcd07ba7bd975f858fab59c43","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"}
+  ],
+  "guards":{"candidateDMayRepairSource":false,"inventMissingStroke":false,"uncertaintyBlocksBatch":false,"localExecutionRequired":false,"actionsRequired":false,"automaticCanonPromotion":false},
+  "coverage":{"authoritativeSourceBinding":"40_OF_40","batchA":"G01-G10","batchB":"G11-G20","batchC":"G21-G30","batchD":"G31-G40"},
+  "next":"Consolidate A-D into a 40/40 research ledger, then drive remaining traces/reconciliation without stopping on local tooling or per-glyph uncertainty."
+}

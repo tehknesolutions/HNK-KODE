@@ -1,0 +1,34 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"RESEARCH_LEDGER_40_OF_40_ACTIVE",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "executionPolicy":"docs/research/mandala/HNK40-NONBLOCKING-EXECUTION-POLICY-V1.md",
+  "source":{"sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","registry":"data/benchmarks/hnk40-new-plate-specimen-registry.v1.json","sourceBound":"40_OF_40"},
+  "batches":{
+    "A":{"range":"G01-G10","sourceBound":10,"orderedTrace":10,"geometryHashed":10,"candidateDDiff":10,"creatorGate":"OPEN","canonPromoted":0,"notes":["G07 upper_right_mark unresolved"]},
+    "B":{"range":"G11-G20","sourceBound":10,"orderedTrace":0,"geometryHashed":0,"candidateDDiff":0,"creatorGate":"NOT_YET_ASSEMBLED","canonPromoted":0,"notes":["G17 DERIVED_AMBIGUOUS","G18 prior machine REVIEW_REQUIRED","G20 DERIVED_AMBIGUOUS"]},
+    "C":{"range":"G21-G30","sourceBound":10,"orderedTrace":0,"geometryHashed":0,"candidateDDiff":0,"creatorGate":"NOT_YET_ASSEMBLED","canonPromoted":0,"notes":["G28 prior machine REVIEW_REQUIRED"]},
+    "D":{"range":"G31-G40","sourceBound":10,"orderedTrace":0,"geometryHashed":0,"candidateDDiff":0,"creatorGate":"NOT_YET_ASSEMBLED","canonPromoted":0,"notes":[]}
+  },
+  "totals":{"glyphs":40,"sourceBound":40,"orderedTrace":10,"geometryHashed":10,"candidateDDiff":10,"researchReconciled":10,"canonPromoted":0},
+  "progress":{"provenanceCoveragePct":100,"orderedTraceCoveragePct":25,"geometryHashCoveragePct":25,"candidateDComparisonCoveragePct":25,"canonPromotionPct":0},
+  "nonBlockingDebt":[
+    {"glyphId":"G07","state":"CREATOR_DECISION_REQUIRED","detail":"upper_right_mark","blocking":false},
+    {"glyphId":"G17","state":"DERIVED_AMBIGUOUS","blocking":false},
+    {"glyphId":"G18","state":"REVIEW_REQUIRED","origin":"prior machine evidence","blocking":false},
+    {"glyphId":"G20","state":"DERIVED_AMBIGUOUS","blocking":false},
+    {"glyphId":"G28","state":"REVIEW_REQUIRED","origin":"prior machine evidence","blocking":false}
+  ],
+  "nextWorkQueue":[
+    "TRACE_G11_G20",
+    "HASH_AND_DIFF_G11_G20",
+    "TRACE_G21_G30",
+    "HASH_AND_DIFF_G21_G30",
+    "TRACE_G31_G40",
+    "HASH_AND_DIFF_G31_G40",
+    "ASSEMBLE_GLOBAL_RECONCILIATION_40_OF_40",
+    "ASSEMBLE_CONSOLIDATED_CREATOR_CANON_GATE"
+  ],
+  "invariants":{"researchUncertaintyBlocksProgress":false,"localRequired":false,"actionsRequired":false,"externalToolRequired":false,"candidateDMayRepairSource":false,"automaticCanonPromotion":false},
+  "target":"Complete source-derived trace/hash/diff/reconciliation evidence for G01-G40 before consolidated Creator canon decisions."
+}

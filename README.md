@@ -1,29 +1,114 @@
 # HNK-KODE
-## haKodan — framework oficial
 
-**haKodan** é o framework universal do HNK-KODE.
+## haKodan — framework, runtime, SDK e Manifestation Engine
 
-- **HNK-KODE** = idioma + linguagem computacional.
-- **haKodan** = framework multicamada, runtime, SDK e Manifestation Engine.
-- **HNK-KODE Studio** = IDE/ambiente de autoria.
-- **Goodle** = camada de criação/autoria universal integrada ao HNK-KODE.
+**O foco de produto deste repositório é o haKodan.**
 
-Arquitetura canônica: **HNK → PT-BR → EN**, convergindo para a mesma AST/HNK-IR, com camadas de **L8 ALEF/Intent até L0 Binary/Malkuth**.
+- **HNK-KODE** = idioma + linguagem computacional e autoridade semântica do domínio.
+- **haKodan** = framework multicamada, runtime, SDK e Manifestation Engine que implementa o HNK-KODE.
+- **HNK-KODE Studio** = ambiente de autoria sobre haKodan.
+- **Goodle** = superfície/ponte de criação e fonte de know-how em migração; não é autoridade semântica concorrente.
 
-## Unificação Goodle → HNK-KODE
-
-O Goodle Browser está sendo incorporado ao HNK-KODE como camada de autoria/creator experience.
-
-A regra arquitetural é:
+North Star:
 
 ```text
-Goodle Surface / GoodProject
+ALEF / INTENT
+  ↓
+HNK-KODE Surface / Semantic IDs
+  ↓
+Canonical AST
+  ↓
+HOM — HNK Object Model
+  ↓
+HNK-IR
+  ↓
+Target Capability + Adapter
+  ↓
+Artifact
+  ↓
+Runtime / Renderer / Exporter
+  ↓
+MALKUTH / REAL MANIFESTATION
+  ↓
+Execution Evidence + Provenance
+```
+
+A arquitetura preserva **HNK → PT-BR → EN** como prioridade de perfis, convergindo para a mesma semântica/AST/HNK-IR, com camadas de **L8 ALEF/Intent até L0 Binary/Malkuth**.
+
+## Estado atual — Acceleration V1
+
+O projeto entrou em uma fase de aceleração centrada em converter a infraestrutura existente em produto executável e visível.
+
+Baseline do **Product Completion Index (PCI): 55.05%** em 2026-10-02. O número de milestone (`M62`) não é usado como porcentagem de conclusão.
+
+Prioridade de engenharia:
+
+```text
+WORLD → ENTITY → PROPERTY → EVENT → ACTION
+  ↓
+Canonical semantics / HOM / HNK-IR
+  ↓
+real supported target
+  ↓
+artifact
+  ↓
+VISIBLE EXECUTION
+```
+
+A expansão automática de novos milestones de provenance está congelada quando não serve esse Golden Path ou não corrige um defeito de integridade comprovado.
+
+Documentos atuais:
+
+- `docs/spec/HAKODAN-ACCELERATION-MASTER-SPEC-v1.0.md`
+- `docs/product/HAKODAN-PDD.md`
+- `docs/product/HAKODAN-GDD.md`
+- `docs/architecture/HAKODAN-ARCHITECTURE.md`
+- `docs/roadmap/HAKODAN-ROADMAP.md`
+- `docs/roadmap/HAKODAN-PRODUCT-COMPLETION-INDEX.md`
+- `docs/audit/HAKODAN-REPOSITORY-AUDIT-v1.md`
+
+## Núcleo implementado
+
+`packages/hakodan` é o núcleo de implementação. O histórico do projeto registra, entre outros, Semantic Token Registry/Canonical Grammar, AST/HNK-IR, HOM, Type/Component/Event models, VM tables, addressing/dispatch, Hybrid VM execution model, instruction IR/encoding/program, bytecode, trap/runtime foundations, PT-BR/EN equivalence tests e workflow do kernel.
+
+A existência de código/testes não é automaticamente tratada como execução fresca. O projeto distingue explicitamente:
+
+```text
+INTENT ≠ PLAN ≠ ARTIFACT ≠ PROTOCOL_CONFORMANCE ≠ EXECUTION_EVIDENCE
+```
+
+## Autoria
+
+haKodan prevê três superfícies convergentes:
+
+- **Visual** — blocos, nós, Mandala, glifos e composição gráfica.
+- **Standard** — autoria declarativa/narrativa de alta legibilidade.
+- **Pro** — tipos, componentes, sistemas, APIs e recursos avançados.
+
+Todas devem resolver para os mesmos Semantic IDs e para a mesma AST/HOM/HNK-IR.
+
+## Manifestation Engine
+
+Famílias arquiteturais previstas incluem:
+
+- **Code:** JavaScript/TypeScript e targets interoperáveis futuros.
+- **Experience:** Web, App, Game, World, UI.
+- **Design:** wireframe, mockup e specifications.
+- **Documentation:** Markdown, GDD, PDD, architecture/runbooks e exporters.
+- **Media/AI:** image/video/audio specifications, prompts, agents e workflows.
+
+Uma família prevista não significa backend suportado. Capability Registry/Inventory deve permanecer fail-closed até existir implementação/evidência operacional.
+
+## Goodle → haKodan
+
+Goodle é subordinado à arquitetura haKodan:
+
+```text
+Goodle / authoring surface
         ↓
-Goodle Semantic Bridge
+Semantic Bridge
         ↓
-Goodle IR
-        ↓
-haKodan semantic IDs
+haKodan Semantic IDs
         ↓
 Canonical AST / HOM
         ↓
@@ -32,96 +117,79 @@ HNK-IR
 Target / Runtime / Manifestation
 ```
 
-Goodle não cria um segundo HNK-IR, HOM, type system, VM ou semantic canon. Esses contratos pertencem ao haKodan.
-
-O plano de migração está em:
-
-- `docs/migration/GOODLE-INTO-HNK-KODE-MIGRATION-v0.1.md`
-- `packages/goodle`
-
-A integração começa por contratos e compatibilidade; a migração completa de authoring, behavior, runtime e Studio ocorrerá por gates verificáveis.
+Goodle não pode criar um segundo HNK-IR, HOM, type system, VM ou semantic canon. O histórico de migração permanece em `docs/migration/` e `packages/goodle`.
 
 ## Autoridade
 
-**CODEX-HNK é o ROOT CANON do ecossistema HNK.**
+**CODEX-HNK é o ROOT CANON do ecossistema HNK.** Ele possui autoridade sobre fundamentos ontológicos e matemáticos do HNK, incluindo HNK-MATH, Atomic-Kode (AK), geometria da Mandala HNK, identidades matemáticas, correspondências canônicas e contratos fundamentais exportados aos consumidores.
 
-Ele possui autoridade sobre fundamentos ontológicos e matemáticos do HNK, incluindo HNK-MATH, Atomic-Kode (AK), geometria da Mandala HNK, identidades matemáticas, correspondências canônicas e contratos fundamentais exportados aos consumidores.
+**HNK-KODE é o DOMAIN CANON operacional do domínio linguístico/computacional HNK**, subordinado aos contratos fundamentais publicados pelo CODEX-HNK.
 
-**HNK-KODE é o DOMAIN CANON operacional do domínio linguístico HNK**, subordinado aos contratos fundamentais publicados pelo CODEX-HNK.
+HNK-KODE possui autoridade sobre fonologia/fonotática, corpus/léxico, gramática, sistema de escrita/composição linguística, transliteração, manifestações de glifos linguísticos e superfícies linguísticas de encoding/decoding. Ele não pode redefinir independentemente uma fundação cuja autoridade pertença ao ROOT CANON.
 
-HNK-KODE possui autoridade sobre:
-
-- fonologia e fonotática;
-- corpus e léxico;
-- gramática;
-- sistema de escrita e composição linguística;
-- transliteração;
-- manifestações de glifos linguísticos;
-- superfícies linguísticas de encoding/decoding.
-
-HNK-KODE **não pode redefinir independentemente** um AK, a geometria da Mandala, uma identidade matemática ou uma correspondência HNK cuja autoridade pertença ao ROOT CANON.
-
-CODEX-HNK, HNK-KODE, SimpleWay-HNK, HNK-VERSE e demais produtos consumidores não devem manter cânones divergentes. Quando houver conflito entre uma fundação ROOT e uma projeção linguística, o conflito deve permanecer explícito e `UNRESOLVED` até reconciliação; não deve ser corrigido por invenção silenciosa.
+Quando houver conflito ROOT/DOMAIN, o conflito permanece explícito e `UNRESOLVED` até reconciliação; não é corrigido por invenção silenciosa.
 
 ## Estados de governança
 
-A pesquisa Genesis adota, no mínimo, os seguintes estados de autoridade/proveniência:
+A pesquisa Genesis adota, no mínimo:
 
-`OBSERVED -> DERIVED -> HYPOTHESIS -> CANDIDATE -> VALIDATED -> CANONICAL`
+`OBSERVED → DERIVED → HYPOTHESIS → CANDIDATE → VALIDATED → CANONICAL`
 
-`UNRESOLVED` representa evidência insuficiente ou conflitante e não é um estágio que possa ser promovido automaticamente.
+`UNRESOLVED` representa evidência insuficiente ou conflitante e não pode ser promovido automaticamente. Coincidência numérica, semelhança visual ou analogia simbólica não constitui promoção canônica.
 
-Coincidência numérica, semelhança visual ou analogia simbólica não constitui promoção canônica.
+## Contrato CODEX-HNK → HNK-KODE
 
-## Contrato CODEX-HNK -> HNK-KODE
-
-O HNK-KODE deve consumir por identificadores/contratos versionados os fundamentos cuja autoridade pertence ao CODEX-HNK.
-
-Uma projeção linguística pode acrescentar propriedades do seu domínio, mas deve preservar:
+Fundamentos ROOT devem ser consumidos por identificadores/contratos versionados, preservando:
 
 1. identidade canônica de origem;
-2. versão do contrato consumido;
+2. versão do contrato;
 3. proveniência;
 4. estado de autoridade;
 5. capacidade de detectar divergência.
 
-Alterações incompatíveis no ROOT CANON exigem reconciliação explícita no HNK-KODE antes de promoção linguística dependente.
+Alterações incompatíveis no ROOT CANON exigem reconciliação explícita antes de promoção dependente.
 
-## Migração inicial
+## Migração e preservação histórica
 
-A extração do legado atualmente residente em `codex-hnk/packages/hnk-linguas` e `codex-hnk/packages/hnk-glyphs` seguirá obrigatoriamente:
+Migrações de legado seguem:
 
-`COPY -> VERIFY -> CONSUME -> DEPRECATE -> REMOVE`
+`COPY → VERIFY → CONSUME → DEPRECATE → REMOVE`
 
-Nenhuma forma linguística nova deve ser inventada durante a migração. Conteúdo existente deve preservar proveniência, comportamento, testes e estado de autoridade.
+Nenhuma forma linguística nova é inventada apenas para completar uma migração. Conteúdo preserva proveniência, comportamento, testes e estado de autoridade.
 
-O material legado G01–G40 é patrimônio de pesquisa/cânone histórico conforme seu estado de origem, **não uma obrigação de cardinalidade para o próximo sistema de escrita**. O inventário futuro deve emergir do censo fonológico, da arquitetura composicional e dos gates do Genesis.
+Documentos antigos não são apagados só porque a arquitetura evoluiu. Novos documentos devem declarar o que foi promovido, substituído, rejeitado ou mantido.
 
-## Domínios previstos
+## Domínios principais do repositório
 
+- `packages/hakodan` — **núcleo haKodan**.
 - `packages/hnk-linguas` — corpus, léxico, gramática e runtime linguístico.
 - `packages/hnk-glyphs` — glifos linguísticos, fonemas e runtime associado.
-- `packages/goodle` — creator layer, GoodProject, Semantic Bridge e superfícies Goodle.
+- `packages/goodle` — creator/migration/bridge/provenance support.
 - `canon` — registros do Domain Canon versionados.
-- `governance` — regras de promoção, autoridade e contratos ROOT/DOMAIN.
-- `references` — fontes e proveniência.
-- `docs` — documentação e pesquisa.
-- `tests` — validação de integração, equivalência e divergência.
-
-## Fronteiras
-
-A relação entre glifos linguísticos do HNK-KODE e sigilos do SIGILKODE-HNK deve ser auditada e documentada antes de qualquer fusão estrutural.
-
-BIN, HEX, matriz/QR-like, cor, som, geometria polar, isometria e 3D são superfícies ou objetos de pesquisa. Uma superfície de encoding não adquire significado espiritual automaticamente; correspondências simbólicas possuem governança separada.
+- `governance` — promoção, autoridade e contratos ROOT/DOMAIN.
+- `assets` — ativos canônicos e, após auditoria, ativos de produto aprovados.
+- `docs` — produto, arquitetura, design, pesquisa, migração e histórico.
+- `tests` — validação transversal.
 
 ## Consumidores e dependências
 
-- **CODEX-HNK** — ROOT CANON e publicador dos fundamentos HNK consumidos pelo domínio linguístico; também pode consumir projeções linguísticas publicadas pelo HNK-KODE sem transferir a autoridade linguística para si.
-- **SimpleWay-HNK** — curso oficial/experiência pedagógica do Idioma HNK; consumidor, não autoridade canônica.
-- **SimpleWay Math** — produto educacional/laboratório de ciências exatas; pode testar estruturas, mas descobertas retornam ao CODEX-HNK como pesquisa/candidato antes de qualquer canonização HNK-MATH.
-- **HNK-VERSE** — consumidor futuro do idioma em runtime/gameplay.
-- **Goodle Browser** — fonte histórica da camada Goodle durante a migração; a autoridade operacional passa progressivamente para HNK-KODE.
+- **CODEX-HNK** — ROOT CANON e publicador de fundamentos.
+- **HNK-VERSE** — consumidor/runtime futuro de mundos e experiências.
+- **SimpleWay-HNK** — experiência pedagógica consumidora.
+- **SimpleWay Math** — laboratório/consumidor de pesquisa matemática.
+- **TEHKNÉ-OS** — know-how/evidence/provenance tecnológica conforme contratos entre repositórios.
+- **Goodle Browser** — fonte histórica/authoring bridge durante migração.
 
-## Genesis V0.1
+Consumidores não transferem para si a autoridade semântica do HNK-KODE/haKodan.
 
-A pesquisa do próximo sistema de escrita é governada pelo HNK-RESEARCH GENESIS V0.1 no CODEX-HNK. Antes de canonizar um novo inventário fundamental de glifos/componentes, o projeto deve concluir os gates de censo fonológico, matriz comparativa de sistemas de escrita, modelo HNK-MATH/AK, censo da Mandala e síntese arquitetural.
+## Identidade e assets
+
+Assets linguísticos/canônicos existentes, incluindo glifos, não são automaticamente tratados como identidade UI completa do haKodan. A Acceleration V1 exige inventário de proveniência e somente decisões visuais aprovadas serão promovidas ao design system e a `assets/hakodan/`.
+
+## Próximo gate
+
+O próximo salto de produto é provar:
+
+> **Uma intenção entra no haKodan e uma manifestação real, visível e verificável sai.**
+
+O roadmap oficial desta fase está em `docs/roadmap/HAKODAN-ROADMAP.md`.

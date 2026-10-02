@@ -10,7 +10,7 @@ const source = `mundo AbrasIsland {
   quando perto(Alakazam, Portal, 2) { ação definir(Portal, open, true); }
 }`;
 
-test("V2-4 HTML target accepts reactive IR/HOM 0.2.0", () => {
+test("V2-4 HTML target selects v2 for reactive rule capability", () => {
   const ast = parse(source, { profile: "PT-BR" });
   const html = compileHtmlDocument({ ir: toHnkIr(ast), hom: toHom(ast) });
   assert.match(html, /data-hakodan-target="hakodan\.target\.html-document\.v2"/);

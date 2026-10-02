@@ -54,3 +54,4 @@ export * from "./evidence-provenance-verified-certificate-registry.mjs";
 export * from "./evidence-provenance-verified-certificate-registry-seal.mjs";
 export * from "./evidence-provenance-verified-certificate-registry-seal-import.mjs";
 export * from "./evidence-provenance-verified-certificate-registry-seal-roundtrip.mjs";
+export * from "./evidence-provenance-sealed-registry-snapshot.mjs";

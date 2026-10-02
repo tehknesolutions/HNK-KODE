@@ -14,9 +14,10 @@ export function buildAuditChain(records = []) {
   let previousDigest = 'GENESIS';
   return Object.freeze(records.map((record, index) => {
     const recordDigest = digestAuditRecord(record);
-    const chainDigest = createHash('sha256').update(previousDigest + ':' + recordDigest).digest('hex');
+    const previous = previousDigest;
+    const chainDigest = createHash('sha256').update(previous + ':' + recordDigest).digest('hex');
     previousDigest = chainDigest;
-    return Object.freeze({ index, recordDigest, previousDigest: index === 0 ? 'GENESIS' : undefined, chainDigest });
+    return Object.freeze({ index, recordDigest, previousDigest: previous, chainDigest });
   }));
 }
 

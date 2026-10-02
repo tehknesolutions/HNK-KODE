@@ -1,23 +1,20 @@
-# M36 — Conformance Bundle Round-Trip Gate — Verification Ledger
+# M36 — Verification Ledger Index
 
 Date: 2026-10-02
-Issue: #125
 
-## Repository-visible implementation
-- integrates M34 bundle creation;
-- integrates M35 verified import;
-- compares serialized bundle equivalence;
-- deterministic result;
-- explicit failure-stage classification;
-- immutable gate result;
-- public API export added.
+The repository currently contains two distinct work items carrying the M36 label. This file is therefore an index rather than silently replacing either ledger.
 
-## Verification classification
-| Evidence | State | Notes |
-| --- | --- | --- |
-| Repository/static contract inspection | VERIFIED_PASS | M36.1–M36.5 implementation and focused tests are present. |
-| Executable Node test suite | NOT_RUN | No fresh stdout/stderr + exit code captured. |
-| GitHub Actions | UNVERIFIED_INFRA | External executor remains supplementary and non-blocking. |
+## M36 / Issue #125
+Conformance Bundle Round-Trip Gate.
 
-## Invariant
-The M36 gate proves portability/integrity of the conformance bundle round trip. It is not manifestation execution evidence.
+Dedicated ledger: `GOODLE-HNK-KODE-M36-ROUNDTRIP-VERIFICATION-LEDGER.md`.
+
+## M36 / Issue #128
+Verified Bundle Registry & Duplicate/Conflict Semantics.
+
+Dedicated ledger: `GOODLE-HNK-KODE-M36-REGISTRY-VERIFICATION-LEDGER.md`.
+
+## Reconciliation
+See `GOODLE-HNK-KODE-M36-NUMBERING-RECONCILIATION.md`.
+
+No milestone is silently renumbered and neither ledger grants execution or canon authority.

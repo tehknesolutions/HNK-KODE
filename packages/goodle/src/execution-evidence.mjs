@@ -20,6 +20,7 @@ export function submitExecutionEvidence(dispatch = {}, evidence = {}) {
   }
 
   if (!evidence.source || !evidence.observationId || !evidence.observedAt) return reject();
+  if (evidence.authority !== receipt.authority) return reject();
   if (evidence.outcome !== 'EXECUTED') return reject();
 
   const finalized = Object.freeze({

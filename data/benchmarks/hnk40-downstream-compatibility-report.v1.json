@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PRE_CANON_COMPATIBILITY_READY",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "sourceDecisionManifest": "data/benchmarks/hnk40-creator-decisions.v1.json",
+  "canonState": "PENDING",
+  "scope": "G01-G40",
+  "consumers": {
+    "HNK-KODE": "READY_FOR_EXPLICIT_CANON_PROMOTION",
+    "Codex/Research": "CAN_CONSUME_RESEARCH_ARTIFACTS_WITHOUT_CANON_PROMOTION",
+    "VisualCanonV2": "WAITING_FOR_EXPLICIT_CREATOR_DECISIONS"
+  },
+  "compatibilityRules": [
+    "Research artifacts remain readable independently of canon state.",
+    "PENDING records must not be emitted as approved visual canon.",
+    "Approved records must retain source provenance and selected geometry reference.",
+    "Rejected or deferred alternatives remain historical evidence.",
+    "Hybrid decisions require explicit per-glyph or family mapping.",
+    "Retraced records return to research and do not silently promote.",
+    "GPT + GitHub remain sufficient for this pipeline."
+  ],
+  "validation": {
+    "provenanceCoverage": 40,
+    "visualInspectionCoverage": 40,
+    "normalizedTraceCoverage": 40,
+    "structuralDiffCoverage": 40,
+    "decisionRecords": 40,
+    "approvedCanonRecords": 0
+  },
+  "next": "Await explicit Creator decisions; once present, generate Visual Canon V2 and downstream promotion records mechanically."
+}

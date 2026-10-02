@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PROMOTION_EXECUTION_CONTRACT_READY",
+  "authority": "CREATOR_CANON_GATE",
+  "scope": "G01-G40",
+  "input": "data/benchmarks/hnk40-creator-decisions.v1.json",
+  "preconditions": [
+    "Decision must be explicit and not PENDING.",
+    "Selected geometry must resolve to an existing research evidence reference.",
+    "Deterministic fingerprint must be present.",
+    "Promotion must not delete or mutate historical alternatives."
+  ],
+  "decisionMapping": {
+    "APPROVE_NEW_PLATE": "promote source-derived geometry",
+    "RETAIN_CANDIDATE_D": "promote Candidate D geometry",
+    "HYBRID": "promote explicitly mapped per-glyph/family selection",
+    "RETRACE": "return to research; no promotion",
+    "DEFER": "leave canon unchanged"
+  },
+  "outputs": [
+    "per-glyph promotion record",
+    "Visual Canon V2 manifest",
+    "downstream compatibility report"
+  ],
+  "invariants": {
+    "pendingNeverPromotes": true,
+    "automaticInferenceNeverPromotes": true,
+    "historicalEvidencePreserved": true,
+    "canonMutationRequiresExplicitDecision": true,
+    "githubPlusGPTSufficient": true
+  },
+  "currentState": {
+    "decisionsPending": 40,
+    "canonPromoted": 0,
+    "focusedDebt": [
+      "G07",
+      "G17",
+      "G18",
+      "G20",
+      "G28"
+    ]
+  },
+  "next": "Wait for explicit non-PENDING Creator decisions; then execute only those records."
+}

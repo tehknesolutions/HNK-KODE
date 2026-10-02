@@ -1,54 +1,26 @@
-import {
-  buildRegistryFromInventory,
-  resolveInventoryCapability,
-} from './target-capability-inventory.mjs';
-import { bridgeToHakodanManifestation } from './manifestation-bridge.mjs';
-
-const ROUTES = Object.freeze({
-  'manifestation-bridge-v1': bridgeToHakodanManifestation,
-});
+import { bindTargetAdapter } from './target-adapter-binding.mjs';
 
 export function routeTargetManifestation(input = {}, actor = {}, inventory) {
-  const registry = buildRegistryFromInventory(inventory);
-  const resolution = resolveInventoryCapability(registry, input);
+  const binding = bindTargetAdapter(input, inventory);
 
-  if (resolution.status !== 'SUPPORTED') {
+  if (binding.status !== 'BOUND') {
     return {
       status: 'UNSUPPORTED',
-      capability: null,
+      capability: binding.capability ?? null,
       request: null,
       plan: null,
     };
   }
 
-  const capability = resolution.capability;
-  if (capability.maturity !== 'CONFORMANT') {
-    return {
-      status: 'UNSUPPORTED',
-      capability,
-      request: null,
-      plan: null,
-    };
-  }
-
-  const route = ROUTES[capability.adapter];
-  if (!route) {
-    return {
-      status: 'UNSUPPORTED',
-      capability,
-      request: null,
-      plan: null,
-    };
-  }
-
+  const capability = binding.capability;
   const request = Object.freeze({
     semanticId: input.semanticId,
-    target: input.target,
-    format: input.format,
-    adapter: input.adapter,
+    target: capability.target,
+    format: capability.format,
+    adapter: capability.adapter,
     artifact: input.artifact,
   });
-  const bridged = route(request, actor);
+  const bridged = binding.invoke(request, actor);
 
   if (bridged.plan?.semanticId && bridged.plan.semanticId !== request.semanticId) {
     throw new Error('GOODLE_TARGET_ROUTER_SEMANTIC_IDENTITY_DRIFT');

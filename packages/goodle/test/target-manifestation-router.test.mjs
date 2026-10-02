@@ -19,6 +19,11 @@ test('M9.1 routes a conformant manifestation target through its declared adapter
   assert.equal(result.capability.maturity, 'CONFORMANT');
   assert.equal(result.capability.authority, 'HAKODAN');
   assert.equal(result.request.semanticId, 'semantic-1');
+  assert.equal(result.plan.semanticId, 'semantic-1');
+  assert.equal(result.plan.target, result.request.target);
+  assert.equal(result.plan.format, result.request.format);
+  assert.equal(result.plan.adapter, result.request.adapter);
+  assert.equal(result.plan.artifact, result.request.artifact);
 });
 
 test('M9.1 refuses unsupported target before adapter invocation', () => {

@@ -17,6 +17,7 @@ const en = `world AbraIsland {
 test("Golden Path preserves PT-BR/EN canonical semantic equivalence", () => {
   const a = buildGoldenPath(pt, { profile: "PT-BR" });
   const b = buildGoldenPath(en, { profile: "EN" });
+
   assert.deepEqual(canonicalizeAst(a.ast), canonicalizeAst(b.ast));
   assert.deepEqual(a.ir, b.ir);
   assert.equal(a.hom.root, b.hom.root);
@@ -25,6 +26,7 @@ test("Golden Path preserves PT-BR/EN canonical semantic equivalence", () => {
 
 test("Golden Path exposes WORLD→ENTITY→PROPERTY→EVENT→ACTION through AST/HOM/HNK-IR", () => {
   const result = buildGoldenPath(pt, { profile: "PT-BR" });
+
   assert.equal(result.ast.body[0].kind, "WorldDeclaration");
   assert.equal(result.ir.world.name, "AbraIsland");
   assert.equal(result.ir.world.entities[0].name, "Alakazam");
@@ -38,6 +40,7 @@ test("Golden Path exposes WORLD→ENTITY→PROPERTY→EVENT→ACTION through AST
 test("Golden Path wrapper does not create a parallel semantic model", () => {
   const result = buildGoldenPath(pt, { profile: "PT-BR" });
   const ast = parse(pt, { profile: "PT-BR" });
+
   assert.deepEqual(result.ast, ast);
   assert.deepEqual(result.ir, toHnkIr(ast));
   assert.deepEqual(result.hom, toHom(ast));

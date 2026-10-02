@@ -32,5 +32,6 @@ test("V2-4 target exposes movement control but derives portal opening from canon
   assert.match(html, /data-control="approach"/);
   assert.match(html, /evaluateCondition/);
   assert.match(html, /applyAction/);
-  assert.doesNotMatch(html, /portal\.dataset\.stateOpen\s*=\s*"true"/);
+  assert.doesNotMatch(html, /entity\.open\s*=\s*true/);
+  assert.doesNotMatch(html, /stateOpen\s*=\s*["']true["']/);
 });

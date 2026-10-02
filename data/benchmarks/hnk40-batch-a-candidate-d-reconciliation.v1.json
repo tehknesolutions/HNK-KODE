@@ -1,0 +1,26 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"BATCH_A_RECONCILIATION_PROPOSALS_READY",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"A",
+  "range":"G01-G10",
+  "newPlateEvidence":"data/benchmarks/hnk40-batch-a-vector-traces.v1.json",
+  "geometryHashes":"data/benchmarks/hnk40-batch-a-geometry-hashes.v1.json",
+  "candidateD":{"repository":"tehknesolutions/codex-hnk","ref":"research/hnk40-e5-hybrid-v1","path":"docs/architecture/HNK40_V2_CANDIDATE_GLYPH_SHEET_B.svg","family":"G01-G10 = identity P01-P10","markersExcludedFromCoreDecision":true},
+  "method":"Conservative structural reconciliation of frozen new-plate ordered traces against Candidate D core primitives only. Candidate D auxiliary corner circle and baseline are excluded. This pass does not promote canon and does not claim metric equivalence where topology/primitive structure already differs materially.",
+  "records":[
+    {"glyphId":"G01","candidateDCore":"P01 axis + upper arc + small circle","newPlateTrace":"axis + closed loop","proposal":"REDESIGNED","reason":"Closed-loop topology materially differs from Candidate D upper-arc core; small Candidate D circle is not treated as required marker evidence."},
+    {"glyphId":"G02","candidateDCore":"P02 axis + horizontal + diagonal","newPlateTrace":"single curved polyline","proposal":"REDESIGNED","reason":"Primitive/stroke topology materially differs."},
+    {"glyphId":"G03","candidateDCore":"P03 triangular polyline + base","newPlateTrace":"single vertical axis","proposal":"REDESIGNED","reason":"Triangle/base topology is absent from the recovered new-plate trace."},
+    {"glyphId":"G04","candidateDCore":"P04 upper arc + horizontal + center circle","newPlateTrace":"single open curve","proposal":"REDESIGNED","reason":"Candidate D multi-part core is not preserved in the recovered trace."},
+    {"glyphId":"G05","candidateDCore":"P05 upper arc + vertical axis + horizontal","newPlateTrace":"single bent/open polyline","proposal":"REDESIGNED","reason":"Core topology materially differs."},
+    {"glyphId":"G06","candidateDCore":"P06 closed diamond + center circle","newPlateTrace":"cross","proposal":"REDESIGNED","reason":"Closed diamond/circle core is replaced by cross geometry."},
+    {"glyphId":"G07","candidateDCore":"P07 axis + horizontal + upper arc","newPlateTrace":"axis + right branch; upper-right mark unresolved","proposal":"CONFLICT","reason":"Known main body differs and one source mark remains explicitly unresolved; Creator decision is required before a redesign classification."},
+    {"glyphId":"G08","candidateDCore":"P08 closed complex polygon","newPlateTrace":"single complex open polyline","proposal":"REDESIGNED","reason":"Open/closed topology differs materially."},
+    {"glyphId":"G09","candidateDCore":"P09 forked vertical axis + horizontal","newPlateTrace":"single curved polyline","proposal":"REDESIGNED","reason":"Fork and crossbar topology are not preserved in the recovered trace."},
+    {"glyphId":"G10","candidateDCore":"P10 upper arc + vertical axis + small circle","newPlateTrace":"portal-shaped stroke + upper axis","proposal":"REDESIGNED","reason":"Portal topology materially differs from Candidate D arc/axis core."}
+  ],
+  "summary":{"proposedRedesigned":9,"proposedConflict":1,"proposedPreserved":0,"proposedTransformed":0,"canonPromoted":0},
+  "humanGate":{"required":true,"decisions":["APPROVE_NEW_PLATE","KEEP_CANDIDATE_D","APPROVE_TRANSFORM","REQUEST_RETRACE","DEFER"],"G07AdditionalQuestion":"Resolve or defer the upper_right_mark before approving the new-plate geometry as complete."},
+  "next":"Assemble Batch A Creator Human Gate with the authoritative source crop, frozen trace/hash, Candidate D core and these proposals side-by-side. No VISUAL-CANON-V2 mutation before explicit Creator approval."
+}

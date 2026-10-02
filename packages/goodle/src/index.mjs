@@ -19,3 +19,4 @@ export * from "./manifestation-dispatch.mjs";
 export * from "./execution-evidence.mjs";
 export * from "./execution-evidence-provider.mjs";
 export * from "./execution-evidence-provider-bridge.mjs";
+export * from "./concrete-execution-evidence-adapter.mjs";

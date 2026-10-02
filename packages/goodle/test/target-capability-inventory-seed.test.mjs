@@ -7,7 +7,7 @@ import {
   resolveInventoryCapability,
 } from '../src/index.mjs';
 
-test('M8 repository seed registers declared haKodan runtime capability', () => {
+test('M8 repository seed registers conformant haKodan runtime capability', () => {
   const registry = buildRegistryFromInventory(GOODLE_TARGET_CAPABILITY_INVENTORY_V1);
   const result = resolveInventoryCapability(registry, {
     target: 'hakodan-runtime',
@@ -16,8 +16,8 @@ test('M8 repository seed registers declared haKodan runtime capability', () => {
     artifact: 'demo.hakodan.json',
   });
   assert.equal(result.status, 'SUPPORTED');
-  assert.equal(result.capability.authority, 'haKodan');
-  assert.equal(result.capability.maturity, 'DECLARED');
+  assert.equal(result.capability.authority, 'HAKODAN');
+  assert.equal(result.capability.maturity, 'CONFORMANT');
 });
 
 test('M8 repository seed never registers unresolved future target', () => {

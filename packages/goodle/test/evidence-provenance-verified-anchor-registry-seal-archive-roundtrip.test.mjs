@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { runVerifiedAnchorRegistrySealArchiveRoundTrip } from '../src/evidence-provenance-verified-anchor-registry-seal-archive-roundtrip.mjs';
+const protocol='M29-M30-M31-M32-M33-M34-M35-M36-M37-M38-M39';
+const entry={digest:'a',snapshotDigest:'snapshot-a',sealDigest:'seal-a',protocol,evidenceClass:'PROTOCOL_CONFORMANCE',anchor:{digest:'a',evidenceClass:'PROTOCOL_CONFORMANCE'}};
+const payload={version:'m53-v1',kind:'GOODLE_VERIFIED_ANCHOR_REGISTRY_SEAL',protocol,evidenceClass:'PROTOCOL_CONFORMANCE',entryCount:1,entries:[entry]};
+const seal={...payload,digest:createHash('sha256').update(JSON.stringify(payload)).digest('hex')};
+const m55={status:'ANCHOR_REGISTRY_SEAL_ROUND_TRIP_CONFORMANT',evidenceClass:'PROTOCOL_CONFORMANCE',seal};
+test('M58.1-M58.3 performs M56 export then independent M57 import',()=>{const r=runVerifiedAnchorRegistrySealArchiveRoundTrip(m55);assert.equal(r.status,'ANCHOR_REGISTRY_SEAL_ARCHIVE_ROUND_TRIP_CONFORMANT');assert.deepEqual(r.stages,{M56:'PASS',M57:'PASS',M58:'PASS'});});
+test('M58.4 is deterministic for identical input',()=>{assert.deepEqual(runVerifiedAnchorRegistrySealArchiveRoundTrip(m55),runVerifiedAnchorRegistrySealArchiveRoundTrip(m55));});
+test('M58.4 rejects invalid M55 input',()=>{const r=runVerifiedAnchorRegistrySealArchiveRoundTrip({status:'BAD',evidenceClass:'PROTOCOL_CONFORMANCE',seal});assert.equal(r.status,'REJECTED');assert.equal(r.failedStage,'M58_INPUT');});
+test('M58.5 preserves immutable result and protocol-conformance boundary',()=>{const r=runVerifiedAnchorRegistrySealArchiveRoundTrip(m55);assert.ok(Object.isFrozen(r));assert.equal(r.evidenceClass,'PROTOCOL_CONFORMANCE');assert.ok(Object.isFrozen(r.archive));});

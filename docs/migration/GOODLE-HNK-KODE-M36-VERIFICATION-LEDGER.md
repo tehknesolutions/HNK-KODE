@@ -1,26 +1,20 @@
-# M36 — Verified Bundle Registry & Duplicate/Conflict Semantics — Verification Ledger
+# M36 — Verification Ledger Index
 
 Date: 2026-10-02
-Issue: #128
 
-## Repository-visible implementation
-- accepts only M35 `IMPORTED_VERIFIED` results with successful verification;
-- deterministic registry key is the verified M34 bundle digest;
-- exact duplicate registration is idempotent;
-- conflicting payload under an existing digest is rejected;
-- registry entries and snapshots are immutable at the caller boundary;
-- verified protocol, source digest, stages, ledger, creation timestamp and digest are preserved;
-- public API export added.
+The repository currently contains two distinct work items carrying the M36 label. This file is therefore an index rather than silently replacing either ledger.
 
-## Verification classification
-| Evidence | State | Notes |
-| --- | --- | --- |
-| Repository/static contract inspection | VERIFIED_PASS | Registry implementation and focused tests are present. |
-| Executable Node test suite | NOT_RUN | No fresh stdout/stderr + exit code captured in this change. |
-| GitHub Actions | UNVERIFIED_INFRA | External executor remains supplementary and non-blocking. |
+## M36 / Issue #125
+Conformance Bundle Round-Trip Gate.
 
-## Naming reconciliation
-Issue #125 already uses the M36 label for the conformance bundle round-trip gate. Issue #128 introduces the verified-bundle registry as a parallel M36 slice. This ledger records the registry slice explicitly; milestone numbering should be reconciled before assigning M37.
+Dedicated ledger: `GOODLE-HNK-KODE-M36-ROUNDTRIP-VERIFICATION-LEDGER.md`.
 
-## Invariant
-Registry membership is audit/catalog evidence only. Registration does not execute a manifestation and does not grant execution, canon, or governance authority.
+## M36 / Issue #128
+Verified Bundle Registry & Duplicate/Conflict Semantics.
+
+Dedicated ledger: `GOODLE-HNK-KODE-M36-REGISTRY-VERIFICATION-LEDGER.md`.
+
+## Reconciliation
+See `GOODLE-HNK-KODE-M36-NUMBERING-RECONCILIATION.md`.
+
+No milestone is silently renumbered and neither ledger grants execution or canon authority.

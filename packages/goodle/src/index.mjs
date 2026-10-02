@@ -37,4 +37,5 @@ export * from "./evidence-provenance-diff.mjs";
 export * from "./evidence-provenance-traversal.mjs";
 export * from "./evidence-provenance-closure.mjs";
 export * from "./evidence-provenance-impact.mjs";
+export * from "./evidence-provenance-closure-artifact-import.mjs";
 export * from "./evidence-provenance-closure-artifact.mjs";

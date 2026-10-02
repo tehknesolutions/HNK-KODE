@@ -40,6 +40,7 @@ test('M9.1 refuses unsupported target before adapter invocation', () => {
     capability: null,
     request: null,
     plan: null,
+    provenance: null,
   });
 });
 
@@ -54,4 +55,5 @@ test('M9.1 refuses unresolved inventory entry before adapter invocation', () => 
 
   assert.equal(result.status, 'UNSUPPORTED');
   assert.equal(result.plan, null);
+  assert.equal(result.provenance, null);
 });

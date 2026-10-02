@@ -69,3 +69,4 @@ export * from "./evidence-provenance-verified-anchor-registry-seal-archive-round
 export * from "./evidence-provenance-verified-anchor-archive-registry.mjs";
 export * from "./evidence-provenance-verified-anchor-archive-registry-seal.mjs";
 export * from "./evidence-provenance-verified-anchor-archive-registry-seal-import.mjs";
+export * from "./evidence-provenance-verified-anchor-archive-registry-seal-roundtrip.mjs";

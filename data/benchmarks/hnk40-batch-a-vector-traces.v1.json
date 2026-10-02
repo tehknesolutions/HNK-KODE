@@ -1,0 +1,40 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"PARTIAL_HUMAN_CENTERLINE_TRACE",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"A",
+  "sourceSha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9",
+  "coordinateSpace":"normalized [0,1] relative to authoritative crop",
+  "records":[
+    {
+      "glyphId":"G01",
+      "cropBoxPx":[424,533,498,580],
+      "registryCropSha256":"87f82494e0bfcb507ba5babf0b52a2902a76e679653a3a90c038d0b6a400a3c4",
+      "reviewStatus":"SOURCE_VISUALLY_REVIEWED",
+      "visualDescription":"central vertical axis crossing an approximately circular/oval loop; pointed terminal/arrow-like mark at the top and pointed terminal at the bottom",
+      "strokes":[
+        {"id":"axis","kind":"open_polyline","points":[[0.251,0.087],[0.251,0.213],[0.251,0.404],[0.251,0.617],[0.251,0.809]]},
+        {"id":"loop","kind":"closed_bezier_guide","points":[[0.251,0.277],[0.174,0.298],[0.128,0.404],[0.132,0.511],[0.188,0.596],[0.251,0.617],[0.315,0.596],[0.365,0.511],[0.368,0.404],[0.326,0.298],[0.251,0.277]]}
+      ],
+      "intentionalMarks":[
+        {"id":"top_terminal","kind":"pointed_terminal","anchor":[0.251,0.087]},
+        {"id":"bottom_terminal","kind":"pointed_terminal","anchor":[0.251,0.809]}
+      ],
+      "unresolved":[],
+      "traceConfidence":"HIGH_FOR_TOPOLOGY_MEDIUM_FOR_EXACT_CURVATURE",
+      "creatorDecisionRequired":false,
+      "canonStatus":"NOT_PROMOTED"
+    },
+    {"glyphId":"G02","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G03","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G04","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G05","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G06","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G07","reviewStatus":"PENDING_ORDERED_TRACE","creatorDecisionRequired":true,"unresolved":["upper-right mark relationship"]},
+    {"glyphId":"G08","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G09","reviewStatus":"PENDING_ORDERED_TRACE"},
+    {"glyphId":"G10","reviewStatus":"PENDING_ORDERED_TRACE"}
+  ],
+  "note":"G01 coordinates are a source-reviewed reconstruction guide, not automatic skeleton output. Exact curvature remains research-grade until the Batch A Human Gate. Candidate D was not used to fill or alter the geometry.",
+  "guards":{"candidateDMayRepairTrace":false,"automaticCanonPromotion":false}
+}

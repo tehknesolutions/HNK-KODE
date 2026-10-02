@@ -43,3 +43,4 @@ export * from "./evidence-provenance-closure-roundtrip.mjs";
 export * from "./evidence-provenance-roundtrip-gate.mjs";
 export * from "./evidence-provenance-conformance-bundle.mjs";
 export * from "./evidence-provenance-conformance-bundle-roundtrip.mjs";
+export * from "./evidence-provenance-conformance-bundle-import.mjs";

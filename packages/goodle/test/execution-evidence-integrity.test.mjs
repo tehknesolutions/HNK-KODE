@@ -25,6 +25,7 @@ const evidence = {
   artifact: 'plan.hakodan.manifest.json',
   capabilityId: 'goodle.target.hakodan-manifestation-plan.v1',
   source: 'hakodan-runtime',
+  authority: 'HAKODAN',
   observationId: 'obs-integrity-11',
   observedAt: '2026-10-02T11:30:00Z',
   outcome: 'EXECUTED',

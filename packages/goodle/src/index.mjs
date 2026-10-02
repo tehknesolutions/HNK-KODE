@@ -51,3 +51,4 @@ export * from "./evidence-provenance-conformance-certificate.mjs";
 export * from "./evidence-provenance-conformance-certificate-import.mjs";
 export * from "./evidence-provenance-conformance-certificate-roundtrip.mjs";
 export * from "./evidence-provenance-verified-certificate-registry.mjs";
+export * from "./evidence-provenance-verified-certificate-registry-seal.mjs";

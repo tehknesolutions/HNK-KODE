@@ -29,3 +29,4 @@ export * from "./evidence-audit-export.mjs";
 export * from "./evidence-artifact-lineage.mjs";
 export * from "./evidence-audit-import.mjs";
 export * from "./evidence-artifact-diff.mjs";
+export * from "./evidence-artifact-merge-plan.mjs";

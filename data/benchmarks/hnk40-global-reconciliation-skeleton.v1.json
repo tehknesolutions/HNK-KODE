@@ -1,0 +1,19 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"GLOBAL_RECONCILIATION_ACTIVE",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "scope":"G01-G40",
+  "sourceCoverage":"40_OF_40",
+  "candidateDInventoryCoverage":"40_OF_40",
+  "sourceVisibleTraceCoverage":"10_OF_40",
+  "records":[
+    {"range":"G01-G10","sourceGeometry":"AVAILABLE","candidateD":"AVAILABLE","structuralDiff":"COMPLETE","reconciliation":"9_REDESSIGNED_1_CONFLICT","canon":"PENDING_CREATOR"},
+    {"range":"G11-G20","sourceGeometry":"TRACE_VISUAL_EVIDENCE_NEEDED","candidateD":"AVAILABLE_ROTATE_90_P01_P10","structuralDiff":"WAITING_ONLY_FOR_SOURCE_GEOMETRY","reconciliation":"PENDING","canon":"NOT_PROMOTED"},
+    {"range":"G21-G30","sourceGeometry":"TRACE_VISUAL_EVIDENCE_NEEDED","candidateD":"AVAILABLE_MIRROR_X_P01_P10","structuralDiff":"WAITING_ONLY_FOR_SOURCE_GEOMETRY","reconciliation":"PENDING","canon":"NOT_PROMOTED"},
+    {"range":"G31-G40","sourceGeometry":"TRACE_VISUAL_EVIDENCE_NEEDED","candidateD":"AVAILABLE_ROTATE_180_P01_P10","structuralDiff":"WAITING_ONLY_FOR_SOURCE_GEOMETRY","reconciliation":"PENDING","canon":"NOT_PROMOTED"}
+  ],
+  "knownDebt":["G07 upper_right_mark creator decision","G17 DERIVED_AMBIGUOUS","G18 PRIOR_MACHINE_REVIEW_REQUIRED","G20 DERIVED_AMBIGUOUS","G28 PRIOR_MACHINE_REVIEW_REQUIRED"],
+  "invariants":{"githubPlusGPTPrimary":true,"externalRuntimeRequired":false,"actionsRequired":false,"uncertaintyBlocksProgress":false,"candidateDRepairsSource":false,"automaticCanonPromotion":false},
+  "completionFormula":"For each Gxx: authoritative source binding + source-visible normalized trace + deterministic geometry hash + Candidate D structural diff + reconciliation proposal. Creator canon decisions are consolidated after research evidence coverage.",
+  "next":"Continue all repository-supported work now; when source raster pixels for G11-G40 are directly inspectable, fill the only remaining geometry-dependent slots and drive reconciliation from 10/40 to 40/40 without reopening provenance or Candidate D inventory."
+}

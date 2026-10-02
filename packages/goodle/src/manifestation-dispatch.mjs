@@ -10,7 +10,8 @@ export function dispatchTargetManifestation(routed = {}) {
     routed?.status !== 'ROUTED' ||
     !routed?.request ||
     !routed?.plan ||
-    !routed?.provenance
+    !routed?.provenance ||
+    routed?.capability?.maturity !== 'CONFORMANT'
   ) {
     return reject();
   }
@@ -26,7 +27,8 @@ export function dispatchTargetManifestation(routed = {}) {
     r.adapter !== p.adapter ||
     r.artifact !== p.artifact ||
     p.authority !== routed.capability?.authority ||
-    p.capabilityId !== routed.capability?.inventoryId
+    p.capabilityId !== routed.capability?.inventoryId ||
+    routed.plan?.semanticId !== r.semanticId
   ) {
     return reject();
   }

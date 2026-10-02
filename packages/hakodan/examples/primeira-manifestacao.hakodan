@@ -1,0 +1,8 @@
+mundo PrimeiraManifestacao {
+  entidade Mensagem {
+    propriedade texto = "haKodan manifestou.";
+  }
+  evento iniciar {
+    ação mostrar("haKodan manifestou.");
+  }
+}

@@ -13,11 +13,11 @@ const source = `mundo PrimeiraManifestacao {
   }
 }`;
 
-function compile() {
-  const ast = parse(source, { profile: "PT-BR" });
+function compile(input = source, options = {}) {
+  const ast = parse(input, { profile: "PT-BR" });
   const ir = toHnkIr(ast);
   const hom = toHom(ast);
-  return { ast, ir, hom, html: compileHtmlDocument({ ir, hom }) };
+  return { ast, ir, hom, html: compileHtmlDocument({ ir, hom, ...options }) };
 }
 
 test("HMV-4 crosses source -> AST -> HNK-IR -> HOM -> HTML", () => {
@@ -36,10 +36,19 @@ test("HMV-4 manifests entity and property data", () => {
   assert.match(html, /haKodan manifestou\./);
 });
 
-test("HMV-4 maps mostrar action to visible DOM output", () => {
+test("HMV-4 maps mostrar action to explicit event dispatch", () => {
   const { html } = compile();
+  assert.match(html, /function dispatch\(eventName\)/);
   assert.match(html, /action\.name==="mostrar"/);
-  assert.match(html, /output\.appendChild\(p\)/);
+  assert.match(html, /dispatch\("iniciar"\)/);
+});
+
+test("HMV-4 preserves event boundaries instead of flattening all actions", () => {
+  const input = `mundo X { evento iniciar { ação mostrar("A"); } evento depois { ação mostrar("B"); } }`;
+  const { html } = compile(input);
+  assert.match(html, /const events=\{"iniciar":\[.*"A".*\],"depois":\[.*"B".*\]\}/);
+  assert.match(html, /dispatch\("iniciar"\)/);
+  assert.doesNotMatch(html, /const actions=/);
 });
 
 test("HMV-4 output is byte deterministic", () => {
@@ -47,8 +56,12 @@ test("HMV-4 output is byte deterministic", () => {
 });
 
 test("HMV-4 rejects unsupported actions explicitly", () => {
-  const ast = parse(`mundo X { evento iniciar { ação desconhecida("x"); } }`, { profile: "PT-BR" });
-  assert.throws(() => compileHtmlDocument({ ir: toHnkIr(ast), hom: toHom(ast) }), /HAKODAN_HTML_TARGET_UNSUPPORTED_ACTION/);
+  assert.throws(() => compile(`mundo X { evento iniciar { ação desconhecida("x"); } }`), /HAKODAN_HTML_TARGET_UNSUPPORTED_ACTION/);
+});
+
+test("HMV-4 rejects mostrar with zero or multiple arguments", () => {
+  assert.throws(() => compile(`mundo X { evento iniciar { ação mostrar(); } }`), /HAKODAN_HTML_TARGET_UNSUPPORTED_ACTION/);
+  assert.throws(() => compile(`mundo X { evento iniciar { ação mostrar("a", "b"); } }`), /HAKODAN_HTML_TARGET_UNSUPPORTED_ACTION/);
 });
 
 test("HMV-4 rejects malformed canonical input", () => {

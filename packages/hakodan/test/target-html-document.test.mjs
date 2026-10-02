@@ -4,12 +4,12 @@ import { parse, toHnkIr } from "../src/parser.mjs";
 import { toHom } from "../src/hom.mjs";
 import { compileHtmlDocument, HAKODAN_HTML_DOCUMENT_TARGET_ID } from "../src/target-html-document.mjs";
 
-const source = `MUNDO PrimeiraManifestacao {
-  ENTIDADE Mensagem {
-    PROPRIEDADE texto = "haKodan manifestou.";
+const source = `mundo PrimeiraManifestacao {
+  entidade Mensagem {
+    propriedade texto = "haKodan manifestou.";
   }
-  EVENTO iniciar {
-    ACAO mostrar("haKodan manifestou.");
+  evento iniciar {
+    ação mostrar("haKodan manifestou.");
   }
 }`;
 
@@ -47,7 +47,7 @@ test("HMV-4 output is byte deterministic", () => {
 });
 
 test("HMV-4 rejects unsupported actions explicitly", () => {
-  const ast = parse(`MUNDO X { EVENTO iniciar { ACAO desconhecida("x"); } }`, { profile: "PT-BR" });
+  const ast = parse(`mundo X { evento iniciar { ação desconhecida("x"); } }`, { profile: "PT-BR" });
   assert.throws(() => compileHtmlDocument({ ir: toHnkIr(ast), hom: toHom(ast) }), /HAKODAN_HTML_TARGET_UNSUPPORTED_ACTION/);
 });
 

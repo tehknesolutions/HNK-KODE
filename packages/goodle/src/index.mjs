@@ -32,3 +32,4 @@ export * from "./evidence-artifact-diff.mjs";
 export * from "./evidence-artifact-merge-plan.mjs";
 export * from "./evidence-artifact-merge.mjs";
 export * from "./evidence-artifact-provenance.mjs";
+export * from "./evidence-artifact-reseal.mjs";

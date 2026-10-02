@@ -48,3 +48,4 @@ export * from "./evidence-provenance-verified-bundle-registry.mjs";
 export * from "./evidence-provenance-conformance-attestation.mjs";
 export * from "./evidence-provenance-conformance-attestation-import.mjs";
 export * from "./evidence-provenance-conformance-certificate.mjs";
+export * from "./evidence-provenance-conformance-certificate-import.mjs";

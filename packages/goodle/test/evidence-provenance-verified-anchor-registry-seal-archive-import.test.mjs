@@ -1,0 +1,16 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { exportVerifiedAnchorRegistrySealArchive } from '../src/evidence-provenance-verified-anchor-registry-seal-archive.mjs';
+import { importVerifiedAnchorRegistrySealArchive } from '../src/evidence-provenance-verified-anchor-registry-seal-archive-import.mjs';
+const entry=(digest)=>({digest,snapshotDigest:'snapshot-'+digest,sealDigest:'seal-'+digest,protocol:'M29-M30-M31-M32-M33-M34-M35-M36-M37-M38-M39',evidenceClass:'PROTOCOL_CONFORMANCE',anchor:{digest,evidenceClass:'PROTOCOL_CONFORMANCE'}});
+const seal={version:'m53-v1',kind:'GOODLE_VERIFIED_ANCHOR_REGISTRY_SEAL',protocol:'M29-M30-M31-M32-M33-M34-M35-M36-M37-M38-M39',evidenceClass:'PROTOCOL_CONFORMANCE',entryCount:1,entries:[entry('a')],digest:''};
+import { createHash } from 'node:crypto';
+const sealPayload={...seal};delete sealPayload.digest;seal.digest=createHash('sha256').update(JSON.stringify(sealPayload)).digest('hex');
+const exported=exportVerifiedAnchorRegistrySealArchive({status:'ANCHOR_REGISTRY_SEAL_ROUND_TRIP_CONFORMANT',evidenceClass:'PROTOCOL_CONFORMANCE',seal});
+test('M57.1/M57.2 imports a valid M56 archive',()=>{const r=importVerifiedAnchorRegistrySealArchive(exported.archive);assert.equal(r.status,'IMPORTED_VERIFIED');assert.equal(r.evidenceClass,'PROTOCOL_CONFORMANCE');});
+test('M57.3 verifies archive digest independently',()=>{const r=importVerifiedAnchorRegistrySealArchive(exported.archive);assert.equal(r.stages.M57_DIGEST,'PASS');});
+test('M57.4 verifies sourceDigest binding to M55 seal',()=>{const r=importVerifiedAnchorRegistrySealArchive(exported.archive);assert.equal(r.sourceDigest,seal.digest);assert.equal(r.stages.M57_BINDING,'PASS');});
+test('M57.4 rejects archive digest tampering',()=>{const bad={...exported.archive,digest:'0'.repeat(64)};const r=importVerifiedAnchorRegistrySealArchive(bad);assert.equal(r.status,'REJECTED');assert.equal(r.failedStage,'M57_DIGEST');});
+test('M57.4 rejects sourceDigest mismatch',()=>{const bad={...exported.archive,sourceDigest:'bad'};const r=importVerifiedAnchorRegistrySealArchive(bad);assert.equal(r.status,'REJECTED');assert.equal(r.failedStage,'M57_DIGEST');});
+test('M57.4 rejects evidence-class promotion',()=>{const bad={...exported.archive,evidenceClass:'EXECUTION_EVIDENCE'};const r=importVerifiedAnchorRegistrySealArchive(bad);assert.equal(r.failedStage,'M57_STRUCTURE');});
+test('M57.5 preserves immutable verified reconstruction',()=>{const r=importVerifiedAnchorRegistrySealArchive(exported.archive);assert.ok(Object.isFrozen(r));assert.ok(Object.isFrozen(r.archive));assert.ok(Object.isFrozen(r.seal));assert.ok(Object.isFrozen(r.stages));});

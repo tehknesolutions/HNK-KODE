@@ -45,3 +45,6 @@ export * from "./evidence-provenance-conformance-bundle.mjs";
 export * from "./evidence-provenance-conformance-bundle-roundtrip.mjs";
 export * from "./evidence-provenance-conformance-bundle-import.mjs";
 export * from "./evidence-provenance-verified-bundle-registry.mjs";
+export * from "./evidence-provenance-conformance-attestation.mjs";
+export * from "./evidence-provenance-conformance-attestation-import.mjs";
+export * from "./evidence-provenance-conformance-certificate.mjs";

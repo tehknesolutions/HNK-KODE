@@ -62,3 +62,4 @@ export * from "./evidence-provenance-sealed-snapshot-anchor-roundtrip.mjs";
 export * from "./evidence-provenance-verified-anchor-registry.mjs";
 export * from "./evidence-provenance-verified-anchor-registry-seal.mjs";
 export * from "./evidence-provenance-verified-anchor-registry-seal-import.mjs";
+export * from "./evidence-provenance-verified-anchor-registry-seal-roundtrip.mjs";

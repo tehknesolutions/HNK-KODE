@@ -18,3 +18,4 @@ export * from "./target-adapter-binding.mjs";
 export * from "./manifestation-dispatch.mjs";
 export * from "./execution-evidence.mjs";
 export * from "./execution-evidence-provider.mjs";
+export * from "./execution-evidence-provider-bridge.mjs";

@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "STRUCTURAL_DIFF_G11_G40_COMPLETE",
+  "authority": "RESEARCH_NON_CANONICAL",
+  "basis": "source-visible normalized traces versus Candidate D transformed core primitives; no metric equivalence claimed",
+  "records": [
+    {
+      "glyphId": "G11",
+      "candidateD": {
+        "base": "P01",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G12",
+      "candidateD": {
+        "base": "P02",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G13",
+      "candidateD": {
+        "base": "P03",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G14",
+      "candidateD": {
+        "base": "P04",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G15",
+      "candidateD": {
+        "base": "P05",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G16",
+      "candidateD": {
+        "base": "P06",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G17",
+      "candidateD": {
+        "base": "P07",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": [
+        "DERIVED_AMBIGUOUS"
+      ]
+    },
+    {
+      "glyphId": "G18",
+      "candidateD": {
+        "base": "P08",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": [
+        "PRIOR_MACHINE_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "glyphId": "G19",
+      "candidateD": {
+        "base": "P09",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G20",
+      "candidateD": {
+        "base": "P10",
+        "transform": "ROTATE_90"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": [
+        "DERIVED_AMBIGUOUS"
+      ]
+    },
+    {
+      "glyphId": "G21",
+      "candidateD": {
+        "base": "P01",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G22",
+      "candidateD": {
+        "base": "P02",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G23",
+      "candidateD": {
+        "base": "P03",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G24",
+      "candidateD": {
+        "base": "P04",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G25",
+      "candidateD": {
+        "base": "P05",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G26",
+      "candidateD": {
+        "base": "P06",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G27",
+      "candidateD": {
+        "base": "P07",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G28",
+      "candidateD": {
+        "base": "P08",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": [
+        "PRIOR_MACHINE_REVIEW_REQUIRED"
+      ]
+    },
+    {
+      "glyphId": "G29",
+      "candidateD": {
+        "base": "P09",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G30",
+      "candidateD": {
+        "base": "P10",
+        "transform": "MIRROR_X"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G31",
+      "candidateD": {
+        "base": "P01",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G32",
+      "candidateD": {
+        "base": "P02",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G33",
+      "candidateD": {
+        "base": "P03",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G34",
+      "candidateD": {
+        "base": "P04",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G35",
+      "candidateD": {
+        "base": "P05",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G36",
+      "candidateD": {
+        "base": "P06",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G37",
+      "candidateD": {
+        "base": "P07",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G38",
+      "candidateD": {
+        "base": "P08",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G39",
+      "candidateD": {
+        "base": "P09",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    },
+    {
+      "glyphId": "G40",
+      "candidateD": {
+        "base": "P10",
+        "transform": "ROTATE_180"
+      },
+      "relation": "STRUCTURAL_DELTA",
+      "confidence": "source-visible-structural",
+      "uncertainty": []
+    }
+  ],
+  "summary": {
+    "compared": 30,
+    "structuralDelta": 30,
+    "preserved": 0,
+    "exactTransformMatch": 0,
+    "unresolvedDebt": [
+      "G17",
+      "G18",
+      "G20",
+      "G28"
+    ],
+    "canonPromoted": 0
+  },
+  "interpretation": "The recovered source-visible Batch B-D forms do not reproduce the Candidate D core primitives as exact transformed copies at the structural level. This is a research comparison, not a claim that Candidate D is historically or semantically wrong.",
+  "next": "Consolidate G01-G40 into one reconciliation table and prepare the final Creator decision package."
+}

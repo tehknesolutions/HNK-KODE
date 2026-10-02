@@ -1,0 +1,24 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"TRACE_ASSIST_MATERIALIZED_NOT_VECTOR_AUTHORITY",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"A",
+  "range":"G01-G10",
+  "sourceSha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9",
+  "method":"Per authoritative crop: grayscale -> local Otsu -> remove components <6 px -> skeletonize -> 8-neighbor connected-component inventory. Coordinates were normalized in the runtime trace-assist artifact but are deliberately not promoted here as vector strokes.",
+  "records":[
+    {"glyphId":"G01","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G02","candidateComponents":6,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G03","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G04","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G05","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G06","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G07","candidateComponents":3,"status":"TRACE_ASSIST_ONLY","creatorDecisionRequired":true},
+    {"glyphId":"G08","candidateComponents":4,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G09","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"},
+    {"glyphId":"G10","candidateComponents":3,"status":"TRACE_ASSIST_ONLY"}
+  ],
+  "interpretation":"The automatic assist still fragments every Batch A crop into multiple components. Therefore it is useful as a visual locator but fails the requirements for authoritative ordered centerline strokes. No machine component is promoted to vector geometry.",
+  "guards":{"machineSkeletonIsVector":false,"candidateDMayRepairTrace":false,"inventStroke":false,"automaticCanonPromotion":false},
+  "next":"Perform ordered human centerline tracing against the enlarged authoritative crops. Encode normalized strokes only after visual review; keep G07 upper-right mark unresolved unless explicitly decided."
+}

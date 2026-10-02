@@ -1,0 +1,23 @@
+{
+  "schemaVersion":"1.0.0",
+  "status":"TRACE_INPUT_FROZEN",
+  "authority":"RESEARCH_NON_CANONICAL",
+  "batch":"A",
+  "range":"G01-G10",
+  "source":{"name":"HNK-IDIOMA--canvas-iso-arquitetura-do-glifo-sistema-completo-40-caracteres.png","sha256":"f67dab0eac436f636a2a28789420c81754943852b222b8547fdb12c388de27d9","widthPx":1536,"heightPx":1024,"sizeBytes":3483750},
+  "sourceRegistry":"data/benchmarks/hnk40-new-plate-specimen-registry.v1.json",
+  "records":[
+    {"glyphId":"G01","cropBoxPx":[424,533,498,580],"registryCropSha256":"87f82494e0bfcb507ba5babf0b52a2902a76e679653a3a90c038d0b6a400a3c4","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G02","cropBoxPx":[498,533,572,580],"registryCropSha256":"b587dc568a97dbdf43136ca95e3e48d9c1c859db34332ba88cdd963844421ffd","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G03","cropBoxPx":[572,533,646,580],"registryCropSha256":"75668b0b8440710850143991919fe3d748519413dff3cb176aa9f76b9a277b4b","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G04","cropBoxPx":[646,533,720,580],"registryCropSha256":"d274e6ef474d730fa006302cc1a054a0d59c92b5d6c828f38c12a55b7b87f448","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G05","cropBoxPx":[720,533,794,580],"registryCropSha256":"a014dc38ac76fd25ec8866c3b0c9bd20a1a353359e60a31c8ad9fc0f3a655f29","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G06","cropBoxPx":[794,533,867,580],"registryCropSha256":"e945d3148e44a52d1fd9b444a9ad969755d8d873ba20e691ef8098fc44bb674d","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G07","cropBoxPx":[867,533,941,580],"registryCropSha256":"9f0ff98432e4a40504006a1a0f0719eb0471a6d604a24571c841074cf127b734","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G08","cropBoxPx":[941,533,1015,580],"registryCropSha256":"b8a81fffa26b2f9b73039e1e90b273ec050555fc0589f4fcf413979071c46644","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G09","cropBoxPx":[1015,533,1089,580],"registryCropSha256":"9e694dc88a942a9fbca749e0d5dc0bc6ad6c8ad8d7a702b6e65523555bd72d0a","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"},
+    {"glyphId":"G10","cropBoxPx":[1089,533,1163,580],"registryCropSha256":"92091a40e7bbaf2d77eb70e20a42189dd22c6605b5eafc61f060b59a2917e9cc","traceStatus":"PENDING_HUMAN_VECTOR_TRACE"}
+  ],
+  "guards":{"candidateDMayFillAmbiguousStroke":false,"automaticCanonPromotion":false,"inventMissingStroke":false},
+  "next":"Trace G01-G10 from these exact authoritative cells; unresolved strokes become CREATOR_DECISION_REQUIRED."
+}

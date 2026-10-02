@@ -1,8 +1,8 @@
 import { buildTargetCapabilityInventory } from './target-capability-inventory.mjs';
 
-// M8 starts conservatively. These entries describe repository-visible adapter
-// surfaces; maturity remains DECLARED until target-specific conformance evidence
-// promotes an entry.
+// M8 inventory is conservative: only repository-visible adapter surfaces enter
+// the inventory. A capability is promoted to CONFORMANT only when a dedicated
+// contract test binds the declaration to the actual adapter authority envelope.
 export const GOODLE_TARGET_CAPABILITY_INVENTORY_V1 = buildTargetCapabilityInventory([
   {
     id: 'goodle.target.hakodan-runtime.v1',
@@ -10,9 +10,9 @@ export const GOODLE_TARGET_CAPABILITY_INVENTORY_V1 = buildTargetCapabilityInvent
     format: 'hakodan-runtime-request',
     adapter: 'runtime-adapter-v1',
     artifactPattern: '*.hakodan.json',
-    authority: 'haKodan',
+    authority: 'HAKODAN',
     source: 'packages/goodle/src/runtime-adapter.mjs',
-    maturity: 'DECLARED',
+    maturity: 'CONFORMANT',
   },
   {
     id: 'goodle.target.future-unresolved.v1',

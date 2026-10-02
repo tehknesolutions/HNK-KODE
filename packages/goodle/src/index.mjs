@@ -40,3 +40,4 @@ export * from "./evidence-provenance-impact.mjs";
 export * from "./evidence-provenance-closure-artifact-import.mjs";
 export * from "./evidence-provenance-closure-artifact.mjs";
 export * from "./evidence-provenance-closure-roundtrip.mjs";
+export * from "./evidence-provenance-roundtrip-gate.mjs";

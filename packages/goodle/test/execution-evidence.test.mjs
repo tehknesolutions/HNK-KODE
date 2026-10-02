@@ -27,6 +27,7 @@ test('M11.1 submits explicit execution evidence against an accepted receipt', ()
     artifact: 'plan.hakodan.manifest.json',
     capabilityId: 'goodle.target.hakodan-manifestation-plan.v1',
     source: 'hakodan-runtime',
+    authority: 'HAKODAN',
     observationId: 'obs-001',
     observedAt: '2026-10-02T11:20:00Z',
     outcome: 'EXECUTED',

@@ -9,6 +9,7 @@ export function routeTargetManifestation(input = {}, actor = {}, inventory) {
       capability: binding.capability ?? null,
       request: null,
       plan: null,
+      provenance: null,
     };
   }
 
@@ -26,6 +27,17 @@ export function routeTargetManifestation(input = {}, actor = {}, inventory) {
     throw new Error('GOODLE_TARGET_ROUTER_SEMANTIC_IDENTITY_DRIFT');
   }
 
+  const provenance = Object.freeze({
+    semanticId: request.semanticId,
+    target: capability.target,
+    format: capability.format,
+    adapter: capability.adapter,
+    artifact: request.artifact,
+    authority: capability.authority,
+    capabilityId: capability.inventoryId,
+    capabilitySource: capability.source,
+  });
+
   return {
     status: bridged.status === 'BRIDGED' ? 'ROUTED' : bridged.status,
     capability,
@@ -33,5 +45,6 @@ export function routeTargetManifestation(input = {}, actor = {}, inventory) {
     plan: bridged.plan ?? null,
     intent: bridged.intent,
     missing: bridged.missing ?? [],
+    provenance,
   };
 }

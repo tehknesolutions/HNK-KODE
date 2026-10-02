@@ -45,3 +45,7 @@ test("Golden Path wrapper does not create a parallel semantic model", () => {
   assert.deepEqual(result.ir, toHnkIr(ast));
   assert.deepEqual(result.hom, toHom(ast));
 });
+
+test("Golden Path fails closed when a required semantic stage is absent", () => {
+  assert.throws(() => buildGoldenPath(`mundo AbraIsland { entidade Alakazam { propriedade vida = 100 } }`, { profile: "PT-BR" }), /HAKODAN_GOLDEN_PATH_EVENT_REQUIRED/);
+});

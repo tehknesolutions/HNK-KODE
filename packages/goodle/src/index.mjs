@@ -22,3 +22,4 @@ export * from "./execution-evidence-provider-bridge.mjs";
 export * from "./concrete-execution-evidence-adapter.mjs";
 export * from "./evidence-audit-store.mjs";
 export * from "./evidence-audit-integration.mjs";
+export * from "./evidence-audit-query.mjs";

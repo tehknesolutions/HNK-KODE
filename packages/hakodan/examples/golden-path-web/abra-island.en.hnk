@@ -1,0 +1,4 @@
+world AbraIsland {
+  entity Alakazam { property vida = 100 }
+  event Despertar { action despertar("Alakazam") }
+}

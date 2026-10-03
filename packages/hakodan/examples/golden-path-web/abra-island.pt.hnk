@@ -1,0 +1,4 @@
+mundo AbraIsland {
+  entidade Alakazam { propriedade vida = 100 }
+  evento Despertar { ação despertar("Alakazam") }
+}

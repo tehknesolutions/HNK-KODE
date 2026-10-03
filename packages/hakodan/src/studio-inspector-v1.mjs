@@ -31,13 +31,13 @@ export function projectStudioInspector(goldenPath) {
     }
     events.push(event.name);
     for (const action of event.actions) {
-      if (!action?.name || !Array.isArray(action.args)) {
+      if (!action?.name || !Array.isArray(action.arguments)) {
         throw new Error("HAKODAN_STUDIO_INSPECTOR_INVALID");
       }
       actions.push(Object.freeze({
         event: event.name,
         name: action.name,
-        args: Object.freeze([...action.args])
+        args: Object.freeze([...action.arguments])
       }));
     }
   }

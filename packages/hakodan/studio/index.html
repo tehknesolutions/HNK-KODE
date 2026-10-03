@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>haKodan Studio V1</title>
+  <link rel="stylesheet" href="./studio.css">
+</head>
+<body>
+  <header><strong>haKodan Studio</strong><span>V1 · HNK-KODE → Malkuth</span></header>
+  <main>
+    <section class="authoring" aria-label="HNK-KODE authoring">
+      <div class="toolbar">
+        <label>Perfil <select id="profile"><option>PT-BR</option><option>EN</option></select></label>
+        <button id="validate" type="button">VALIDATE</button>
+        <button id="run" type="button">RUN</button>
+        <output id="evidence">IDLE</output>
+      </div>
+      <textarea id="source" spellcheck="false" aria-label="HNK-KODE source"></textarea>
+      <pre id="diagnostic" role="status"></pre>
+    </section>
+    <section class="inspection" aria-label="Canonical inspector">
+      <h2>Canonical Inspector</h2>
+      <div id="inspector"></div>
+    </section>
+    <section class="manifestation" aria-label="Manifestation preview">
+      <h2>Manifestation</h2>
+      <iframe id="preview" sandbox="" title="haKodan manifestation preview"></iframe>
+    </section>
+  </main>
+  <script type="module" src="./studio.mjs"></script>
+</body>
+</html>

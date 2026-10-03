@@ -6,7 +6,7 @@ export function compileHtmlDocument({ ir, hom, startupEvent = "iniciar" }) {
   const reactive = Array.isArray(ir?.world?.rules) && ir.world.rules.length > 0;
   const supportedIr = ir?.version === "0.1.0" || (ir?.version === "0.2.0" && reactive);
   if (ir?.ir !== "HNK-IR" || !supportedIr || !ir?.world) throw new Error("HAKODAN_HTML_TARGET_INVALID_IR");
-  if (hom?.model !== "HOM" || hom?.version !== ir.version || !Array.isArray(hom.objects)) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
+  if (hom?.model !== "HOM" || !["0.1.0", "0.2.0"].includes(hom?.version) || hom.version !== ir.version || !Array.isArray(hom.objects)) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
   const targetId = reactive ? TARGET_ID_V2 : TARGET_ID_V1;
   const worldEvents = ir.world.events ?? [];
   const unsupported = worldEvents.flatMap(event => event.actions.filter(action => action.name !== "mostrar" || action.arguments?.length !== 1).map(action => `${event.name}:${action.name}/${action.arguments?.length ?? 0}`));

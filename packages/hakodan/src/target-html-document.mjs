@@ -4,7 +4,8 @@ function escapeHtml(value) { return String(value).replaceAll("&", "&amp;").repla
 function scriptLiteral(value) { return JSON.stringify(value).replaceAll("<", "\\u003c"); }
 export function compileHtmlDocument({ ir, hom, startupEvent = "iniciar" }) {
   if (ir?.ir !== "HNK-IR" || !["0.1.0", "0.2.0"].includes(ir?.version) || !ir?.world) throw new Error("HAKODAN_HTML_TARGET_INVALID_IR");
-  if (hom?.model !== "HOM" || hom?.version !== ir.version || !Array.isArray(hom.objects)) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
+  if (hom?.model !== "HOM" || !["0.1.0", "0.2.0"].includes(hom?.version) || !Array.isArray(hom.objects)) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
+  if (hom.version !== ir.version) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
   const reactive = Array.isArray(ir.world.rules) && ir.world.rules.length > 0;
   const targetId = reactive ? TARGET_ID_V2 : TARGET_ID_V1;
   const worldEvents = ir.world.events ?? [];

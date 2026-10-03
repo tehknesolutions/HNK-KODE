@@ -98,3 +98,8 @@ Exit: evidence-backed release candidate.
 ## Backlog rule
 
 Any proposed work that does not materially improve execution, usability, verification, documentation/versioning or approved identity is deferred unless it fixes a verified integrity defect.
+
+
+## Web Manifestation V1 checkpoint — 2026-10-02
+
+Wave D first vertical slice: **EVIDENCED**. AbraIsland → Alakazam → vida=100 → Despertar → despertar now reaches deterministic HTML/JS and observable Chrome DOM through canonical haKodan semantics. Fresh suite: **169/169 PASS**. Recalculated PCI: **74.45%**. Primary next leverage: Wave C identity/assets plus Wave E Studio/authoring over the same Golden Path.

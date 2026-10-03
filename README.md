@@ -193,3 +193,8 @@ O próximo salto de produto é provar:
 > **Uma intenção entra no haKodan e uma manifestação real, visível e verificável sai.**
 
 O roadmap oficial desta fase está em `docs/roadmap/HAKODAN-ROADMAP.md`.
+
+
+## Web Manifestation V1
+
+The first real Web vertical slice is now evidenced: canonical PT-BR/EN Golden Path → HNK-IR → fail-closed Web target → deterministic HTML/JS → Chrome execution → observable DOM. Acceptance fixture: packages/hakodan/examples/golden-path-web/. Fresh local regression: **169/169 PASS**. Current evidence-backed PCI: **74.45%**; next major gaps are haKodan Studio/authoring and approved identity/assets integration.

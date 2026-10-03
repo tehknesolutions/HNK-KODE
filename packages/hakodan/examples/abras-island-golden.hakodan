@@ -1,0 +1,16 @@
+mundo AbrasIsland {
+  entidade Alakazam {
+    propriedade x = 0;
+    propriedade y = 0;
+  }
+
+  entidade Portal {
+    propriedade x = 10;
+    propriedade y = 0;
+    propriedade open = false;
+  }
+
+  quando perto(Alakazam, Portal, 2) {
+    ação definir(Portal, open, true);
+  }
+}

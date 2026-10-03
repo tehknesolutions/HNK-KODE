@@ -1,3 +1,13 @@
+## 2026-10-02 — haKodan Web Manifestation V1
+
+- Added fail-closed Web target capability and deterministic Web adapter under packages/hakodan.
+- Added manifest() orchestration without conflating artifact generation with execution.
+- Added truthful UNVERIFIED | EXECUTED | FAILED execution-evidence boundary.
+- Added PT-BR/EN AbraIsland/Alakazam acceptance fixture and generated HTML artifact.
+- Observed the artifact executing in installed Chrome headless with AbraIsland, Alakazam, vida=100, Despertar and despertar present in the post-script DOM.
+- Fresh complete local haKodan suite: **169/169 PASS, 0 FAIL**.
+- Recalculated evidence-backed PCI to **74.45%**.
+
 ## 2026-10-02 — haKodan Acceleration V1
 
 - Re-centered the repository product roadmap explicitly on **haKodan**.

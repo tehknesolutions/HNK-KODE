@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>haKodan — AbraIsland</title></head>
+<body><main id="hakodan-root"></main>
+<script>const world={"id":"hnk://world/AbraIsland","name":"AbraIsland","entities":[{"id":"hnk://world/AbraIsland/entity/Alakazam","name":"Alakazam","properties":{"vida":100},"propertyTypes":{"vida":"Number"}}],"events":[{"name":"Despertar","actions":[{"name":"despertar","arguments":["Alakazam"]}]}]};
+const root=document.getElementById("hakodan-root");
+root.innerHTML='<h1>'+world.name+'</h1><pre>'+JSON.stringify(world,null,2)+'</pre>';
+window.__HAKODAN_WORLD__=world;</script></body></html>

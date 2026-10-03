@@ -60,3 +60,12 @@ The project is stronger than a prototype in semantic/runtime foundations, but we
 - **80% gate:** authoring/Studio path drives the same Golden Path; identity/assets integrated; fresh integration execution captured.
 - **90% gate:** broader target/runtime coverage, robust regression suite, release/distribution path and reduced unresolved design/canon gaps.
 - **100% of this acceleration scope:** all Definition-of-Done requirements in `HAKODAN-ACCELERATION-MASTER-SPEC-v1.0.md` satisfied with evidence. This does not mean the universal haKodan vision can never expand.
+
+
+## 2026-10-02 Web Manifestation V1 recalculation
+
+Fresh evidence changes the weighted scores to: Product/Canon 95%, Semantic Core 90%, IR/compiler 88%, Manifestation 80%, Real runtime/targets 70%, Studio 25%, Identity/assets 25%, Tests/QA 85%, Documentation 90%, Versioning/release 45%.
+
+Weighted PCI: **74.45%** (dashboard: **74%**).
+
+Evidence: docs/evidence/HAKODAN-WEB-GOLDEN-PATH-V1.md. The increase is driven by consolidated product documentation, the canonical Golden Path, a fail-closed real Web target/adapter, deterministic artifact generation, fresh 169/169 local tests, and observed Chrome execution. Studio/authoring and approved identity/assets remain the largest product gaps.

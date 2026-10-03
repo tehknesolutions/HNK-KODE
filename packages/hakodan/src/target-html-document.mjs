@@ -4,10 +4,8 @@ function escapeHtml(value) { return String(value).replaceAll("&", "&amp;").repla
 function scriptLiteral(value) { return JSON.stringify(value).replaceAll("<", "\\u003c"); }
 export function compileHtmlDocument({ ir, hom, startupEvent = "iniciar" }) {
   const reactive = Array.isArray(ir?.world?.rules) && ir.world.rules.length > 0;
-  const supportedIr = ir?.version === "0.1.0" || (ir?.version === "0.2.0" && reactive);
-  if (ir?.ir !== "HNK-IR" || !supportedIr || !ir?.world) throw new Error("HAKODAN_HTML_TARGET_INVALID_IR");
-  const supportedHom = hom?.version === "0.1.0" || (hom?.version === "0.2.0" && reactive);
-  if (hom?.model !== "HOM" || !supportedHom || hom.version !== ir.version || !Array.isArray(hom.objects)) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
+  if (ir?.ir !== "HNK-IR" || !ir?.world || (reactive ? ir.version !== "0.2.0" : ir.version !== "0.1.0")) throw new Error("HAKODAN_HTML_TARGET_INVALID_IR");
+  if (hom?.model !== "HOM" || !Array.isArray(hom.objects) || (reactive ? hom.version !== "0.2.0" : hom.version !== "0.1.0")) throw new Error("HAKODAN_HTML_TARGET_INVALID_HOM");
   const targetId = reactive ? TARGET_ID_V2 : TARGET_ID_V1;
   const worldEvents = ir.world.events ?? [];
   const unsupported = worldEvents.flatMap(event => event.actions.filter(action => action.name !== "mostrar" || action.arguments?.length !== 1).map(action => `${event.name}:${action.name}/${action.arguments?.length ?? 0}`));

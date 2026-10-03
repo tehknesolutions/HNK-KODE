@@ -1,3 +1,5 @@
+import { createCanonicalRuntimeRegistries } from "./runtime-capability-registry.mjs";
+
 function cloneEntity(entity) {
   return {
     id: entity.id,
@@ -10,13 +12,14 @@ function cloneEntity(entity) {
   };
 }
 
-export function createWorldRuntime(ir) {
-  if (ir?.ir !== "HNK-IR" || ir?.version !== "0.2.0" || !ir?.world) {
-    throw new Error("HAKODAN_WORLD_RUNTIME_INVALID_IR");
-  }
+export function createWorldRuntime(ir, options = {}) {
+  if (ir?.ir !== "HNK-IR" || ir?.version !== "0.2.0" || !ir?.world) throw new Error("HAKODAN_WORLD_RUNTIME_INVALID_IR");
 
   const state = new Map(ir.world.entities.map(entity => [entity.id, cloneEntity(entity)]));
   const changes = [];
+  const canonical = createCanonicalRuntimeRegistries();
+  const conditions = options.conditions ?? canonical.conditions;
+  const actions = options.actions ?? canonical.actions;
 
   function entity(id) {
     const value = state.get(id);
@@ -24,27 +27,18 @@ export function createWorldRuntime(ir) {
     return value;
   }
 
+  const context = { entity };
+
   function evaluate(condition) {
-    if (condition.kind === "NEAR") {
-      const subject = entity(condition.subject);
-      const target = entity(condition.target);
-      return Math.hypot(
-        subject.position.x - target.position.x,
-        subject.position.y - target.position.y
-      ) <= condition.threshold;
-    }
-    throw new Error(`HAKODAN_RUNTIME_UNSUPPORTED_CONDITION: ${condition.kind}`);
+    return Boolean(conditions.resolve(condition.kind)(condition, context));
   }
 
   function apply(action, ruleId) {
-    if (action.kind !== "SET") throw new Error(`HAKODAN_RUNTIME_UNSUPPORTED_ACTION: ${action.kind}`);
-    const subject = entity(action.subject);
-    const before = subject[action.path];
-    if (Object.is(before, action.value)) return null;
-    subject[action.path] = structuredClone(action.value);
-    const change = { ruleId, action: "SET", subject: action.subject, path: action.path, before, after: action.value };
-    changes.push(change);
-    return change;
+    const change = actions.resolve(action.kind)(action, context);
+    if (!change) return null;
+    const evidence = { ruleId, ...change };
+    changes.push(evidence);
+    return evidence;
   }
 
   function tick() {
@@ -70,5 +64,5 @@ export function createWorldRuntime(ir) {
     return Object.fromEntries([...state.entries()].map(([id, value]) => [id, structuredClone(value)]));
   }
 
-  return { tick, setPosition, snapshot, changes, entity };
+  return { tick, setPosition, snapshot, changes, entity, capabilities: { conditions, actions } };
 }

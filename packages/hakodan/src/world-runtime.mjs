@@ -1,5 +1,6 @@
 import { createCanonicalRuntimeRegistries } from "./runtime-capability-registry.mjs";
 import { createCanonicalTriggerRegistry } from "./runtime-trigger-registry.mjs";
+import { createRelationStore } from "./entity-relations.mjs";
 
 function cloneEntity(entity) {
   return { id: entity.id, name: entity.name, ...structuredClone(entity.properties), position: { x: Number(entity.properties.x ?? 0), y: Number(entity.properties.y ?? 0) } };
@@ -13,13 +14,14 @@ export function createWorldRuntime(ir, options = {}) {
   const conditions = options.conditions ?? canonical.conditions;
   const actions = options.actions ?? canonical.actions;
   const triggers = options.triggers ?? createCanonicalTriggerRegistry();
+  const relations = createRelationStore(id => state.has(id));
 
   function entity(id) {
     const value = state.get(id);
     if (!value) throw new Error(`HAKODAN_RUNTIME_ENTITY_NOT_FOUND: ${id}`);
     return value;
   }
-  const context = { entity, evaluate: condition => evaluate(condition) };
+  const context = { entity, relations, evaluate: condition => evaluate(condition) };
   function evaluate(condition) { return Boolean(conditions.resolve(condition.kind)(condition, context)); }
   function apply(action, ruleId) {
     const change = actions.resolve(action.kind)(action, context);
@@ -39,5 +41,5 @@ export function createWorldRuntime(ir, options = {}) {
   function tick() { return dispatch({ type: "tick" }); }
   function setPosition(entityId, x, y) { const subject = entity(entityId); subject.position = { x: Number(x), y: Number(y) }; return structuredClone(subject.position); }
   function snapshot() { return Object.fromEntries([...state.entries()].map(([id, value]) => [id, structuredClone(value)])); }
-  return { tick, dispatch, setPosition, snapshot, changes, entity, capabilities: { conditions, actions, triggers } };
+  return { tick, dispatch, setPosition, snapshot, changes, entity, relations, capabilities: { conditions, actions, triggers } };
 }

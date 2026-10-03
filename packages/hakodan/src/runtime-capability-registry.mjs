@@ -16,22 +16,27 @@ function number(value, label) {
   if (typeof value !== "number" || !Number.isFinite(value)) throw new Error(`HAKODAN_NUMERIC_VALUE_REQUIRED: ${label}`);
   return value;
 }
+function bounded(value, min, max) {
+  const low = min === undefined ? -Infinity : number(min, "CLAMP.min");
+  const high = max === undefined ? Infinity : number(max, "CLAMP.max");
+  if (low > high) throw new Error("HAKODAN_NUMERIC_INVALID_BOUNDS");
+  return Math.min(high, Math.max(low, value));
+}
 export function createConditionRegistry() { return createRegistry("CONDITION"); }
 export function createActionRegistry() { return createRegistry("ACTION"); }
 export function createCanonicalRuntimeRegistries() {
   const conditions = createConditionRegistry(); const actions = createActionRegistry();
   conditions.register("NEAR", (condition, context) => { const subject = context.entity(condition.subject); const target = context.entity(condition.target); return Math.hypot(subject.position.x - target.position.x, subject.position.y - target.position.y) <= condition.threshold; });
   conditions.register("EQUALS", (condition, context) => Object.is(getStatePath(context.entity(condition.subject), condition.path), condition.value));
-  for (const [kind, compare] of [["GT", (a,b)=>a>b], ["GTE", (a,b)=>a>=b], ["LT", (a,b)=>a<b], ["LTE", (a,b)=>a<=b]]) {
-    conditions.register(kind, (condition, context) => compare(number(getStatePath(context.entity(condition.subject), condition.path), `${condition.subject}.${condition.path}`), number(condition.value, `${kind}.value`)));
-  }
+  for (const [kind, compare] of [["GT", (a,b)=>a>b], ["GTE", (a,b)=>a>=b], ["LT", (a,b)=>a<b], ["LTE", (a,b)=>a<=b]]) conditions.register(kind, (condition, context) => compare(number(getStatePath(context.entity(condition.subject), condition.path), `${condition.subject}.${condition.path}`), number(condition.value, `${kind}.value`)));
   conditions.register("AND", (condition, context) => { if (!Array.isArray(condition.conditions) || condition.conditions.length === 0) throw new Error("HAKODAN_LOGIC_AND_REQUIRES_CONDITIONS"); return condition.conditions.every(context.evaluate); });
   conditions.register("OR", (condition, context) => { if (!Array.isArray(condition.conditions) || condition.conditions.length === 0) throw new Error("HAKODAN_LOGIC_OR_REQUIRES_CONDITIONS"); return condition.conditions.some(context.evaluate); });
   conditions.register("NOT", (condition, context) => { if (!condition.condition) throw new Error("HAKODAN_LOGIC_NOT_REQUIRES_CONDITION"); return !context.evaluate(condition.condition); });
   actions.register("SET", (action, context) => { const subject = context.entity(action.subject); const before = getStatePath(subject, action.path); if (Object.is(before, action.value)) return null; const change = setStatePath(subject, action.path, action.value); return { action: "SET", subject: action.subject, path: action.path, before: change.before, after: change.after }; });
-  for (const [kind, operation] of [["ADD", (a,b)=>a+b], ["SUBTRACT", (a,b)=>a-b]]) {
-    actions.register(kind, (action, context) => { const subject = context.entity(action.subject); const before = number(getStatePath(subject, action.path), `${action.subject}.${action.path}`); const operand = number(action.value, `${kind}.value`); const after = operation(before, operand); if (Object.is(before, after)) return null; setStatePath(subject, action.path, after); return { action: kind, subject: action.subject, path: action.path, before, after }; });
-  }
+  for (const [kind, operation] of [["ADD", (a,b)=>a+b], ["SUBTRACT", (a,b)=>a-b]]) actions.register(kind, (action, context) => { const subject = context.entity(action.subject); const before = number(getStatePath(subject, action.path), `${action.subject}.${action.path}`); const operand = number(action.value, `${kind}.value`); const after = operation(before, operand); if (Object.is(before, after)) return null; setStatePath(subject, action.path, after); return { action: kind, subject: action.subject, path: action.path, before, after }; });
+  actions.register("CLAMP", (action, context) => { const subject = context.entity(action.subject); const before = number(getStatePath(subject, action.path), `${action.subject}.${action.path}`); const after = bounded(before, action.min, action.max); if (Object.is(before, after)) return null; setStatePath(subject, action.path, after); return { action: "CLAMP", subject: action.subject, path: action.path, before, after }; });
+  actions.register("ADD_CLAMPED", (action, context) => { const subject = context.entity(action.subject); const before = number(getStatePath(subject, action.path), `${action.subject}.${action.path}`); const raw = before + number(action.value, "ADD_CLAMPED.value"); const after = bounded(raw, action.min, action.max); if (Object.is(before, after)) return null; setStatePath(subject, action.path, after); return { action: "ADD_CLAMPED", subject: action.subject, path: action.path, before, after }; });
+  actions.register("SUBTRACT_CLAMPED", (action, context) => { const subject = context.entity(action.subject); const before = number(getStatePath(subject, action.path), `${action.subject}.${action.path}`); const raw = before - number(action.value, "SUBTRACT_CLAMPED.value"); const after = bounded(raw, action.min, action.max); if (Object.is(before, after)) return null; setStatePath(subject, action.path, after); return { action: "SUBTRACT_CLAMPED", subject: action.subject, path: action.path, before, after }; });
   actions.register("MOVE", (action, context) => { const subject = context.entity(action.subject); const before = structuredClone(subject.position); const after = { x: before.x + Number(action.dx ?? 0), y: before.y + Number(action.dy ?? 0) }; if (Object.is(before.x, after.x) && Object.is(before.y, after.y)) return null; subject.position = after; return { action: "MOVE", subject: action.subject, path: "position", before, after: structuredClone(after) }; });
   return { conditions, actions };
 }

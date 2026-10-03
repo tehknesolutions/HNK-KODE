@@ -5,6 +5,7 @@
   "type": "module",
   "description": "haKodan executable language/framework kernel",
   "scripts": {
-    "test": "node --test test/*.test.mjs"
+    "test": "node --test test/*.test.mjs",
+    "golden:v2": "node examples/generate-abras-island-golden.mjs"
   }
 }

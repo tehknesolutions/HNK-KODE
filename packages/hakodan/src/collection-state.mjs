@@ -50,25 +50,27 @@ function assertWritableCollectionPath(subject, path) {
 }
 
 export function transferCollectionItem(source, sourcePath, target, targetPath, value, all = false) {
-  const sourceBefore = structuredClone(getCollection(source, sourcePath));
-  const targetBefore = structuredClone(getCollection(target, targetPath));
+  const sourceLive = getCollection(source, sourcePath);
+  const targetLive = getCollection(target, targetPath);
   assertWritableCollectionPath(source, sourcePath);
   assertWritableCollectionPath(target, targetPath);
 
   if (source === target && sourcePath === targetPath) return null;
 
-  const matches = sourceBefore.filter(item => Object.is(item, value));
-  if (matches.length === 0) return null;
+  const matchIndices = [];
+  for (let index = 0; index < sourceLive.length; index += 1) {
+    if (Object.is(sourceLive[index], value)) matchIndices.push(index);
+  }
+  if (matchIndices.length === 0) return null;
 
-  const moved = all ? matches : [matches[0]];
-  let removed = 0;
-  const removeLimit = all ? Infinity : 1;
-  const sourceAfter = sourceBefore.filter(item => {
-    if (!Object.is(item, value) || removed >= removeLimit) return true;
-    removed += 1;
-    return false;
-  });
-  const targetAfter = [...targetBefore, ...moved.map(item => structuredClone(item))];
+  const selectedIndices = all ? matchIndices : [matchIndices[0]];
+  const selected = new Set(selectedIndices);
+  const movedLive = selectedIndices.map(index => sourceLive[index]);
+  const sourceBefore = structuredClone(sourceLive);
+  const targetBefore = structuredClone(targetLive);
+  const sourceAfter = structuredClone(sourceLive.filter((_, index) => !selected.has(index)));
+  const moved = structuredClone(movedLive);
+  const targetAfter = [...targetBefore, ...structuredClone(movedLive)];
 
   setStatePath(source, sourcePath, sourceAfter);
   try {
@@ -77,5 +79,5 @@ export function transferCollectionItem(source, sourcePath, target, targetPath, v
     setStatePath(source, sourcePath, sourceBefore);
     throw error;
   }
-  return { sourceBefore, sourceAfter, targetBefore, targetAfter, moved: structuredClone(moved) };
+  return { sourceBefore, sourceAfter, targetBefore, targetAfter, moved };
 }

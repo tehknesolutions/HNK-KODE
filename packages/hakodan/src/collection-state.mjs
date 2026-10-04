@@ -37,22 +37,45 @@ export function removeCollectionItem(subject, path, value, all = false) {
   return { before, after };
 }
 
+function assertWritableCollectionPath(subject, path) {
+  const parts = path.split(".");
+  let cursor = subject;
+  for (let index = 0; index < parts.length - 1; index += 1) {
+    const key = parts[index];
+    if (cursor?.[key] == null || typeof cursor[key] !== "object" || Array.isArray(cursor[key])) {
+      throw new Error(`HAKODAN_STATE_PATH_NOT_OBJECT: ${parts.slice(0, index + 1).join(".")}`);
+    }
+    cursor = cursor[key];
+  }
+}
+
 export function transferCollectionItem(source, sourcePath, target, targetPath, value, all = false) {
   const sourceBefore = structuredClone(getCollection(source, sourcePath));
   const targetBefore = structuredClone(getCollection(target, targetPath));
+  assertWritableCollectionPath(source, sourcePath);
+  assertWritableCollectionPath(target, targetPath);
+
+  if (source === target && sourcePath === targetPath) return null;
+
   const matches = sourceBefore.filter(item => Object.is(item, value));
   if (matches.length === 0) return null;
 
   const moved = all ? matches : [matches[0]];
-  let remaining = all ? 0 : 1;
+  let removed = 0;
+  const removeLimit = all ? Infinity : 1;
   const sourceAfter = sourceBefore.filter(item => {
-    if (!Object.is(item, value) || remaining === 0) return true;
-    remaining -= 1;
+    if (!Object.is(item, value) || removed >= removeLimit) return true;
+    removed += 1;
     return false;
   });
   const targetAfter = [...targetBefore, ...moved.map(item => structuredClone(item))];
 
   setStatePath(source, sourcePath, sourceAfter);
-  setStatePath(target, targetPath, targetAfter);
+  try {
+    setStatePath(target, targetPath, targetAfter);
+  } catch (error) {
+    setStatePath(source, sourcePath, sourceBefore);
+    throw error;
+  }
   return { sourceBefore, sourceAfter, targetBefore, targetAfter, moved: structuredClone(moved) };
 }

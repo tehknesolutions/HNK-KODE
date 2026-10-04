@@ -1,5 +1,6 @@
 import { getStatePath, setStatePath } from "./state-path.mjs";
 import { collectionHas, collectionCount, addCollectionItem, removeCollectionItem, transferCollectionItem } from "./collection-state.mjs";
+import { hasItem, itemCount, addItem, removeItem, transferItem } from "./item-stack-state.mjs";
 
 function assertHandler(kind, handler, type) { if (typeof kind !== "string" || !kind) throw new Error(`HAKODAN_${type}_REGISTRY_INVALID_KIND`); if (typeof handler !== "function") throw new Error(`HAKODAN_${type}_REGISTRY_INVALID_HANDLER: ${kind}`); }
 function createRegistry(type) { const handlers = new Map(); return { register(kind, handler) { assertHandler(kind, handler, type); if (handlers.has(kind)) throw new Error(`HAKODAN_${type}_REGISTRY_DUPLICATE: ${kind}`); handlers.set(kind, handler); return this; }, resolve(kind) { const handler = handlers.get(kind); if (!handler) throw new Error(`HAKODAN_RUNTIME_UNSUPPORTED_${type}: ${kind}`); return handler; }, has(kind) { return handlers.has(kind); }, kinds() { return [...handlers.keys()]; } }; }
@@ -14,6 +15,8 @@ export function createCanonicalRuntimeRegistries() {
   for (const [k,f] of [["GT",(a,b)=>a>b],["GTE",(a,b)=>a>=b],["LT",(a,b)=>a<b],["LTE",(a,b)=>a<=b]]) conditions.register(k,(c,x)=>f(number(getStatePath(x.entity(c.subject),c.path),`${c.subject}.${c.path}`),number(c.value,`${k}.value`)));
   conditions.register("HAS", (c,x) => collectionHas(x.entity(c.subject),c.path,c.value));
   conditions.register("COUNT", (c,x) => collectionCount(x.entity(c.subject),c.path,c.value) === number(c.count,"COUNT.count"));
+  conditions.register("HAS_ITEM", (c,x) => hasItem(x.entity(c.subject),c.path,c.id,c.minimum ?? 1));
+  conditions.register("ITEM_COUNT", (c,x) => itemCount(x.entity(c.subject),c.path,c.id) === number(c.count,"ITEM_COUNT.count"));
   conditions.register("RELATED", (c,x) => x.relations.has(c.subject,c.type,c.target));
   conditions.register("AND",(c,x)=>{if(!Array.isArray(c.conditions)||!c.conditions.length)throw new Error("HAKODAN_LOGIC_AND_REQUIRES_CONDITIONS");return c.conditions.every(x.evaluate);});
   conditions.register("OR",(c,x)=>{if(!Array.isArray(c.conditions)||!c.conditions.length)throw new Error("HAKODAN_LOGIC_OR_REQUIRES_CONDITIONS");return c.conditions.some(x.evaluate);});
@@ -25,6 +28,9 @@ export function createCanonicalRuntimeRegistries() {
   actions.register("PUSH",(a,x)=>{const change=addCollectionItem(x.entity(a.subject),a.path,a.value);return{action:"PUSH",subject:a.subject,path:a.path,before:change.before,after:change.after};});
   actions.register("REMOVE",(a,x)=>{const change=removeCollectionItem(x.entity(a.subject),a.path,a.value,Boolean(a.all));if(!change)return null;return{action:"REMOVE",subject:a.subject,path:a.path,before:change.before,after:change.after};});
   actions.register("TRANSFER",(a,x)=>{const change=transferCollectionItem(x.entity(a.subject),a.path,x.entity(a.target),a.targetPath,a.value,Boolean(a.all));if(!change)return null;return{action:"TRANSFER",subject:a.subject,path:a.path,target:a.target,targetPath:a.targetPath,value:a.value,moved:change.moved,source:{before:change.sourceBefore,after:change.sourceAfter},targetState:{before:change.targetBefore,after:change.targetAfter}};});
+  actions.register("ADD_ITEM",(a,x)=>{const change=addItem(x.entity(a.subject),a.path,a.id,a.quantity ?? 1);if(!change)return null;return{action:"ADD_ITEM",subject:a.subject,path:a.path,id:a.id,quantity:change.quantity,before:change.before,after:change.after};});
+  actions.register("REMOVE_ITEM",(a,x)=>{const change=removeItem(x.entity(a.subject),a.path,a.id,a.quantity ?? 1);if(!change)return null;return{action:"REMOVE_ITEM",subject:a.subject,path:a.path,id:a.id,quantity:change.quantity,before:change.before,after:change.after};});
+  actions.register("TRANSFER_ITEM",(a,x)=>{const change=transferItem(x.entity(a.subject),a.path,x.entity(a.target),a.targetPath,a.id,a.quantity ?? 1);if(!change)return null;return{action:"TRANSFER_ITEM",subject:a.subject,path:a.path,target:a.target,targetPath:a.targetPath,id:a.id,quantity:change.quantity,source:{before:change.sourceBefore,after:change.sourceAfter},targetState:{before:change.targetBefore,after:change.targetAfter}};});
   actions.register("RELATE",(a,x)=>{const relation=x.relations.add(a.subject,a.type,a.target);if(!relation)return null;return{action:"RELATE",subject:a.subject,type:a.type,target:a.target,before:false,after:true};});
   actions.register("UNRELATE",(a,x)=>{const relation=x.relations.remove(a.subject,a.type,a.target);if(!relation)return null;return{action:"UNRELATE",subject:a.subject,type:a.type,target:a.target,before:true,after:false};});
   actions.register("MOVE",(a,x)=>{const s=x.entity(a.subject),before=structuredClone(s.position),after={x:before.x+Number(a.dx??0),y:before.y+Number(a.dy??0)};if(Object.is(before.x,after.x)&&Object.is(before.y,after.y))return null;s.position=after;return{action:"MOVE",subject:a.subject,path:"position",before,after:structuredClone(after)};});

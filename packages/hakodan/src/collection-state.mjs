@@ -36,3 +36,23 @@ export function removeCollectionItem(subject, path, value, all = false) {
   setStatePath(subject, path, after);
   return { before, after };
 }
+
+export function transferCollectionItem(source, sourcePath, target, targetPath, value, all = false) {
+  const sourceBefore = structuredClone(getCollection(source, sourcePath));
+  const targetBefore = structuredClone(getCollection(target, targetPath));
+  const matches = sourceBefore.filter(item => Object.is(item, value));
+  if (matches.length === 0) return null;
+
+  const moved = all ? matches : [matches[0]];
+  let remaining = all ? 0 : 1;
+  const sourceAfter = sourceBefore.filter(item => {
+    if (!Object.is(item, value) || remaining === 0) return true;
+    remaining -= 1;
+    return false;
+  });
+  const targetAfter = [...targetBefore, ...moved.map(item => structuredClone(item))];
+
+  setStatePath(source, sourcePath, sourceAfter);
+  setStatePath(target, targetPath, targetAfter);
+  return { sourceBefore, sourceAfter, targetBefore, targetAfter, moved: structuredClone(moved) };
+}

@@ -17,6 +17,7 @@ export function createCanonicalRuntimeRegistries() {
   conditions.register("COUNT", (c,x) => collectionCount(x.entity(c.subject),c.path,c.value) === number(c.count,"COUNT.count"));
   conditions.register("HAS_ITEM", (c,x) => hasItem(x.entity(c.subject),c.path,c.id,c.minimum ?? 1));
   conditions.register("ITEM_COUNT", (c,x) => itemCount(x.entity(c.subject),c.path,c.id) === number(c.count,"ITEM_COUNT.count"));
+  conditions.register("RELATED", (c,x) => x.relations.has(c.subject,c.type,c.target));
   conditions.register("AND",(c,x)=>{if(!Array.isArray(c.conditions)||!c.conditions.length)throw new Error("HAKODAN_LOGIC_AND_REQUIRES_CONDITIONS");return c.conditions.every(x.evaluate);});
   conditions.register("OR",(c,x)=>{if(!Array.isArray(c.conditions)||!c.conditions.length)throw new Error("HAKODAN_LOGIC_OR_REQUIRES_CONDITIONS");return c.conditions.some(x.evaluate);});
   conditions.register("NOT",(c,x)=>{if(!c.condition)throw new Error("HAKODAN_LOGIC_NOT_REQUIRES_CONDITION");return !x.evaluate(c.condition);});
@@ -30,6 +31,8 @@ export function createCanonicalRuntimeRegistries() {
   actions.register("ADD_ITEM",(a,x)=>{const change=addItem(x.entity(a.subject),a.path,a.id,a.quantity ?? 1);if(!change)return null;return{action:"ADD_ITEM",subject:a.subject,path:a.path,id:a.id,quantity:change.quantity,before:change.before,after:change.after};});
   actions.register("REMOVE_ITEM",(a,x)=>{const change=removeItem(x.entity(a.subject),a.path,a.id,a.quantity ?? 1);if(!change)return null;return{action:"REMOVE_ITEM",subject:a.subject,path:a.path,id:a.id,quantity:change.quantity,before:change.before,after:change.after};});
   actions.register("TRANSFER_ITEM",(a,x)=>{const change=transferItem(x.entity(a.subject),a.path,x.entity(a.target),a.targetPath,a.id,a.quantity ?? 1);if(!change)return null;return{action:"TRANSFER_ITEM",subject:a.subject,path:a.path,target:a.target,targetPath:a.targetPath,id:a.id,quantity:change.quantity,source:{before:change.sourceBefore,after:change.sourceAfter},targetState:{before:change.targetBefore,after:change.targetAfter}};});
+  actions.register("RELATE",(a,x)=>{const relation=x.relations.add(a.subject,a.type,a.target);if(!relation)return null;return{action:"RELATE",subject:a.subject,type:a.type,target:a.target,before:false,after:true};});
+  actions.register("UNRELATE",(a,x)=>{const relation=x.relations.remove(a.subject,a.type,a.target);if(!relation)return null;return{action:"UNRELATE",subject:a.subject,type:a.type,target:a.target,before:true,after:false};});
   actions.register("MOVE",(a,x)=>{const s=x.entity(a.subject),before=structuredClone(s.position),after={x:before.x+Number(a.dx??0),y:before.y+Number(a.dy??0)};if(Object.is(before.x,after.x)&&Object.is(before.y,after.y))return null;s.position=after;return{action:"MOVE",subject:a.subject,path:"position",before,after:structuredClone(after)};});
   return { conditions, actions };
 }

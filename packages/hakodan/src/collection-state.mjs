@@ -36,3 +36,48 @@ export function removeCollectionItem(subject, path, value, all = false) {
   setStatePath(subject, path, after);
   return { before, after };
 }
+
+function assertWritableCollectionPath(subject, path) {
+  const parts = path.split(".");
+  let cursor = subject;
+  for (let index = 0; index < parts.length - 1; index += 1) {
+    const key = parts[index];
+    if (cursor?.[key] == null || typeof cursor[key] !== "object" || Array.isArray(cursor[key])) {
+      throw new Error(`HAKODAN_STATE_PATH_NOT_OBJECT: ${parts.slice(0, index + 1).join(".")}`);
+    }
+    cursor = cursor[key];
+  }
+}
+
+export function transferCollectionItem(source, sourcePath, target, targetPath, value, all = false) {
+  const sourceLive = getCollection(source, sourcePath);
+  const targetLive = getCollection(target, targetPath);
+  assertWritableCollectionPath(source, sourcePath);
+  assertWritableCollectionPath(target, targetPath);
+
+  if (source === target && sourcePath === targetPath) return null;
+
+  const matchIndices = [];
+  for (let index = 0; index < sourceLive.length; index += 1) {
+    if (Object.is(sourceLive[index], value)) matchIndices.push(index);
+  }
+  if (matchIndices.length === 0) return null;
+
+  const selectedIndices = all ? matchIndices : [matchIndices[0]];
+  const selected = new Set(selectedIndices);
+  const movedLive = selectedIndices.map(index => sourceLive[index]);
+  const sourceBefore = structuredClone(sourceLive);
+  const targetBefore = structuredClone(targetLive);
+  const sourceAfter = structuredClone(sourceLive.filter((_, index) => !selected.has(index)));
+  const moved = structuredClone(movedLive);
+  const targetAfter = [...targetBefore, ...structuredClone(movedLive)];
+
+  setStatePath(source, sourcePath, sourceAfter);
+  try {
+    setStatePath(target, targetPath, targetAfter);
+  } catch (error) {
+    setStatePath(source, sourcePath, sourceBefore);
+    throw error;
+  }
+  return { sourceBefore, sourceAfter, targetBefore, targetAfter, moved };
+}

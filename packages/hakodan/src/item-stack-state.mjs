@@ -2,8 +2,14 @@ import { getCollection } from "./collection-state.mjs";
 import { setStatePath } from "./state-path.mjs";
 
 function quantity(value, label = "quantity") {
-  if (!Number.isInteger(value) || value < 0) throw new Error(`HAKODAN_ITEM_QUANTITY_INVALID: ${label}`);
+  if (!Number.isSafeInteger(value) || value < 0) throw new Error(`HAKODAN_ITEM_QUANTITY_INVALID: ${label}`);
   return value;
+}
+
+function sumQuantity(left, right, label) {
+  const result = left + right;
+  quantity(result, label);
+  return result;
 }
 
 function itemId(id) {
@@ -26,18 +32,9 @@ export function getItemStack(subject, path, id) {
   return matches[0] ?? null;
 }
 
-export function itemCount(subject, path, id) {
-  return getItemStack(subject, path, id)?.quantity ?? 0;
-}
-
-export function hasItem(subject, path, id, minimum = 1) {
-  quantity(minimum, "minimum");
-  return itemCount(subject, path, id) >= minimum;
-}
-
-function replaceInventory(subject, path, inventory) {
-  setStatePath(subject, path, structuredClone(inventory));
-}
+export function itemCount(subject, path, id) { return getItemStack(subject, path, id)?.quantity ?? 0; }
+export function hasItem(subject, path, id, minimum = 1) { quantity(minimum, "minimum"); return itemCount(subject, path, id) >= minimum; }
+function replaceInventory(subject, path, inventory) { setStatePath(subject, path, structuredClone(inventory)); }
 
 export function addItem(subject, path, id, amount = 1) {
   itemId(id); quantity(amount);
@@ -46,7 +43,7 @@ export function addItem(subject, path, id, amount = 1) {
   const current = getItemStack(subject, path, id);
   const before = structuredClone(inventory);
   const after = current
-    ? before.map(stack => stack.id === id ? { ...stack, quantity: stack.quantity + amount } : stack)
+    ? before.map(stack => stack.id === id ? { ...stack, quantity: sumQuantity(stack.quantity, amount, `${id}.quantity`) } : stack)
     : [...before, { id, quantity: amount }];
   replaceInventory(subject, path, after);
   return { before, after, id, quantity: amount };
@@ -60,9 +57,7 @@ export function removeItem(subject, path, id, amount = 1) {
   if (!current || current.quantity < amount) throw new Error(`HAKODAN_ITEM_INSUFFICIENT_QUANTITY: ${id}`);
   const before = structuredClone(inventory);
   const remaining = current.quantity - amount;
-  const after = remaining === 0
-    ? before.filter(stack => stack.id !== id)
-    : before.map(stack => stack.id === id ? { ...stack, quantity: remaining } : stack);
+  const after = remaining === 0 ? before.filter(stack => stack.id !== id) : before.map(stack => stack.id === id ? { ...stack, quantity: remaining } : stack);
   replaceInventory(subject, path, after);
   return { before, after, id, quantity: amount };
 }
@@ -75,16 +70,15 @@ export function transferItem(source, sourcePath, target, targetPath, id, amount 
   const sourceStack = getItemStack(source, sourcePath, id);
   const targetStack = getItemStack(target, targetPath, id);
   if (!sourceStack || sourceStack.quantity < amount) throw new Error(`HAKODAN_ITEM_INSUFFICIENT_QUANTITY: ${id}`);
+  if (targetStack) sumQuantity(targetStack.quantity, amount, `${id}.quantity`);
 
   const sourceBefore = structuredClone(sourceInventory);
   const targetBefore = structuredClone(targetInventory);
   const remaining = sourceStack.quantity - amount;
-  const sourceAfter = remaining === 0
-    ? sourceBefore.filter(stack => stack.id !== id)
-    : sourceBefore.map(stack => stack.id === id ? { ...stack, quantity: remaining } : stack);
+  const sourceAfter = remaining === 0 ? sourceBefore.filter(stack => stack.id !== id) : sourceBefore.map(stack => stack.id === id ? { ...stack, quantity: remaining } : stack);
   const targetAfter = targetStack
-    ? targetBefore.map(stack => stack.id === id ? { ...stack, quantity: stack.quantity + amount } : stack)
-    : [...targetBefore, { id, quantity: amount }];
+    ? targetBefore.map(stack => stack.id === id ? { ...stack, quantity: sumQuantity(stack.quantity, amount, `${id}.quantity`) } : stack)
+    : [...targetBefore, { ...structuredClone(sourceStack), quantity: amount }];
 
   replaceInventory(source, sourcePath, sourceAfter);
   try { replaceInventory(target, targetPath, targetAfter); }

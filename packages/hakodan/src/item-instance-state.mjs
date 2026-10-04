@@ -27,6 +27,7 @@ function inventoryInstances(subject, path) {
 }
 
 function replaceInventory(subject, path, inventory) { setStatePath(subject, path, structuredClone(inventory)); }
+function pathsOverlap(left, right) { return left === right || left.startsWith(`${right}.`) || right.startsWith(`${left}.`); }
 
 export function getItemInstance(subject, path, id) {
   instanceId(id);
@@ -60,6 +61,7 @@ export function removeItemInstance(subject, path, id) {
 export function transferItemInstance(source, sourcePath, target, targetPath, id) {
   instanceId(id);
   if (source === target && sourcePath === targetPath) return null;
+  if (source === target && pathsOverlap(sourcePath, targetPath)) throw new Error("HAKODAN_ITEM_INSTANCE_OVERLAPPING_PATHS");
   const sourceInventory = inventoryInstances(source, sourcePath);
   const targetInventory = inventoryInstances(target, targetPath);
   const current = getItemInstance(source, sourcePath, id);

@@ -1,6 +1,7 @@
 const BINARY_OPS=new Set(["ADD","SUBTRACT","MULTIPLY","DIVIDE","MIN","MAX"]);
 const UNARY_OPS=new Set(["ABS","ROUND","FLOOR","CEIL"]);
-const OPS=new Set([...BINARY_OPS,...UNARY_OPS]);
+const TERNARY_OPS=new Set(["CLAMP"]);
+const OPS=new Set([...BINARY_OPS,...UNARY_OPS,...TERNARY_OPS]);
 const CONDITION_OPS=new Set(["GT","GTE","LT","LTE","EQ"]);
 const VALUE_KEYS=new Set(["value"]),STAT_KEYS=new Set(["stat"]),OP_KEYS=new Set(["op","args"]),IF_KEYS=new Set(["op","condition","then","else"]),CONDITION_KEYS=new Set(["op","left","right"]);
 function clone(v){return structuredClone(v);}
@@ -31,8 +32,9 @@ function evaluate(expression,context){
  if(!Array.isArray(expression.args))throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(UNARY_OPS.has(expression.op)&&expression.args.length!==1)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(BINARY_OPS.has(expression.op)&&expression.args.length<2)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
+ if(TERNARY_OPS.has(expression.op)&&expression.args.length!==3)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  const operands=expression.args.map(a=>evaluate(a,context));let value;
- switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;}
+ switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;case"CLAMP":if(operands[1].value>operands[2].value)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");value=Math.min(Math.max(operands[0].value,operands[1].value),operands[2].value);break;}
  return{value:numeric(value),expression:{op:expression.op,args:operands.map(o=>o.expression)},operands};
 }
 export function evaluateFormula(expression,context){assertContext(context);return evaluate(expression,context);}

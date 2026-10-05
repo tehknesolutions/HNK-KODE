@@ -1,4 +1,6 @@
-const OPS = new Set(["ADD", "SUBTRACT", "MULTIPLY", "DIVIDE", "MIN", "MAX"]);
+const BINARY_OPS = new Set(["ADD", "SUBTRACT", "MULTIPLY", "DIVIDE", "MIN", "MAX"]);
+const UNARY_OPS = new Set(["ABS", "ROUND", "FLOOR", "CEIL"]);
+const OPS = new Set([...BINARY_OPS, ...UNARY_OPS]);
 const VALUE_KEYS = new Set(["value"]);
 const STAT_KEYS = new Set(["stat"]);
 const OP_KEYS = new Set(["op", "args"]);
@@ -29,7 +31,9 @@ function evaluate(expression, context) {
   }
   if (!exactKeys(expression, OP_KEYS) || typeof expression.op!=="string" || !expression.op) throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
   if (!OPS.has(expression.op)) throw new Error(`HAKODAN_DERIVED_FORMULA_UNSUPPORTED_OP: ${expression.op}`);
-  if (!Array.isArray(expression.args) || expression.args.length<2) throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
+  if (!Array.isArray(expression.args)) throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
+  if (UNARY_OPS.has(expression.op) && expression.args.length!==1) throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
+  if (BINARY_OPS.has(expression.op) && expression.args.length<2) throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
   const operands=expression.args.map(arg=>evaluate(arg,context));
   let value;
   switch(expression.op){
@@ -42,6 +46,10 @@ function evaluate(expression, context) {
       break;
     case "MIN": value=Math.min(...operands.map(o=>o.value)); break;
     case "MAX": value=Math.max(...operands.map(o=>o.value)); break;
+    case "ABS": value=Math.abs(operands[0].value); break;
+    case "ROUND": value=Math.round(operands[0].value); break;
+    case "FLOOR": value=Math.floor(operands[0].value); break;
+    case "CEIL": value=Math.ceil(operands[0].value); break;
   }
   return {value:numeric(value),expression:clone(expression),operands};
 }

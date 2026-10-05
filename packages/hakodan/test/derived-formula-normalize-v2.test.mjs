@@ -75,3 +75,11 @@ test("V2-26 NORMALIZE rejects unsupported operators without executing payload",(
 test("V2-26 NORMALIZE preserves exact-key AST validation",()=>{
  assert.throws(()=>evaluateFormula({op:"NORMALIZE",args:[{value:50},{value:0},{value:100}],extra:"forbidden"},context),/HAKODAN_DERIVED_FORMULA_INVALID/);
 });
+
+
+test("V2-26 NORMALIZE handles the widest finite source range without overflow",()=>{
+ const max=Number.MAX_VALUE,min=-Number.MAX_VALUE;
+ assert.equal(evaluateFormula(normalize(0,min,max),context).value,0.5);
+ assert.equal(evaluateFormula(normalize(max,min,max),context).value,1);
+ assert.equal(evaluateFormula(normalize(min,min,max),context).value,0);
+});

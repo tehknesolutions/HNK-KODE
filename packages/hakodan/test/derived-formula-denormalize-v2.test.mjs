@@ -48,6 +48,11 @@ test("V2-27 DENORMALIZE maps the widest finite range without intermediate overfl
  assert.equal(evaluateFormula(denormalize(0.5,min,max),context).value,0);
  assert.equal(evaluateFormula(denormalize(1,min,max),context).value,max);
 });
+test("V2-27 DENORMALIZE maps interior points of the widest finite range without overflow",()=>{
+ const min=-Number.MAX_VALUE,max=Number.MAX_VALUE;
+ assert.equal(evaluateFormula(denormalize(0.25,min,max),context).value,-Number.MAX_VALUE/2);
+ assert.equal(evaluateFormula(denormalize(0.75,min,max),context).value,Number.MAX_VALUE/2);
+});
 
 test("V2-27 DENORMALIZE preserves exact-key AST validation",()=>{
  assert.throws(()=>evaluateFormula({op:"DENORMALIZE",args:[{value:0.5},{value:0},{value:100}],extra:"forbidden"},context),/HAKODAN_DERIVED_FORMULA_INVALID/);

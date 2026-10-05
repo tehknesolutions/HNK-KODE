@@ -54,6 +54,9 @@ test("V2-27 DENORMALIZE tolerates uncloneable dormant nested IF values",()=>{
  assert.equal(result.operands[0].selected,"then");
 });
 
-test("V2-27 DENORMALIZE rejects overflow-producing finite ranges canonically",()=>{
- assert.throws(()=>evaluateFormula(denormalize(0.5,-Number.MAX_VALUE,Number.MAX_VALUE),context),/HAKODAN_DERIVED_FORMULA_NUMERIC_REQUIRED/);
+test("V2-27 DENORMALIZE maps the widest finite range without intermediate overflow",()=>{
+ const min=-Number.MAX_VALUE,max=Number.MAX_VALUE;
+ assert.equal(evaluateFormula(denormalize(0,min,max),context).value,min);
+ assert.equal(evaluateFormula(denormalize(0.5,min,max),context).value,0);
+ assert.equal(evaluateFormula(denormalize(1,min,max),context).value,max);
 });

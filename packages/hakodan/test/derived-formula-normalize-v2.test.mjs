@@ -63,3 +63,15 @@ test("V2-26 NORMALIZE tolerates uncloneable dormant nested IF values",()=>{
  assert.equal(result.value,0.25);
  assert.equal(result.operands[0].selected,"then");
 });
+
+test("V2-26 NORMALIZE rejects arbitrary callback-bearing operands",()=>{
+ assert.throws(()=>evaluateFormula({op:"NORMALIZE",args:[{value:50},{value:0},{value:100,callback:()=>1}]},context),/HAKODAN_DERIVED_FORMULA_INVALID/);
+});
+
+test("V2-26 NORMALIZE rejects unsupported operators without executing payload",()=>{
+ assert.throws(()=>evaluateFormula({op:"EVIL",args:[{value:50},{value:0},{value:100,callback:()=>1}]},context),/HAKODAN_DERIVED_FORMULA_UNSUPPORTED_OP: EVIL/);
+});
+
+test("V2-26 NORMALIZE preserves exact-key AST validation",()=>{
+ assert.throws(()=>evaluateFormula({op:"NORMALIZE",args:[{value:50},{value:0},{value:100}],extra:"forbidden"},context),/HAKODAN_DERIVED_FORMULA_INVALID/);
+});

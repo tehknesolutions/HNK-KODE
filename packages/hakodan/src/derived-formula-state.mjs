@@ -12,7 +12,7 @@ function evaluateCondition(c,context){
  if(!CONDITION_OPS.has(c.op))throw new Error(`HAKODAN_DERIVED_CONDITION_UNSUPPORTED_OP: ${c.op}`);
  const left=evaluate(c.left,context),right=evaluate(c.right,context);let result;
  switch(c.op){case"GT":result=left.value>right.value;break;case"GTE":result=left.value>=right.value;break;case"LT":result=left.value<right.value;break;case"LTE":result=left.value<=right.value;break;case"EQ":result=left.value===right.value;break;}
- return {expression:clone(c),left,right,result};
+ return {expression:{op:c.op,left:left.expression,right:right.expression},left,right,result};
 }
 function evaluate(expression,context){
  if(!expression||typeof expression!=="object"||Array.isArray(expression))throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
@@ -24,7 +24,7 @@ function evaluate(expression,context){
   if(!exactKeys(expression,IF_KEYS))throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
   const condition=evaluateCondition(expression.condition,context),selected=condition.result?"then":"else";
   const branch=evaluate(expression[selected],context);
-  return{value:numeric(branch.value),expression:clone(expression),condition,selected,branch};
+  return{value:numeric(branch.value),expression:{op:"IF",condition:condition.expression,[selected]:branch.expression},condition,selected,branch};
  }
  if(!exactKeys(expression,OP_KEYS)||typeof expression.op!=="string"||!expression.op)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(!OPS.has(expression.op))throw new Error(`HAKODAN_DERIVED_FORMULA_UNSUPPORTED_OP: ${expression.op}`);

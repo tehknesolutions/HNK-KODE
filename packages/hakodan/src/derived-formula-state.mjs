@@ -12,7 +12,7 @@ function evaluateCondition(c,context){
  if(!CONDITION_OPS.has(c.op))throw new Error(`HAKODAN_DERIVED_CONDITION_UNSUPPORTED_OP: ${c.op}`);
  const left=evaluate(c.left,context),right=evaluate(c.right,context);let result;
  switch(c.op){case"GT":result=left.value>right.value;break;case"GTE":result=left.value>=right.value;break;case"LT":result=left.value<right.value;break;case"LTE":result=left.value<=right.value;break;case"EQ":result=left.value===right.value;break;}
- return {expression:clone(c),left,right,result};
+ return {expression:{op:c.op,left:left.expression,right:right.expression},left,right,result};
 }
 function evaluate(expression,context){
  if(!expression||typeof expression!=="object"||Array.isArray(expression))throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
@@ -24,7 +24,7 @@ function evaluate(expression,context){
   if(!exactKeys(expression,IF_KEYS))throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
   const condition=evaluateCondition(expression.condition,context),selected=condition.result?"then":"else";
   const branch=evaluate(expression[selected],context);
-  return{value:numeric(branch.value),expression:clone(expression),condition,selected,branch};
+  return{value:numeric(branch.value),expression:{op:"IF",condition:condition.expression,[selected]:branch.expression},condition,selected,branch};
  }
  if(!exactKeys(expression,OP_KEYS)||typeof expression.op!=="string"||!expression.op)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(!OPS.has(expression.op))throw new Error(`HAKODAN_DERIVED_FORMULA_UNSUPPORTED_OP: ${expression.op}`);
@@ -33,6 +33,6 @@ function evaluate(expression,context){
  if(BINARY_OPS.has(expression.op)&&expression.args.length<2)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  const operands=expression.args.map(a=>evaluate(a,context));let value;
  switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;}
- return{value:numeric(value),expression:clone(expression),operands};
+ return{value:numeric(value),expression:{op:expression.op,args:operands.map(o=>o.expression)},operands};
 }
 export function evaluateFormula(expression,context){assertContext(context);return evaluate(expression,context);}

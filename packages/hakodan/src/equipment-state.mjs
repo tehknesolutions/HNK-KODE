@@ -7,6 +7,10 @@ function slotName(slot) {
 }
 function slotPath(path, slot) { return `${path}.${slotName(slot)}`; }
 function clone(value) { return structuredClone(value); }
+function pathsOverlap(left, right) { return left === right || left.startsWith(`${right}.`) || right.startsWith(`${left}.`); }
+function assertDistinctOwnershipPaths(inventoryPath, equipmentPath, slot) {
+  if (pathsOverlap(inventoryPath, slotPath(equipmentPath, slot))) throw new Error("HAKODAN_EQUIPMENT_OVERLAPPING_PATHS");
+}
 
 export function getEquippedInstance(subject, equipmentPath, slot) {
   return getStatePath(subject, slotPath(equipmentPath, slot)) ?? null;
@@ -24,6 +28,7 @@ export function isEquipmentSlotEmpty(subject, equipmentPath, slot) {
 
 export function equipItemInstance(subject, inventoryPath, equipmentPath, instanceId, slot) {
   slotName(slot);
+  assertDistinctOwnershipPaths(inventoryPath, equipmentPath, slot);
   const item = getItemInstance(subject, inventoryPath, instanceId);
   if (!item) throw new Error(`HAKODAN_EQUIPMENT_INSTANCE_NOT_FOUND: ${instanceId}`);
   if (item.slot !== undefined && item.slot !== slot) throw new Error(`HAKODAN_EQUIPMENT_SLOT_INCOMPATIBLE: ${instanceId}`);
@@ -40,6 +45,7 @@ export function equipItemInstance(subject, inventoryPath, equipmentPath, instanc
 
 export function unequipItemInstance(subject, equipmentPath, slot, inventoryPath) {
   slotName(slot);
+  assertDistinctOwnershipPaths(inventoryPath, equipmentPath, slot);
   const item = getEquippedInstance(subject, equipmentPath, slot);
   if (!item || typeof item !== "object" || !item.instanceId) throw new Error(`HAKODAN_EQUIPMENT_INSTANCE_NOT_FOUND: ${slot}`);
   if (getItemInstance(subject, inventoryPath, item.instanceId)) throw new Error(`HAKODAN_ITEM_INSTANCE_DUPLICATE: ${item.instanceId}`);

@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+
 import { evaluateFormula } from "../src/derived-formula-state.mjs";
 
 const context={resolveStat(){throw new Error("UNEXPECTED_STAT_RESOLUTION");}};
@@ -51,4 +52,8 @@ test("V2-27 DENORMALIZE tolerates uncloneable dormant nested IF values",()=>{
  const result=evaluateFormula({op:"DENORMALIZE",args:[conditional,{value:0},{value:100}]},context);
  assert.equal(result.value,75);
  assert.equal(result.operands[0].selected,"then");
+});
+
+test("V2-27 DENORMALIZE rejects overflow-producing finite ranges canonically",()=>{
+ assert.throws(()=>evaluateFormula(denormalize(0.5,-Number.MAX_VALUE,Number.MAX_VALUE),context),/HAKODAN_DERIVED_FORMULA_NUMERIC_REQUIRED/);
 });

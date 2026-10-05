@@ -33,6 +33,6 @@ function evaluate(expression,context){
  if(BINARY_OPS.has(expression.op)&&expression.args.length<2)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  const operands=expression.args.map(a=>evaluate(a,context));let value;
  switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;}
- return{value:numeric(value),expression:clone(expression),operands};
+ return{value:numeric(value),expression:{op:expression.op,args:operands.map(o=>o.expression)},operands};
 }
 export function evaluateFormula(expression,context){assertContext(context);return evaluate(expression,context);}

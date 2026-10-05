@@ -1,0 +1,1 @@
+Follow-up to merged PR #230: reject overlapping inventory/equipment ownership paths before mutation.

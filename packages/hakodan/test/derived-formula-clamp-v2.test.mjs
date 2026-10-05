@@ -33,3 +33,21 @@ test("V2-25 CLAMP rejects non-finite operands canonically",()=>{
 test("V2-25 CLAMP rejects inverted ranges canonically",()=>{
  assert.throws(()=>evaluateFormula(clamp(5,10,0),context),/HAKODAN_DERIVED_FORMULA_INVALID_RANGE/);
 });
+
+test("V2-25 CLAMP never traverses dormant nested IF accessor",()=>{
+ let touched=0;
+ const dormant={};
+ Object.defineProperty(dormant,"stat",{enumerable:true,get(){touched+=1;throw new Error("CLAMP_DORMANT_BRANCH_TOUCHED");}});
+ const conditional={op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:150},else:dormant};
+ const result=evaluateFormula({op:"CLAMP",args:[conditional,{value:0},{value:100}]},context);
+ assert.equal(result.value,100);
+ assert.equal(touched,0);
+ assert.deepEqual(result.expression,{op:"CLAMP",args:[{op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:150}},{value:0},{value:100}]});
+});
+
+test("V2-25 CLAMP tolerates uncloneable dormant nested IF values",()=>{
+ const conditional={op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:-5},else:{stat:"unused",callback:()=>99}};
+ const result=evaluateFormula({op:"CLAMP",args:[conditional,{value:0},{value:100}]},context);
+ assert.equal(result.value,0);
+ assert.equal(result.operands[0].selected,"then");
+});

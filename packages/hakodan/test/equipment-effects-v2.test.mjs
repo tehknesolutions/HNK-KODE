@@ -1,9 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { collectEquipmentEffects, deriveStat, deriveStats } from "../src/equipment-effects-state.mjs";
+import { createCanonicalRuntimeRegistries } from "../src/runtime-capability-registry.mjs";
+import { createWorldRuntime } from "../src/world-runtime.mjs";
 
 const excalibur=()=>({id:"sword",instanceId:"excalibur-001",quantity:1,slot:"main_hand",effects:[{stat:"attack",op:"ADD",value:7}]});
-const subject=()=>({stats:{base:{attack:10,defense:4}},equipment:{main_hand:excalibur(),off_hand:null,head:null,body:null}});
+const subject=()=>({stats:{base:{attack:10,defense:4},derived:{}},equipment:{main_hand:excalibur(),off_hand:null,head:null,body:null}});
 
 test("V2-21 Excalibur derives attack 10 to 17 without mutating base stats",()=>{const s=subject();const before=structuredClone(s.stats.base);const result=deriveStat(s,"stats.base","equipment","attack");assert.equal(result.value,17);assert.equal(result.base,10);assert.deepEqual(s.stats.base,before);});
 test("V2-21 unequipped item contributes no effects",()=>{const s=subject();s.equipment.main_hand=null;assert.equal(deriveStat(s,"stats.base","equipment","attack").value,10);});
@@ -15,3 +17,9 @@ test("V2-21 invalid numeric modifier rejects explicitly",()=>{const s=subject();
 test("V2-21 unsupported modifier operation rejects explicitly",()=>{const s=subject();s.equipment.main_hand.effects[0].op="MULTIPLY";assert.throws(()=>deriveStat(s,"stats.base","equipment","attack"),/HAKODAN_EFFECT_UNSUPPORTED_OP: MULTIPLY/);});
 test("V2-21 missing base stat rejects explicitly",()=>{assert.throws(()=>deriveStat(subject(),"stats.base","equipment","magic"),/HAKODAN_BASE_STAT_NOT_FOUND: magic/);});
 test("V2-21 nonnumeric base stat rejects explicitly",()=>{const s=subject();s.stats.base.attack="10";assert.throws(()=>deriveStat(s,"stats.base","equipment","attack"),/HAKODAN_BASE_STAT_NUMERIC_REQUIRED: attack/);});
+
+test("V2-21 registry exposes derived-stat runtime capabilities",()=>{const{conditions,actions}=createCanonicalRuntimeRegistries();for(const k of ["DERIVED_GT","DERIVED_GTE","DERIVED_LT","DERIVED_LTE"])assert.equal(conditions.has(k),true);assert.equal(actions.has("SYNC_DERIVED_STATS"),true);});
+function runtime(condition,actions){return createWorldRuntime({ir:"HNK-IR",version:"0.2.0",world:{entities:[{id:"alakazam",properties:subject()}],rules:[{id:"derived-rule",trigger:"tick",condition,actions}]}});}
+test("V2-21 DERIVED_GTE reads pure derived attack without mutating base or derived state",()=>{const r=runtime({kind:"DERIVED_GTE",subject:"alakazam",basePath:"stats.base",equipmentPath:"equipment",stat:"attack",value:15},[]);const before=structuredClone(r.entity("alakazam").stats);assert.deepEqual(r.tick(),[]);assert.deepEqual(r.entity("alakazam").stats,before);});
+test("V2-21 SYNC_DERIVED_STATS writes only derived target and emits ordered evidence",()=>{const r=runtime({kind:"DERIVED_GTE",subject:"alakazam",basePath:"stats.base",equipmentPath:"equipment",stat:"attack",value:15},[{kind:"SYNC_DERIVED_STATS",subject:"alakazam",basePath:"stats.base",equipmentPath:"equipment",derivedPath:"stats.derived"}]);const[e]=r.tick();assert.equal(r.entity("alakazam").stats.base.attack,10);assert.equal(r.entity("alakazam").stats.derived.attack,17);assert.deepEqual(e.derived.attack,{stat:"attack",base:10,modifiers:[{slot:"main_hand",instanceId:"excalibur-001",id:"sword",effectIndex:0,stat:"attack",op:"ADD",value:7}],value:17});});
+test("V2-21 derived conditions gate runtime deterministically",()=>{const r=runtime({kind:"DERIVED_LT",subject:"alakazam",basePath:"stats.base",equipmentPath:"equipment",stat:"attack",value:15},[{kind:"SET",subject:"alakazam",path:"marker",value:"should-not-run"}]);assert.deepEqual(r.tick(),[]);assert.equal(r.entity("alakazam").marker,undefined);});

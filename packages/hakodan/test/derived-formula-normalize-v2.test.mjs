@@ -45,3 +45,21 @@ test("V2-26 NORMALIZE rejects nonnumeric operands canonically",()=>{
 test("V2-26 NORMALIZE rejects non-finite operands canonically",()=>{
  assert.throws(()=>evaluateFormula({op:"NORMALIZE",args:[{value:5},{stat:"bad"},{value:10}]},{resolveStat:()=>Infinity}),/HAKODAN_DERIVED_FORMULA_NUMERIC_REQUIRED/);
 });
+
+test("V2-26 NORMALIZE never traverses dormant nested IF accessor",()=>{
+ let touched=0;
+ const dormant={};
+ Object.defineProperty(dormant,"stat",{enumerable:true,get(){touched+=1;throw new Error("NORMALIZE_DORMANT_BRANCH_TOUCHED");}});
+ const conditional={op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:75},else:dormant};
+ const result=evaluateFormula({op:"NORMALIZE",args:[conditional,{value:0},{value:100}]},context);
+ assert.equal(result.value,0.75);
+ assert.equal(touched,0);
+ assert.deepEqual(result.expression,{op:"NORMALIZE",args:[{op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:75}},{value:0},{value:100}]});
+});
+
+test("V2-26 NORMALIZE tolerates uncloneable dormant nested IF values",()=>{
+ const conditional={op:"IF",condition:{op:"EQ",left:{value:1},right:{value:1}},then:{value:25},else:{stat:"unused",callback:()=>99}};
+ const result=evaluateFormula({op:"NORMALIZE",args:[conditional,{value:0},{value:100}]},context);
+ assert.equal(result.value,0.25);
+ assert.equal(result.operands[0].selected,"then");
+});

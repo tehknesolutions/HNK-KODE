@@ -7,6 +7,6 @@ export function applyCanonicalPortalEntry(world,value){
  if(intent.targetId!==world.portal.id)throw new Error("HAKODAN_INTERACTION_INTENT_INVALID");
  const evaluated=evaluatePortalProximityState({portal:world.portal,actor:world.actor,threshold:world.threshold});
  const eligible=world.portal.state==="open"&&evaluated.evidence.proximity;
- if(!eligible)return {accepted:false,reason:"ineligible",interaction:intent,actor:{...world.actor},targetId:world.portal.id,worldRevision:world.worldRevision,portal:{...world.portal}};
- return {accepted:true,reason:"entered",interaction:intent,actor:{...world.actor},targetId:world.portal.id,worldRevision:world.worldRevision+1,portal:{...evaluated.portal}};
+ if(!eligible)return {accepted:false,reason:"ineligible",interaction:intent,actor:{id:world.actor.id,x:world.actor.x,y:world.actor.y},targetId:world.portal.id,worldRevision:world.worldRevision,portal:{...world.portal}};
+ return {accepted:true,reason:"entered",interaction:intent,actor:{id:world.actor.id,x:world.actor.x,y:world.actor.y},targetId:world.portal.id,worldRevision:world.worldRevision+1,portal:{...evaluated.portal}};
 }

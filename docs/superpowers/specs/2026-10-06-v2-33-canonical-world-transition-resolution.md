@@ -92,7 +92,54 @@ Exact-key validation is required at the HNK boundary.
 
 The transition resolution MUST be derived from an accepted canonical interaction result, never from raw player input.
 
-## 6. Revision invariant
+## 6. Atomic outer canonical result
+
+V2-33 introduces one exact accepted outer result. It is the sole canonical delivery, validation, ordering, and mutation unit for this transition slice and supersedes the V2-32 accepted outer shape for V2-33 consumers.
+
+```js
+{
+  accepted: true,
+  reason: "entered",
+  interaction: {
+    actorId: "alakazam",
+    interaction: "enter",
+    targetId: "portal-1"
+  },
+  actor: {
+    id: "alakazam",
+    x: <finite number>,
+    y: <finite number>
+  },
+  targetId: "portal-1",
+  interactionRevision: <safe positive integer>,
+  transitionRevision: <same revision>,
+  worldRevision: <same revision>,
+  transition: {
+    occurred: true,
+    kind: "portal-entry",
+    actorId: "alakazam",
+    targetId: "portal-1",
+    transitionRevision: <same revision>
+  },
+  targetEnvelope: <V2-32 exact canonical target envelope at the same revision>
+}
+```
+
+The outer object uses exact-key validation before field reads. The nested `interaction`, `actor`, `transition`, and `targetEnvelope` contracts are exact and bounded.
+
+The complete outer result MUST be parsed and validated before any ordering state or manifestation is mutated.
+
+Goodle MUST NOT independently deliver `actor`, `targetEnvelope`, or `transition` before the complete result is known valid.
+
+A malformed transition invalidates the entire result before mutation. A stale, duplicate, or conflicting outer result is classified once for the causal revision:
+- stale: no mutation;
+- identical duplicate: satisfied, no re-mutation;
+- conflict: no mutation;
+- accepted newer result: actor, portal and transition manifestations commit as one coherent delivery.
+
+No independent transition revision stream, transition delivery queue, or transition-side authority may be introduced.
+
+## 7. Revision invariant
 
 For an accepted transition:
 
@@ -112,7 +159,7 @@ Rejected interaction:
 
 Overflow MUST be rejected before mutation.
 
-## 7. Ordering and atomicity
+## 8. Ordering and atomicity
 
 Goodle must preserve the V2-32 ordering guarantees:
 - stale canonical results do not mutate manifestation;
@@ -122,7 +169,7 @@ Goodle must preserve the V2-32 ordering guarantees:
 
 Transition evidence is not authoritative state. It is a reflection of HNK authority.
 
-## 8. Security / boundedness
+## 9. Security / boundedness
 
 Neither HNK nor Goodle may evaluate unrelated enumerable accessors while projecting the bounded transition result.
 
@@ -130,7 +177,7 @@ Returned/public transition objects contain only the explicit transition contract
 
 No callbacks, executable payloads, formulas, derivation metadata, internal portal geometry, thresholds, distances or inferred destinations cross the boundary.
 
-## 9. TDD gates
+## 10. TDD gates
 
 HNK:
 1. accepted V2-32 interaction yields exact transition contract;
@@ -149,7 +196,7 @@ Goodle:
 6. browser proof exposes transition evidence only after canonical delivery;
 7. no destination is inferred.
 
-## 10. Promotion gate
+## 11. Promotion gate
 
 V2-33 may be promoted only when:
 - HNK contract is source-locked;
@@ -157,7 +204,7 @@ V2-33 may be promoted only when:
 - structural review has no unresolved P1/P2 authority or atomicity defects;
 - execution status is reported separately and never converted from UNEXECUTED-INFRA into PASS.
 
-## 11. Deferred by design
+## 12. Deferred by design
 
 The following require a future authoritative HNK specification and are NOT part of V2-33:
 - destination/world identity;

@@ -1,13 +1,21 @@
 const BINARY_OPS=new Set(["ADD","SUBTRACT","MULTIPLY","DIVIDE","MIN","MAX"]);
 const UNARY_OPS=new Set(["ABS","ROUND","FLOOR","CEIL"]);
 const TERNARY_OPS=new Set(["CLAMP","NORMALIZE","DENORMALIZE"]);
-const OPS=new Set([...BINARY_OPS,...UNARY_OPS,...TERNARY_OPS]);
+const QUATERNARY_OPS=new Set(["DISTANCE"]);
+const OPS=new Set([...BINARY_OPS,...UNARY_OPS,...TERNARY_OPS,...QUATERNARY_OPS]);
 const CONDITION_OPS=new Set(["GT","GTE","LT","LTE","EQ"]);
 const VALUE_KEYS=new Set(["value"]),STAT_KEYS=new Set(["stat"]),OP_KEYS=new Set(["op","args"]),IF_KEYS=new Set(["op","condition","then","else"]),CONDITION_KEYS=new Set(["op","left","right"]);
 function clone(v){return structuredClone(v);}
 function numeric(v){if(typeof v!=="number"||!Number.isFinite(v))throw new Error("HAKODAN_DERIVED_FORMULA_NUMERIC_REQUIRED");return v;}
 function assertContext(c){if(!c||typeof c!=="object"||typeof c.resolveStat!=="function")throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");}
 function exactKeys(o,a){const k=Object.keys(o);return k.length===a.size&&k.every(x=>a.has(x));}
+function distance2d(ax,ay,bx,by){
+ const scale=Math.max(Math.abs(ax),Math.abs(ay),Math.abs(bx),Math.abs(by));
+ if(scale===0)return 0;
+ const dx=ax/scale-bx/scale,dy=ay/scale-by/scale;
+ const unit=Math.hypot(dx,dy),limit=Number.MAX_VALUE/scale;
+ return unit>limit?Number.MAX_VALUE:unit*scale;
+}
 function evaluateCondition(c,context){
  if(!c||typeof c!=="object"||Array.isArray(c)||!exactKeys(c,CONDITION_KEYS)||typeof c.op!=="string")throw new Error("HAKODAN_DERIVED_CONDITION_INVALID");
  if(!CONDITION_OPS.has(c.op))throw new Error(`HAKODAN_DERIVED_CONDITION_UNSUPPORTED_OP: ${c.op}`);
@@ -33,8 +41,9 @@ function evaluate(expression,context){
  if(UNARY_OPS.has(expression.op)&&expression.args.length!==1)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(BINARY_OPS.has(expression.op)&&expression.args.length<2)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  if(TERNARY_OPS.has(expression.op)&&expression.args.length!==3)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
+ if(QUATERNARY_OPS.has(expression.op)&&expression.args.length!==4)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID");
  const operands=expression.args.map(a=>evaluate(a,context));let value;
- switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;case"CLAMP":if(operands[1].value>operands[2].value)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");value=Math.min(Math.max(operands[0].value,operands[1].value),operands[2].value);break;case"NORMALIZE":{if(operands[1].value>=operands[2].value)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");const min=operands[1].value,max=operands[2].value,bounded=Math.min(Math.max(operands[0].value,min),max);if(bounded===min)value=0;else if(bounded===max)value=1;else{const scale=Math.max(Math.abs(bounded),Math.abs(min),Math.abs(max));value=(bounded/scale-min/scale)/(max/scale-min/scale);}break;}case"DENORMALIZE":{const min=operands[1].value,max=operands[2].value;if(min>=max)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");const bounded=Math.min(Math.max(operands[0].value,0),1);if(bounded===0)value=min;else if(bounded===1)value=max;else{const scale=Math.max(Math.abs(min),Math.abs(max));value=((1-bounded)*(min/scale)+bounded*(max/scale))*scale;}break;}}
+ switch(expression.op){case"ADD":value=operands.reduce((r,o)=>r+o.value,0);break;case"SUBTRACT":value=operands.slice(1).reduce((r,o)=>r-o.value,operands[0].value);break;case"MULTIPLY":value=operands.reduce((r,o)=>r*o.value,1);break;case"DIVIDE":value=operands[0].value;for(const o of operands.slice(1)){if(o.value===0)throw new Error("HAKODAN_DERIVED_FORMULA_DIVIDE_BY_ZERO");value/=o.value;}break;case"MIN":value=Math.min(...operands.map(o=>o.value));break;case"MAX":value=Math.max(...operands.map(o=>o.value));break;case"ABS":value=Math.abs(operands[0].value);break;case"ROUND":value=Math.round(operands[0].value);break;case"FLOOR":value=Math.floor(operands[0].value);break;case"CEIL":value=Math.ceil(operands[0].value);break;case"CLAMP":if(operands[1].value>operands[2].value)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");value=Math.min(Math.max(operands[0].value,operands[1].value),operands[2].value);break;case"NORMALIZE":{if(operands[1].value>=operands[2].value)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");const min=operands[1].value,max=operands[2].value,bounded=Math.min(Math.max(operands[0].value,min),max);if(bounded===min)value=0;else if(bounded===max)value=1;else{const scale=Math.max(Math.abs(bounded),Math.abs(min),Math.abs(max));value=(bounded/scale-min/scale)/(max/scale-min/scale);}break;}case"DENORMALIZE":{const min=operands[1].value,max=operands[2].value;if(min>=max)throw new Error("HAKODAN_DERIVED_FORMULA_INVALID_RANGE");const bounded=Math.min(Math.max(operands[0].value,0),1);if(bounded===0)value=min;else if(bounded===1)value=max;else{const scale=Math.max(Math.abs(min),Math.abs(max));value=((1-bounded)*(min/scale)+bounded*(max/scale))*scale;}break;}case"DISTANCE":value=distance2d(operands[0].value,operands[1].value,operands[2].value,operands[3].value);break;}
  return{value:numeric(value),expression:{op:expression.op,args:operands.map(o=>o.expression)},operands};
 }
 export function evaluateFormula(expression,context){assertContext(context);return evaluate(expression,context);}
